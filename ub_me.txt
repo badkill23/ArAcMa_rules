@@ -1,0 +1,72 @@
+! 2021-08-26 https://app.listonic.com
+app.listonic.com##.ng-star-inserted.ng-trigger-openClose.ng-trigger.ng-tns-c39-0.download-widget.row
+
+! 2021-08-26 https://www.gob.mx
+||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
+www.gob.mx##.list-info
+
+! 2021-10-16 https://uploadrar.com
+uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
+uploadrar.com##.btn-lg.btn-info.btn
+
+! 2021-12-11 Pinterest without having to log in
+www.pinterest.com##.FullPageModal__scroller
+www.pinterest.com##.Module.DenzelReactBridge > div > div:nth-of-type(2)
+www.pinterest.com###desktopWrapper:style(position: relative !important)
+! https://github.com/uBlockOrigin/uAssets/issues/2044
+pinterest.*##[data-test-giftwrap]
+pinterest.*###desktopWrapper:style(position: static !important;)
+pinterest.*##.gridCentered:style(margin-top: auto !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/5030
+pinterest.*##div[data-test-id="giftWrap"]
+pinterest.*##div[class="Closeup__wrapper"] > div > div[style^="cursor: default"]
+!pinterest.*##div:nth-of-type(2) > div > div > div > .Hsu.iyn.zI7 > div.Hsu.iyn.zI7:nth-of-type(2) > div
+pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
+pinterest.*##div[style^="filter:"]:style(filter: none !important)
+pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
+pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
+! Pinterest 
+! For very important notes about Pinterest, see https://github.com/DandelionSprout/adfilt/issues/26.
+!! Removes the login prompt when browsing down on a page
+pinterest.*##div[data-test-id="giftWrap"]
+!! Removes the login prompts when opening the "Full page modal scroller" (Which was very hard to do without removing the intentional login prompt)
+pinterest.*##div[class="Closeup__wrapper"] > div > div[style^="cursor: default"]
+pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
+!! Removes the "Open" overlay on images, so that their raw versions can more easily be opened
+pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
+pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
+
+! 2022-07-04 https://radiotk.org
+@@||radiotk.org
+
+! 2022-08-15 https://megaplay.cc
+@@||megaplay.cc/js/
+@@||wss.commentsengine.com:8443^$domain=megaplay.cc
+
+! 2022-08-15 chatango
+||st.chatango.com/js/
+||www.chatbro.com/embed.js
+
+! 2022-08-15 https://live.adn40.mx
+live.adn40.mx##.EnvivoConstant-info
+
+! 2022-07-28 https://www.telelatinohd.com
+www.telelatinohd.com##.col-md-5.col-xl-4
+! 2022-08-16 https://www.micineclub.com
+||feefouga.com
+
+! 2022-08-20 https://www.tvplusgratis.com
+www.tvplusgratis.com###chat-online
+
+! 2022-08-20 https://estrellatv.com
+@@||pubads.g.doubleclick.net/ssai/event/CvTZNYjrRC2HJU4io--aAA/master.m3u8$xhr,domain=estrellatv.com
+@@||pubads.g.doubleclick.net/ssai/event/y1Zjs_6rS3-ltPqmaNLQDQ/master.m3u8$xhr,domain=estrellatv.com
+@@||pubads.g.doubleclick.net/ssai/event/QgzLP09xRdOZX2prvHHN4g/master.m3u8$xhr,domain=estrellatv.com
+estrellatv.com###descarga-app
+estrellatv.com##div.publicitag
+
+! 2022-09-01 https://anegocios.com
+anegocios.com##.formulario-content
+
+! 2022-10-20 https://www.youtube.com
+www.youtube.com###chat
