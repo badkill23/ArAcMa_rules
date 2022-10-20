@@ -76,3 +76,4 @@ anegocios.com##.formulario-content
 
 ! 2022-10-20 https://www.youtube.com
 www.youtube.com###chat
+www.youtube.com###always-shown > .ytd-metadata-row-container-renderer.style-scope
