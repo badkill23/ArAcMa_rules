@@ -1,4 +1,5 @@
 ! Title: ArAcMa's Base Filters
+! Last modified: 20/10/2022
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 
