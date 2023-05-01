@@ -1,10 +1,10 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 21/02/2023
+! Last modified: 01/05/2023
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 
 
-! 2021-08-26 https://app.listonic.com
+! listonic
 app.listonic.com##.ng-star-inserted.ng-trigger-openClose.ng-trigger.ng-tns-c39-0.download-widget.row
 
 ! 2021-08-26 https://www.gob.mx
@@ -16,7 +16,7 @@ www.gob.mx##.col-md-8 > p
 www.gob.mx##.bottom-buffer
 www.gob.mx##h1
 
-! 2021-10-16 https://uploadrar.com
+! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
 uploadrar.com##.btn-lg.btn-info.btn
 
@@ -47,41 +47,46 @@ pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
 pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 
-! 2022-07-04 https://radiotk.org
+! radiotk
 @@||radiotk.org
 
-! 2022-08-15 https://megaplay.cc
+! megaplay
 @@||megaplay.cc/js/
 @@||wss.commentsengine.com:8443^$domain=megaplay.cc
 
-! 2022-08-15 chatango
+! chatango
 ||st.chatango.com/js/
 ||www.chatbro.com/embed.js
 
-! 2022-08-15 https://live.adn40.mx
+! adn40
 live.adn40.mx##.EnvivoConstant-info
 
-! 2022-07-28 https://www.telelatinohd.com
+! telelatinohd
 www.telelatinohd.com##.col-md-5.col-xl-4
-! 2022-08-16 https://www.micineclub.com
+! micineclub
 ||feefouga.com
 
-! 2022-08-20 https://www.tvplusgratis.com
+! tvplusgratis
 www.tvplusgratis.com###chat-online
 
-! 2022-08-20 https://estrellatv.com
+! estrellatv
 @@||pubads.g.doubleclick.net/ssai/event/CvTZNYjrRC2HJU4io--aAA/master.m3u8$xhr,domain=estrellatv.com
 @@||pubads.g.doubleclick.net/ssai/event/y1Zjs_6rS3-ltPqmaNLQDQ/master.m3u8$xhr,domain=estrellatv.com
 @@||pubads.g.doubleclick.net/ssai/event/QgzLP09xRdOZX2prvHHN4g/master.m3u8$xhr,domain=estrellatv.com
 estrellatv.com###descarga-app
 estrellatv.com##div.publicitag
 
-! 2022-09-01 https://anegocios.com
+! anegocios
 anegocios.com##.formulario-content
 
-! 2022-10-20 https://www.youtube.com
+! youtube
 www.youtube.com###chat
 www.youtube.com###always-shown > .ytd-metadata-row-container-renderer.style-scope
 
-! https://lrepacks.net
+! lrepacks
 lrepacks.net##.fixedbut
+
+! dailymotion
+##.js-dailymotion
+
+##.socials-vertical
