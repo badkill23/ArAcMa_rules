@@ -1,5 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 01/05/2023
+! Expires: 1 day
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 
@@ -7,7 +8,7 @@
 ! listonic
 app.listonic.com##.ng-star-inserted.ng-trigger-openClose.ng-trigger.ng-tns-c39-0.download-widget.row
 
-! 2021-08-26 https://www.gob.mx
+! gobierno
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
 www.gob.mx##.list-info
 www.gob.mx##.alert-info.alert
@@ -88,7 +89,10 @@ lrepacks.net##.fixedbut
 
 ! dailymotion
 ##.js-dailymotion
+
+! elementos flotantes
 ##.socials-vertical
+##.float-nav-2
 
 ! softzone
 www.softzone.es##.np-card--visible.np-card
