@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 03/05/2023
-! Version: 20230503
+! Last modified: 04/05/2023
+! Version: 20230504
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -22,30 +22,22 @@ www.gob.mx##h1
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
 uploadrar.com##.btn-lg.btn-info.btn
 
-! 2021-12-11 Pinterest without having to log in
+! Pinterest without having to log in
 www.pinterest.com##.FullPageModal__scroller
 www.pinterest.com##.Module.DenzelReactBridge > div > div:nth-of-type(2)
 www.pinterest.com###desktopWrapper:style(position: relative !important)
-! https://github.com/uBlockOrigin/uAssets/issues/2044
 pinterest.*##[data-test-giftwrap]
 pinterest.*###desktopWrapper:style(position: static !important;)
 pinterest.*##.gridCentered:style(margin-top: auto !important;)
-! https://github.com/uBlockOrigin/uAssets/issues/5030
 pinterest.*##div[data-test-id="giftWrap"]
 pinterest.*##div[class="Closeup__wrapper"] > div > div[style^="cursor: default"]
-!pinterest.*##div:nth-of-type(2) > div > div > div > .Hsu.iyn.zI7 > div.Hsu.iyn.zI7:nth-of-type(2) > div
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 pinterest.*##div[style^="filter:"]:style(filter: none !important)
 pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
 pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
-! Pinterest 
-! For very important notes about Pinterest, see https://github.com/DandelionSprout/adfilt/issues/26.
-!! Removes the login prompt when browsing down on a page
 pinterest.*##div[data-test-id="giftWrap"]
-!! Removes the login prompts when opening the "Full page modal scroller" (Which was very hard to do without removing the intentional login prompt)
 pinterest.*##div[class="Closeup__wrapper"] > div > div[style^="cursor: default"]
 pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
-!! Removes the "Open" overlay on images, so that their raw versions can more easily be opened
 pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 
@@ -81,9 +73,25 @@ estrellatv.com##div.publicitag
 ! anegocios
 anegocios.com##.formulario-content
 
-! youtube
+! YouTube
 www.youtube.com###chat
 www.youtube.com###always-shown > .ytd-metadata-row-container-renderer.style-scope
+! YT Homepage - Hide the Shorts section
+youtube.com##[is-shorts]
+! YT Menu - Hide the Shorts button
+www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
+! YT Search - Hide Shorts
+www.youtube.com##ytd-search ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-video-renderer)
+! YT Search and Channels - Hide the Shorts sections
+www.youtube.com##ytd-reel-shelf-renderer
+! YT Channels - Hide the Shorts tab
+www.youtube.com##ytd-browse[page-subtype="channels"] [role="tab"]:nth-of-type(3):has-text(Shorts)
+! YT Subscriptions - Hide Shorts - Grid View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)
+! YT Subscriptions - Hide Shorts - List View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-item-section-renderer)
+! YT Sidebar - Hide Shorts
+www.youtube.com###related ytd-compact-video-renderer [overlay-style="SHORTS"]:upward(ytd-compact-video-renderer)
 
 ! lrepacks
 lrepacks.net##.fixedbut
