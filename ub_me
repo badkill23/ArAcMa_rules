@@ -64,14 +64,8 @@ www.telelatinohd.com##.col-md-5.col-xl-4
 www.tvplusgratis.com###chat-online
 
 ! estrellatv
-@@||pubads.g.doubleclick.net/ssai/event/CvTZNYjrRC2HJU4io--aAA/master.m3u8$xhr,domain=estrellatv.com
-@@||pubads.g.doubleclick.net/ssai/event/y1Zjs_6rS3-ltPqmaNLQDQ/master.m3u8$xhr,domain=estrellatv.com
-@@||pubads.g.doubleclick.net/ssai/event/QgzLP09xRdOZX2prvHHN4g/master.m3u8$xhr,domain=estrellatv.com
 estrellatv.com###descarga-app
 estrellatv.com##div.publicitag
-
-! anegocios
-anegocios.com##.formulario-content
 
 ! YouTube
 www.youtube.com###chat
@@ -105,3 +99,13 @@ lrepacks.net##.fixedbut
 
 ! softzone
 www.softzone.es##.np-card--visible.np-card
+
+! topesdegama
+topesdegama.com##.np-card--visible.np-card
+
+! teamos
+www.teamos.xyz##center:nth-of-type(2)
+www.teamos.xyz##.button--icon.button.button--link.siropuChatEnable.siropuChatAboveForumList
+
+! Outlook
+outlook.live.com##[role="listbox"] .Ogt7j
