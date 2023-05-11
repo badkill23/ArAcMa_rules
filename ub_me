@@ -41,32 +41,6 @@ pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
 pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 
-! radiotk
-@@||radiotk.org
-
-! megaplay
-@@||megaplay.cc/js/
-@@||wss.commentsengine.com:8443^$domain=megaplay.cc
-
-! chatango
-||st.chatango.com/js/
-||www.chatbro.com/embed.js
-
-! adn40
-live.adn40.mx##.EnvivoConstant-info
-
-! telelatinohd
-www.telelatinohd.com##.col-md-5.col-xl-4
-! micineclub
-||feefouga.com
-
-! tvplusgratis
-www.tvplusgratis.com###chat-online
-
-! estrellatv
-estrellatv.com###descarga-app
-estrellatv.com##div.publicitag
-
 ! YouTube
 www.youtube.com###chat
 www.youtube.com###always-shown > .ytd-metadata-row-container-renderer.style-scope
@@ -87,6 +61,72 @@ www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer [ov
 ! YT Sidebar - Hide Shorts
 www.youtube.com###related ytd-compact-video-renderer [overlay-style="SHORTS"]:upward(ytd-compact-video-renderer)
 
+! radiotk
+@@||radiotk.org
+
+! megaplay
+@@||megaplay.cc/js/
+@@||wss.commentsengine.com:8443^$domain=megaplay.cc
+
+! chatango
+||st.chatango.com/js/
+||www.chatbro.com/embed.js
+
+! adn40
+live.adn40.mx##.EnvivoConstant-info
+
+! telelatinohd
+www.telelatinohd.com##.col-md-5.col-xl-4
+
+! micineclub
+||feefouga.com
+
+! tvplusgratis
+www.tvplusgratis.com###chat-online
+
+! tvplusgratis
+www.tvplusgratis.com##.btn-block.btn-white.btn-danger.btn
+www.tvplusgratis.com##.alert-info.alert
+www.tvplusgratis.com##.alert-danger.alert
+www.tvplusgratis.com##p
+
+! televisiongratishd
+www.televisiongratishd.com##.alert-danger.alert
+www.televisiongratishd.com##.alert-info.alert
+www.televisiongratishd.com##aside#secondary.widget-area
+www.televisiongratishd.com###chat-online
+www.televisiongratishd.com##p
+www.televisiongratishd.com##.btn-block.btn-white.btn-danger.btn
+www.televisiongratishd.com##.form-control
+
+
+! nmas
+www.nmas.com.mx##.cHZiTq.sc-29778d0-16
+www.nmas.com.mx##.czooCt.sc-e0e9c840-1
+www.nmas.com.mx##.fPmnNY.sc-bd80086a-0
+www.nmas.com.mx##.eAjhvj.sc-82eed557-0
+www.nmas.com.mx##.iBVySa.sc-7b132a7-0
+www.nmas.com.mx##.bDnAKS.sc-b0b99834-2
+www.nmas.com.mx##.cDYuzt.sc-b0b99834-0
+www.nmas.com.mx##.dPPRZU.caclzF.sc-fb561a29-1.sc-fb561a29-0
+
+! taenet
+www.taenet.com.mx##.sidebar_main_header
+www.taenet.com.mx##[href="ActualizacionFacturacion"]
+www.taenet.com.mx##.menu_section > ul > li:nth-of-type(3) > a
+www.taenet.com.mx##.menu_section > ul > li:nth-of-type(2) > a
+
+! imagentv
+www.imagentv.com##.m-none.left.node-ads.nodeAds
+www.imagentv.com##.m-none.right.node-ads.nodeAds
+www.imagentv.com##.headerUserInner
+
+! estrellatv
+estrellatv.com###descarga-app
+estrellatv.com##div.publicitag
+@@||pubads.g.doubleclick.net/ssai/event/*$xhr,domain=estrellatv.com
+estrellatv.com##div.bg-2:nth-of-type(2)
+
 ! lrepacks
 lrepacks.net##.fixedbut
 
@@ -99,12 +139,15 @@ lrepacks.net##.fixedbut
 
 ! softzone
 www.softzone.es##.np-card--visible.np-card
+softzone.es###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 
 ! adslzone
+adslzone.net##.np-card--visible.np-card
 adslzone.net###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 
 ! topesdegama
 topesdegama.com##.np-card--visible.np-card
+topesdegama.com###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 
 ! teamos
 www.teamos.xyz##center:nth-of-type(2)
