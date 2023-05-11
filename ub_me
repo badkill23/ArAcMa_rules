@@ -140,14 +140,17 @@ lrepacks.net##.fixedbut
 ! softzone
 www.softzone.es##.np-card--visible.np-card
 softzone.es###main > section.article-full > div:last-child > ul.comments-social-share-mobile
+softzone.es###app > div:last-child > div.np-sheet:nth-child(2)
 
 ! adslzone
 adslzone.net##.np-card--visible.np-card
 adslzone.net###main > section.article-full > div:last-child > ul.comments-social-share-mobile
+adslzone.net###app > div:last-child > div.np-sheet:nth-child(2)
 
 ! topesdegama
 topesdegama.com##.np-card--visible.np-card
 topesdegama.com###main > section.article-full > div:last-child > ul.comments-social-share-mobile
+topesdegama.com###app > div:last-child > div.np-sheet:nth-child(2)
 
 ! teamos
 www.teamos.xyz##center:nth-of-type(2)
