@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 04/05/2023
-! Version: 20230504
+! Last modified: 11/05/2023
+! Version: 20230511
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -99,6 +99,9 @@ lrepacks.net##.fixedbut
 
 ! softzone
 www.softzone.es##.np-card--visible.np-card
+
+! adslzone
+adslzone.net###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 
 ! topesdegama
 topesdegama.com##.np-card--visible.np-card
