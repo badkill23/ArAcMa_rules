@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 11/05/2023
-! Version: 20230511
+! Last modified: 12/05/2023
+! Version: 20230512
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -133,9 +133,12 @@ lrepacks.net##.fixedbut
 ! dailymotion
 ##.js-dailymotion
 
-! elementos flotantes
+! elementos flotantes genericos
 ##.socials-vertical
 ##.float-nav-2
+##.np-card--visible.np-card
+###main > section.article-full > div:last-child > ul.comments-social-share-mobile
+###app > div:last-child > div.np-sheet:nth-child(2)
 
 ! softzone
 www.softzone.es##.np-card--visible.np-card
