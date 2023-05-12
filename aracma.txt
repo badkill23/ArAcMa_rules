@@ -164,3 +164,6 @@ outlook.live.com##[role="listbox"] .Ogt7j
 
 ! vix
 ||vix.com
+
+! Google
+www.google.com##[class$="__middle-slot-promo"]
