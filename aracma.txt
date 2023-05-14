@@ -180,7 +180,7 @@ www.google.com##[class$="__middle-slot-promo"]
 tunein.com##.super-prompt-module__withCloseIcon___r0SAL.super-prompt-module__promptContainer___SvA4j
 tunein.com##.leftSide-module__upsellButtonContainer___fOE5Z
 tunein.com##.right-side-module__container___QoVHu
-tunein.com###container-2 > div > div.ad-cell-module_container__phfcP
+tunein.com###container-2 > div > div.ad-cell-module__container___phfcP
 
 ! tunein
 www.xataka.com.mx##.ad-top3.ad
