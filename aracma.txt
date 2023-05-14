@@ -140,6 +140,7 @@ lrepacks.net##.fixedbut
 ###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 ###app > div:last-child > div.np-sheet:nth-child(2)
 ##.opening .comments-social-share button
+##.foot-menu-follow.menu-follow
 
 
 ! softzone
@@ -189,6 +190,7 @@ www.xataka.com.mx##.pivot-ecommerce-container
 www.xataka.com.mx##.desvio-container
 www.xataka.com##.desvio
 www.xataka.com.mx##.article-asset-large.article-asset-video > .asset-content
+www.xataka.com##.foot-menu-follow.menu-follow
 
 ! genbeta
 www.genbeta.com.mx##.ad-top3.ad
@@ -197,3 +199,4 @@ www.genbeta.com.mx##.desvio-container
 www.genbeta.com##.desvio
 www.genbeta.com.mx##.article-asset-large.article-asset-video > .asset-content
 www.genbeta.com##.article-asset-normal.video-boost-container
+www.genbeta.com##.foot-menu-follow.menu-follow
