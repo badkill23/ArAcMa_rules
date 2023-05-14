@@ -183,8 +183,17 @@ tunein.com##.right-side-module__container___QoVHu
 tunein.com##.ad-cell-module__ad___xyJuW
 tunein.com##.ad-cell-module__container___phfcP
 
-! tunein
+! xataka
 www.xataka.com.mx##.ad-top3.ad
 www.xataka.com.mx##.pivot-ecommerce-container
 www.xataka.com.mx##.desvio-container
+www.xataka.com##.desvio
 www.xataka.com.mx##.article-asset-large.article-asset-video > .asset-content
+
+! genbeta
+www.genbeta.com.mx##.ad-top3.ad
+www.genbeta.com.mx##.pivot-ecommerce-container
+www.genbeta.com.mx##.desvio-container
+www.genbeta.com##.desvio
+www.genbeta.com.mx##.article-asset-large.article-asset-video > .asset-content
+www.genbeta.com##.article-asset-normal.video-boost-container
