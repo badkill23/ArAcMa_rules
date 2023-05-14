@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 12/05/2023
-! Version: 20230512
+! Last modified: 14/05/2023
+! Version: 20230514
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -139,21 +139,29 @@ lrepacks.net##.fixedbut
 ##.np-card--visible.np-card
 ###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 ###app > div:last-child > div.np-sheet:nth-child(2)
+##.opening .comments-social-share button
+
 
 ! softzone
 www.softzone.es##.np-card--visible.np-card
 softzone.es###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 softzone.es###app > div:last-child > div.np-sheet:nth-child(2)
+softzone.es##.fixed-sites
+softzone.es##.opening .comments-social-share button
 
 ! adslzone
 adslzone.net##.np-card--visible.np-card
 adslzone.net###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 adslzone.net###app > div:last-child > div.np-sheet:nth-child(2)
+adslzone.net##.fixed-sites
+adslzone.net##.opening .comments-social-share button
 
 ! topesdegama
 topesdegama.com##.np-card--visible.np-card
 topesdegama.com###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 topesdegama.com###app > div:last-child > div.np-sheet:nth-child(2)
+topesdegama.com##.fixed-sites
+topesdegama.com##.opening .comments-social-share button
 
 ! teamos
 www.teamos.xyz##center:nth-of-type(2)
@@ -167,3 +175,14 @@ outlook.live.com##[role="listbox"] .Ogt7j
 
 ! Google
 www.google.com##[class$="__middle-slot-promo"]
+
+! tunein
+tunein.com##.super-prompt-module__withCloseIcon___r0SAL.super-prompt-module__promptContainer___SvA4j
+tunein.com##.leftSide-module__upsellButtonContainer___fOE5Z
+tunein.com##.right-side-module__container___QoVHu
+
+! tunein
+www.xataka.com.mx##.ad-top3.ad
+www.xataka.com.mx##.pivot-ecommerce-container
+www.xataka.com.mx##.desvio-container
+www.xataka.com.mx##.article-asset-large.article-asset-video > .asset-content
