@@ -141,7 +141,13 @@ lrepacks.net##.fixedbut
 ###app > div:last-child > div.np-sheet:nth-child(2)
 ##.opening .comments-social-share button
 ##.foot-menu-follow.menu-follow
-
+##.desvio
+##.article-asset-normal.video-boost-container
+##.pivot-ecommerce-container
+##.ad-top3.ad
+##.section-deeplinking
+##.masthead-nav-social
+###comments
 
 ! softzone
 www.softzone.es##.np-card--visible.np-card
