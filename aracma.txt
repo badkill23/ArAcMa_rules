@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 15/05/2023
-! Version: 20230515
+! Last modified: 17/05/2023
+! Version: 20230517
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -137,6 +137,7 @@ lrepacks.net##.fixedbut
 ##.socials-vertical
 ##.float-nav-2
 ##.np-card--visible.np-card
+##.np-visible.fixed-sites
 ###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 ###app > div:last-child > div.np-sheet:nth-child(2)
 ##.opening .comments-social-share button
@@ -154,21 +155,32 @@ lrepacks.net##.fixedbut
 www.softzone.es##.np-card--visible.np-card
 softzone.es###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 softzone.es###app > div:last-child > div.np-sheet:nth-child(2)
-softzone.es##.fixed-sites
+softzone.es##.np-visible.fixed-sites
+softzone.es##.social-icons
 softzone.es##.opening .comments-social-share button
+
+! redeszone
+redeszone.net##.np-card--visible.np-card
+redeszone.net###main > section.article-full > div:last-child > ul.comments-social-share-mobile
+redeszone.net###app > div:last-child > div.np-sheet:nth-child(2)
+redeszone.net##.np-visible.fixed-sites
+redeszone.net##.social-icons
+redeszone.net##.opening .comments-social-share button
 
 ! adslzone
 adslzone.net##.np-card--visible.np-card
 adslzone.net###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 adslzone.net###app > div:last-child > div.np-sheet:nth-child(2)
-adslzone.net##.fixed-sites
+adslzone.net##.np-visible.fixed-sites
+adslzone.net##.social-icons
 adslzone.net##.opening .comments-social-share button
 
 ! topesdegama
 topesdegama.com##.np-card--visible.np-card
 topesdegama.com###main > section.article-full > div:last-child > ul.comments-social-share-mobile
 topesdegama.com###app > div:last-child > div.np-sheet:nth-child(2)
-topesdegama.com##.fixed-sites
+topesdegama.com##.np-visible.fixed-sites
+topesdegama.com##.social-icons
 topesdegama.com##.opening .comments-social-share button
 
 ! teamos
@@ -209,3 +221,4 @@ www.genbeta.com.mx##.article-asset-large.article-asset-video > .asset-content
 www.genbeta.com##.article-asset-normal.video-boost-container
 www.genbeta.com##.foot-menu-follow.menu-follow
 www.genbeta.com##.aside-menu-follow.menu-follow
+
