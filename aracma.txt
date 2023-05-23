@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 17/05/2023
-! Version: 20230517
+! Last modified: 23/05/2023
+! Version: 202305231117
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -60,6 +60,11 @@ www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-rendere
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-item-section-renderer)
 ! YT Sidebar - Hide Shorts
 www.youtube.com###related ytd-compact-video-renderer [overlay-style="SHORTS"]:upward(ytd-compact-video-renderer)
+! YouTube's Anti-Ad-blocker
+youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
+youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 
 ! radiotk
 @@||radiotk.org
@@ -98,7 +103,6 @@ www.televisiongratishd.com###chat-online
 www.televisiongratishd.com##p
 www.televisiongratishd.com##.btn-block.btn-white.btn-danger.btn
 www.televisiongratishd.com##.form-control
-
 
 ! nmas
 www.nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -186,6 +190,7 @@ topesdegama.com##.opening .comments-social-share button
 ! teamos
 www.teamos.xyz##center:nth-of-type(2)
 www.teamos.xyz##.button--icon.button.button--link.siropuChatEnable.siropuChatAboveForumList
+www.teamos.xyz##.tabGroup--members.tabGroup
 
 ! Outlook
 outlook.live.com##[role="listbox"] .Ogt7j
@@ -221,4 +226,19 @@ www.genbeta.com.mx##.article-asset-large.article-asset-video > .asset-content
 www.genbeta.com##.article-asset-normal.video-boost-container
 www.genbeta.com##.foot-menu-follow.menu-follow
 www.genbeta.com##.aside-menu-follow.menu-follow
+
+! makeuseof
+www.makeuseof.com##.ad-current
+
+! anonym
+||anonym.es/js/anonymize.js$script
+
+! megawarez
+www.megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
+www.megawarez.org##.has-icon.has-text.is-large.join-link.components-button
+
+! rogramasvirtualespc
+www.programasvirtualespc.net##.spc-social-block
+www.programasvirtualespc.net##.widget-social-b.widget
+www.programasvirtualespc.net##.yasr-auto-insert-visitor
 
