@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 23/05/2023
-! Version: 202305231117
+! Last modified: 26/05/2023
+! Version: 202305260734
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -65,6 +65,13 @@ youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageV
 youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
 youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
 youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+youtube.com##.ytd-download-button-renderer
+youtube.com##ytd-grid-video-renderer:has(a[href^="/shorts/"])
+@@||www.youtube.com/api/*$xhr,1p
+youtube.com##ytd-button-renderer:has([aria-label="Compartir"])
+youtube.com##.ytd-menu-renderer:has([aria-label="Más acciones"])
+youtube.com###contentWrapper
+youtube.com###menu > .ytd-watch-metadata.style-scope
 
 ! radiotk
 @@||radiotk.org
@@ -130,6 +137,12 @@ estrellatv.com###descarga-app
 estrellatv.com##div.publicitag
 @@||pubads.g.doubleclick.net/ssai/event/*$xhr,domain=estrellatv.com
 estrellatv.com##div.bg-2:nth-of-type(2)
+estrellatv.com##.align-items-center.row
+
+! jwplayer
+@@||p.jwpcdn.com/*/*/skins/glow.xml
+@@||p.jwpcdn.com/*/*/googima.swf
+@@||p.jwpcdn.com/crossdomain.xml
 
 ! lrepacks
 lrepacks.net##.fixedbut
