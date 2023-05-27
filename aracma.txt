@@ -165,7 +165,6 @@ lrepacks.net##.fixedbut
 ##.ad-top3.ad
 ##.section-deeplinking
 ##.masthead-nav-social
-###comments
 ##.aside-menu-follow.menu-follow
 
 ! softzone
