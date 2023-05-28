@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 26/05/2023
-! Version: 202305260734
+! Last modified: 28/05/2023
+! Version: 202305280314
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -17,6 +17,7 @@ www.gob.mx##div.row:nth-of-type(5)
 www.gob.mx##.col-md-8 > p
 www.gob.mx##.bottom-buffer
 www.gob.mx##h1
+www2.repuve.gob.mx##div[class^="swal2-container swal2-center swal2-backdrop-show"]
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -76,10 +77,6 @@ youtube.com###menu > .ytd-watch-metadata.style-scope
 ! radiotk
 @@||radiotk.org
 
-! megaplay
-@@||megaplay.cc/js/
-@@||wss.commentsengine.com:8443^$domain=megaplay.cc
-
 ! chatango
 ||st.chatango.com/js/
 ||www.chatbro.com/embed.js
@@ -95,21 +92,33 @@ www.telelatinohd.com##.col-md-5.col-xl-4
 
 ! tvplusgratis
 www.tvplusgratis.com###chat-online
-
-! tvplusgratis
 www.tvplusgratis.com##.btn-block.btn-white.btn-danger.btn
 www.tvplusgratis.com##.alert-info.alert
 www.tvplusgratis.com##.alert-danger.alert
 www.tvplusgratis.com##p
+www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
+www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
 
-! televisiongratishd
-www.televisiongratishd.com##.alert-danger.alert
-www.televisiongratishd.com##.alert-info.alert
-www.televisiongratishd.com##aside#secondary.widget-area
-www.televisiongratishd.com###chat-online
-www.televisiongratishd.com##p
-www.televisiongratishd.com##.btn-block.btn-white.btn-danger.btn
-www.televisiongratishd.com##.form-control
+! ritsatv
+@@||ritsatv.ru/adver.js$xhr,1p
+@@||cdn.ampproject.org/v0/amp-auto-ads-0.1.js$xhr,domain=ritsatv.ru
+
+! telegratis.online
+telegratis.online##.card-description
+telegratis.online##.tageti
+telegratis.online##.footer
+
+! vertvcable
+www.vertvcable.com###ventana-flotante
+www.vertvcable.com###descripcion
+www.vertvcable.com##div.box:nth-of-type(2)
+www.vertvcable.com##div.box:nth-of-type(6)
+www.vertvcable.com###sidebar
+www.vertvcable.com##.social
+www.vertvcable.com##.pxcn.px-carousel
+@@||jwpltx.com^
+@@||histats.com^$domain=vertvcable.com
+@@||e.dtscout.com/e/*$script,domain=vertvcable.com
 
 ! nmas
 www.nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -166,6 +175,8 @@ lrepacks.net##.fixedbut
 ##.section-deeplinking
 ##.masthead-nav-social
 ##.aside-menu-follow.menu-follow
+###chat-message-view
+##.support-chat-bubble
 
 ! softzone
 www.softzone.es##.np-card--visible.np-card
