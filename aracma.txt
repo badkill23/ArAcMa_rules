@@ -41,6 +41,7 @@ app.cfe.mx##.page-title-dark.page-title
 app.cfe.mx###header
 app.cfe.mx###page-menu-wrap
 app.cfe.mx###top-bar
+app.cfe.mx##.nopadding:style(background-image: none !important;)
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
