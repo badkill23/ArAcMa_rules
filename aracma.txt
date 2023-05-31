@@ -13,7 +13,7 @@ app.listonic.com##.ng-star-inserted.ng-trigger-openClose.ng-trigger.ng-tns-c39-0
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
 www.gob.mx##.list-info
 www.gob.mx##.alert-info.alert
-www.gob.mx##div.row:nth-of-type(5)
+!www.gob.mx##div.row:nth-of-type(5)
 www.gob.mx##.col-md-8 > p
 www.gob.mx##.bottom-buffer
 www.gob.mx##h1
@@ -27,7 +27,6 @@ app.cfe.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 app.cfe.mx##div[class^="col-md-12 alert alert-info"]
 app.cfe.mx##div[class^="list-info"]
 app.cfe.mx##.main-footer
-app.cfe.mx##div[id^="wrapper"]
 app.cfe.mx##footer[id^="footer"]
 app.cfe.mx##div.form-row:nth-of-type(2)
 app.cfe.mx##div.col-lg-12:nth-of-type(2)
@@ -38,6 +37,10 @@ www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar
 www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 www.suri.agricultura.gob.mx##section:nth-of-type(3)
 www.suri.agricultura.gob.mx##section:nth-of-type(4)
+app.cfe.mx##.page-title-dark.page-title
+app.cfe.mx###header
+app.cfe.mx###page-menu-wrap
+app.cfe.mx###top-bar
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
