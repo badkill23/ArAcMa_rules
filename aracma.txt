@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 03/06/2023
-! Version: 202306030152
+! Last modified: 06/06/2023
+! Version: 202306060412
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -42,6 +42,11 @@ app.cfe.mx###header
 app.cfe.mx###page-menu-wrap
 app.cfe.mx###top-bar
 app.cfe.mx##.nopadding:style(background-image: none !important;)
+inscripcion.seppue.gob.mx##div[id^="datosPersonalesInf"]
+inscripcion.seppue.gob.mx##div[class^="footer"]
+inscripcion.seppue.gob.mx##div[class^="modal-dialog"]
+inscripcion.seppue.gob.mx##div[class^="modal bootstrap-dialog type-primary fade size-normal in"]
+inscripcion.seppue.gob.mx##div[class^="modal-backdrop fade in"]
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
