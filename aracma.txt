@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 09/06/2023
-! Version: 202306090132
+! Version: 202306090514
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -268,3 +268,9 @@ twitter.com##.r-lrvibr.r-bztko3.r-1ny4l3l.r-bt1l66.r-1777fci.r-1loqt21.css-1dbjc
 
 ! facebook
 www.facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
+
+! digitaltrends
+digitaltrends.com##div[class^="b-related-links"]
+digitaltrends.com##div[class^="b-foot__social"]
+digitaltrends.com##div[class^="b-share h-modal-it"]
+digitaltrends.com##button[class^="b-share h-modal-it"]
