@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 06/06/2023
-! Version: 202306060412
+! Last modified: 09/06/2023
+! Version: 202306090132
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -127,6 +127,9 @@ www.tvplusgratis.com##.alert-danger.alert
 www.tvplusgratis.com##p
 www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
 www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
+www.tvplusgratis.com##.btn-secondary.btn
+www.tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
+www.tvplusgratis.com##.card-body
 
 ! ritsatv
 @@||ritsatv.ru/adver.js$xhr,1p
@@ -148,6 +151,11 @@ www.vertvcable.com##.pxcn.px-carousel
 @@||jwpltx.com^
 @@||histats.com^$domain=vertvcable.com
 @@||e.dtscout.com/e/*$script,domain=vertvcable.com
+www.vertvcable.com##div.box:nth-of-type(1) > center
+www.vertvcable.com##footer[id^="footer"]
+www.vertvcable.com##div[class^="alert"]
+www.vertvcable.com##div[class^="box relacionados"]
+www.vertvcable.com##[href="https://www.vertvcable.com/app-vertvcable/"]
 
 ! nmas
 www.nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -188,56 +196,34 @@ lrepacks.net##.fixedbut
 ! dailymotion
 ##.js-dailymotion
 
-! elementos flotantes genericos
-##.socials-vertical
-##.float-nav-2
-##.np-card--visible.np-card
-##.np-visible.fixed-sites
-###main > section.article-full > div:last-child > ul.comments-social-share-mobile
-###app > div:last-child > div.np-sheet:nth-child(2)
-##.opening .comments-social-share button
-##.foot-menu-follow.menu-follow
-##.desvio
-##.article-asset-normal.video-boost-container
-##.pivot-ecommerce-container
-##.ad-top3.ad
-##.section-deeplinking
-##.masthead-nav-social
-##.aside-menu-follow.menu-follow
-###chat-message-view
-##.support-chat-bubble
+! elementos genericos
+##nav[class^="fixed-sites"]
+##div[class^="redes-flotantes"]
+##div[id^="header social widget"]
+##ul[class^="social-icons"]
+##nav[class^="trends"]
+##ul[class^="comments-social-share"]
+##div[class^="np-card np-card--visible"]
+##div[class^="gaz-branded-link"]
+##aside[id^="head-favicons"]
+##div[class^="head-favicons-container"]
+##ul[class^="masthead-nav-social"]
+##div[class^="article-social-share js-article-social-share m-in-normal"]
+##div[class^="article-actions"]
+##nav[class^="menu-follow aside-menu-follow"]
+##div[class^="pivot-ecommerce-container"]
+##div[class^="js-dailymotion"]
+##div[class^="article-asset-video article-asset-large article-asset-center"]
+##div[class^="article-social-share js-article-social-share m-in-links is-hidden"]
+##div[class^="menu-follow foot-menu-follow"]
+##div[class^="section-deeplinking-container m-deeplinking-news "]
+##div[class^="video-boost-container article-asset-normal"]
+##div[class^="desvio-container"]
+##div[class^="pivot-newsletter"]
+##div[class^="section-deeplinking-container m-evergreen-links"]
 
-! softzone
-www.softzone.es##.np-card--visible.np-card
-softzone.es###main > section.article-full > div:last-child > ul.comments-social-share-mobile
-softzone.es###app > div:last-child > div.np-sheet:nth-child(2)
-softzone.es##.np-visible.fixed-sites
-softzone.es##.social-icons
-softzone.es##.opening .comments-social-share button
-
-! redeszone
-redeszone.net##.np-card--visible.np-card
-redeszone.net###main > section.article-full > div:last-child > ul.comments-social-share-mobile
-redeszone.net###app > div:last-child > div.np-sheet:nth-child(2)
-redeszone.net##.np-visible.fixed-sites
-redeszone.net##.social-icons
-redeszone.net##.opening .comments-social-share button
-
-! adslzone
-adslzone.net##.np-card--visible.np-card
-adslzone.net###main > section.article-full > div:last-child > ul.comments-social-share-mobile
-adslzone.net###app > div:last-child > div.np-sheet:nth-child(2)
-adslzone.net##.np-visible.fixed-sites
-adslzone.net##.social-icons
-adslzone.net##.opening .comments-social-share button
-
-! topesdegama
-topesdegama.com##.np-card--visible.np-card
-topesdegama.com###main > section.article-full > div:last-child > ul.comments-social-share-mobile
-topesdegama.com###app > div:last-child > div.np-sheet:nth-child(2)
-topesdegama.com##.np-visible.fixed-sites
-topesdegama.com##.social-icons
-topesdegama.com##.opening .comments-social-share button
+! makeuseof
+www.makeuseof.com##.ad-current
 
 ! teamos
 teamos.xyz##center:nth-of-type(2)
@@ -260,28 +246,6 @@ tunein.com##.leftSide-module__upsellButtonContainer___fOE5Z
 tunein.com##.right-side-module__container___QoVHu
 tunein.com##.ad-cell-module__ad___xyJuW
 tunein.com##.ad-cell-module__container___phfcP
-
-! xataka
-www.xataka.com.mx##.ad-top3.ad
-www.xataka.com.mx##.pivot-ecommerce-container
-www.xataka.com.mx##.desvio-container
-www.xataka.com##.desvio
-www.xataka.com.mx##.article-asset-large.article-asset-video > .asset-content
-www.xataka.com##.foot-menu-follow.menu-follow
-www.xataka.com##.aside-menu-follow.menu-follow
-
-! genbeta
-www.genbeta.com.mx##.ad-top3.ad
-www.genbeta.com.mx##.pivot-ecommerce-container
-www.genbeta.com.mx##.desvio-container
-www.genbeta.com##.desvio
-www.genbeta.com.mx##.article-asset-large.article-asset-video > .asset-content
-www.genbeta.com##.article-asset-normal.video-boost-container
-www.genbeta.com##.foot-menu-follow.menu-follow
-www.genbeta.com##.aside-menu-follow.menu-follow
-
-! makeuseof
-www.makeuseof.com##.ad-current
 
 ! anonym
 ||anonym.es/js/anonymize.js$script
