@@ -17,7 +17,6 @@ www.gob.mx##.alert-info.alert
 www.gob.mx##.col-md-8 > p
 www.gob.mx##.bottom-buffer
 www.gob.mx##h1
-www2.repuve.gob.mx##div[class^="swal2-container swal2-center swal2-backdrop-show"]
 www.gob.mx##.form-group > .clearfix.form-group
 www.gob.mx##.main-footer
 www.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
