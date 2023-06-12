@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 10/06/2023
-! Version: 202306101135
+! Last modified: 11/06/2023
+! Version: 202306110625
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -46,6 +46,11 @@ inscripcion.seppue.gob.mx##div[class^="footer"]
 inscripcion.seppue.gob.mx##div[class^="modal-dialog"]
 inscripcion.seppue.gob.mx##div[class^="modal bootstrap-dialog type-primary fade size-normal in"]
 inscripcion.seppue.gob.mx##div[class^="modal-backdrop fade in"]
+www2.repuve.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
+www2.repuve.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
+www2.repuve.gob.mx##footer[class^="main-footer"]
+www2.repuve.gob.mx##div.row:nth-of-type(4)
+www2.repuve.gob.mx##div[class^="alert alert-info"]
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
