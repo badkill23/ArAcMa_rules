@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 11/06/2023
-! Version: 202306110625
+! Last modified: 12/06/2023
+! Version: 202306120613
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -104,7 +104,6 @@ youtube.com##ytd-grid-video-renderer:has(a[href^="/shorts/"])
 @@||www.youtube.com/api/*$xhr,1p
 youtube.com##ytd-button-renderer:has([aria-label="Compartir"])
 youtube.com##.ytd-menu-renderer:has([aria-label="Más acciones"])
-youtube.com###contentWrapper
 youtube.com###menu > .ytd-watch-metadata.style-scope
 
 ! radiotk
