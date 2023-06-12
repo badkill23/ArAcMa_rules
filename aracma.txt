@@ -283,3 +283,4 @@ digitaltrends.com##button[class^="b-share h-modal-it"]
 web.whatsapp.com##._3NdAd > ._3OtEr > ._3ndVb
 web.whatsapp.com##li.FCS6Q.Iaqxu.jScby:nth-of-type(3)
 web.whatsapp.com##._3SOOk
+web.whatsapp.com##._2XdMx._3qNGb > div._3OtEr:nth-of-type(3)
