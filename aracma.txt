@@ -1,13 +1,15 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 14/06/2023
-! Version: 202306140716am
+! Version: 202306140807am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 
 
 ! listonic
-
+listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
+listonic.com##div[class^="flex flex-col w-auto Sidebar_privacyWrapper__a52W5"]
+listonic.com##div[class^="flex flex-col w-auto DownloadNotification_container__oTdOo"]
 
 ! gobierno
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
