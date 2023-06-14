@@ -1,10 +1,9 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 14/06/2023
-! Version: 202306140807am
+! Version: 202306140458pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
-
 
 ! listonic
 listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
@@ -146,8 +145,9 @@ www.tvplusgratis.com##p
 www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
 www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
 www.tvplusgratis.com##.btn-secondary.btn
-www.tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
+www.tvplusgratis.com##div[class^="block-title"]
 www.tvplusgratis.com##.card-body
+www.tvplusgratis.com##.site-main-menu.leven-classic-menu
 
 ! ritsatv
 @@||ritsatv.ru/adver.js$xhr,1p
@@ -174,10 +174,6 @@ www.vertvcable.com##footer[id^="footer"]
 www.vertvcable.com##div[class^="alert"]
 www.vertvcable.com##div[class^="box relacionados"]
 www.vertvcable.com##[href="https://www.vertvcable.com/app-vertvcable/"]
-
-! tvplusgratis
-www.tvplusgratis.com##.site-main-menu.leven-classic-menu
-www.tvplusgratis.com###page_container > .block-title > h2
 
 ! nmas
 www.nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -243,6 +239,7 @@ lrepacks.net##.fixedbut
 ##div[class^="desvio-container"]
 ##div[class^="pivot-newsletter"]
 ##div[class^="section-deeplinking-container m-evergreen-links"]
+##div[class^="post-comments-shortcut"]
 
 ! makeuseof
 www.makeuseof.com##.ad-current
@@ -314,3 +311,7 @@ www.telcel.com##div[class^="text parbase section"]
 
 ! elcomercio
 elcomercio.pe##blockquote.story-contents__blockquote
+
+! Reddit
+reddit.com##.comment.stickied:has(.author[href*="AutoModerator"])
+reddit.com##.Comment:has(a[href*="/AutoModerator"][data-testid="comment_author_link"])
