@@ -147,6 +147,8 @@ www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:n
 www.tvplusgratis.com##.btn-secondary.btn
 www.tvplusgratis.com##.card-body
 www.tvplusgratis.com##.site-main-menu.leven-classic-menu
+www.tvplusgratis.com##h2
+www.tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
 
 ! ritsatv
 @@||ritsatv.ru/adver.js$xhr,1p
