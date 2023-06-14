@@ -145,7 +145,6 @@ www.tvplusgratis.com##p
 www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
 www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
 www.tvplusgratis.com##.btn-secondary.btn
-www.tvplusgratis.com##div[class^="block-title"]
 www.tvplusgratis.com##.card-body
 www.tvplusgratis.com##.site-main-menu.leven-classic-menu
 
