@@ -1,13 +1,13 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 12/06/2023
-! Version: 202306120613
+! Last modified: 14/06/2023
+! Version: 202306140716am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 
 
 ! listonic
-app.listonic.com##.ng-star-inserted.ng-trigger-openClose.ng-trigger.ng-tns-c39-0.download-widget.row
+
 
 ! gobierno
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
@@ -21,6 +21,7 @@ www.gob.mx##.form-group > .clearfix.form-group
 www.gob.mx##.main-footer
 www.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 www.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
+!CFE
 app.cfe.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 app.cfe.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 app.cfe.mx##div[class^="col-md-12 alert alert-info"]
@@ -30,22 +31,27 @@ app.cfe.mx##footer[id^="footer"]
 app.cfe.mx##div.form-row:nth-of-type(2)
 app.cfe.mx##div.col-lg-12:nth-of-type(2)
 app.cfe.mx##.bottommargin-sm.col-lg-12
+app.cfe.mx##.page-title-dark.page-title
+app.cfe.mx###header
+app.cfe.mx###page-menu-wrap
+app.cfe.mx###top-bar
+app.cfe.mx##.nopadding:style(background-image: none !important;)
+! Agricultura
 www.suri.agricultura.gob.mx##div[class^="carousel slide"]
 www.suri.agricultura.gob.mx##.main-footer
 www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 www.suri.agricultura.gob.mx##section:nth-of-type(3)
 www.suri.agricultura.gob.mx##section:nth-of-type(4)
-app.cfe.mx##.page-title-dark.page-title
-app.cfe.mx###header
-app.cfe.mx###page-menu-wrap
-app.cfe.mx###top-bar
-app.cfe.mx##.nopadding:style(background-image: none !important;)
+! SEPPuebla
 inscripcion.seppue.gob.mx##div[id^="datosPersonalesInf"]
 inscripcion.seppue.gob.mx##div[class^="footer"]
 inscripcion.seppue.gob.mx##div[class^="modal-dialog"]
 inscripcion.seppue.gob.mx##div[class^="modal bootstrap-dialog type-primary fade size-normal in"]
 inscripcion.seppue.gob.mx##div[class^="modal-backdrop fade in"]
+! repuve
+www2.repuve.gob.mx##body:style(overflow-y: scroll !important)
+www2.repuve.gob.mx##div[class^="swal2-container swal2-center swal2-backdrop-show"]
 www2.repuve.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 www2.repuve.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 www2.repuve.gob.mx##footer[class^="main-footer"]
@@ -55,6 +61,13 @@ www2.repuve.gob.mx##div[class^="alert alert-info"]
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
 uploadrar.com##.btn-lg.btn-info.btn
+
+! megaup
+megaup.net##+js(rpnt, script, /if\(\$.*return;}/)
+
+! usersdrive
+@@||d19gkl2iaav80x.cloudfront.net^$script,domain=usersdrive.com
+@@||d19gkl2iaav80x.cloudfront.net^$script,domain=apptquitesouse.com
 
 ! Pinterest without having to log in
 www.pinterest.com##.FullPageModal__scroller
@@ -147,7 +160,7 @@ telegratis.online##.footer
 www.vertvcable.com###ventana-flotante
 www.vertvcable.com###descripcion
 www.vertvcable.com##div.box:nth-of-type(2)
-www.vertvcable.com##div.box:nth-of-type(6)
+www.vertvcable.com##div.box:nth-of-typhttps://www.tvplusgratis.come(6)
 www.vertvcable.com###sidebar
 www.vertvcable.com##.social
 www.vertvcable.com##.pxcn.px-carousel
@@ -159,6 +172,10 @@ www.vertvcable.com##footer[id^="footer"]
 www.vertvcable.com##div[class^="alert"]
 www.vertvcable.com##div[class^="box relacionados"]
 www.vertvcable.com##[href="https://www.vertvcable.com/app-vertvcable/"]
+
+! tvplusgratis
+www.tvplusgratis.com##.site-main-menu.leven-classic-menu
+www.tvplusgratis.com###page_container > .block-title > h2
 
 ! nmas
 www.nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -266,8 +283,11 @@ www.programasvirtualespc.net##.yasr-auto-insert-visitor
  !adguard
 twitter.com##div.css-1dbjc4n.r-1jgb5lz.r-633pao.r-13qz1uu > div.css-1dbjc4n.r-1awozwy.r-l5o3uw.r-18u37iz.r-1wtj0ep.r-q81ovl.r-105ug2t
  !ublock
+twitter.com##div.r-1h0z5md.r-18u37iz.css-1dbjc4n:nth-of-type(4)
+! popup saved 
 twitter.com##.r-105ug2t.r-xyw6el.r-zd98yo.r-1wtj0ep.r-18u37iz.r-z2wwpe.r-l5o3uw.r-1kihuf0.r-1awozwy.css-1dbjc4n
-twitter.com##.r-lrvibr.r-bztko3.r-1ny4l3l.r-bt1l66.r-1777fci.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
+! blue
+twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
 
 ! facebook
 www.facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
@@ -283,3 +303,12 @@ web.whatsapp.com##._3NdAd > ._3OtEr > ._3ndVb
 web.whatsapp.com##li.FCS6Q.Iaqxu.jScby:nth-of-type(3)
 web.whatsapp.com##._3SOOk
 web.whatsapp.com##._2XdMx._3qNGb > div._3OtEr:nth-of-type(3)
+
+! Telcel
+www.telcel.com##div[class^="comp-telcel-banner-superior"]
+www.telcel.com##div[class^="comp-telcel-chatbot"]
+www.telcel.com##div[class^="comp-telcel-banner-rotativo"]
+www.telcel.com##div[class^="text parbase section"]
+
+! elcomercio
+elcomercio.pe##blockquote.story-contents__blockquote
