@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 15/06/2023
-! Version: 202306160946am
+! Version: 202306161202pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -253,7 +253,7 @@ lrepacks.net##.fixedbut
 ##nav[class^="social-navigation"]
 ##div[class^="disqus-footer disqus-footer--refresh"]
 ##div[class^="aside"]
-##div[class^="np-sheet"]
+##div[class*="np-sheet"]
 ##div[id^="newsletter"]
 ##nav[class^="menu-categories foot-menu-categories"]
 ##div[class^="section-post-closure"]
