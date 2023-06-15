@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 14/06/2023
-! Version: 202306140458pm
+! Last modified: 15/06/2023
+! Version: 202306160656am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -9,6 +9,12 @@
 listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
 listonic.com##div[class^="flex flex-col w-auto Sidebar_privacyWrapper__a52W5"]
 listonic.com##div[class^="flex flex-col w-auto DownloadNotification_container__oTdOo"]
+!Movil
+listonic.com##button[class^="w-auto Button_solid__AQNMV text-xs"]
+listonic.com##div[class^="flex flex-row w-auto SocialMediaButtons_socialMediaButtonsWrapper__f8cWu"]
+listonic.com##div[class^="flex flex-row w-auto gap-3 mt-6"]
+listonic.com##div[class^="flex flex-row w-auto gap-12 my-5"]
+listonic.com##p[class^="text-center"]
 
 ! gobierno
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
