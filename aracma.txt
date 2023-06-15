@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 15/06/2023
-! Version: 202306160725am
+! Version: 202306160946am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -247,6 +247,23 @@ lrepacks.net##.fixedbut
 ##div[class^="pivot-newsletter"]
 ##div[class^="section-deeplinking-container m-evergreen-links"]
 ##div[class^="post-comments-shortcut"]
+##a[class^="float-nav-2"]
+##div[class^="code-block code-block-2"]
+##section[id^="block-25"]
+##nav[class^="social-navigation"]
+##div[class^="disqus-footer disqus-footer--refresh"]
+##div[class^="aside"]
+##div[class^="np-sheet"]
+##div[id^="newsletter"]
+##nav[class^="menu-categories foot-menu-categories"]
+##div[class^="section-post-closure"]
+##div[data-itemtype^="product"]
+##div[data-asin^="B0BSJF5SHL"]
+##div[class^="related-alts-container"]
+##div[class^="section-deeplinking-container m-deeplinking-aside "]
+##div[class^="section-deeplinking-container m-deeplinking-light "]
+##div[class^="article-wrapper-outer"]
+##div[class^="article-social-share js-article-social-share m-in-links"]
 
 ! makeuseof
 www.makeuseof.com##.ad-current
@@ -279,6 +296,7 @@ tunein.com##.ad-cell-module__container___phfcP
 ! megawarez
 www.megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
 www.megawarez.org##.has-icon.has-text.is-large.join-link.components-button
+megawarez.org##div[class^="widget w2"]
 
 ! rogramasvirtualespc
 www.programasvirtualespc.net##.spc-social-block
