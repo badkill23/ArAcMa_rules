@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 15/06/2023
-! Version: 202306161202pm
+! Version: 202306161234pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -341,3 +341,6 @@ elcomercio.pe##blockquote.story-contents__blockquote
 ! Reddit
 reddit.com##.comment.stickied:has(.author[href*="AutoModerator"])
 reddit.com##.Comment:has(a[href*="/AutoModerator"][data-testid="comment_author_link"])
+reddit.com##div[class^="_3RPJ8hHnfFohktLZca18J6 "]
+reddit.com##div[class^="_1vXXD2qKLnHetdKvisFzBD"]
+reddit.com##span[class^="_2zZ-KGHbWWqrwGlHWXR90y _2I12Htze2UzJmmfnrgYJOn "]
