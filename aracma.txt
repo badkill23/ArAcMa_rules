@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 16/06/2023
-! Version: 202306160646am
+! Version: 202306161209pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -295,6 +295,9 @@ lrepacks.net##.fixedbut
 ##div[class^="section-deeplinking-container m-deeplinking-light "]
 ##div[class^="article-wrapper-outer"]
 ##div[class^="article-social-share js-article-social-share m-in-links"]
+##div[id^="ModuleAccessibility117"]
+##div[id^="accessibility"]
+##div[id^="survey"]
 
 ! makeuseof
 www.makeuseof.com##.ad-current
