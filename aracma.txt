@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 16/06/2023
-! Version: 202306161209pm
+! Version: 202306160715pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -197,21 +197,21 @@ telegratis.online##.tageti
 telegratis.online##.footer
 
 ! vertvcable
-www.vertvcable.com###ventana-flotante
-www.vertvcable.com###descripcion
-www.vertvcable.com##div.box:nth-of-type(2)
-www.vertvcable.com##div.box:nth-of-typhttps://www.tvplusgratis.come(6)
-www.vertvcable.com###sidebar
-www.vertvcable.com##.social
-www.vertvcable.com##.pxcn.px-carousel
+vertvcable.com###ventana-flotante
+vertvcable.com###descripcion
+vertvcable.com##div.box:nth-of-type(2)
+vertvcable.com##div.box:nth-of-typhttps://www.tvplusgratis.come(6)
+vertvcable.com###sidebar
+vertvcable.com##.social
+vertvcable.com##.pxcn.px-carousel
 @@||jwpltx.com^
 @@||histats.com^$domain=vertvcable.com
 @@||e.dtscout.com/e/*$script,domain=vertvcable.com
-www.vertvcable.com##div.box:nth-of-type(1) > center
-www.vertvcable.com##footer[id^="footer"]
-www.vertvcable.com##div[class^="alert"]
-www.vertvcable.com##div[class^="box relacionados"]
-www.vertvcable.com##[href="https://www.vertvcable.com/app-vertvcable/"]
+vertvcable.com##div.box:nth-of-type(1) > center
+vertvcable.com##footer[id^="footer"]
+vertvcable.com##div[class^="alert"]
+vertvcable.com##div[class^="box relacionados"]
+vertvcable.com##.bloque-app:has(a[href*="/app-vertvcable/"])
 
 ! nmas
 www.nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -248,6 +248,9 @@ estrellatv.com##.align-items-center.row
 
 ! lrepacks
 lrepacks.net##.fixedbut
+lrepacks.net##.large-6.medium-6:has(a[href*="/876-keysfan-sales-gifts-best-prices.html"])
+lrepacks.net##.large-6.medium-6:has(a[href*="/743-podderzhka-proekta.html"])
+lrepacks.net##ul[class^="block-with-icons"]
 
 ! dailymotion
 ##.js-dailymotion
@@ -375,3 +378,6 @@ elcomercio.pe##blockquote.story-contents__blockquote
 ! Reddit
 reddit.com##.comment.stickied:has(.author[href*="AutoModerator"])
 reddit.com##.Comment:has(a[href*="/AutoModerator"][data-testid="comment_author_link"])
+reddit.com##span[class^="_2zZ-KGHbWWqrwGlHWXR90y _2I12Htze2UzJmmfnrgYJOn "]
+reddit.com##div[class^="_1b1Jalg2nxA_Z-BjKXRfAV"]
+reddit.com##div[class^="_1vXXD2qKLnHetdKvisFzBD"]
