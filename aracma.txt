@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 16/06/2023
-! Version: 202306160715pm
+! Last modified: 20/06/2023
+! Version: 202306200757pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -107,6 +107,7 @@ youtube.com##ytd-button-renderer:has([aria-label="Compartir"])
 youtube.com##.ytd-menu-renderer:has([aria-label="Más acciones"])
 youtube.com###menu > .ytd-watch-metadata.style-scope
 youtube.com##.ytd-download-button-renderer
+youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
 
 ! YouTube's Anti-Ad-blocker
 youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
@@ -381,3 +382,18 @@ reddit.com##.Comment:has(a[href*="/AutoModerator"][data-testid="comment_author_l
 reddit.com##span[class^="_2zZ-KGHbWWqrwGlHWXR90y _2I12Htze2UzJmmfnrgYJOn "]
 reddit.com##div[class^="_1b1Jalg2nxA_Z-BjKXRfAV"]
 reddit.com##div[class^="_1vXXD2qKLnHetdKvisFzBD"]
+
+! periodicocentral
+periodicocentral.mx##[id^="lx_"]
+periodicocentral.mx##[data-widgetid="19724"]
+periodicocentral.mx##div[class^="newspack-newsletters-subscribe"]
+periodicocentral.mx##div[class^="clAdPlacementAnchor"]
+periodicocentral.mx##.BelowPost.custom-html-22333.custom-html
+periodicocentral.mx##.BelowPost.custom-html-22322.custom-html
+periodicocentral.mx##.BelowPost.custom-html-21683.custom-html
+periodicocentral.mx##.BelowPost.custom-html-19728.custom-html
+periodicocentral.mx##.BelowPost.custom-html-22313.custom-html
+periodicocentral.mx##div[class*="google-news-wrap"]
+periodicocentral.mx##footer[id*="footer"]
+periodicocentral.mx##div[class*="cl-social cl-social-widget cl-social-20115 cl-social-positioning-center cl-social-title-positioning-left"]
+periodicocentral.mx##.custom-html-extra:has(a[href*="http://www.ficomics.buap.mx/portal/"])
