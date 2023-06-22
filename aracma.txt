@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 22/06/2023
-! Version: 202306221045pm
+! Version: 202306221058pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -373,6 +373,7 @@ web.whatsapp.com##._3NdAd > ._3OtEr > ._3ndVb
 web.whatsapp.com##li.FCS6Q.Iaqxu.jScby:nth-of-type(3)
 web.whatsapp.com##._3SOOk
 web.whatsapp.com##._2XdMx._3qNGb > div._3OtEr:nth-of-type(3)
+web.whatsapp.com##div[data-testid*="reaction-entry-point"]
 
 ! Telcel
 www.telcel.com##div[class^="comp-telcel-banner-superior"]
