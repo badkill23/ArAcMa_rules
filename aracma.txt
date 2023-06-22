@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 22/06/2023
-! Version: 202306221058pm
+! Version: 202306220306pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -344,12 +344,14 @@ www.programasvirtualespc.net##.yasr-auto-insert-visitor
 ! Twitter
 twitter.com#@#div[data-testid="BottomBar"]
 ! btn flotante
-twitter.com##div[data-testid^="FloatingActionButtonBase"]
+twitter.com##div[data-testid="FloatingActionButtonBase"]
 ! btn replay
-twitter.com##div[data-testid^="reply"]
+twitter.com##div[data-testid="reply"]
 ! btn analitics
+twitter.com##article [role=group] [href$="/analytics"]:upward(div:not(:only-child))
 twitter.com##div.r-1h0z5md.r-18u37iz.css-1dbjc4n:nth-of-type(4)
-! popup saved 
+! toast saved
+twitter.com##[data-testid="toast"]
 twitter.com##.r-105ug2t.r-xyw6el.r-zd98yo.r-1wtj0ep.r-18u37iz.r-z2wwpe.r-l5o3uw.r-1kihuf0.r-1awozwy.css-1dbjc4n
 twitter.com##.r-105ug2t.r-xyw6el.r-1wtj0ep.r-18u37iz.r-l5o3uw.r-1awozwy.css-1dbjc4n
 ! popup saved en adguardPro
@@ -358,6 +360,10 @@ twitter.com##div.css-1dbjc4n.r-1jgb5lz.r-633pao.r-13qz1uu > div.css-1dbjc4n.r-1a
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
 !app suggestion
 twitter.com###layers>div:last-of-type:has-text(Switch to the app)
+! Block "For You" and "following"
+twitter.com##[aria-live="polite"]
+! remove "Show additinonal replies"
+twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] article [role="button"]:not([aria-label]):upward([data-testid="cellInnerDiv"])
 
 ! facebook
 www.facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
