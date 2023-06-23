@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 23/06/2023
-! Version: 202306230120am
+! Version: 202306230740am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -358,8 +358,8 @@ twitter.com##.r-105ug2t.r-xyw6el.r-1wtj0ep.r-18u37iz.r-l5o3uw.r-1awozwy.css-1dbj
 twitter.com##div.css-1dbjc4n.r-1jgb5lz.r-633pao.r-13qz1uu > div.css-1dbjc4n.r-1awozwy.r-l5o3uw.r-18u37iz.r-1wtj0ep.r-q81ovl.r-105ug2t
 ! blue
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
-!app suggestion
-twitter.com###layers>div:last-of-type:has-text(switch to the App)
+! btn open app
+twitter.com##.r-lrvibr.r-6416eg.r-o7ynqc.r-ymttw5.r-1ny4l3l.r-4wgw6l.r-15ysp7h.r-rs99b7.r-1phboty.r-sdzlij.r-1niwhzg.css-1dbjc4n.css-18t94o4
 ! remove "Show additinonal replies"
 twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] article [role="button"]:not([aria-label]):upward([data-testid="cellInnerDiv"])
 
