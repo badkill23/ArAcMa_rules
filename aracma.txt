@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 22/06/2023
-! Version: 202306220306pm
+! Version: 202306220648pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -361,7 +361,8 @@ twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt2
 !app suggestion
 twitter.com###layers>div:last-of-type:has-text(Switch to the app)
 ! Block "For You" and "following"
-twitter.com##[aria-live="polite"]
+!twitter.com##[aria-live="polite"]
+twitter.com##nav.r-1igl3o0 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1):style(visibility: collapse !important;)
 ! remove "Show additinonal replies"
 twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] article [role="button"]:not([aria-label]):upward([data-testid="cellInnerDiv"])
 
