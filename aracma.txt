@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 22/06/2023
-! Version: 202306220648pm
+! Version: 202306220750pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -376,10 +376,13 @@ digitaltrends.com##div[class^="b-share h-modal-it"]
 digitaltrends.com##button[class^="b-share h-modal-it"]
 
 ! whatsapp web
-web.whatsapp.com##._3NdAd > ._3OtEr > ._3ndVb
-web.whatsapp.com##li.FCS6Q.Iaqxu.jScby:nth-of-type(3)
-web.whatsapp.com##._3SOOk
-web.whatsapp.com##._2XdMx._3qNGb > div._3OtEr:nth-of-type(3)
+! btn ad creation menubar
+web.whatsapp.com##div[data-testid^="menu-bar-ad-creation"]
+! ad fb menulist
+web.whatsapp.com##li[data-testid^="ad-creation-menu-item"]
+! splash home
+web.whatsapp.com##div[class^="_3SOOk"]
+! btn reaction
 web.whatsapp.com##div[data-testid*="reaction-entry-point"]
 
 ! Telcel
