@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 22/06/2023
-! Version: 202306220750pm
+! Last modified: 23/06/2023
+! Version: 202306231229am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -360,9 +360,11 @@ twitter.com##div.css-1dbjc4n.r-1jgb5lz.r-633pao.r-13qz1uu > div.css-1dbjc4n.r-1a
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
 !app suggestion
 twitter.com###layers>div:last-of-type:has-text(Switch to the app)
+! btn app en adguard 
+twitter.com###layers > div.css-1dbjc4n.r-aqfbo4.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj:last-child > div.css-1dbjc4n.r-12vffkv > div.css-1dbjc4n.r-12vffkv > div.css-1dbjc4n.r-1d2f490.r-1xcajam.r-zchlnj.r-1gn8etr > div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-16e0dcy.r-dkhcqf.r-axxi2z.r-18jm5s1:first-child > div.css-1dbjc4n.r-1jgb5lz.r-13qz1uu > div.css-1dbjc4n.r-136ojw6 > div.css-1dbjc4n.r-1iud8zs.r-136ojw6 > div.css-1dbjc4n > div.css-1dbjc4n.r-1iud8zs > div.css-1dbjc4n.r-1awozwy.r-18u37iz.r-1iud8zs.r-1777fci.r-1jgb5lz.r-1j3t67a.r-13qz1uu > div.css-1dbjc4n.r-obd0qt.r-1pz39u2.r-1777fci.r-1vsu8ta.r-2j7rtt:last-child
 ! Block "For You" and "following"
 !twitter.com##[aria-live="polite"]
-twitter.com##nav.r-1igl3o0 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1):style(visibility: collapse !important;)
+!twitter.com##nav.r-1igl3o0 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1):style(visibility: collapse !important;)
 ! remove "Show additinonal replies"
 twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] article [role="button"]:not([aria-label]):upward([data-testid="cellInnerDiv"])
 
