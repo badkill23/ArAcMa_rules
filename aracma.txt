@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 23/06/2023
-! Version: 202306230740am
+! Version: 202306231035pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -327,6 +327,8 @@ tunein.com##.leftSide-module__upsellButtonContainer___fOE5Z
 tunein.com##.right-side-module__container___QoVHu
 tunein.com##.ad-cell-module__ad___xyJuW
 tunein.com##.ad-cell-module__container___phfcP
+! appmobile
+tunein.com##+js(set-cookie, hideMobileOverlay, true, , reload, 1)
 
 ! anonym
 ||anonym.es/js/anonymize.js$script
