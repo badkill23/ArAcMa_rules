@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 23/06/2023
-! Version: 202306231035pm
+! Last modified: 24/06/2023
+! Version: 202306240838am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -212,6 +212,8 @@ vertvcable.com##div.box:nth-of-type(1) > center
 vertvcable.com##footer[id^="footer"]
 vertvcable.com##div[class^="alert"]
 vertvcable.com##div[class^="box relacionados"]
+vertvcable.com##div.box:nth-of-type(6)
+vertvcable.com##.bloque-app:has(a[href*="/app-video-player/"])
 vertvcable.com##.bloque-app:has(a[href*="/app-vertvcable/"])
 
 ! nmas
