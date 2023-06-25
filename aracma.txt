@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 24/06/2023
-! Version: 202306240838am
+! Last modified: 25/06/2023
+! Version: 202306251234pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -416,3 +416,16 @@ periodicocentral.mx##div[class*="google-news-wrap"]
 periodicocentral.mx##footer[id*="footer"]
 periodicocentral.mx##div[class*="cl-social cl-social-widget cl-social-20115 cl-social-positioning-center cl-social-title-positioning-left"]
 periodicocentral.mx##.custom-html-extra:has(a[href*="http://www.ficomics.buap.mx/portal/"])
+
+! cloudflare verification
+@@||challenges.cloudflare.com^$script,3p
+
+! techmedok
+techmedok.com##div[class="mfp-wrap mfp-close-btn-in mfp-auto-cursor popup-animation mfp-ready"]
+techmedok.com##div[class="mfp-bg popup-animation mfp-ready"]
+techmedok.com##html:style(overflow:auto !important;)
+techmedok.com##div[class="l-shared-sec-outer show-mobile"]
+techmedok.com##aside[class="reaction-sec entry-sec"]
+techmedok.com##div[class="e-shared-sec entry-sec"]
+techmedok.com##div[class="sidebar-wrap single-sidebar"]
+techmedok.com##div[class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9b18e51 is-sidebar"]
