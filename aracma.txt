@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 25/06/2023
-! Version: 202306251234pm
+! Last modified: 29/06/2023
+! Version: 202306290419pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -215,6 +215,8 @@ vertvcable.com##div[class^="box relacionados"]
 vertvcable.com##div.box:nth-of-type(6)
 vertvcable.com##.bloque-app:has(a[href*="/app-video-player/"])
 vertvcable.com##.bloque-app:has(a[href*="/app-vertvcable/"])
+vertvcable.com##div[class^="onesignal-slidedown-container"]
+vertvcable.com###main-site > div.container > div.aplication-single:first-child > div.box:last-child
 
 ! nmas
 www.nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -366,6 +368,8 @@ twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt2
 twitter.com##.r-lrvibr.r-6416eg.r-o7ynqc.r-ymttw5.r-1ny4l3l.r-4wgw6l.r-15ysp7h.r-rs99b7.r-1phboty.r-sdzlij.r-1niwhzg.css-1dbjc4n.css-18t94o4
 ! remove "Show additinonal replies"
 twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] article [role="button"]:not([aria-label]):upward([data-testid="cellInnerDiv"])
+! ref shared post
+twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1loqt21.r-adacv.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg:last-child
 
 ! facebook
 www.facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
