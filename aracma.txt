@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 29/06/2023
-! Version: 202306290419pm
+! Last modified: 30/06/2023
+! Version: 202306301245pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -219,14 +219,16 @@ vertvcable.com##div[class^="onesignal-slidedown-container"]
 vertvcable.com###main-site > div.container > div.aplication-single:first-child > div.box:last-child
 
 ! nmas
-www.nmas.com.mx##.cHZiTq.sc-29778d0-16
-www.nmas.com.mx##.czooCt.sc-e0e9c840-1
-www.nmas.com.mx##.fPmnNY.sc-bd80086a-0
-www.nmas.com.mx##.eAjhvj.sc-82eed557-0
-www.nmas.com.mx##.iBVySa.sc-7b132a7-0
-www.nmas.com.mx##.bDnAKS.sc-b0b99834-2
-www.nmas.com.mx##.cDYuzt.sc-b0b99834-0
-www.nmas.com.mx##.dPPRZU.caclzF.sc-fb561a29-1.sc-fb561a29-0
+nmas.com.mx##.cHZiTq.sc-29778d0-16
+nmas.com.mx##.czooCt.sc-e0e9c840-1
+nmas.com.mx##.fPmnNY.sc-bd80086a-0
+nmas.com.mx##.eAjhvj.sc-82eed557-0
+nmas.com.mx##.iBVySa.sc-7b132a7-0
+nmas.com.mx##.bDnAKS.sc-b0b99834-2
+nmas.com.mx##.cDYuzt.sc-b0b99834-0
+nmas.com.mx##.dPPRZU.caclzF.sc-fb561a29-1.sc-fb561a29-0
+nmas.com.mx##div[id="indigitall-button"]
+nmas.com.mx###__next > div > div.sc-6acfbec0-0.kjvycv:last-child
 
 ! taenet
 www.taenet.com.mx##.sidebar_main_header
@@ -433,3 +435,8 @@ techmedok.com##aside[class="reaction-sec entry-sec"]
 techmedok.com##div[class="e-shared-sec entry-sec"]
 techmedok.com##div[class="sidebar-wrap single-sidebar"]
 techmedok.com##div[class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9b18e51 is-sidebar"]
+
+! tiotech
+tiotech.net##[id^="elementor-popup-modal-"]
+tiotech.net##aside[class^="widget widget_follow_us"]
+tiotech.net##footer[class^="footer-bottom bb-footer style-2"]
