@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 03/07/2023
-! Version: 20230070207pm
+! Last modified: 06/07/2023
+! Version: 202307060202pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -442,8 +442,11 @@ tiotech.net##aside[class^="widget widget_follow_us"]
 tiotech.net##footer[class^="footer-bottom bb-footer style-2"]
 
 ! Tiktok
+tiktok.com#@#.e1dsngob0
+tiktok.com##div[data-e2e="footer-guide"]
+tiktok.com##tiktok-cookie-banner
+tiktok.com##[class*="tiktok-v2a75e-DivModalMask e1gjoq3k2"]
 tiktok.com##[class*="ButtonGetAppText"]
-tiktok.com##[class*="DivBodyWrapper "]
 tiktok.com##[class*="DivFooterGuide "]
 tiktok.com##[class*="DivInfoContainer "]
 tiktok.com##[class*="DivGuideBtnContainer "]
