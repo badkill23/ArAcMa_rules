@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 06/07/2023
-! Version: 202307060623pm
+! Version: 202307060904pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -455,3 +455,7 @@ tiktok.com##[class*="DivModalContainer"]
 tiktok.com##div[class*="DivFooterGuidePlaceholder "]
 tiktok.com##div[class="tiktok-usns2b-DivIconContainer enx791q1"]
 tiktok.com##div[class="tiktok-1xw8s8f-DivMask e1dsngob1"]
+
+! ssstik
+ssstik.io##.modal__overlay
+ssstik.io###overlayimage
