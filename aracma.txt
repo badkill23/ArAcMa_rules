@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 06/07/2023
-! Version: 202307060912pm
+! Last modified: 09/07/2023
+! Version: 202307091146am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -98,16 +98,19 @@ pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 ! YouTube
 !     Sin Distracciones Personal
 ! boton compartir y denunciar
-m.youtube.com##.icon-add_to_playlist.slim_video_action_bar_renderer_button > .yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next
-m.youtube.com##.icon-flag.slim_video_action_bar_renderer_button > .yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next
-m.youtube.com##.icon-share_arrow.slim_video_action_bar_renderer_button
-www.youtube.com###chat
-www.youtube.com###always-shown > .ytd-metadata-row-container-renderer.style-scope
+youtube.com##.icon-add_to_playlist.slim_video_action_bar_renderer_button > .yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next
+youtube.com##.icon-flag.slim_video_action_bar_renderer_button > .yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next
+youtube.com##.icon-share_arrow.slim_video_action_bar_renderer_button
+youtube.com###chat
+youtube.com###always-shown > .ytd-metadata-row-container-renderer.style-scope
 youtube.com##ytd-button-renderer:has([aria-label="Compartir"])
 youtube.com##.ytd-menu-renderer:has([aria-label="Más acciones"])
 youtube.com###menu > .ytd-watch-metadata.style-scope
 youtube.com##.ytd-download-button-renderer
 youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
+youtube.com##.bottom-sheet-overlay-scrim
+youtube.com##.yt-spec-button-shape-next--outline
+youtube.com##.slim-video-action-bar-actions
 
 ! YouTube's Anti-Ad-blocker
 youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
@@ -322,7 +325,7 @@ teamos.xyz##div[class^="topNav-inner"]
 outlook.live.com##[role="listbox"] .Ogt7j
 
 ! vix
-||vix.com
+||vix.com^
 
 ! Google
 www.google.com##[class$="__middle-slot-promo"]
