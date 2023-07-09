@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 09/07/2023
-! Version: 202307091146am
+! Version: 20230709300pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -324,9 +324,6 @@ teamos.xyz##div[class^="topNav-inner"]
 ! Outlook
 outlook.live.com##[role="listbox"] .Ogt7j
 
-! vix
-||vix.com^
-
 ! Google
 www.google.com##[class$="__middle-slot-promo"]
 
@@ -463,3 +460,51 @@ tiktok.com##[class*="DivSubtitleWrapper"]
 ! ssstik
 ssstik.io##.modal__overlay
 ssstik.io###overlayimage
+
+#
+# List of DNS Filters
+#
+
+! Blocklist DNS
+! vix
+||vix.com^
+
+! Allowlist DNS Personal
+@@||citibanamex.com
+@@||banamex.com
+@@||masvision.mx
+@@||epicgames.com
+@@||www.taenet.com.mx
+@@||eleventa.com
+@@||image.engage.windows.com
+@@||image.engage.xbox.com
+@@||cdns-content.dzcdn.net
+@@||image.s11.sfmc-content.com
+@@||self.events.data.microsoft.com
+@@||image.email2.office.com
+@@||prod.rewardsplatform.microsoft.com
+@@||image.email.microsoftemail.com
+@@||citiintl.sc.omtrdc.net
+@@||online-metrix.net
+@@||weather-analytics-events.apple.com
+@@||srtb.msn.com
+@@||c.msn.com
+@@||api.mixpanel.com
+@@||assets.adobedtm.com
+@@||dpm.demdex.net
+@@||identify-global.acrcloud.com
+@@||open.mkt51.net
+@@||contentz.mkt10247.com
+@@||int.dewrain.site
+@@||radiotk.org
+@@||dewrain.life
+@@||kochava.com
+@@||vaicore.store
+@@||akisinn.site
+@@||dewrain.world
+@@||tealiumiq.com
+@@||wss.commentsengine.com
+@@||megaplay.cc/js/
+@@||sams.com.mx
+@@||mkt8990.com
+@@||whatsapp.*
