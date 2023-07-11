@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 09/07/2023
-! Version: 20230709300pm
+! Last modified: 11/07/2023
+! Version: 202307110551pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -251,6 +251,11 @@ estrellatv.com##div.publicitag
 estrellatv.com##div.bg-2:nth-of-type(2)
 estrellatv.com##.align-items-center.row
 
+! repelis24
+||content.jwplatform.com
+repelis24.rs##div[id="fakeplayer"]
+||doruffleton.com^$popup,domain=repelis24.rs
+
 ! jwplayer
 @@||p.jwpcdn.com/*/*/skins/glow.xml
 @@||p.jwpcdn.com/*/*/googima.swf
@@ -311,6 +316,38 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##div[id^="ModuleAccessibility117"]
 ##div[id^="accessibility"]
 ##div[id^="survey"]
+##.social-bar
+##.contact-footer
+##[id^="subscriptionUI"]
+##[class$="suscribete"]
+##[class*="bannerSuscribete"]
+##[class*="adversiting"]
+##[id*="socialmedia"]
+##[id^="popmake-"]
+##ul[class^="social-links"]
+##span[class^="label-share"]
+##[class$="_share"]
+##[id^="social_"]
+##[class^="subscribe-modal-wrapper"]
+##li[class^="js-freemium-cta ps-relative"]
+##[class^="socialicon"]
+##[class^="subscibe-"]
+##[class^="icons-menu"]
+##ul[class^="follow-"]
+##ul[class$="social-icons"]
+##[class^="follow-us"]
+##[id^="Subscription"]
+##[class^="donations-"]
+##[aria-label="Síguenos en las redes sociales"]
+##[class^="Share"]
+##[id^="Feedback"]
+##[id^="popUpMedictor-movil"]
+##[class^="social-"]
+##[class^="at-temp"]
+##[class^="find-us"]
+
+! ecoavant
+ecoavant.com##html:style(overflow-y: auto !important;)
 
 ! makeuseof
 www.makeuseof.com##.ad-current
@@ -338,6 +375,9 @@ tunein.com##+js(set-cookie, hideMobileOverlay, true, , reload, 1)
 
 ! anonym
 ||anonym.es/js/anonymize.js$script
+
+! inklinkor antiblock
+@@||inklinkor.com/tag.min.js$xhr
 
 ! megawarez
 www.megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
@@ -375,6 +415,8 @@ twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1l
 
 ! facebook
 www.facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
+! block Facebook Stories from News Feed
+facebook.com##[aria-posinset] [href^="/stories/"][href*="source=from_feed"]:upward([aria-posinset])
 
 ! digitaltrends
 digitaltrends.com##div[class^="b-related-links"]
@@ -400,6 +442,10 @@ www.telcel.com##div[class^="text parbase section"]
 
 ! elcomercio
 elcomercio.pe##blockquote.story-contents__blockquote
+
+! economist
+www.economist.com##.paywall
+www.economist.com##html:style(overflow-y: auto !important;)
 
 ! Reddit
 reddit.com##.comment.stickied:has(.author[href*="AutoModerator"])
