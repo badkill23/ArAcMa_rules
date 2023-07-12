@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 11/07/2023
-! Version: 202307110551pm
+! Last modified: 12/07/2023
+! Version: 202307121233pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -345,6 +345,16 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##[class^="social-"]
 ##[class^="at-temp"]
 ##[class^="find-us"]
+##[class$="_social"]
+##[class$="_social_"]
+##[class$="-social"]
+##[class$="-social-icons"]
+##[class^="share_"]
+##[id="fbox-background"]
+##[id^="subscribe-"]
+##[class^="rainbow"]
+##[class*="social content"]
+##[class*="footer__icons--social"]
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -506,6 +516,14 @@ tiktok.com##[class*="DivSubtitleWrapper"]
 ! ssstik
 ssstik.io##.modal__overlay
 ssstik.io###overlayimage
+
+! inoreader
+inoreader.com##[class^="share_"]
+inoreader.com##[id$="_upgrade"]
+inoreader.com##[id*="_social_bar_"]
+inoreader.com##[class*="_create_annotation_"]
+inoreader.com##[id*="_comment_bar_"]
+inoreader.com##[class="article_footer_main_buttons"]
 
 #
 # List of DNS Filters
