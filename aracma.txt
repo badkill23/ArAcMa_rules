@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 12/07/2023
-! Version: 202307121233pm
+! Version: 202307120647pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -71,10 +71,6 @@ uploadrar.com##.btn-lg.btn-info.btn
 
 ! megaup
 megaup.net##+js(rpnt, script, /if\(\$.*return;}/)
-
-! usersdrive
-@@||d19gkl2iaav80x.cloudfront.net^$script,domain=usersdrive.com
-@@||d19gkl2iaav80x.cloudfront.net^$script,domain=apptquitesouse.com
 
 ! Pinterest without having to log in
 www.pinterest.com##.FullPageModal__scroller
@@ -158,12 +154,6 @@ m.youtube.com##ytm-item-section-renderer:has(.reel-shelf-title-wrapper:has-text(
 ! Hide shorts tab on channel pages
 m.youtube.com##ytm-single-column-browse-results-renderer>.scbrr-tabs>.scbrr-tab:has-text(Shorts)
 
-@@||www.youtube.com/api/*$xhr,1p
-
-
-! radiotk
-@@||radiotk.org
-
 ! chatango
 ||st.chatango.com/js/
 ||www.chatbro.com/embed.js
@@ -191,10 +181,6 @@ www.tvplusgratis.com##.site-main-menu.leven-classic-menu
 www.tvplusgratis.com##h2
 www.tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
 
-! ritsatv
-@@||ritsatv.ru/adver.js$xhr,1p
-@@||cdn.ampproject.org/v0/amp-auto-ads-0.1.js$xhr,domain=ritsatv.ru
-
 ! telegratis.online
 telegratis.online##.card-description
 telegratis.online##.tageti
@@ -208,9 +194,6 @@ vertvcable.com##div.box:nth-of-typhttps://www.tvplusgratis.come(6)
 vertvcable.com###sidebar
 vertvcable.com##.social
 vertvcable.com##.pxcn.px-carousel
-@@||jwpltx.com^
-@@||histats.com^$domain=vertvcable.com
-@@||e.dtscout.com/e/*$script,domain=vertvcable.com
 vertvcable.com##div.box:nth-of-type(1) > center
 vertvcable.com##footer[id^="footer"]
 vertvcable.com##div[class^="alert"]
@@ -247,7 +230,6 @@ www.imagentv.com##.headerUserInner
 ! estrellatv
 estrellatv.com###descarga-app
 estrellatv.com##div.publicitag
-@@||pubads.g.doubleclick.net/ssai/event/*$xhr,domain=estrellatv.com
 estrellatv.com##div.bg-2:nth-of-type(2)
 estrellatv.com##.align-items-center.row
 
@@ -255,11 +237,6 @@ estrellatv.com##.align-items-center.row
 ||content.jwplatform.com
 repelis24.rs##div[id="fakeplayer"]
 ||doruffleton.com^$popup,domain=repelis24.rs
-
-! jwplayer
-@@||p.jwpcdn.com/*/*/skins/glow.xml
-@@||p.jwpcdn.com/*/*/googima.swf
-@@||p.jwpcdn.com/crossdomain.xml
 
 ! lrepacks
 lrepacks.net##.fixedbut
@@ -355,6 +332,9 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##[class^="rainbow"]
 ##[class*="social content"]
 ##[class*="footer__icons--social"]
+##[id^="LoginForm"]
+##[id^="container-banner"]
+##[id^="stickyDiv"]
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -385,9 +365,6 @@ tunein.com##+js(set-cookie, hideMobileOverlay, true, , reload, 1)
 
 ! anonym
 ||anonym.es/js/anonymize.js$script
-
-! inklinkor antiblock
-@@||inklinkor.com/tag.min.js$xhr
 
 ! megawarez
 www.megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
@@ -479,9 +456,6 @@ periodicocentral.mx##footer[id*="footer"]
 periodicocentral.mx##div[class*="cl-social cl-social-widget cl-social-20115 cl-social-positioning-center cl-social-title-positioning-left"]
 periodicocentral.mx##.custom-html-extra:has(a[href*="http://www.ficomics.buap.mx/portal/"])
 
-! cloudflare verification
-@@||challenges.cloudflare.com^$script,3p
-
 ! techmedok
 techmedok.com##div[class="mfp-wrap mfp-close-btn-in mfp-auto-cursor popup-animation mfp-ready"]
 techmedok.com##div[class="mfp-bg popup-animation mfp-ready"]
@@ -572,3 +546,18 @@ inoreader.com##[class="article_footer_main_buttons"]
 @@||sams.com.mx
 @@||mkt8990.com
 @@||whatsapp.*
+@@||d19gkl2iaav80x.cloudfront.net^$script
+@@||www.youtube.com/api/*$xhr,1p
+@@||radiotk.org
+@@||ritsatv.ru/adver.js$xhr,1p
+@@||cdn.ampproject.org/v0/amp-auto-ads-0.1.js$xhr,domain=ritsatv.ru
+@@||jwpltx.com^
+@@||histats.com^$domain=vertvcable.com
+@@||e.dtscout.com/e/*$script,domain=vertvcable.com
+@@||pubads.g.doubleclick.net/ssai/event/*$xhr,domain=estrellatv.com
+@@||p.jwpcdn.com/*/*/skins/glow.xml
+@@||p.jwpcdn.com/*/*/googima.swf
+@@||p.jwpcdn.com/crossdomain.xml
+@@||inklinkor.com/tag.min.js$xhr
+@@||challenges.cloudflare.com^$script,3p
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script
