@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 12/07/2023
-! Version: 202307120647pm
+! Last modified: 14/07/2023
+! Version: 202307141120m
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -335,6 +335,37 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##[id^="LoginForm"]
 ##[id^="container-banner"]
 ##[id^="stickyDiv"]
+##[class*="__share"]
+##[class^="block-social"]
+##[class*="_social_media_follow_"]
+##[class^="ListContenidoRelacionado"]
+##[class^="CreativeWorkPage-actions"]
+##[class*="social-media"]
+##[class*="_siganos"]
+##[class^="bottomMenu"]
+##[class^="container-share"]
+##[class^="sharing-menu"]
+##[id^="google-news"]
+##[class$="footer-redes"]
+##[class$="footer__banner "]
+##[class^="hook "]
+##[class*="media-integrated "]
+##[class*="relatedposts"]
+##[class*="post-related"]
+##[class*="tambien-en"]
+##[class*="editors-recs"]
+##[id^="page-feedback"]
+##[id^="sectionSocialMedia"]
+##[aria-label*="redes sociales"]
+##[class*="suggested-content"]
+##[class*="share"]
+##[id*="social"]
+##[class*="social"]
+##[class^="accessibility_open"]
+##[class*="twitter-timeline"]
+##[class*="block-social"]
+##[class*="newsletter"]
+##div>ul:has-text(/Te recomendamos/)
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -499,6 +530,9 @@ inoreader.com##[class*="_create_annotation_"]
 inoreader.com##[id*="_comment_bar_"]
 inoreader.com##[class="article_footer_main_buttons"]
 
+! elsoldepuebla
+www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
+
 #
 # List of DNS Filters
 #
@@ -506,6 +540,8 @@ inoreader.com##[class="article_footer_main_buttons"]
 ! Blocklist DNS
 ! vix
 ||vix.com^
+! chat accuesp
+||accuesp.com/chat.e5826d3f.js
 
 ! Allowlist DNS Personal
 @@||citibanamex.com
