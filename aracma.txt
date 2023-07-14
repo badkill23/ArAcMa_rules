@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 14/07/2023
-! Version: 202307141120m
+! Version: 202307140123pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -560,7 +560,6 @@ www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 @@||image.email.microsoftemail.com
 @@||citiintl.sc.omtrdc.net
 @@||online-metrix.net
-@@||weather-analytics-events.apple.com
 @@||srtb.msn.com
 @@||c.msn.com
 @@||api.mixpanel.com
