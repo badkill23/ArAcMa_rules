@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 14/07/2023
-! Version: 202307140123pm
+! Version: 202307141023pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -548,7 +548,7 @@ www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 @@||banamex.com
 @@||masvision.mx
 @@||epicgames.com
-@@||www.taenet.com.mx
+@@||taenet.com.mx
 @@||eleventa.com
 @@||image.engage.windows.com
 @@||image.engage.xbox.com
@@ -559,23 +559,15 @@ www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 @@||prod.rewardsplatform.microsoft.com
 @@||image.email.microsoftemail.com
 @@||citiintl.sc.omtrdc.net
-@@||online-metrix.net
 @@||srtb.msn.com
 @@||c.msn.com
-@@||api.mixpanel.com
 @@||assets.adobedtm.com
-@@||dpm.demdex.net
 @@||identify-global.acrcloud.com
 @@||open.mkt51.net
 @@||contentz.mkt10247.com
-@@||int.dewrain.site
 @@||radiotk.org
-@@||dewrain.life
-@@||kochava.com
 @@||vaicore.store
 @@||akisinn.site
-@@||dewrain.world
-@@||tealiumiq.com
 @@||wss.commentsengine.com
 @@||megaplay.cc/js/
 @@||sams.com.mx
@@ -583,7 +575,6 @@ www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 @@||whatsapp.*
 @@||d19gkl2iaav80x.cloudfront.net^$script
 @@||www.youtube.com/api/*$xhr,1p
-@@||radiotk.org
 @@||ritsatv.ru/adver.js$xhr,1p
 @@||cdn.ampproject.org/v0/amp-auto-ads-0.1.js$xhr,domain=ritsatv.ru
 @@||jwpltx.com^
