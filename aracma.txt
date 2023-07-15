@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 15/07/2023
-! Version: 202307151141am
+! Version: 202307151238m
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -386,6 +386,7 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##form:has(input[name="business"])
 ##[action^="https://www.paypal.com/donate"]
 ##[class*="paypal-button"]
+##[id^="layerAppsWrapper"]
 
 
 ! ecoavant
@@ -564,6 +565,9 @@ eluniversal.com.mx##[href*="/newsletters"]:upward(1)
 !debate
 www.debate.com.mx##div>h2:has-text(/Contenido Patrocinado/):upward(4)
 
+! cdn.com.do
+cdn.com.do##.has-link.entry-resumen.wp-block-group
+
 ########################
 # Filter list for dns  #
 ########################
@@ -571,6 +575,7 @@ www.debate.com.mx##div>h2:has-text(/Contenido Patrocinado/):upward(4)
 ! Blocklist DNS
 ||vix.com^
 ||accuesp.com/chat.e5826d3f.js
+||https://cdn.userway.org/widget.js
 
 ! Allowlist DNS Personal
 @@||citibanamex.com
