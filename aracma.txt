@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 14/07/2023
-! Version: 202307141023pm
+! Version: 202307141028pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -559,15 +559,12 @@ www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 @@||prod.rewardsplatform.microsoft.com
 @@||image.email.microsoftemail.com
 @@||citiintl.sc.omtrdc.net
-@@||srtb.msn.com
-@@||c.msn.com
+@@||msn.com
 @@||assets.adobedtm.com
 @@||identify-global.acrcloud.com
 @@||open.mkt51.net
 @@||contentz.mkt10247.com
 @@||radiotk.org
-@@||vaicore.store
-@@||akisinn.site
 @@||wss.commentsengine.com
 @@||megaplay.cc/js/
 @@||sams.com.mx
