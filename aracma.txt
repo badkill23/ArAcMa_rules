@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 14/07/2023
-! Version: 202307141028pm
+! Version: 202307141044pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -545,6 +545,7 @@ www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 
 ! Allowlist DNS Personal
 @@||citibanamex.com
+@@||citi.com
 @@||banamex.com
 @@||masvision.mx
 @@||epicgames.com
@@ -560,7 +561,6 @@ www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 @@||image.email.microsoftemail.com
 @@||citiintl.sc.omtrdc.net
 @@||msn.com
-@@||assets.adobedtm.com
 @@||identify-global.acrcloud.com
 @@||open.mkt51.net
 @@||contentz.mkt10247.com
@@ -571,7 +571,7 @@ www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 @@||mkt8990.com
 @@||whatsapp.*
 @@||d19gkl2iaav80x.cloudfront.net^$script
-@@||www.youtube.com/api/*$xhr,1p
+@@||youtube.com/api/*$xhr,1p
 @@||ritsatv.ru/adver.js$xhr,1p
 @@||cdn.ampproject.org/v0/amp-auto-ads-0.1.js$xhr,domain=ritsatv.ru
 @@||jwpltx.com^
