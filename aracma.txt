@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 14/07/2023
-! Version: 202307141044pm
+! Last modified: 15/07/2023
+! Version: 202307151141am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -366,6 +366,27 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##[class*="block-social"]
 ##[class*="newsletter"]
 ##div>ul:has-text(/Te recomendamos/)
+##[href*="/donate/"]
+##[href*="/donate"]
+##[class^="kofi-button"]
+##[class^="subscribe_button"]
+##[class*="google-news"]
+##[href*="/news.google.com/"]
+##[href*="/newsletters"]:upward(1)
+##[class*="itemRelated"]
+##[class*="elementor-icon-list-items"]
+##[class^="jsx-2832277404"]
+##[class$="banner block"]
+##div>h2:has-text(/Contenido Patrocinado/)
+##div>h4:has-text(/Sigueme/)
+##[class*="icon-redes"]
+##[class*="widget-follow"]
+##form:has(input[alt="Donate with PayPal button"])
+##form:has(input[name="hosted_button_id"])
+##form:has(input[name="business"])
+##[action^="https://www.paypal.com/donate"]
+##[class*="paypal-button"]
+
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -533,14 +554,22 @@ inoreader.com##[class="article_footer_main_buttons"]
 ! elsoldepuebla
 www.elsoldepuebla.com.mx##div>ul:has-text(/Te recomendamos/)
 
-#
-# List of DNS Filters
-#
+! politico
+politico.mx##[class^="modal-backdrop fade in"]
+politico.mx##body:style(overflow-y: auto !important;)
+
+! eluniversal
+eluniversal.com.mx##[href*="/newsletters"]:upward(1)
+
+!debate
+www.debate.com.mx##div>h2:has-text(/Contenido Patrocinado/):upward(4)
+
+########################
+# Filter list for dns  #
+########################
 
 ! Blocklist DNS
-! vix
 ||vix.com^
-! chat accuesp
 ||accuesp.com/chat.e5826d3f.js
 
 ! Allowlist DNS Personal
