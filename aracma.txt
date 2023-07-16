@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 15/07/2023
-! Version: 202307151238m
+! Version: 202307151100pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -618,3 +618,14 @@ cdn.com.do##.has-link.entry-resumen.wp-block-group
 @@||inklinkor.com/tag.min.js$xhr
 @@||challenges.cloudflare.com^$script,3p
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script
+@@||vaicore.site
+@@||optanon.blob.core.windows.net
+@@||dewrain.world
+@@||kochava.com
+@@||dewrain.life
+@@||tealiumiq.com
+@@||vaicore.xyz
+@@||vaicore.store
+@@||evolv.ai
+@@||dewrain.site
+@@||akisinn.site
