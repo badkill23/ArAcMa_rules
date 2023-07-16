@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
 ! Last modified: 16/07/2023
-! Version: 202307160254pm
+! Version: 202307160408pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -399,7 +399,13 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##p:has-text(/Advertisement/):upward(1)
 *##p:has-text(/Síguenos en/):upward(1)
 *##h4:has-text(/Síguenos en/):upward(1)
-
+*##a:has-text(/suscríbete/):upward(1)
+*##h2:has-text(/Síguenos en/):upward(div)
+*##a:has-text(/Suscríbete/)
+*##span:has-text(/Suscríbete/)
+*##[class*="-siguenos-"]
+*##p:has-text(/Siguenos/):upward(1)
+*##p:has-text(/Valora este contenido/):upward(1)
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
