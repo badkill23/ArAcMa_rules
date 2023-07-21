@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 20/07/2023
-! Version: 202307200129pm
+! Last modified: 21/07/2023
+! Version: 202307210346pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -413,6 +413,22 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class^="products-box-ask"]
 *##[class^="botlers-messaging"]
 *##[class^="m a"]
+*##[aria-label="Chatea con nosotros"]
+*##[aria-label="Chat with us"]
+*##[class^="adbMsg"]
+*##[id^="seguidores"]
+*##[class="title"]:has-text(/uscribirse/)
+*##form:has(input[value="Subscribirse"]):upward(1)
+*##[class^="ads-asap"]
+*##[class$="-antes"]
+*##[href*="donar"]:upward(1)
+*##[class*="card FixedWidget"]
+*##p:has-text(/^Lea también/)
+*##.the-content>ul:not(#index-table)
+*##p:has(a[href="https://t.me/AndroForever"])
+*##td:has(a[href="https://t.me/AndroForever"])
+*##div>p:has-text(/Quizá te gusté/):upward(1)
+*##[class^="networking"]
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
