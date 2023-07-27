@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 21/07/2023
-! Version: 202307210346pm
+! Last modified: 27/07/2023
+! Version: 202307271040am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -203,6 +203,8 @@ vertvcable.com##.bloque-app:has(a[href*="/app-video-player/"])
 vertvcable.com##.bloque-app:has(a[href*="/app-vertvcable/"])
 vertvcable.com##div[class^="onesignal-slidedown-container"]
 vertvcable.com###main-site > div.container > div.aplication-single:first-child > div.box:last-child
+vertvcable.com##script:contains(clickIE4)
+vertvcable.com##script:contains(clickNS4)
 
 ! nmas
 nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -429,6 +431,10 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##td:has(a[href="https://t.me/AndroForever"])
 *##div>p:has-text(/Quizá te gusté/):upward(1)
 *##[class^="networking"]
+*##h4:has-text(/edes sociales/)
+*##h3:has-text(/edes Sociales/):upward(1)
+*##[data-display-name="SocialShare"]
+*##[data-display-name="Newsletter"]
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -534,6 +540,10 @@ reddit.com##.Comment:has(a[href*="/AutoModerator"][data-testid="comment_author_l
 reddit.com##span[class^="_2zZ-KGHbWWqrwGlHWXR90y _2I12Htze2UzJmmfnrgYJOn "]
 reddit.com##div[class^="_1b1Jalg2nxA_Z-BjKXRfAV"]
 reddit.com##div[class^="_1vXXD2qKLnHetdKvisFzBD"]
+reddit.com##.m-visible.TopNav__topButton.TopButton
+
+! masterpctutoriales
+masterpctutoriales.com##.adblock_title:upward(5)
 
 ! periodicocentral
 periodicocentral.mx##[id^="lx_"]
@@ -665,3 +675,4 @@ cdn.com.do##.has-link.entry-resumen.wp-block-group
 @@||dewrain.site
 @@||akisinn.site
 @@||myq-cloud.com
+@@||imasdk.googleapis.com^$script,domain=southpark.*
