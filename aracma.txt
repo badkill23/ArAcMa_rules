@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 27/07/2023
-! Version: 202307271040am
+! Last modified: 28/07/2023
+! Version: 202307280827am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -676,3 +676,4 @@ cdn.com.do##.has-link.entry-resumen.wp-block-group
 @@||akisinn.site
 @@||myq-cloud.com
 @@||imasdk.googleapis.com^$script,domain=southpark.*
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js
