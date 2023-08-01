@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 28/07/2023
-! Version: 202307281109am
+! Last modified: 31/07/2023
+! Version: 202307310717pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -236,7 +236,6 @@ estrellatv.com##div.bg-2:nth-of-type(2)
 estrellatv.com##.align-items-center.row
 
 ! repelis24
-||content.jwplatform.com
 repelis24.rs##div[id="fakeplayer"]
 ||doruffleton.com^$popup,domain=repelis24.rs
 
@@ -437,6 +436,16 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[data-display-name="Newsletter"]
 *##[class*="social-links"]
 *##[class*="article-vote"]
+*##.ListPOpt
+*##.smft
+*##.fa-lightbulb
+*##[class*="social"]
+*##[class*="subscribe_to_updates"]
+*##[id*="browser-promo"]
+*##[class*="telegram-widget"]
+*##[id*="post-rating"]
+*##[href*="/donations/"]
+*##.BtnLight
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -469,14 +478,15 @@ tunein.com##+js(set-cookie, hideMobileOverlay, true, , reload, 1)
 ||anonym.es/js/anonymize.js$script
 
 ! megawarez
-www.megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
-www.megawarez.org##.has-icon.has-text.is-large.join-link.components-button
+megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
+megawarez.org##.has-icon.has-text.is-large.join-link.components-button
 megawarez.org##div[class^="widget w2"]
 
-! rogramasvirtualespc
-www.programasvirtualespc.net##.spc-social-block
-www.programasvirtualespc.net##.widget-social-b.widget
-www.programasvirtualespc.net##.yasr-auto-insert-visitor
+! programasvirtualespc
+programasvirtualespc.net##.spc-social-block
+programasvirtualespc.net##.widget-social-b.widget
+programasvirtualespc.net##.yasr-auto-insert-visitor
+programasvirtualespc.net##[class*="social"]
 
 ! Twitter
 twitter.com#@#div[data-testid="BottomBar"]
