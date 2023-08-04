@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 03/08/2023
-! Version: 202308030614pm
+! Last modified: 04/08/2023
+! Version: 202308041038am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -22,7 +22,6 @@ gob.mx##[class^="main-footer"]
 gob.mx##.list-info
 gob.mx##.alert-info.alert
 gob.mx##.col-md-8 > p
-gob.mx##.bottom-buffer
 gob.mx##h1
 gob.mx##.form-group > .clearfix.form-group
 gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
@@ -449,6 +448,7 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class*="soc-list"]:upward(1)
 *##[class*="nav-soc"]:upward(1)
 *##b:has-text(/Recomendado/)
+*##[class^="accessibilityClass"]
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
