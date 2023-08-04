@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 31/07/2023
-! Version: 202307310717pm
+! Last modified: 03/08/2023
+! Version: 202308030614pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -16,18 +16,17 @@ listonic.com##div[class^="flex flex-row w-auto gap-3 mt-6"]
 listonic.com##div[class^="flex flex-row w-auto gap-12 my-5"]
 listonic.com##p[class^="text-center"]
 
-! gobierno
+! GobiernoMX
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
-www.gob.mx##.list-info
-www.gob.mx##.alert-info.alert
-!www.gob.mx##div.row:nth-of-type(5)
-www.gob.mx##.col-md-8 > p
-www.gob.mx##.bottom-buffer
-www.gob.mx##h1
-www.gob.mx##.form-group > .clearfix.form-group
-www.gob.mx##.main-footer
-www.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
-www.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
+gob.mx##[class^="main-footer"]
+gob.mx##.list-info
+gob.mx##.alert-info.alert
+gob.mx##.col-md-8 > p
+gob.mx##.bottom-buffer
+gob.mx##h1
+gob.mx##.form-group > .clearfix.form-group
+gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
+gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 !CFE
 app.cfe.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 app.cfe.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
@@ -45,7 +44,6 @@ app.cfe.mx###top-bar
 app.cfe.mx##.nopadding:style(background-image: none !important;)
 ! Agricultura
 www.suri.agricultura.gob.mx##div[class^="carousel slide"]
-www.suri.agricultura.gob.mx##.main-footer
 www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 www.suri.agricultura.gob.mx##section:nth-of-type(3)
@@ -61,7 +59,6 @@ www2.repuve.gob.mx##body:style(overflow-y: scroll !important)
 www2.repuve.gob.mx##div[class^="swal2-container swal2-center swal2-backdrop-show"]
 www2.repuve.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 www2.repuve.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
-www2.repuve.gob.mx##footer[class^="main-footer"]
 www2.repuve.gob.mx##div.row:nth-of-type(4)
 www2.repuve.gob.mx##div[class^="alert alert-info"]
 
@@ -446,6 +443,12 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[id*="post-rating"]
 *##[href*="/donations/"]
 *##.BtnLight
+*###ad_strip
+*##[class^="alert-section"]
+*##[class^="ask-common-wrap"]
+*##[class*="soc-list"]:upward(1)
+*##[class*="nav-soc"]:upward(1)
+*##b:has-text(/Recomendado/)
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
