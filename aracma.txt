@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 04/08/2023
-! Version: 202308041038am
+! Last modified: 05/08/2023
+! Version: 202308050735am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -232,8 +232,16 @@ estrellatv.com##div.bg-2:nth-of-type(2)
 estrellatv.com##.align-items-center.row
 
 ! repelis24
-repelis24.rs##div[id="fakeplayer"]
 ||doruffleton.com^$popup,domain=repelis24.rs
+
+! 1password
+1password.com##.u-py-24\@lg.u-py-16.password-gen.c-panel
+1password.com##.u-pb-16.password-gen.c-panel
+1password.com##.u-pt-24\@lg.u-pb-16\@lg.u-pb-8.u-pt-16.password-gen.c-panel--background-light-grey.c-panel
+1password.com##.u-py-12\@lg.u-py-16.password-gen.c-panel--brand-primary.c-panel
+1password.com##footer
+1password.com##.u-py-12\@lg.u-px-10\@lg.u-py-8.u-px-4.u-flexhorizontal\@lg.u-aligncenter.u-justifybetween\@md.u-flexvertical.u-is-displayflex.u-bg-core-bits-blue-2.u-rounded
+1password.com##.hover\:bg-\[\#DEE0E3\].text-bits-blue.bg-white.rounded-full.px-4.py-2.md\:tracking-\[-0\.0112rem\].md\:leading-\[1\.6875rem\].md\:text-lg.tracking-\[-0\.01rem\].leading-6.text-base.no-underline.inline-block
 
 ! lrepacks
 lrepacks.net##.fixedbut
@@ -449,6 +457,8 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class*="nav-soc"]:upward(1)
 *##b:has-text(/Recomendado/)
 *##[class^="accessibilityClass"]
+*##p:has-text(/ollow/):upward(1)
+*##h3:has-text(/SIGUE NUESTROS TABLEROS EN PINTEREST/):upward(1)
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
