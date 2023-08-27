@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 21/08/2023
-! Version: 202308210633am
+! Last modified: 27/08/2023
+! Version: 202308270246pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -69,9 +69,9 @@ uploadrar.com##.btn-lg.btn-info.btn
 megaup.net##+js(rpnt, script, /if\(\$.*return;}/)
 
 ! Pinterest without having to log in
-www.pinterest.com##.FullPageModal__scroller
-www.pinterest.com##.Module.DenzelReactBridge > div > div:nth-of-type(2)
-www.pinterest.com###desktopWrapper:style(position: relative !important)
+pinterest.com##.FullPageModal__scroller
+pinterest.com##.Module.DenzelReactBridge > div > div:nth-of-type(2)
+pinterest.com###desktopWrapper:style(position: relative !important)
 pinterest.*##[data-test-giftwrap]
 pinterest.*###desktopWrapper:style(position: static !important;)
 pinterest.*##.gridCentered:style(margin-top: auto !important;)
@@ -86,6 +86,7 @@ pinterest.*##div[class="Closeup__wrapper"] > div > div[style^="cursor: default"]
 pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
 pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
+pinterest.com.mx##.Hsu.iyn.zI7.rDA.ojN.jar._he.RDc.KO4
 
 ! YouTube
 !     Sin Distracciones Personal
@@ -459,6 +460,16 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class^="accessibilityClass"]
 *##p:has-text(/ollow/):upward(1)
 *##h3:has-text(/SIGUE NUESTROS TABLEROS EN PINTEREST/):upward(1)
+*##span:has-text(/ollow/):upward(1)
+*##h5:has-text(/ollow/):upward(1)
+*##em:has-text(/FOLLOW/):upward(1)
+*##[class*="subscribe"]
+*##a:has-text(/Accesibilidad/)
+*##[class*="btn-paypal"]
+*##[class^="mysticky-welcomebar-fixed"]
+*##[id="fc-card"]
+*##[data-mrf-recirculation="article-box"]
+*##[data-mrf-recirculation="article-epigraph"]
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -539,12 +550,14 @@ digitaltrends.com##button[class^="b-share h-modal-it"]
 ! whatsapp web
 ! btn ad creation menubar
 web.whatsapp.com##div[data-testid^="menu-bar-ad-creation"]
+web.whatsapp.com##div[aria-label="Anunciar en Facebook"]
 ! ad fb menulist
 web.whatsapp.com##li[data-testid^="ad-creation-menu-item"]
 ! splash home
 web.whatsapp.com##div[class^="_3SOOk"]
 ! btn reaction
 web.whatsapp.com##div[data-testid*="reaction-entry-point"]
+web.whatsapp.com##div[aria-label="Reaccionar"]
 
 ! Telcel
 www.telcel.com##div[class^="comp-telcel-banner-superior"]
@@ -569,6 +582,19 @@ reddit.com##.m-visible.TopNav__topButton.TopButton
 
 ! masterpctutoriales
 masterpctutoriales.com##.adblock_title:upward(5)
+
+! correotemporal
+correotemporal.org##.g-lg-3.g-2.row-cols-lg-4.row-cols-md-2.row-cols-2.row
+correotemporal.org##article
+correotemporal.org##.bg-dark-subtle.py-3
+correotemporal.org###message-fixed
+correotemporal.org##.text-justify
+
+! howtogeek
+howtogeek.com##+js(set, admiral, noopFunc)
+
+! ipadizate
+ipadizate.com##.popular-list
 
 ! periodicocentral
 periodicocentral.mx##[id^="lx_"]
