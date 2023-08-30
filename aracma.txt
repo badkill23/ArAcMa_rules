@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 27/08/2023
-! Version: 202308270246pm
+! Last modified: 30/08/2023
+! Version: 202308300823am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -458,7 +458,7 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class*="nav-soc"]:upward(1)
 *##b:has-text(/Recomendado/)
 *##[class^="accessibilityClass"]
-*##p:has-text(/ollow/):upward(1)
+*##p:has-text(/Follow/):upward(1)
 *##h3:has-text(/SIGUE NUESTROS TABLEROS EN PINTEREST/):upward(1)
 *##span:has-text(/ollow/):upward(1)
 *##h5:has-text(/ollow/):upward(1)
