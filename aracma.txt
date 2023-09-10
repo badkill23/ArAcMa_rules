@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 30/08/2023
-! Version: 202308300823am
+! Last modified: 10/09/2023
+! Version: 202309101218pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -663,6 +663,24 @@ www.debate.com.mx##div>h2:has-text(/Contenido Patrocinado/):upward(4)
 
 ! cdn.com.do
 cdn.com.do##.has-link.entry-resumen.wp-block-group
+
+! sinube
+sinube.mx#@#[class*="newsletter"]
+sinube.mx#@#[class*="social"]
+sinube.mx#@#[class*="share"]
+sinube.mx##[class="Footer-inner clear"]
+sinube.mx##div.sqs-row.row:nth-of-type(2) > .span-12.sqs-col-12.col
+
+! deezer
+deezer.com##[href="/mx/concerts"]
+
+! ionos
+ionos.mx###bio_ep_reworked_bg
+
+! letras
+letras.com##.composer
+letras.com##.logo
+
 
 ########################
 # Filter list for dns  #
