@@ -458,18 +458,7 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class*="nav-soc"]:upward(1)
 *##b:has-text(/Recomendado/)
 *##[class^="accessibilityClass"]
-*##p:has-text(/Follow/):upward(1)
-*##h3:has-text(/SIGUE NUESTROS TABLEROS EN PINTEREST/):upward(1)
-*##span:has-text(/ollow/):upward(1)
-*##h5:has-text(/ollow/):upward(1)
-*##em:has-text(/FOLLOW/):upward(1)
-*##[class*="subscribe"]
-*##a:has-text(/Accesibilidad/)
 *##[class*="btn-paypal"]
-*##[class^="mysticky-welcomebar-fixed"]
-*##[id="fc-card"]
-*##[data-mrf-recirculation="article-box"]
-*##[data-mrf-recirculation="article-epigraph"]
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
