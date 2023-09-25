@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 10/09/2023
-! Version: 202309101218pm
+! Last modified: 25/09/2023
+! Version: 202309250817am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -60,6 +60,8 @@ www2.repuve.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-to
 www2.repuve.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 www2.repuve.gob.mx##div.row:nth-of-type(4)
 www2.repuve.gob.mx##div[class^="alert alert-info"]
+! becasbenitojuarez
+becasbenitojuarez.gob.mx##footer
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -286,7 +288,6 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##div[class^="disqus-footer disqus-footer--refresh"]
 *##div[class^="aside"]
 *##div[class*="np-sheet"]
-*##div[id^="newsletter"]
 *##nav[class^="menu-categories foot-menu-categories"]
 *##div[class^="section-post-closure"]
 *##div[data-itemtype^="product"]
@@ -308,9 +309,6 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[id*="socialmedia"]
 *##[id^="popmake-"]
 *##ul[class^="social-links"]
-*##span[class^="label-share"]
-*##[class$="_share"]
-*##[id^="social_"]
 *##[class^="subscribe-modal-wrapper"]
 *##li[class^="js-freemium-cta ps-relative"]
 *##[class^="socialicon"]
@@ -322,26 +320,16 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[id^="Subscription"]
 *##[class^="donations-"]
 *##[aria-label="Síguenos en las redes sociales"]
-*##[class^="Share"]
-*##[id^="Feedback"]
 *##[id^="popUpMedictor-movil"]
-*##[class^="social-"]
 *##[class^="at-temp"]
 *##[class^="find-us"]
-*##[class$="_social"]
-*##[class$="_social_"]
-*##[class$="-social"]
-*##[class$="-social-icons"]
-*##[class^="share_"]
 *##[id="fbox-background"]
 *##[id^="subscribe-"]
 *##[class^="rainbow"]
-*##[class*="social content"]
 *##[class*="footer__icons--social"]
 *##[id^="LoginForm"]
 *##[id^="container-banner"]
 *##[id^="stickyDiv"]
-*##[class*="__share"]
 *##[class^="block-social"]
 *##[class*="_social_media_follow_"]
 *##[class^="ListContenidoRelacionado"]
@@ -349,7 +337,6 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class*="social-media"]
 *##[class*="_siganos"]
 *##[class^="bottomMenu"]
-*##[class^="container-share"]
 *##[class^="sharing-menu"]
 *##[id^="google-news"]
 *##[class$="footer-redes"]
@@ -360,17 +347,12 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class*="post-related"]
 *##[class*="tambien-en"]
 *##[class*="editors-recs"]
-*##[id^="page-feedback"]
 *##[id^="sectionSocialMedia"]
 *##[aria-label*="redes sociales"]
 *##[class*="suggested-content"]
-*##[class*="share"]
-*##[id*="social"]
-*##[class*="social"]
 *##[class^="accessibility_open"]
 *##[class*="twitter-timeline"]
 *##[class*="block-social"]
-*##[class*="newsletter"]
 *##div>ul:has-text(/Te recomendamos/)
 *##[href*="/donate/"]
 *##[href*="/donate"]
@@ -393,12 +375,10 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[action^="https://www.paypal.com/donate"]
 *##[class*="paypal-button"]
 *##[id^="layerAppsWrapper"]
-*##[id*="feedback"]
 *##div>a:has-text(/LEA TAMBIÉN/)
 *##div>a:has-text(/Puede servirte/)
 *##p:has-text(/TE PUEDE INTERESAR/):upward(1)
 *##p:has-text(/Advertisement/):upward(1)
-*##[id*="feedback"]
 *##div>a:has-text(/LEA TAMBIÉN/)
 *##div>a:has-text(/Puede servirte/)
 *##p:has-text(/TE PUEDE INTERESAR/):upward(1)
@@ -444,7 +424,6 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##.ListPOpt
 *##.smft
 *##.fa-lightbulb
-*##[class*="social"]
 *##[class*="subscribe_to_updates"]
 *##[id*="browser-promo"]
 *##[class*="telegram-widget"]
@@ -476,7 +455,7 @@ teamos.xyz##div[class^="topNav-inner"]
 outlook.live.com##[role="listbox"] .Ogt7j
 
 ! Google
-www.google.com##[class$="__middle-slot-promo"]
+google.com##[class$="__middle-slot-promo"]
 
 ! tunein
 tunein.com##.super-prompt-module__withCloseIcon___r0SAL.super-prompt-module__promptContainer___SvA4j
@@ -526,7 +505,7 @@ twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] 
 twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1loqt21.r-adacv.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg:last-child
 
 ! facebook
-www.facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
+facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
 ! block Facebook Stories from News Feed
 facebook.com##[aria-posinset] [href^="/stories/"][href*="source=from_feed"]:upward([aria-posinset])
 
@@ -549,17 +528,17 @@ web.whatsapp.com##div[data-testid*="reaction-entry-point"]
 web.whatsapp.com##div[aria-label="Reaccionar"]
 
 ! Telcel
-www.telcel.com##div[class^="comp-telcel-banner-superior"]
-www.telcel.com##div[class^="comp-telcel-chatbot"]
-www.telcel.com##div[class^="comp-telcel-banner-rotativo"]
-www.telcel.com##div[class^="text parbase section"]
+telcel.com##div[class^="comp-telcel-banner-superior"]
+telcel.com##div[class^="comp-telcel-chatbot"]
+telcel.com##div[class^="comp-telcel-banner-rotativo"]
+telcel.com##div[class^="text parbase section"]
 
 ! elcomercio
 elcomercio.pe##blockquote.story-contents__blockquote
 
 ! economist
-www.economist.com##.paywall
-www.economist.com##html:style(overflow-y: auto !important;)
+economist.com##.paywall
+economist.com##html:style(overflow-y: auto !important;)
 
 ! Reddit
 reddit.com##.comment.stickied:has(.author[href*="AutoModerator"])
@@ -648,7 +627,7 @@ politico.mx##[class^="modal-backdrop fade in"]
 politico.mx##body:style(overflow-y: auto !important;)
 
 !debate
-www.debate.com.mx##div>h2:has-text(/Contenido Patrocinado/):upward(4)
+debate.com.mx##div>h2:has-text(/Contenido Patrocinado/):upward(4)
 
 ! cdn.com.do
 cdn.com.do##.has-link.entry-resumen.wp-block-group
