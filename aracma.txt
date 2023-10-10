@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 25/09/2023
-! Version: 202309250817am
+! Last modified: 10/10/2023
+! Version: 202310100204pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -613,6 +613,7 @@ tiktok.com##[class*="DivSubtitleWrapper"]
 ! ssstik
 ssstik.io##.modal__overlay
 ssstik.io###overlayimage
+ssstik.io###direct_dl_link
 
 ! inoreader
 inoreader.com##[class^="share_"]
