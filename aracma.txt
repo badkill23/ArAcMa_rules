@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 19/10/2023
-! Version: 202310190625am
+! Last modified: 27/10/2023
+! Version: 202310270606am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -524,8 +524,8 @@ web.whatsapp.com##li[data-testid^="ad-creation-menu-item"]
 ! splash home
 web.whatsapp.com##div[class^="_3SOOk"]
 ! btn reaction
-web.whatsapp.com##div[data-testid*="reaction-entry-point"]
-web.whatsapp.com##div[aria-label="Reaccionar"]
+!web.whatsapp.com##div[data-testid*="reaction-entry-point"]
+!web.whatsapp.com##div[aria-label="Reaccionar"]
 
 ! Telcel
 telcel.com##div[class^="comp-telcel-banner-superior"]
