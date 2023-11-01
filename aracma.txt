@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 27/10/2023
-! Version: 202310270606am
+! Last modified: 01/11/2023
+! Version: 01112023.0228pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -327,13 +327,10 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[id^="subscribe-"]
 *##[class^="rainbow"]
 *##[class*="footer__icons--social"]
-*##[id^="LoginForm"]
 *##[id^="container-banner"]
-*##[id^="stickyDiv"]
 *##[class^="block-social"]
 *##[class*="_social_media_follow_"]
 *##[class^="ListContenidoRelacionado"]
-*##[class^="CreativeWorkPage-actions"]
 *##[class*="social-media"]
 *##[class*="_siganos"]
 *##[class^="bottomMenu"]
@@ -654,6 +651,13 @@ ionos.mx###bio_ep_reworked_bg
 ! letras
 letras.com##.composer
 letras.com##.logo
+
+! TV Azteca
+tvazteca.com###stickyDiv
+tvazteca.com###LoginForm
+tvazteca.com##.Page-footer
+tvazteca.com###container-banner
+tvazteca.com##.CreativeWorkPage-actions
 
 
 ########################
