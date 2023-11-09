@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 04/11/2023
-! Version: 04112023.0840am
+! Last modified: 09/11/2023
+! Version: 09112023.0824am
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -523,6 +523,8 @@ web.whatsapp.com##div[class^="_3SOOk"]
 ! btn reaction
 !web.whatsapp.com##div[data-testid*="reaction-entry-point"]
 !web.whatsapp.com##div[aria-label="Reaccionar"]
+!ventana de mensajes eliminados
+web.whatsapp.com##.lyvj5e2u.l9g3jx6n.ekpn4oxx.b7n2qyd4.a4ywakfo.f8jlpxt4.p357zi0d.k17s6i4e.lysxvg3k.ecxr5yey.l5pmshjt.cynldqnp.cqvkqxai.gndfcl4n
 
 ! Telcel
 telcel.com##div[class^="comp-telcel-banner-superior"]
@@ -616,6 +618,9 @@ tiktok.com##[class*="DivSubtitleWrapper"]
 ssstik.io##.modal__overlay
 ssstik.io###overlayimage
 ssstik.io###direct_dl_link
+ssstik.io##.main-highlights
+ssstik.io##.content-visibility
+ssstik.io###footer
 
 ! savefrom
 savefrom.net##.main-supported-services
@@ -623,6 +628,7 @@ savefrom.net##.wrapper-after-output.wrapper
 savefrom.net##.footer_v2
 savefrom.net##.norton
 savefrom.net##.terms__string
+savefrom.net##.dh-top-banner.smart-app-br
 
 ! inoreader
 inoreader.com##[class^="share_"]
@@ -666,6 +672,27 @@ tvazteca.com##.Page-footer
 tvazteca.com###container-banner
 tvazteca.com##.CreativeWorkPage-actions
 
+! parfana
+parfana.net##.mt10.container-fluid.containers > .row
+parfana.net##.mb10.container-fluid.containers > .row
+parfana.net##.footer
+parfana.net##.copyRight
+
+! ennovelas
+ennovelas.net##.chaty-channels
+||iamcdn.net/players/custom-banner.js$script,domain=abysscdn.com
+
+! pelisflix2
+pelisflix2.stream##.ShareList
+
+! cine24h
+@@||waaw.to^
+cine24h.net##.joinchat__button
+cine24h.net##.Container.Top
+cine24h.net###custom_html-15
+cine24h.net###custom_html-6
+cine24h.net##.btnsplyr
+cine24h.net##.alert-danger.alert
 
 ########################
 # Filter list for dns  #
