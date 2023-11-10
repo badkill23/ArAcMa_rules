@@ -1,6 +1,6 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 09/11/2023
-! Version: 09112023.0824am
+! Last modified: 10/11/2023
+! Version: 10112023.0517pm
 ! Expires: 1 days (update frequency)
 ! Description: This filter list is for various websites.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -631,12 +631,9 @@ savefrom.net##.terms__string
 savefrom.net##.dh-top-banner.smart-app-br
 
 ! inoreader
-inoreader.com##[class^="share_"]
-inoreader.com##[id$="_upgrade"]
-inoreader.com##[id*="_social_bar_"]
-inoreader.com##[class*="_create_annotation_"]
-inoreader.com##[id*="_comment_bar_"]
-inoreader.com##[class="article_footer_main_buttons"]
+inoreader.com##.inno_toolbar_button_upgrade.inno_toolbar_button
+inoreader.com##a.share_wrapper
+inoreader.com##.article_footer_main_buttons
 
 ! politico
 politico.mx##[class^="modal-backdrop fade in"]
