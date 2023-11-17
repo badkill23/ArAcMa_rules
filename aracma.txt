@@ -1,9 +1,10 @@
 ! Title: ArAcMa's Base Filters
-! Last modified: 10/11/2023
-! Version: 10112023.0517pm
-! Expires: 1 days (update frequency)
-! Description: This filter list is for various websites.
+! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
+! Expires: 1 day
+! Last modified: 17/11/2023
+! Version: 17112023.0844am
+! Syntax: AdBlock
 
 ! listonic
 listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
@@ -690,6 +691,9 @@ cine24h.net###custom_html-15
 cine24h.net###custom_html-6
 cine24h.net##.btnsplyr
 cine24h.net##.alert-danger.alert
+
+! mercadolibre
+mercadolibre.*##body > div > div > [href^="https://ddnf.adj.st/home"]:upward(2)
 
 ########################
 # Filter list for dns  #
