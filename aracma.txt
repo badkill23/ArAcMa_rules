@@ -1,10 +1,12 @@
 ! Title: ArAcMa's Base Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
+! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 17/11/2023
-! Version: 17112023.0844am
+! Last modified: 17 Nov 2023 08:58 UTC-6
+! Version: 17.11.2023
 ! Syntax: AdBlock
+! Number of entries: 575
 
 ! listonic
 listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
