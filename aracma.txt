@@ -3,10 +3,10 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 17 Nov 2023 08:58 UTC-6
-! Version: 17.11.2023
+! Last modified: 22 Nov 2023 14:07 UTC-6
+! Version: 22.11.2023
 ! Syntax: AdBlock
-! Number of entries: 575
+! Number of entries: 580
 
 ! listonic
 listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
@@ -65,6 +65,10 @@ www2.repuve.gob.mx##div.row:nth-of-type(4)
 www2.repuve.gob.mx##div[class^="alert alert-info"]
 ! becasbenitojuarez
 becasbenitojuarez.gob.mx##footer
+! CURP
+consultas.curp.gob.mx##header.container
+consultas.curp.gob.mx##.footer
+||consultas.curp.gob.mx/CurpSP/preparaEncuesta.do$popup,1p
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -696,6 +700,11 @@ cine24h.net##.alert-danger.alert
 
 ! mercadolibre
 mercadolibre.*##body > div > div > [href^="https://ddnf.adj.st/home"]:upward(2)
+
+! geeksblog
+www.igeeksblog.com##.elementor-popup-modal.dialog-type-lightbox.dialog-type-buttons.dialog-lightbox-widget.dialog-widget
+www.igeeksblog.com##.cnvs-block-section-fullwidth.cnvs-block-section-layout-full.cnvs-block-section-1697538714378.cnvs-block-section
+
 
 ########################
 # Filter list for dns  #
