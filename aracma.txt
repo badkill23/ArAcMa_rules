@@ -3,10 +3,9 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 22 Nov 2023 14:07 UTC-6
-! Version: 22.11.2023
+! Last modified: 30 Nov 2023 10:33 UTC-6
+! Version: 30.11.2023
 ! Syntax: AdBlock
-! Number of entries: 580
 
 ! listonic
 listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
@@ -485,14 +484,16 @@ programasvirtualespc.net##.yasr-auto-insert-visitor
 programasvirtualespc.net##[class*="social"]
 
 ! Twitter
+!omitir bloqueo barra inferior
 twitter.com#@#div[data-testid="BottomBar"]
 ! btn flotante
 twitter.com##div[data-testid="FloatingActionButtonBase"]
 ! btn replay
-twitter.com##div[data-testid="reply"]
+twitter.com##div[data-testid="reply"]:upward(1)
+! quita borde gris
+twitter.com##.css-175oi2r:style(border:0px !important;)
 ! btn analitics
 twitter.com##article [role=group] [href$="/analytics"]:upward(div:not(:only-child))
-twitter.com##div.r-1h0z5md.r-18u37iz.css-1dbjc4n:nth-of-type(4)
 ! toast saved
 twitter.com##[data-testid="toast"]
 twitter.com##.r-105ug2t.r-xyw6el.r-zd98yo.r-1wtj0ep.r-18u37iz.r-z2wwpe.r-l5o3uw.r-1kihuf0.r-1awozwy.css-1dbjc4n
