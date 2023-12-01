@@ -3,7 +3,7 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 01 Dic 2023 09:51 UTC-6
+! Last modified: 01 Dec 2023 11:15 UTC-6
 ! Version: 01.12.2023
 ! Syntax: AdBlock
 
