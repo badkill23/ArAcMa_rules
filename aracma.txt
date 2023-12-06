@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 01 Dec 2023 11:50 UTC-6
-! Version: 01.12.2023
+! Last modified: 06 Dec 2023 18:48 UTC-6
+! Version: 06.12.2023
 ! Syntax: AdBlock
 
 ! listonic
@@ -28,6 +28,10 @@ gob.mx##h1
 gob.mx##.form-group > .clearfix.form-group
 gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
+gob.mx##.breadcrumb:style(margin: 0 !important;)
+gob.mx##.breadcrumb:style(padding: 0 !important;)
+gob.mx##.top-buffer:style(margin: 0 !important;)
+gob.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
 !CFE
 app.cfe.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 app.cfe.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
@@ -43,6 +47,10 @@ app.cfe.mx###header
 app.cfe.mx###page-menu-wrap
 app.cfe.mx###top-bar
 app.cfe.mx##.nopadding:style(background-image: none !important;)
+app.cfe.mx##.breadcrumb:style(margin: 0 !important;)
+app.cfe.mx##.breadcrumb:style(padding: 0 !important;)
+app.cfe.mx##.top-buffer:style(margin: 0 !important;)
+app.cfe.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
 ! Agricultura
 www.suri.agricultura.gob.mx##div[class^="carousel slide"]
 www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
@@ -68,6 +76,10 @@ becasbenitojuarez.gob.mx##footer
 consultas.curp.gob.mx##header.container
 consultas.curp.gob.mx##.footer
 ||consultas.curp.gob.mx/CurpSP/preparaEncuesta.do$popup,1p
+! becasbenitojuarez
+buscador.becasbenitojuarez.gob.mx##.header
+buscador.becasbenitojuarez.gob.mx##.print.internal.font-changer.hidden-xs
+buscador.becasbenitojuarez.gob.mx###socialside
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -222,6 +234,17 @@ nmas.com.mx##.cDYuzt.sc-b0b99834-0
 nmas.com.mx##.dPPRZU.caclzF.sc-fb561a29-1.sc-fb561a29-0
 nmas.com.mx##div[id="indigitall-button"]
 nmas.com.mx###__next > div > div.sc-6acfbec0-0.kjvycv:last-child
+nmas.com.mx##.Grid_social_media_wrapper__O95P2
+nmas.com.mx##.viewGrid.Grid_wrapper_vix__N7uvH
+
+! bing
+bing.com##.slide-in.b_widgetContainer
+bing.com###relatedSearchesLGWContainer
+bing.com##.b_footer
+bing.com##.cdxAcrylicAnimated.cdxAcrylic
+bing.com##.show_footer.dynamic_footer.footer
+bing.com##[aria-label*="Probar la IA de Bing para"]
+bing.com##.b_pag_lets_chat
 
 ! taenet
 www.taenet.com.mx##.sidebar_main_header
@@ -242,6 +265,9 @@ estrellatv.com##.align-items-center.row
 
 ! repelis24
 ||doruffleton.com^$popup,domain=repelis24.rs
+
+! pelisplus2
+pelisplus2.vip##.rcl0c.rfg1.rw.options
 
 ! 1password
 1password.com##.u-py-24\@lg.u-py-16.password-gen.c-panel
@@ -609,6 +635,29 @@ periodicocentral.mx##footer[id*="footer"]
 periodicocentral.mx##div[class*="cl-social cl-social-widget cl-social-20115 cl-social-positioning-center cl-social-title-positioning-left"]
 periodicocentral.mx##.custom-html-extra:has(a[href*="http://www.ficomics.buap.mx/portal/"])
 
+! rt
+actualidad.rt.com##section.Grid-container:nth-of-type(2)
+actualidad.rt.com##.App-footer
+actualidad.rt.com##body > .FeedbackForm-isReact
+actualidad.rt.com##.Grid-is1to4-sm_is1to1-xs_is1to1.Grid-block
+actualidad.rt.com##.Header-socials > .Socials-root
+actualidad.rt.com##.Grid-block.Grid-is3to4-sm_is1to1-xs_is1to1:style(max-width: 100% !important;)
+actualidad.rt.com##.Grid-block.Grid-is3to4-sm_is1to1-xs_is1to1:style(width: 100% !important;)
+actualidad.rt.com##div.Section-isRow-isTop.Section-container:nth-of-type(3)
+
+! dw
+dw.com##.fNvoEx.sc-ePcVlk.iEloxc.sc-htehxa.fjghsj.sc-dUHfgR
+dw.com##.always-dark.dlQArV.sc-kfdinS.iEloxc.sc-htehxa.fjghsj.sc-dUHfgR
+dw.com##.liQSgH.sc-bPzpER.fjghsj.sc-dUHfgR
+dw.com##.looZLN.sc-doSroW.ricAG.sc-jbyokt.jUJNUq.sc-lgGdMt.iEloxc.sc-htehxa.fjghsj.sc-dUHfgR
+dw.com##.HyUeq.sc-iqqmeU
+dw.com##.iwAvRy.sc-jmxIRD
+dw.com##.kicker.bKVbqG.sc-ihxOxR.dodPrT.llLYdd.sc-ilpitK.sc-ezGUZh
+dw.com##.title.fqJeGt.sc-gfrIVq.wdGIM.sc-HjNCl
+dw.com##.video-wrapper:style(width: 100% !important;)
+dw.com##.hQCCju.sc-ddSWHM.gIapWc.sc-jWpcqD.jUJNUq.sc-lgGdMt.iEloxc.sc-htehxa.fjghsj.sc-dUHfgR
+dw.com##.cACzJz.sc-jbyokt
+
 ! techmedok
 techmedok.com##div[class="mfp-wrap mfp-close-btn-in mfp-auto-cursor popup-animation mfp-ready"]
 techmedok.com##div[class="mfp-bg popup-animation mfp-ready"]
@@ -660,6 +709,9 @@ savefrom.net##.dh-top-banner.smart-app-br
 inoreader.com##.inno_toolbar_button_upgrade.inno_toolbar_button
 inoreader.com##a.share_wrapper
 inoreader.com##.article_footer_main_buttons
+inoreader.com###below_tree > div.parent_div:nth-of-type(1) > .parent_div_inner
+inoreader.com###below_tree > div.parent_div:nth-of-type(2) > .parent_div_inner
+inoreader.com###below_tree > div.parent_div:nth-of-type(4) > .parent_div_inner
 
 ! politico
 politico.mx##[class^="modal-backdrop fade in"]
