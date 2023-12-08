@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 07 Dec 2023 13:05 UTC-6
-! Version: 07.12.2023
+! Last modified: 08 Dec 2023 15:30 UTC-6
+! Version: 08.12.2023
 ! Syntax: AdBlock
 
 ! listonic
@@ -185,18 +185,19 @@ www.telelatinohd.com##.col-md-5.col-xl-4
 ||feefouga.com
 
 ! tvplusgratis
-www.tvplusgratis.com###chat-online
-www.tvplusgratis.com##.btn-block.btn-white.btn-danger.btn
-www.tvplusgratis.com##.alert-info.alert
-www.tvplusgratis.com##.alert-danger.alert
-www.tvplusgratis.com##p
-www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
-www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
-www.tvplusgratis.com##.btn-secondary.btn
-www.tvplusgratis.com##.card-body
-www.tvplusgratis.com##.site-main-menu.leven-classic-menu
-www.tvplusgratis.com##h2
-www.tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
+tvplusgratis.com###chat-online
+tvplusgratis.com##.btn-block.btn-white.btn-danger.btn
+tvplusgratis.com##.alert-info.alert
+tvplusgratis.com##.alert-danger.alert
+tvplusgratis.com##p
+tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
+tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
+tvplusgratis.com##.btn-secondary.btn
+tvplusgratis.com##.card-body
+tvplusgratis.com##.site-main-menu.leven-classic-menu
+tvplusgratis.com##h2
+tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
+tvplusgratis.com##.items-end.flex-col.flex.md\:col-span-2
 
 ! telegratis.online
 telegratis.online##.card-description
@@ -236,6 +237,8 @@ nmas.com.mx##div[id="indigitall-button"]
 nmas.com.mx###__next > div > div.sc-6acfbec0-0.kjvycv:last-child
 nmas.com.mx##.Grid_social_media_wrapper__O95P2
 nmas.com.mx##.viewGrid.Grid_wrapper_vix__N7uvH
+nmas.com.mx##.Footer_social_network_list__6u_bS:upward(1)
+nmas.com.mx##.BloqueNewsletter_newsletter__ex4im
 
 ! bing
 bing.com##.slide-in.b_widgetContainer
@@ -473,6 +476,15 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.social.social-footer
 ##.author-social_profiles
 ##[href$="ko-fi.com/4download"]
+*##.contenido-redes-sociales:upward(1)
+*##.tdm-social-item-wrap:upward(3)
+*##.tdb-author-social
+*##.fh5co-social-icons
+*##.kids_social_wrapper
+*##.kids_social
+*##.social
+*##.open-chaty:upward(2)
+*##.botones_sociales
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -565,6 +577,8 @@ twitter.com##.r-lrvibr.r-6416eg.r-o7ynqc.r-ymttw5.r-1ny4l3l.r-4wgw6l.r-15ysp7h.r
 twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] article [role="button"]:not([aria-label]):upward([data-testid="cellInnerDiv"])
 ! ref shared post
 twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1loqt21.r-adacv.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg:last-child
+! centrar iconos barra
+twitter.com##.r-1hdv0qi:style(width: 3.25em !important;)
 
 ! facebook
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
