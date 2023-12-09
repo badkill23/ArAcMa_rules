@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 08 Dec 2023 15:30 UTC-6
-! Version: 08.12.2023
+! Last modified: 09 Dec 2023 13:46 UTC-6
+! Version: 09.12.2023
 ! Syntax: AdBlock
 
 ! listonic
@@ -485,6 +485,28 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##.social
 *##.open-chaty:upward(2)
 *##.botones_sociales
+*##.icon-holder-social:upward(1)
+*##.icon-holder-device:upward(1)
+*###dailymotion-pip-large-viewport
+##.social-link
+##.css-1v5xah6
+##.sg-social
+##.ShareList
+##.boxsocial
+##.share
+*##[id*="publicidad"]:upward(1)
+*##.rayabtn
+##.siguenos_footer
+
+! y2meta
+y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
+y2meta.app##.p-r-md.p-l-md.row-centered.row-bordered.row-padded.row
+y2meta.app##.featured.p-r-md.p-l-md.m-t.text-center.homepage-grid.row-padded.row
+y2meta.app##.footer-borderless.clearfix.footer
+y2meta.app##.panel-body > .row.text-center
+y2meta.app##.panel-body > .text-left.box-guide
+y2meta.app##hr
+y2meta.app##.extension-header
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
