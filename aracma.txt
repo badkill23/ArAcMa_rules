@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 10 Dec 2023 09:01 UTC-6
-! Version: 10.12.2023
+! Last modified: 10 Dec 2023 12:14 UTC-6
+! Version: 10.12.2023.r1
 ! Syntax: AdBlock
 
 ! listonic
@@ -496,12 +496,13 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.ShareList
 ##.boxsocial
 ##.share
-*##[id*="publicidad"]:upward(1)
+*##[id*="publicidad"]
 *##.rayabtn
 ##.siguenos_footer
 ##.elementor-social-icons-wrapper
 ##.show_share
 ##.heateor_sss_follow_ul
+##.kofi-button
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
