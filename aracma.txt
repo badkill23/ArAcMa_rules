@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 09 Dec 2023 13:46 UTC-6
-! Version: 09.12.2023
+! Last modified: 10 Dec 2023 09:01 UTC-6
+! Version: 10.12.2023
 ! Syntax: AdBlock
 
 ! listonic
@@ -248,7 +248,9 @@ bing.com##.cdxAcrylicAnimated.cdxAcrylic
 bing.com##.show_footer.dynamic_footer.footer
 bing.com##[aria-label*="Probar la IA de Bing para"]
 bing.com##.b_pag_lets_chat
-
+bing.com###b_pag_chat_btn_container > div.b_pag_chat_area
+bing.com###b-scopeListItem-conv
+bing.com##.rs_chat
 ! taenet
 www.taenet.com.mx##.sidebar_main_header
 www.taenet.com.mx##[href="ActualizacionFacturacion"]
@@ -497,6 +499,9 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[id*="publicidad"]:upward(1)
 *##.rayabtn
 ##.siguenos_footer
+##.elementor-social-icons-wrapper
+##.show_share
+##.heateor_sss_follow_ul
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
@@ -507,6 +512,7 @@ y2meta.app##.panel-body > .row.text-center
 y2meta.app##.panel-body > .text-left.box-guide
 y2meta.app##hr
 y2meta.app##.extension-header
+y2meta.app##.navbar-toggle
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
@@ -579,11 +585,15 @@ twitter.com#@#div[data-testid="BottomBar"]
 ! btn flotante
 twitter.com##div[data-testid="FloatingActionButtonBase"]
 ! btn replay
-twitter.com##div[data-testid="reply"]:upward(1)
+!twitter.com##div[data-testid="reply"]:upward(1)
+twitter.com##div[data-testid="reply"]:upward(.css-175oi2r.r-18u37iz.r-1h0z5md.r-13awgt0)
 ! quita borde gris
 twitter.com##.css-175oi2r:style(border:0px !important;)
+! oculta borde nueva pub
+twitter.com##.r-gu4em3:style(background-color: unset !important;)
 ! btn analitics
 !twitter.com##article [role=group] [href$="/analytics"]:upward(div:not(:only-child))
+twitter.com##[aria-label='Ver las estadísticas del post']:upward(1)
 twitter.com##[href$="/analytics"]:upward(1)
 ! toast saved
 twitter.com##[data-testid="toast"]
@@ -749,6 +759,32 @@ ssstik.io###direct_dl_link
 ssstik.io##.main-highlights
 ssstik.io##.content-visibility
 ssstik.io###footer
+ssstik.io###menu__toggle__wrapper
+
+! rapidsave
+rapidsave.com##.collapsed.navbar-toggle
+rapidsave.com###about
+rapidsave.com###how-to
+rapidsave.com###faq
+rapidsave.com###contact
+rapidsave.com##footer
+
+! fdown
+fdown.net##.container.row-fluid
+fdown.net##.btn-default.btn
+fdown.net##.navbar-toggle
+
+! fdownloader
+fdownloader.net##.container-app > .container
+fdownloader.net##footer
+fdownloader.net##.nav-logo > .icon
+
+! bravedown
+bravedown.com###tools-box
+bravedown.com##.page-1.mb-3
+bravedown.com##.ml-auto.col-lg-3
+bravedown.com##.pb-0.mt-3.pt-3.footer
+bravedown.com##.navbar-toggler
 
 ! savefrom
 savefrom.net##.main-supported-services
@@ -757,6 +793,7 @@ savefrom.net##.footer_v2
 savefrom.net##.norton
 savefrom.net##.terms__string
 savefrom.net##.dh-top-banner.smart-app-br
+savefrom.net##.menu-btn_v2.menu-btn
 
 ! inoreader
 inoreader.com##.inno_toolbar_button_upgrade.inno_toolbar_button
