@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 10 Dec 2023 12:14 UTC-6
-! Version: 10.12.2023.r1
+! Last modified: 10 Dec 2023 12:28 UTC-6
+! Version: 10.12.2023.rev2
 ! Syntax: AdBlock
 
 ! listonic
@@ -289,9 +289,6 @@ lrepacks.net##.large-6.medium-6:has(a[href*="/876-keysfan-sales-gifts-best-price
 lrepacks.net##.large-6.medium-6:has(a[href*="/743-podderzhka-proekta.html"])
 lrepacks.net##ul[class^="block-with-icons"]
 
-! dailymotion
-##.js-dailymotion
-
 ! elementos genericos
 *##nav[class^="fixed-sites"]
 *##div[class^="redes-flotantes"]
@@ -308,7 +305,6 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##div[class^="article-actions"]
 *##nav[class^="menu-follow aside-menu-follow"]
 *##div[class^="pivot-ecommerce-container"]
-*##div[class^="js-dailymotion"]
 *##div[class^="article-asset-video article-asset-large article-asset-center"]
 *##div[class^="article-social-share js-article-social-share m-in-links is-hidden"]
 *##div[class^="menu-follow foot-menu-follow"]
