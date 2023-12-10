@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 10 Dec 2023 12:28 UTC-6
-! Version: 10.12.2023.rev2
+! Last modified: 10 Dec 2023 13:44 UTC-6
+! Version: 10.12.2023.rev3
 ! Syntax: AdBlock
 
 ! listonic
@@ -499,6 +499,29 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.show_share
 ##.heateor_sss_follow_ul
 ##.kofi-button
+##.fa-twitter.fab
+##.fa-facebook.fab
+##.fab.mvp-author-box-soc
+##.newsletter-box
+##.header__social
+##.newsfull__share-buttons
+##.footer__social
+##.td-social-icon-wrap
+##.footer-social-wrap
+##.subscribe-button
+###membership_sidebar
+##.header_sm_buttons
+##.donate_button
+##.donate_message
+##.subscribe-hit
+##.c-footer__share
+###ctn_premium_article
+##.fo_en_redes
+##.share-buttons-style-two 
+##.newsletter
+##.memberful-post-container
+##.like-newsletter
+##.membership-link
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
@@ -513,6 +536,9 @@ y2meta.app##.navbar-toggle
 
 ! ecoavant
 ecoavant.com##html:style(overflow-y: auto !important;)
+
+! 20minutos
+20minutos.es##body:watch-attr(class):remove-class(didomi-popup-open)
 
 ! zdescargas
 zdescargas.org##.icon-box.after-menu
