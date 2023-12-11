@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 11 Dec 2023 16:57 UTC-6
-! Version: 11.12.2023
+! Last modified: 11 Dec 2023 17:01 UTC-6
+! Version: 11.12.2023rev1
 ! Syntax: AdBlock
 
 ! listonic
@@ -88,9 +88,6 @@ cevar.registrocivil.gob.mx##header
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
 uploadrar.com##.btn-lg.btn-info.btn
-
-! megaup
-megaup.net##+js(rpnt, script, /if\(\$.*return;}/)
 
 ! Pinterest without having to log in
 pinterest.com##.FullPageModal__scroller
@@ -212,7 +209,6 @@ telegratis.online##.footer
 vertvcable.com###ventana-flotante
 vertvcable.com###descripcion
 vertvcable.com##div.box:nth-of-type(2)
-vertvcable.com##div.box:nth-of-typhttps://www.tvplusgratis.come(6)
 vertvcable.com###sidebar
 vertvcable.com##.social
 vertvcable.com##.pxcn.px-carousel
