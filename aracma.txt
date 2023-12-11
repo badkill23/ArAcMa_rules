@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 10 Dec 2023 14:30 UTC-6
-! Version: 10.12.2023.rev5
+! Last modified: 11 Dec 2023 16:57 UTC-6
+! Version: 11.12.2023
 ! Syntax: AdBlock
 
 ! listonic
@@ -80,6 +80,10 @@ consultas.curp.gob.mx##.footer
 buscador.becasbenitojuarez.gob.mx##.header
 buscador.becasbenitojuarez.gob.mx##.print.internal.font-changer.hidden-xs
 buscador.becasbenitojuarez.gob.mx###socialside
+! registrocivil
+cevar.registrocivil.gob.mx##body:style(background: none !important;)
+cevar.registrocivil.gob.mx##.page > .container:style(background: none !important;)
+cevar.registrocivil.gob.mx##header
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -524,6 +528,22 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.membership-link
 *##.comments-social-share-mobile
 *##a.kofi-button
+##.redes
+###btn-soporte
+##.essb-block
+*##.uk-margin:upward(div:not(:only-child))
+##.feedback-binded
+##.info-networks
+*##ins[class="adsbygoogle"]
+##[name*="chatbot"]
+##.app-footer__social
+##.footer-social-inner-wrap
+###slidebox
+##.social-cl
+##.socialNetwork
+##.banners-ecp
+##.m-footer__bottombar__left__social
+##h3:has-text(/Suscríbete/)
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
@@ -636,6 +656,12 @@ twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] 
 twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1loqt21.r-adacv.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg:last-child
 ! centrar iconos barra
 twitter.com##.r-1hdv0qi:style(width: 3.25em !important;)
+twitter.com##.r-1srniue:style(width: 3.25em !important;)
+twitter.com##.css-175oi2r.r-18u37iz.r-1h0z5md.r-1b7u577:style(width: 6.25em !important;)
+! Hide Premium
+twitter.com##[aria-label="Premium"]
+twitter.com##[href$="/verified-choose"]
+twitter.com##[href$="/settings/monetization"]
 
 ! facebook
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
@@ -665,6 +691,12 @@ web.whatsapp.com##.lyvj5e2u.l9g3jx6n.ekpn4oxx.b7n2qyd4.a4ywakfo.f8jlpxt4.p357zi0
 web.whatsapp.com##div[aria-label="Canales"]
 ! btn comunidades
 web.whatsapp.com##div[aria-label="Comunidades"]
+! quita bordes blancos
+web.whatsapp.com##._8nE1Y:style(border-top: 0 !important;)
+web.whatsapp.com##._64p9P:style(border-left: 0 !important;)
+web.whatsapp.com##._5kRIK:style(border-left: 0 !important;)
+web.whatsapp.com##.AmmtE:style(border-left: 0 !important;)
+web.whatsapp.com##._2lSWV:style(border-left: 0 !important;)
 
 ! Telcel
 telcel.com##div[class^="comp-telcel-banner-superior"]
@@ -756,10 +788,11 @@ techmedok.com##div[class="e-shared-sec entry-sec"]
 techmedok.com##div[class="sidebar-wrap single-sidebar"]
 techmedok.com##div[class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9b18e51 is-sidebar"]
 
-! tiotech
-tiotech.net##[id^="elementor-popup-modal-"]
-tiotech.net##aside[class^="widget widget_follow_us"]
-tiotech.net##footer[class^="footer-bottom bb-footer style-2"]
+! eltiotech
+eltiotech.com##aside[class^="widget widget_follow_us"]
+eltiotech.com##footer[class^="footer-bottom bb-footer style-2"]
+eltiotech.com##.elementor-popup-modal
+eltiotech.com##.push-right
 
 ! Tiktok
 tiktok.com#@#.e1dsngob0
@@ -776,6 +809,7 @@ tiktok.com##div[class*="DivFooterGuidePlaceholder "]
 tiktok.com##div[class="tiktok-usns2b-DivIconContainer enx791q1"]
 tiktok.com##div[class="tiktok-1xw8s8f-DivMask e1dsngob1"]
 tiktok.com##[class*="DivSubtitleWrapper"]
+tiktok.com##.e1mecfx00.tiktok-1qjw4dg-DivContentContainer
 
 ! ssstik
 ssstik.io##.modal__overlay
