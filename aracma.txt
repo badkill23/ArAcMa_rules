@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 11 Dec 2023 20:12 UTC-6
-! Version: 11.12.2023rev2
+! Last modified: 12 Dec 2023 17:17 UTC-6
+! Version: 12.12.2023rev1
 ! Syntax: AdBlock
 
 ! listonic
@@ -251,6 +251,10 @@ bing.com##.b_pag_lets_chat
 bing.com###b_pag_chat_btn_container > div.b_pag_chat_area
 bing.com###b-scopeListItem-conv
 bing.com##.rs_chat
+bing.com##.wpt_bc_container
+bing.com###footer
+bing.com###hc_followus
+
 ! taenet
 www.taenet.com.mx##.sidebar_main_header
 www.taenet.com.mx##[href="ActualizacionFacturacion"]
@@ -540,6 +544,10 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.m-footer__bottombar__left__social
 ##h3:has-text(/Suscríbete/)
 ##.btnsplyr
+##.jetpack_widget_social_icons
+##.content-social
+*##.expand.floating-footer
+###elFooterSocialLinks
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
