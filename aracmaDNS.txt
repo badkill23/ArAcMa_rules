@@ -1,0 +1,75 @@
+! Title: ArAcMa's DNS Filters
+! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
+! Homepage: https://github.com/badkill23/ArAcMa_rules
+! Issues: https://github.com/badkill23/ArAcMa_rules/issues
+! Expires: 1 day
+! Last modified: 23 Dec 2023 12:31 UTC-6
+! Version: 23.12.2023rev1
+! Syntax: AdBlock
+
+
+########################
+# Filter list for dns  #
+########################
+
+! Blocklist DNS
+||vix.com^
+||accuesp.com/chat.e5826d3f.js
+||cdn.userway.org/widget.js
+
+! Allowlist DNS Personal
+@@||citibanamex.com
+@@||citi.com
+@@||banamex.com
+@@||masvision.mx
+@@||epicgames.com
+@@||taenet.com.mx
+@@||eleventa.com
+@@||image.engage.windows.com
+@@||image.engage.xbox.com
+@@||cdns-content.dzcdn.net
+@@||image.s11.sfmc-content.com
+@@||self.events.data.microsoft.com
+@@||image.email2.office.com
+@@||prod.rewardsplatform.microsoft.com
+@@||image.email.microsoftemail.com
+@@||citiintl.sc.omtrdc.net
+@@||msn.com
+@@||identify-global.acrcloud.com
+@@||open.mkt51.net
+@@||contentz.mkt10247.com
+@@||radiotk.org
+@@||wss.commentsengine.com
+@@||megaplay.cc/js/
+@@||sams.com.mx
+@@||mkt8990.com
+@@||whatsapp.*
+@@||d19gkl2iaav80x.cloudfront.net^$script
+@@||youtube.com/api/*$xhr,1p
+@@||ritsatv.ru/adver.js$xhr,1p
+@@||cdn.ampproject.org/v0/amp-auto-ads-0.1.js$xhr,domain=ritsatv.ru
+@@||jwpltx.com^
+@@||histats.com^$domain=vertvcable.com
+@@||e.dtscout.com/e/*$script,domain=vertvcable.com
+@@||pubads.g.doubleclick.net/ssai/event/*$xhr,domain=estrellatv.com
+@@||p.jwpcdn.com/*/*/skins/glow.xml
+@@||p.jwpcdn.com/*/*/googima.swf
+@@||p.jwpcdn.com/crossdomain.xml
+@@||inklinkor.com/tag.min.js$xhr
+@@||challenges.cloudflare.com^$script,3p
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script
+@@||vaicore.site
+@@||optanon.blob.core.windows.net
+@@||dewrain.world
+@@||kochava.com
+@@||dewrain.life
+@@||tealiumiq.com
+@@||vaicore.xyz
+@@||vaicore.store
+@@||evolv.ai
+@@||dewrain.site
+@@||akisinn.site
+@@||myq-cloud.com
+@@||imasdk.googleapis.com^$script,domain=southpark.*
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=www.yelitzonpc.com
