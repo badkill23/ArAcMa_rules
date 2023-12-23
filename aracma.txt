@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 23 Dec 2023 12:30 UTC-6
-! Version: 23.12.2023rev3
+! Last modified: 23 Dec 2023 15:16 UTC-6
+! Version: 23.12.2023rev4
 ! Syntax: Adblock
 
 ! listonic
@@ -84,6 +84,8 @@ buscador.becasbenitojuarez.gob.mx###socialside
 cevar.registrocivil.gob.mx##body:style(background: none !important;)
 cevar.registrocivil.gob.mx##.page > .container:style(background: none !important;)
 cevar.registrocivil.gob.mx##header
+! puebla.gob.mx
+rl.puebla.gob.mx##.footer-bottom
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -548,6 +550,18 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.content-social
 *##.expand.floating-footer
 ###elFooterSocialLinks
+*##h3:has-text("Follow Us")
+*##h3:has-text(/Suscríbete/)
+*##h3:has-text(/Síguenos/)
+##.bottomFooter
+###chat-teaser-box
+##.circle_social
+##.mzp-c-footer-links-social > li
+##.donate
+##[href*="/ko-fi.com/"]
+##.nv-social-icons-list
+##.nv-post-share
+##.phpdebugbar
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
@@ -823,6 +837,7 @@ ssstik.io##.main-highlights
 ssstik.io##.content-visibility
 ssstik.io###footer
 ssstik.io###menu__toggle__wrapper
+ssstik.io###twt_promo
 
 ! rapidsave
 rapidsave.com##.collapsed.navbar-toggle
@@ -928,6 +943,10 @@ mercadolibre.*##body > div > div > [href^="https://ddnf.adj.st/home"]:upward(2)
 ! geeksblog
 www.igeeksblog.com##.elementor-popup-modal.dialog-type-lightbox.dialog-type-buttons.dialog-lightbox-widget.dialog-widget
 www.igeeksblog.com##.cnvs-block-section-fullwidth.cnvs-block-section-layout-full.cnvs-block-section-1697538714378.cnvs-block-section
+
+! automateexcel
+automateexcel.com##.automacro-footer-strip
+automateexcel.com###vba-code-examples-add-in
 
 ! filtros para Moviles
 !#if env_mobile
