@@ -1,10 +1,10 @@
-! Title: ArAcMa's Filters
+! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
 ! Last modified: 23 Dec 2023 12:30 UTC-6
-! Version: 23.12.2023rev2
+! Version: 23.12.2023rev3
 ! Syntax: Adblock
 
 ! listonic
@@ -929,4 +929,7 @@ mercadolibre.*##body > div > div > [href^="https://ddnf.adj.st/home"]:upward(2)
 www.igeeksblog.com##.elementor-popup-modal.dialog-type-lightbox.dialog-type-buttons.dialog-lightbox-widget.dialog-widget
 www.igeeksblog.com##.cnvs-block-section-fullwidth.cnvs-block-section-layout-full.cnvs-block-section-1697538714378.cnvs-block-section
 
-!#include ArAcMa_rules/aracmaDNS.txt
+! filtros para Moviles
+!#if env_mobile
+!#include aracmaDNS.txt
+!#endif
