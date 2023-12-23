@@ -1,10 +1,10 @@
-! Title: ArAcMa's Comectic Filters
+! Title: ArAcMa's Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
 ! Last modified: 23 Dec 2023 12:30 UTC-6
-! Version: 23.12.2023rev1
+! Version: 23.12.2023rev2
 ! Syntax: Adblock
 
 ! listonic
