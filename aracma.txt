@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 23 Dec 2023 15:16 UTC-6
-! Version: 23.12.2023rev4
+! Last modified: 24 Dec 2023 07:45 UTC-6
+! Version: 24.12.2023rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -948,7 +948,10 @@ www.igeeksblog.com##.cnvs-block-section-fullwidth.cnvs-block-section-layout-full
 automateexcel.com##.automacro-footer-strip
 automateexcel.com###vba-code-examples-add-in
 
+! Remove Smart App Banners on iOS
+#%#(function(){window.addEventListener("load",function(){(document.querySelector("meta[name='apple-itunes-app']")||{remove:()=>0}).remove();});})();
+
 ! filtros para Moviles
-!#if env_mobile
+!#if (ext_ublock)
 !#include aracmaDNS.txt
 !#endif
