@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 24 Dec 2023 07:57 UTC-6
-! Version: 24.12.2023rev2
+! Last modified: 24 Dec 2023 10:55 UTC-6
+! Version: 24.12.2023rev3
 ! Syntax: Adblock
 
 ! listonic
@@ -915,6 +915,7 @@ tvazteca.com###LoginForm
 tvazteca.com##.Page-footer
 tvazteca.com###container-banner
 tvazteca.com##.CreativeWorkPage-actions
+tvazteca.com##div.LoginProviders-panel
 
 ! parfana
 parfana.net##.mt10.container-fluid.containers > .row
