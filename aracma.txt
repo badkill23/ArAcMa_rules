@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 24 Dec 2023 11:56 UTC-6
-! Version: 24.12.2023rev6
+! Last modified: 24 Dec 2023 14:40 UTC-6
+! Version: 24.12.2023rev7
 ! Syntax: Adblock
 
 ! listonic
@@ -563,6 +563,11 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.nv-social-icons-list
 ##.nv-post-share
 ##.phpdebugbar
+*##[href$="/membresia-vip/"]:upward(.container-wrapper)
+###glt-translate-trigger
+##.social-profiles
+##.social_icon
+##.footer-wrapper_branding-social
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
@@ -623,10 +628,12 @@ megawarez.org##.has-icon.has-text.is-large.join-link.components-button
 megawarez.org##div[class^="widget w2"]
 
 ! programasvirtualespc
-programasvirtualespc.net##.spc-social-block
-programasvirtualespc.net##.widget-social-b.widget
-programasvirtualespc.net##.yasr-auto-insert-visitor
-programasvirtualespc.net##[class*="social"]
+www.programasvirtualespc.net##.spc-social-block
+www.programasvirtualespc.net##.widget-social-b.widget
+www.programasvirtualespc.net##.yasr-auto-insert-visitor
+www.programasvirtualespc.net##[class*="social"]
+www.programasvirtualespc.net##.pix-christmas-pandas-popup
+www.programasvirtualespc.net##[href$="/miembro-vip/"]:upward(1)
 
 ! Instagram
 ! WebPC oculta borde gris
@@ -910,12 +917,12 @@ letras.com##.composer
 letras.com##.logo
 
 ! TV Azteca
-tvazteca.com###stickyDiv
-tvazteca.com###LoginForm
-tvazteca.com##.Page-footer
-tvazteca.com###container-banner
-tvazteca.com##.CreativeWorkPage-actions
-tvazteca.com##div.LoginProviders-panel
+www.tvazteca.com###stickyDiv
+www.tvazteca.com###LoginForm
+www.tvazteca.com##.Page-footer
+www.tvazteca.com###container-banner
+www.tvazteca.com##.CreativeWorkPage-actions
+www.tvazteca.com##div.LoginProviders-panel
 
 ! parfana
 parfana.net##.mt10.container-fluid.containers > .row
@@ -947,8 +954,14 @@ www.igeeksblog.com##.elementor-popup-modal.dialog-type-lightbox.dialog-type-butt
 www.igeeksblog.com##.cnvs-block-section-fullwidth.cnvs-block-section-layout-full.cnvs-block-section-1697538714378.cnvs-block-section
 
 ! automateexcel
-automateexcel.com##.automacro-footer-strip
-automateexcel.com###vba-code-examples-add-in
+www.automateexcel.com##.automacro-footer-strip
+www.automateexcel.com###vba-code-examples-add-in
+www.automateexcel.com###right-column
+www.automateexcel.com##.pb-8.gap-8.md\:justify-around.md\:flex-row.items-center.flex-col.flex
+
+! howtodoexcel
+www.howtodoexcel.com##.modal-backdrop
+www.howtodoexcel.com##body:style(overflow-y: auto !important)
 
 ! Remove Smart App Banners on iOS
 #%#(function(){window.addEventListener("load",function(){(document.querySelector("meta[name='apple-itunes-app']")||{remove:()=>0}).remove();});})();
