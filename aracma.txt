@@ -4,7 +4,7 @@
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
 ! Last modified: 24 Dec 2023 11:50 UTC-6
-! Version: 24.12.2023rev4
+! Version: 24.12.2023rev5
 ! Syntax: Adblock
 
 ! listonic
@@ -243,19 +243,20 @@ nmas.com.mx##.Footer_social_network_list__6u_bS:upward(1)
 nmas.com.mx##.BloqueNewsletter_newsletter__ex4im
 
 ! bing
-bing.com##.slide-in.b_widgetContainer
-bing.com###relatedSearchesLGWContainer
-bing.com##.b_footer
-bing.com##.cdxAcrylicAnimated.cdxAcrylic
-bing.com##.show_footer.dynamic_footer.footer
-bing.com##[aria-label*="Probar la IA de Bing para"]
-bing.com##.b_pag_lets_chat
+www.bing.com##.slide-in.b_widgetContainer
+www.bing.com###relatedSearchesLGWContainer
+www.bing.com##.b_footer
+www.bing.com##.cdxAcrylicAnimated.cdxAcrylic
+www.bing.com##.show_footer.dynamic_footer.footer
+www.bing.com##[aria-label*="Probar la IA de Bing para"]
+www.bing.com##.b_pag_lets_chat
 www.bing.com##.b_pag_chat_area
-bing.com###b-scopeListItem-conv
-bing.com##.rs_chat
-bing.com##.wpt_bc_container
-bing.com###footer
-bing.com###hc_followus
+www.bing.com##.b_ds5
+www.bing.com###b-scopeListItem-conv
+www.bing.com##.rs_chat
+www.bing.com##.wpt_bc_container
+www.bing.com###footer
+www.bing.com###hc_followus
 
 ! taenet
 www.taenet.com.mx##.sidebar_main_header
