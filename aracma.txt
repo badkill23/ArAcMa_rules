@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 24 Dec 2023 14:40 UTC-6
-! Version: 24.12.2023rev7
+! Last modified: 25 Dec 2023 13:34 UTC-6
+! Version: 25.12.2023rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -183,24 +183,39 @@ live.adn40.mx##.EnvivoConstant-info
 
 ! telelatinohd
 www.telelatinohd.com##.col-md-5.col-xl-4
+www.telelatinohd.com##[href="https://t.me/+cSr9aoH36AMwYzMx"] > .gray-default.lm-info-block.lm-canal:upward(2)
+www.telelatinohd.com##[href*="/donationlizardpremium"] > .gray-default.lm-info-block.lm-canal:upward(2)
+www.telelatinohd.com##[href="https://www.lizardpremium.com"] > .gray-default.lm-info-block.lm-canal:upward(2)
+www.telelatinohd.com##.card-body
+www.telelatinohd.com##.col-sm-12.col-xs-12 > .block-title
+www.telelatinohd.com##.bg-white.card
+www.telelatinohd.com##.btn-secondary.btn
+www.telelatinohd.com##body > center
+www.telelatinohd.com##.footer
 
 ! micineclub
 ||feefouga.com
 
 ! tvplusgratis
-tvplusgratis.com###chat-online
-tvplusgratis.com##.btn-block.btn-white.btn-danger.btn
-tvplusgratis.com##.alert-info.alert
-tvplusgratis.com##.alert-danger.alert
-tvplusgratis.com##p
-tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
-tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
-tvplusgratis.com##.btn-secondary.btn
-tvplusgratis.com##.card-body
-tvplusgratis.com##.site-main-menu.leven-classic-menu
-tvplusgratis.com##h2
-tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
-tvplusgratis.com##.items-end.flex-col.flex.md\:col-span-2
+www.tvplusgratis.com###chat-online
+www.tvplusgratis.com##.btn-block.btn-white.btn-danger.btn
+www.tvplusgratis.com##.alert-info.alert
+www.tvplusgratis.com##.alert-danger.alert
+www.tvplusgratis.com##p
+www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
+www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
+www.tvplusgratis.com##.btn-secondary.btn
+www.tvplusgratis.com##.card-body
+www.tvplusgratis.com##.site-main-menu.leven-classic-menu
+www.tvplusgratis.com##h2
+www.tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
+www.tvplusgratis.com##.items-end.flex-col.flex.md\:col-span-2
+www.tvplusgratis.com##[href="https://www.lizardpremium.com"] > .gray-default.lm-info-block.lm-canal:upward(2)
+www.tvplusgratis.com##.bg-dark.card
+
+! smotret
+smotret.tv##.tv-programm.program-container
+smotret.tv##.about_channel_info
 
 ! telegratis.online
 telegratis.online##.card-description
@@ -208,23 +223,25 @@ telegratis.online##.tageti
 telegratis.online##.footer
 
 ! vertvcable
-vertvcable.com###ventana-flotante
-vertvcable.com###descripcion
-vertvcable.com##div.box:nth-of-type(2)
-vertvcable.com###sidebar
-vertvcable.com##.social
-vertvcable.com##.pxcn.px-carousel
-vertvcable.com##div.box:nth-of-type(1) > center
-vertvcable.com##footer[id^="footer"]
-vertvcable.com##div[class^="alert"]
-vertvcable.com##div[class^="box relacionados"]
-vertvcable.com##div.box:nth-of-type(6)
-vertvcable.com##.bloque-app:has(a[href*="/app-video-player/"])
-vertvcable.com##.bloque-app:has(a[href*="/app-vertvcable/"])
-vertvcable.com##div[class^="onesignal-slidedown-container"]
-vertvcable.com###main-site > div.container > div.aplication-single:first-child > div.box:last-child
-vertvcable.com##script:contains(clickIE4)
-vertvcable.com##script:contains(clickNS4)
+www.vertvcable.com###ventana-flotante
+www.vertvcable.com###descripcion
+www.vertvcable.com##div.box:nth-of-type(2)
+www.vertvcable.com###sidebar
+www.vertvcable.com##.social
+www.vertvcable.com##.pxcn.px-carousel
+www.vertvcable.com##div.box:nth-of-type(1) > center
+www.vertvcable.com##footer[id^="footer"]
+www.vertvcable.com##div[class^="alert"]
+www.vertvcable.com##div[class^="box relacionados"]
+www.vertvcable.com##div.box:nth-of-type(6)
+www.vertvcable.com##div[class^="onesignal-slidedown-container"]
+www.vertvcable.com###main-site > div.container > div.aplication-single:first-child > div.box:last-child
+www.vertvcable.com##script:contains(clickIE4)
+www.vertvcable.com##script:contains(clickNS4)
+www.vertvcable.com##[href*="/app-video-player/"]:upward(1)
+www.vertvcable.com##[href*="/app-vertvcable/"]:upward(1)
+www.vertvcable.com##.app-s > b
+www.vertvcable.com##center:nth-of-type(2)
 
 ! nmas
 nmas.com.mx##.cHZiTq.sc-29778d0-16
@@ -274,6 +291,10 @@ estrellatv.com###descarga-app
 estrellatv.com##div.publicitag
 estrellatv.com##div.bg-2:nth-of-type(2)
 estrellatv.com##.align-items-center.row
+estrellatv.com##footer
+
+! tubitv
+tubitv.com##.GLTCO
 
 ! repelis24
 ||doruffleton.com^$popup,domain=repelis24.rs
@@ -568,6 +589,9 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.social-profiles
 ##.social_icon
 ##.footer-wrapper_branding-social
+*##form:has(button[name="subscribe"]):upward(1)
+##.footer-follow
+##.footer-social-link
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
@@ -623,9 +647,10 @@ tunein.com##+js(set-cookie, hideMobileOverlay, true, , reload, 1)
 ||anonym.es/js/anonymize.js$script
 
 ! megawarez
-megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
-megawarez.org##.has-icon.has-text.is-large.join-link.components-button
-megawarez.org##div[class^="widget w2"]
+www.megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
+www.megawarez.org##.has-icon.has-text.is-large.join-link.components-button
+www.megawarez.org##div[class^="widget w2"]
+||www.megawarez.org/bg_1.png
 
 ! programasvirtualespc
 www.programasvirtualespc.net##.spc-social-block
