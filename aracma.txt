@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 25 Dec 2023 14:32 UTC-6
-! Version: 25.12.2023rev3
+! Last modified: 27 Dec 2023 08:43 UTC-6
+! Version: 27.12.2023rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -285,6 +285,20 @@ www.taenet.com.mx##.menu_section > ul > li:nth-of-type(2) > a
 www.imagentv.com##.m-none.left.node-ads.nodeAds
 www.imagentv.com##.m-none.right.node-ads.nodeAds
 www.imagentv.com##.headerUserInner
+www.imagentv.com##.m-p0.t-cuad-12.m-cuad-12.m-float-none.pr15.pt60.cuad-12.left
+www.imagentv.com###landingSchedule
+www.imagentv.com##.footer
+www.imagentv.com##.list_envivo:style(width: 100% !important;)
+www.imagentv.com###headerMain:style(display: none !important;)
+www.imagentv.com##div#wrapp:style(padding-top: 5px !important;)
+www.imagentv.com##html:style(background: black !important;)
+www.imagentv.com##html:style(overflow: hidden !important;)
+www.imagentv.com##.wrapper-description
+
+! vtube
+vtube.network##center:nth-of-type(2)
+vtube.network##.nav-tabs.nav
+vtube.network###nav-embed
 
 ! estrellatv
 estrellatv.com###descarga-app
@@ -596,6 +610,11 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##form:has(button[name="subscribe"]):upward(1)
 ##.footer-follow
 ##.footer-social-link
+##.mks_social_widget
+##.fa-facebook-square
+##.fa-twitter-square
+###whatsapp-dialog
+##.app-header > .d-block.d-md-none
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
@@ -994,6 +1013,17 @@ www.howtodoexcel.com##body:style(overflow-y: auto !important)
 
 ! Remove Smart App Banners on iOS
 #%#(function(){window.addEventListener("load",function(){(document.querySelector("meta[name='apple-itunes-app']")||{remove:()=>0}).remove();});})();
+
+! materializedview
+##.frontend-components-SubscribePrompt-module__background--WF3cB
+##.frontend-components-SubscribePrompt-module__subscribeDialog--Yce7g
+##.subscribe-footer
+##.subscribe-widget
+##.subscribe-btn
+
+! disking
+@@||googlesyndication.com^$domain=disking.in
+@@||gplinks.in/track/js/*$domain=disking.in
 
 ! filtros para Moviles
 !#if (ext_ublock)
