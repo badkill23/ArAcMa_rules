@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 27 Dec 2023 08:43 UTC-6
-! Version: 27.12.2023rev1
+! Last modified: 28 Dec 2023 15:35 UTC-6
+! Version: 28.12.2023rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -464,7 +464,6 @@ lrepacks.net##ul[class^="block-with-icons"]
 *##[class*="-siguenos-"]
 *##p:has-text(/Siguenos/):upward(1)
 *##p:has-text(/Valora este contenido/):upward(1)
-*##div>ul:has-text(/Leer más/)
 *##[alt="Newslwtter"]
 *##[class^="exit-intent-popup"]
 *##[data-testid^="assistant"]
@@ -575,7 +574,7 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.essb-block
 ##.feedback-binded
 ##.info-networks
-*##ins[class="adsbygoogle"]
+*##ins[class="adsbygoogle"]:upward(1)
 ##[name*="chatbot"]
 ##.app-footer__social
 ##.footer-social-inner-wrap
@@ -615,6 +614,45 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.fa-twitter-square
 ###whatsapp-dialog
 ##.app-header > .d-block.d-md-none
+##.share-article-card
+##[id="reactions__container"]
+##[id="didomi-host"]
+##.compartir-articulo
+*#?#span:contains(/ublicidad/)
+##.about-share
+##.share-section
+##.sm_links
+##.icon-share
+##[class*="relacionada"]
+##[class*="relacionados"]
+##[class*="next-post"]
+##[class*="anuncio-"]
+##[class*="suscripcion"]
+###scrollRecomendacion
+##.meta_right
+##[data-testid*="onsite-messaging"]
+##[aria-label*="Social Media Share buttons"]
+##[id*="btn_share"]
+*#?#a:contains(Suscribirse)
+##.btn-redes-sociales
+###chat-button
+##.redesBox
+##.iconos-redes
+*#?#.widget:contains(Síguenos)
+##.footer-follow-us
+
+! digitaltoo
+www.digitaltoo.com##[id*="hustle-popup-id-"]
+www.digitaltoo.com##html:watch-attr(class):remove-class(hustle-no-scroll)
+
+! hipertextual
+hipertextual.com##.widget_block.widget.above-content
+
+! lamanzanamordida
+lamanzanamordida.net##div.amazon-button
+
+! mexicotravelchannel
+mexicotravelchannel.com.mx##.tdc-footer-wrap
 
 ! y2meta
 y2meta.app##.p-r-md.p-l-md.text-center.homepage-grid.row-bordered.row-padded.row
