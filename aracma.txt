@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 28 Dec 2023 18:46 UTC-6
-! Version: 28.12.2023rev2
+! Last modified: 30 Dec 2023 13:35 UTC-6
+! Version: 30.12.2023rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -274,6 +274,11 @@ www.bing.com##.rs_chat
 www.bing.com##.wpt_bc_container
 www.bing.com###footer
 www.bing.com###hc_followus
+www.bing.com##.pageRecoContainer
+www.bing.com##.rqnaContainerwithfeedback
+www.bing.com##.fdbk_thmb_root
+www.bing.com###b-scopeListItem-shop
+www.bing.com###b_syd_supermax
 
 ! taenet
 www.taenet.com.mx##.sidebar_main_header
@@ -640,6 +645,63 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##.iconos-redes
 *#?#.widget:contains(Síguenos)
 ##.footer-follow-us
+##.privacy-choices-link
+##.menu-icon-fb
+##.menu-icon-tw
+##.youtubechannelgallery
+*#?#aside:contains(Follow)
+##.fa-instagram
+##.share-container
+##.social-platform
+##.get-news-title
+##.share-party
+##.newsletter-dialog-link
+##[class*="footer-social"]
+!smallpdf
+##.dCbDug.sc-1vdvga6-1
+##[data-e2e*="recommendations"]
+*##h6:contains(Follow)
+*##h3:contains(Follow)
+##.feed-newsletter-ficha
+##.social-share-contenedor
+##.list-socials
+##.social-column
+##.slide-down.notification-subs
+###reactions_section
+##.medias
+##.mwm_rrss_contenedor
+*##p:contains(Also Read:)
+*##p:contains(Recommended:)
+##.optinforms-form-container
+*##.social-icons__list
+*##.oneTrust_btn
+##.jl_socialcolor
+##.jl_single_share_wrapper
+##.jl_auth_link
+##[class*="social-list_container"]
+##.f-social
+*##[title="Banner"]:upward(2)
+##.element-social-inner-wrap
+##[class*="footer_social"]
+##[class*="social-networks"]
+
+! elpais
+elpais.com##[id="ctn_freemium_article"]
+elpais.com##.a_b_wall._dn:style(display: block !important;)
+elpais.com###containerBlockLayer
+||elpais.com/arc/subs/p.min.js
+
+! nytimes
+www.nytimes.com##span:contains(El Times):upward(4)
+
+! cnn
+cnn.com##*:watch-attr(class):remove-class(news--videofull)
+cnn.com##*:watch-attr(class):remove-class(cnnvideo--sticky)
+
+! numeros-a-letras
+numeros-a-letras.onlinegratis.tv##p
+numeros-a-letras.onlinegratis.tv##h2
+numeros-a-letras.onlinegratis.tv##footer
 
 ! digitaltoo
 www.digitaltoo.com##[id*="hustle-popup-id-"]
@@ -851,6 +913,14 @@ howtogeek.com##+js(set, admiral, noopFunc)
 
 ! ipadizate
 ipadizate.com##.popular-list
+ipadizate.com##.visible
+
+! lavanguardia
+www.lavanguardia.com##html:style(overflow: auto !important;)
+www.lavanguardia.com##.visible
+
+! kiwilimon
+www.kiwilimon.com##.wall
 
 ! periodicocentral
 periodicocentral.mx##[id^="lx_"]
