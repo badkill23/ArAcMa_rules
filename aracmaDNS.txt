@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 25 Dec 2023 13:37 UTC-6
-! Version: 25.12.2023rev1
+! Last modified: 30 Dec 2023 13:35 UTC-6
+! Version: 30.12.2023rev1
 ! Syntax: AdBlock
 
 
@@ -74,3 +74,4 @@
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=www.yelitzonpc.com
 @@||modemobile.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=descargaspcpro.net
