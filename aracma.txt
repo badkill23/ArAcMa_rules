@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 31 Dec 2023 12:49 UTC-6
-! Version: 31.12.2023rev1
+! Last modified: 31 Dec 2023 17:05 UTC-6
+! Version: 31.12.2023rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -343,8 +343,8 @@ pelisplus2.vip##.rcl0c.rfg1.rw.options
 
 ! lrepacks
 lrepacks.net##.fixedbut
-lrepacks.net##.large-6.medium-6:has(a[href*="/876-keysfan-sales-gifts-best-prices.html"])
-lrepacks.net##.large-6.medium-6:has(a[href*="/743-podderzhka-proekta.html"])
+lrepacks.net#?#article:has([href*="/876-keysfan-sales-gifts-best-prices.html"])
+lrepacks.net#?#article:has([href*="/743-podderzhka-proekta.html"])
 lrepacks.net##ul[class^="block-with-icons"]
 
 ! elementos genericos
@@ -697,6 +697,15 @@ lrepacks.net##ul[class^="block-with-icons"]
 ##[class*="social-networks"]
 ##[class*="social_icon"]
 *###share-to-social
+##.reaction-section
+##[class*="rating-widget"]
+##.social-follower
+##.topbar-social
+! Blank space instead of GoogleAds
+##div.in-article-container
+! Blank space instead of Video Ads
+##.article-asset-video
+
 
 ! elpais
 elpais.com##[id="ctn_freemium_article"]
