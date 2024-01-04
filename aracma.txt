@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 03 Jan 2024 07:40 UTC-6
-! Version: 03.01.2024rev1
+! Last modified: 03 Jan 2024 19:35 UTC-6
+! Version: 03.01.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -713,6 +713,29 @@ lrepacks.net##li:has([href*="-premium-"])
 *##.banner-cursos-online-latam
 *##a:contains(Privacy Choices)
 *##p:contains(Also See:)
+##.section__social
+*##.oneTrust_btn
+
+! eluniversal
+www.eluniversal.com.mx##p:contains(Lee también)
+www.eluniversal.com.mx##.ELU_VIDEO
+
+! esbarrio
+esbarrio.com###social-links
+
+! wired
+es.wired.com##.oneTrust_btn
+
+! milenio
+www.milenio.com###signwall
+www.milenio.com##body:style(overflow: visible !important;)
+www.milenio.com##.nd-related-news-detail-media-dual
+www.milenio.com##.social-media
+www.milenio.com##[data-mrf-recirculation^="Nota Recomendada"]
+www.milenio.com##.nd-tags-detail-base
+www.milenio.com##.nd-disclaimer-base
+www.milenio.com##.nd-author-card
+||id.tinypass.com/id/api/v1/identity/token/verify$script,domain=milenio.com
 
 ! elpais
 elpais.com##[id="ctn_freemium_article"]
@@ -720,8 +743,10 @@ elpais.com##.a_b_wall._dn:style(display: block !important;)
 elpais.com###containerBlockLayer
 ||elpais.com/arc/subs/p.min.js
 
-! nytimes
+! nyt
 www.nytimes.com##span:contains(El Times):upward(4)
+www.nytimes.com##.related-links-block
+www.nytimes.com##p:has([href*="/subscription?"])
 
 ! cnn
 cnn.com##*:watch-attr(class):remove-class(news--videofull)
@@ -735,6 +760,11 @@ numeros-a-letras.onlinegratis.tv##footer
 ! digitaltoo
 www.digitaltoo.com##[id*="hustle-popup-id-"]
 www.digitaltoo.com##html:watch-attr(class):remove-class(hustle-no-scroll)
+www.digitaltoo.com##.inline-post
+
+! muyinteresante
+www.muyinteresante.es##.main_video
+www.muyinteresante.es##.c-detail__share
 
 ! hipertextual
 hipertextual.com##.widget_block.widget.above-content
@@ -943,6 +973,16 @@ howtogeek.com##+js(set, admiral, noopFunc)
 ! ipadizate
 ipadizate.com##.popular-list
 ipadizate.com##.visible
+ipadizate.com##article-box
+
+! applesfera
+www.applesfera.com##p:contains(En Applesfera)
+
+! xataka
+www.xataka.*##p:contains(En Xataka)
+
+! genbeta
+www.genbeta.com##p:contains(En Genbeta)
 
 ! lavanguardia
 www.lavanguardia.com##html:style(overflow: auto !important;)
