@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 03 Jan 2024 19:35 UTC-6
-! Version: 03.01.2024rev2
+! Last modified: 04 Jan 2024 19:20 UTC-6
+! Version: 04.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -726,6 +726,9 @@ esbarrio.com###social-links
 ! wired
 es.wired.com##.oneTrust_btn
 
+! fost.ws
+||tarload.site/uv2.js$script,domain=fost.ws
+
 ! milenio
 www.milenio.com###signwall
 www.milenio.com##body:style(overflow: visible !important;)
@@ -735,12 +738,16 @@ www.milenio.com##[data-mrf-recirculation^="Nota Recomendada"]
 www.milenio.com##.nd-tags-detail-base
 www.milenio.com##.nd-disclaimer-base
 www.milenio.com##.nd-author-card
+www.milenio.com##.btn-register
+www.milenio.com##.nav-today
+www.milenio.com##span > [href="/suscripciones/notificaciones"]
 ||id.tinypass.com/id/api/v1/identity/token/verify$script,domain=milenio.com
 
 ! elpais
 elpais.com##[id="ctn_freemium_article"]
 elpais.com##.a_b_wall._dn:style(display: block !important;)
 elpais.com###containerBlockLayer
+elpais.com##.btn-2.btn-xs.btn.flex.\|.button
 ||elpais.com/arc/subs/p.min.js
 
 ! nyt
@@ -951,6 +958,7 @@ reddit.com##span[class^="_2zZ-KGHbWWqrwGlHWXR90y _2I12Htze2UzJmmfnrgYJOn "]
 reddit.com##div[class^="_1b1Jalg2nxA_Z-BjKXRfAV"]
 reddit.com##div[class^="_1vXXD2qKLnHetdKvisFzBD"]
 reddit.com##.m-visible.TopNav__topButton.TopButton
+reddit.com##.subredditvars-r-ublockorigin :is(div:has(>div>button[id^="collection-menu"]), div:has(>#collectionPostListScrollContainer))
 
 ! masterpctutoriales
 masterpctutoriales.com##.adblock_title:upward(5)
