@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 05 Jan 2024 11:15 UTC-6
-! Version: 05.01.2024rev1
+! Last modified: 06 Jan 2024 15:30 UTC-6
+! Version: 06.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -870,6 +870,27 @@ instagram.com##.x13fuv20:style(border:0 !important;)
 instagram.com##_ab15:style(border-bottom-width: 0px !important;)
 instagram.com##.x1q0q8m5:style(border:0 !important;)
 instagram.com##.wbloks_1.wbloks_78.wbloks_75.wbloks_79:style(background-color: black !important;)
+!WEB
+!bloquea el cuadro de comentarios en vista previa
+instagram.com##._a9za._a9z6
+! quita agregar comentario vista previa
+instagram.com##._ae62._ae5z._ae5y._aaoe
+! quita Story Cuadro Agregar Comentario
+instagram.com##._abx1._abx0
+instagram.com##.x9ch8sp.xfeqr9l.x1nd7iub.xom57h4.xlu9dua.x1sxyh0.x1gg8mnh.x78zum5.x9f619.xy80clv.xso031l.xm81vs4.x178xt8z.x26u7qi.x1q0q8m5.xu3j5b3.x13fuv20.xiuebna.xd18jyu.xxqof28.xl4qmuc.x6s0dn4
+! Ajusta Story tamaño alto
+instagram.com##._ac0n:style(max-height: 100% !important;)
+instagram.com##._ac0n:style(max-width: 100% !important;)
+instagram.com##.x10l6tqk.x17qophe.x19w6rv:style(height: 90% !important;)
+!instagram.com##.x10l6tqk.x17qophe.x19w6rv:style(width: 40% !important;)
+! quita icono threads navbar
+instagram.com##.xdy9tzy
+! quita threads cuadro post
+www.instagram.com##.wbloks_1
+! quita Link Ver comentarios
+www.instagram.com##.x1nhvcw1.x1oa3qoh.x1cy8zhl.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xat24cr.xo71vjh.x5pf9jr.x13lgxp2.x168nmei.x78zum5.xjbqb8w.x9f619
+! quita agregar comentario
+www.instagram.com##div.x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.x1xmf6yo.xo71vjh.x5pf9jr.x13lgxp2.x168nmei.x78zum5.xjbqb8w.x9f619
 
 ! Twitter
 !omitir bloqueo barra inferior
