@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 07 Jan 2024 20:30 UTC-6
-! Version: 07.01.2024rev1
+! Last modified: 08 Jan 2024 08:10 UTC-6
+! Version: 08.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -715,6 +715,9 @@ lrepacks.net##li:has([href*="-premium-"])
 *##p:contains(Also See:)
 ##.section__social
 *##.oneTrust_btn
+##.wpra-reactions-wrap
+##.kenta-socials
+*##p:contains(See also)
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -759,10 +762,12 @@ elpais.com##.fo_col
 elpais.com##.fo_en_redes
 elpais.com##.icon_social_twitter
 elpais.com##.fo_app
+elpais.com##+js(set, videoList, enabled)
 elpais.com##.commonmm_sonExpand:style(visibility: visible !important;)
 elpais.com##.commonmm_sonExpand:style(display: block !important;)
 elpais.com###UISkin_video_20240107145540328_TopPlayer
 ||elpais.com/arc/subs/p.min.js
+||ak-ads-ns.prisasd.com/slot/elpais/slot.js$script,domain=elpais.com
 
 ! nyt
 www.nytimes.com##span:contains(El Times):upward(4)
@@ -772,6 +777,11 @@ www.nytimes.com##p:has([href*="/subscription?"])
 ! cnn
 cnn.com##*:watch-attr(class):remove-class(news--videofull)
 cnn.com##*:watch-attr(class):remove-class(cnnvideo--sticky)
+cnn.com##*:watch-attr(class):remove-class(single-video-mobile-template)
+cnn.com##*:watch-attr(class):remove-class(story-media)
+cnn.com##*:watch-attr(class):remove-class(fave-top-player)
+cnn.com##*:watch-attr(class):remove-class(fave-mobile)
+cnn.com##*:watch-attr(class):remove-class(mobile-video-sticky-enabled)
 cnn.com##.story-video-playing.story-video.story-summary.story
 cnn.com##.footer-buttons
 
