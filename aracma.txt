@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 06 Jan 2024 15:30 UTC-6
-! Version: 06.01.2024rev1
+! Last modified: 07 Jan 2024 20:30 UTC-6
+! Version: 07.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -755,6 +755,13 @@ elpais.com##[id="ctn_freemium_article"]
 elpais.com##.a_b_wall._dn:style(display: block !important;)
 elpais.com###containerBlockLayer
 elpais.com##.btn-2.btn-xs.btn.flex.\|.button
+elpais.com##.fo_col
+elpais.com##.fo_en_redes
+elpais.com##.icon_social_twitter
+elpais.com##.fo_app
+elpais.com##.commonmm_sonExpand:style(visibility: visible !important;)
+elpais.com##.commonmm_sonExpand:style(display: block !important;)
+elpais.com###UISkin_video_20240107145540328_TopPlayer
 ||elpais.com/arc/subs/p.min.js
 
 ! nyt
@@ -765,6 +772,8 @@ www.nytimes.com##p:has([href*="/subscription?"])
 ! cnn
 cnn.com##*:watch-attr(class):remove-class(news--videofull)
 cnn.com##*:watch-attr(class):remove-class(cnnvideo--sticky)
+cnn.com##.story-video-playing.story-video.story-summary.story
+cnn.com##.footer-buttons
 
 ! numeros-a-letras
 numeros-a-letras.onlinegratis.tv##p
@@ -965,6 +974,9 @@ web.whatsapp.com##._64p9P:style(border-left: 0 !important;)
 web.whatsapp.com##._5kRIK:style(border-left: 0 !important;)
 web.whatsapp.com##.AmmtE:style(border-left: 0 !important;)
 web.whatsapp.com##._2lSWV:style(border-left: 0 !important;)
+
+! whatsapp
+www.whatsapp.com##._ae_x._9tau._9ta8._9ta5._9ta3._9tar
 
 ! Telcel
 telcel.com##div[class^="comp-telcel-banner-superior"]
@@ -1219,6 +1231,13 @@ www.automateexcel.com##.automacro-footer-strip
 www.automateexcel.com###vba-code-examples-add-in
 www.automateexcel.com###right-column
 www.automateexcel.com##.pb-8.gap-8.md\:justify-around.md\:flex-row.items-center.flex-col.flex
+www.automateexcel.com##.px-0.py-8.gap-4.md\:grid-cols-4.sm\:grid-cols-2.grid-cols-1.grid
+
+! ablebits
+www.ablebits.com##.a19SectionContainer--Footer.a19SectionContainer
+
+! ntwind
+www.ntwind.com##.btn_block
 
 ! howtodoexcel
 www.howtodoexcel.com##.modal-backdrop
