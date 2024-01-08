@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 08 Jan 2024 08:10 UTC-6
-! Version: 08.01.2024rev1
+! Last modified: 08 Jan 2024 13:10 UTC-6
+! Version: 08.01.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -942,9 +942,9 @@ twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] 
 ! ref shared post
 twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1loqt21.r-adacv.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg:last-child
 ! centrar iconos barra
-twitter.com##.r-1hdv0qi:style(width: 4.25em !important;)
-twitter.com##.r-1srniue:style(width: 4.25em !important;)
-twitter.com##.css-175oi2r.r-18u37iz.r-1h0z5md.r-1b7u577:style(width: 6.25em !important;)
+twitter.com##.r-1hdv0qi:style(width: 2.25em !important;)
+twitter.com##.r-1srniue:style(width: 2.25em !important;)
+twitter.com##.css-175oi2r.r-18u37iz.r-1h0z5md.r-1b7u577:style(width: 4.25em !important;)
 ! Hide Premium
 twitter.com##[aria-label="Premium"]
 twitter.com##[href$="/verified-choose"]
