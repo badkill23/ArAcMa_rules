@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 08 Jan 2024 15:00 UTC-6
-! Version: 08.01.2024rev3
+! Last modified: 08 Jan 2024 19:00 UTC-6
+! Version: 08.01.2024rev4
 ! Syntax: Adblock
 
 ! listonic
@@ -875,34 +875,40 @@ www.programasvirtualespc.net##.pix-christmas-pandas-popup
 www.programasvirtualespc.net##[href$="/miembro-vip/"]:upward(1)
 
 ! Instagram
-! WebPC oculta borde gris
-instagram.com##.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv:style(border:0 !important;)
-instagram.com##.x1ypdohk.x78zum5.xdt5ytf.x5yr21d.xa1mljc.xh8yej3.x1bs97v6.x1q0q8m5.xso031l.x11aubdm.xnc8uc2:style(border:0 !important;)
-instagram.com##.xopu45v.xu3j5b3.xm81vs4.x1vjfegm:style(border:0 !important;)
-instagram.com##.wbloks_1:style(border: 0 !important;)
-! WebMobile oculta borde gris
-instagram.com##._aasi:style(border:0 !important;)
-instagram.com##._aac4:style(border:0 !important;)
-instagram.com##._aac4:style(background: black !important;)
-instagram.com##.x13fuv20:style(border:0 !important;)
-instagram.com##_ab15:style(border-bottom-width: 0px !important;)
-instagram.com##.x1q0q8m5:style(border:0 !important;)
-instagram.com##.wbloks_1.wbloks_78.wbloks_75.wbloks_79:style(background-color: black !important;)
-!WEB
+# WebMobile oculta borde gris
+www.instagram.com##._aasi:style(border:0 !important;)
+www.instagram.com##._aac4:style(border:0 !important;)
+www.instagram.com##._aac4:style(background: black !important;)
+www.instagram.com##.x13fuv20:style(border:0 !important;)
+www.instagram.com##_ab15:style(border-bottom-width: 0px !important;)
+www.instagram.com##.x1q0q8m5:style(border:0 !important;)
+www.instagram.com##.wbloks_1.wbloks_78.wbloks_75.wbloks_79:style(background-color: black !important;)
+! quita Ver los comentarios
+www.instagram.com##.x1nhvcw1.x1oa3qoh.x1cy8zhl.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1n2onr6.x12nagc.xo71vjh.x5pf9jr.x13lgxp2.x168nmei.x78zum5.xjbqb8w.x9f619
+! quita icono cuadro comentarios
+www.instagram.com##._aamx > .xcdnw81.xurb0ha.xwib8y2.x1sxyh0.x1y1aw1k.xl56j7k.x78zum5.x1ypdohk.x17r0tee.x1sy0etr.xd10rxx.x1ejq31n.xjbqb8w.x6s0dn4.x1a2a7pz.xggy1nq.x1hl2dhg.x16tdsg8.x1mh8g0r.xat24cr.x11i5rnm.xdj266r.xe8uvvx.x9f619.xav7gou.xaqea5y.x1b1mbwd.x6umtig.x1i10hfl
+# WEB
+! oculta borde gris
+www.instagram.com##.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv:style(border:0 !important;)
+www.instagram.com##.x1ypdohk.x78zum5.xdt5ytf.x5yr21d.xa1mljc.xh8yej3.x1bs97v6.x1q0q8m5.xso031l.x11aubdm.xnc8uc2:style(border:0 !important;)
+www.instagram.com##.xopu45v.xu3j5b3.xm81vs4.x1vjfegm:style(border:0 !important;)
+www.instagram.com##.wbloks_1:style(border: 0 !important;)
+! quita icono cuadro comentarios
+www.instagram.com##span:nth-of-type(2)
 !bloquea el cuadro de comentarios en vista previa
-instagram.com##._a9za._a9z6
+www.instagram.com##._a9za._a9z6
 ! quita agregar comentario vista previa
-instagram.com##._ae62._ae5z._ae5y._aaoe
+www.instagram.com##._ae62._ae5z._ae5y._aaoe
 ! quita Story Cuadro Agregar Comentario
-instagram.com##._abx1._abx0
-instagram.com##.x9ch8sp.xfeqr9l.x1nd7iub.xom57h4.xlu9dua.x1sxyh0.x1gg8mnh.x78zum5.x9f619.xy80clv.xso031l.xm81vs4.x178xt8z.x26u7qi.x1q0q8m5.xu3j5b3.x13fuv20.xiuebna.xd18jyu.xxqof28.xl4qmuc.x6s0dn4
+www.instagram.com##._abx1._abx0
+www.instagram.com##.x9ch8sp.xfeqr9l.x1nd7iub.xom57h4.xlu9dua.x1sxyh0.x1gg8mnh.x78zum5.x9f619.xy80clv.xso031l.xm81vs4.x178xt8z.x26u7qi.x1q0q8m5.xu3j5b3.x13fuv20.xiuebna.xd18jyu.xxqof28.xl4qmuc.x6s0dn4
 ! Ajusta Story tamaño alto
-instagram.com##._ac0n:style(max-height: 100% !important;)
-instagram.com##._ac0n:style(max-width: 100% !important;)
-instagram.com##.x10l6tqk.x17qophe.x19w6rv:style(height: 90% !important;)
-!instagram.com##.x10l6tqk.x17qophe.x19w6rv:style(width: 40% !important;)
+www.instagram.com##._ac0n:style(max-height: 100% !important;)
+www.instagram.com##._ac0n:style(max-width: 100% !important;)
+www.instagram.com##.x10l6tqk.x17qophe.x19w6rv:style(height: 90% !important;)
+!www.instagram.com##.x10l6tqk.x17qophe.x19w6rv:style(width: 40% !important;)
 ! quita icono threads navbar
-instagram.com##.xdy9tzy
+www.instagram.com##.xdy9tzy
 ! quita threads cuadro post
 www.instagram.com##.wbloks_1
 ! quita Link Ver comentarios
@@ -943,6 +949,8 @@ twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1l
 ! centrar iconos barra
 twitter.com##.r-1hdv0qi:style(width: 2.25em !important;)
 twitter.com##.r-1srniue:style(width: 2.25em !important;)
+twitter.com##.r-1kb76zh:style(margin-right: 20px !important;)
+twitter.com##.tmd-down:style(margin-left: 20px !important;)
 twitter.com##.css-175oi2r.r-18u37iz.r-1h0z5md.r-1b7u577:style(width: 4.25em !important;)
 ! Hide Premium
 twitter.com##[aria-label="Premium"]
@@ -1244,6 +1252,21 @@ www.automateexcel.com##.px-0.py-8.gap-4.md\:grid-cols-4.sm\:grid-cols-2.grid-col
 
 ! ablebits
 www.ablebits.com##.a19SectionContainer--Footer.a19SectionContainer
+www.ablebits.com###id-section-scripts > aside
+www.ablebits.com##[class*="PopUpOset"]
+
+! exceldemy
+www.exceldemy.com##[class^="manual_trigger"]
+
+! wikihow
+wikihow.com###sf
+wikihow.com###bodyContent > .section_text
+wikihow.com##.articlesocial
+wikihow.com##.follow_sidebox
+
+! gadgets360
+www.gadgets360.com##.alsoseewgt
+www.gadgets360.com##._ovfhide._flscl
 
 ! ntwind
 www.ntwind.com##.btn_block
