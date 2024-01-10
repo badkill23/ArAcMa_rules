@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 08 Jan 2024 19:00 UTC-6
-! Version: 08.01.2024rev4
+! Last modified: 10 Jan 2024 08:50 UTC-6
+! Version: 10.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -947,8 +947,8 @@ twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] 
 ! ref shared post
 twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1loqt21.r-adacv.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg:last-child
 ! centrar iconos barra
-twitter.com##.r-1hdv0qi:style(width: 2.25em !important;)
-twitter.com##.r-1srniue:style(width: 2.25em !important;)
+twitter.com##.r-1hdv0qi:style(width: 3.25em !important;)
+twitter.com##.r-1srniue:style(width: 3.25em !important;)
 twitter.com##.r-1kb76zh:style(margin-right: 20px !important;)
 twitter.com##.tmd-down:style(margin-left: 20px !important;)
 twitter.com##.css-175oi2r.r-18u37iz.r-1h0z5md.r-1b7u577:style(width: 4.25em !important;)
@@ -956,6 +956,8 @@ twitter.com##.css-175oi2r.r-18u37iz.r-1h0z5md.r-1b7u577:style(width: 4.25em !imp
 twitter.com##[aria-label="Premium"]
 twitter.com##[href$="/verified-choose"]
 twitter.com##[href$="/settings/monetization"]
+!spaces
+||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true$xhr,1p,important
 
 ! facebook
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
@@ -1256,7 +1258,7 @@ www.ablebits.com###id-section-scripts > aside
 www.ablebits.com##[class*="PopUpOset"]
 
 ! exceldemy
-www.exceldemy.com##[class^="manual_trigger"]
+www.exceldemy.com##[class*="manual_trigger_"]
 
 ! wikihow
 wikihow.com###sf
