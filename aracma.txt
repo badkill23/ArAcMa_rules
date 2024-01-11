@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 10 Jan 2024 18:10 UTC-6
-! Version: 10.01.2024rev3
+! Last modified: 11 Jan 2024 12:40 UTC-6
+! Version: 11.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -711,12 +711,14 @@ lrepacks.net##li:has([href*="-premium-"])
 *##.soc-ico
 *##.banner-cursos-online-latam
 *##a:contains(Privacy Choices)
-*##p:contains(Also See:)
+*##p:contains(Also See)
 ##.section__social
 *##.oneTrust_btn
 ##.wpra-reactions-wrap
 ##.kenta-socials
 *##p:contains(See also)
+*##p:contains(See Also)
+*##p:contains(Vea también)
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -955,6 +957,10 @@ twitter.com##[href$="/verified-choose"]
 twitter.com##[href$="/settings/monetization"]
 !spaces
 ||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true
+! icono perfil
+twitter.com##.css-175oi2r.r-18kxxzh.r-1b7u577.r-onrtq4.r-1awozwy:style(visibility: collapse !important;)
+! centrar contenido
+twitter.com##.css-175oi2r.r-k200y:style(align-self: center !important;)
 
 ! facebook
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
@@ -1248,6 +1254,13 @@ www.automateexcel.com###vba-code-examples-add-in
 www.automateexcel.com###right-column
 www.automateexcel.com##.pb-8.gap-8.md\:justify-around.md\:flex-row.items-center.flex-col.flex
 www.automateexcel.com##.px-0.py-8.gap-4.md\:grid-cols-4.sm\:grid-cols-2.grid-cols-1.grid
+www.automateexcel.com##.my-8.p-8.bg-gray-300
+
+! ayudaexcel
+ayudaexcel.com##.elementor-popup-modal
+ayudaexcel.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-687859f.elementor-element.elementor-top-section.elementor-section
+ayudaexcel.com##.elementor-sticky--effects.elementor-section--handles-inside.elementor-sticky--active.elementor-sticky.elementor-section-height-default.elementor-section-boxed.elementor-element-3762f90.elementor-element.elementor-top-section.elementor-section
+ayudaexcel.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-75cbd84.elementor-element.elementor-top-section.elementor-section
 
 ! ablebits
 www.ablebits.com##.a19SectionContainer--Footer.a19SectionContainer
