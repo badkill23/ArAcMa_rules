@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 11 Jan 2024 20:30 UTC-6
-! Version: 11.01.2024rev4
+! Last modified: 12 Jan 2024 09:10 UTC-6
+! Version: 12.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -306,11 +306,16 @@ www.imagentv.com###landingSchedule
 www.imagentv.com##.footer
 !www.imagentv.com##.list_envivo:style(width: 100% !important;)
 www.imagentv.com###headerMain:style(display: none !important;)
-www.imagentv.com##div#wrapp:style(padding-top: 200px !important;)
-www.imagentv.com##div#wrapp:style(padding-Left: 350px !important;)
+www.imagentv.com##div#wrapp:style(padding-top: 150px !important;)
+www.imagentv.com##.nodeMain_wrapper:style(justify-content: space-evenly !important;)
 www.imagentv.com##html:style(background: black !important;)
 www.imagentv.com##html:style(overflow: hidden !important;)
 www.imagentv.com##.wrapper-description
+www.imagentv.com##*:watch-attr(class):remove-class(limited)
+www.imagentv.com##*:watch-attr(class):remove-class(dblock)
+
+! respontodo
+respontodo.com##.entry-content > div:contains(Relacionado)
 
 ! vtube
 vtube.network##center:nth-of-type(2)
@@ -720,6 +725,8 @@ lrepacks.net##li:has([href*="-premium-"])
 *##p:contains(See also)
 *##p:contains(See Also)
 *##p:contains(Vea también)
+##._social-share-container
+##p:contains(Similar)
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -765,8 +772,7 @@ elpais.com##.fo_en_redes
 elpais.com##.icon_social_twitter
 elpais.com##.fo_app
 elpais.com###s_b_mb
-elpais.com##+js(set-constant, window.videoList, enabled)
-
+elpais.com##+js(set, window.videoList, enabled)
 ||elpais.com/arc/subs/p.min.js
 ||ak-ads-ns.prisasd.com/slot/elpais/slot.js$script,domain=elpais.com
 
