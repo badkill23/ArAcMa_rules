@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 11 Jan 2024 20:20 UTC-6
-! Version: 11.01.2024rev3
+! Last modified: 11 Jan 2024 20:30 UTC-6
+! Version: 11.01.2024rev4
 ! Syntax: Adblock
 
 ! listonic
@@ -307,6 +307,7 @@ www.imagentv.com##.footer
 !www.imagentv.com##.list_envivo:style(width: 100% !important;)
 www.imagentv.com###headerMain:style(display: none !important;)
 www.imagentv.com##div#wrapp:style(padding-top: 200px !important;)
+www.imagentv.com##div#wrapp:style(padding-Left: 350px !important;)
 www.imagentv.com##html:style(background: black !important;)
 www.imagentv.com##html:style(overflow: hidden !important;)
 www.imagentv.com##.wrapper-description
