@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 11 Jan 2024 18:20 UTC-6
-! Version: 11.01.2024rev2
+! Last modified: 11 Jan 2024 20:20 UTC-6
+! Version: 11.01.2024rev3
 ! Syntax: Adblock
 
 ! listonic
@@ -304,9 +304,9 @@ www.imagentv.com##.headerUserInner
 www.imagentv.com##.m-p0.t-cuad-12.m-cuad-12.m-float-none.pr15.pt60.cuad-12.left
 www.imagentv.com###landingSchedule
 www.imagentv.com##.footer
-www.imagentv.com##.list_envivo:style(width: 100% !important;)
+!www.imagentv.com##.list_envivo:style(width: 100% !important;)
 www.imagentv.com###headerMain:style(display: none !important;)
-www.imagentv.com##div#wrapp:style(padding-top: 5px !important;)
+www.imagentv.com##div#wrapp:style(padding-top: 200px !important;)
 www.imagentv.com##html:style(background: black !important;)
 www.imagentv.com##html:style(overflow: hidden !important;)
 www.imagentv.com##.wrapper-description
@@ -986,6 +986,8 @@ web.whatsapp.com##div[class^="_3SOOk"]
 ! btn reaction
 !web.whatsapp.com##div[data-testid*="reaction-entry-point"]
 !web.whatsapp.com##div[aria-label="Reaccionar"]
+! btn reaccionar en chat
+web.whatsapp.com##._3OtEr:has([aria-label="Reaccionar"])
 !ventana de mensajes eliminados
 web.whatsapp.com##.lyvj5e2u.l9g3jx6n.ekpn4oxx.b7n2qyd4.a4ywakfo.f8jlpxt4.p357zi0d.k17s6i4e.lysxvg3k.ecxr5yey.l5pmshjt.cynldqnp.cqvkqxai.gndfcl4n
 ! btn canales
