@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 11 Jan 2024 12:40 UTC-6
-! Version: 11.01.2024rev1
+! Last modified: 11 Jan 2024 18:20 UTC-6
+! Version: 11.01.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -763,6 +763,8 @@ elpais.com##.fo_col
 elpais.com##.fo_en_redes
 elpais.com##.icon_social_twitter
 elpais.com##.fo_app
+elpais.com###s_b_mb
+elpais.com##+js(set-constant, window.videoList, enabled)
 
 ||elpais.com/arc/subs/p.min.js
 ||ak-ads-ns.prisasd.com/slot/elpais/slot.js$script,domain=elpais.com
@@ -1049,7 +1051,8 @@ ipadizate.com##article-box
 www.applesfera.com##p:contains(En Applesfera)
 
 ! xataka
-www.xataka.*##p:contains(En Xataka)
+xataka.*##p:contains(En Xataka)
+xataka.*##div.customize-me:nth-child(5) > div.page-container:last-child > div.content-container > section.section-native-container:nth-child(5)
 
 ! genbeta
 www.genbeta.com##p:contains(En Genbeta)
