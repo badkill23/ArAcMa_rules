@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 1 day
-! Last modified: 12 Jan 2024 12:45 UTC-6
-! Version: 12.01.2024rev2
+! Last modified: 12 Jan 2024 18:00 UTC-6
+! Version: 12.01.2024rev3
 ! Syntax: Adblock
 
 ! listonic
@@ -967,6 +967,7 @@ twitter.com##[href$="/settings/monetization"]
 !spaces
 ||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true
 ! icono perfil
+twitter.com##[data-testid="Tweet-User-Avatar"]:upward(1)
 twitter.com##.css-175oi2r.r-18kxxzh.r-1b7u577.r-onrtq4.r-1awozwy
 ! centrar contenido
 twitter.com##.css-175oi2r.r-k200y:style(align-self: center !important;)
