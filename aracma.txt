@@ -2,9 +2,9 @@
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
-! Expires: 1 day
-! Last modified: 12 Jan 2024 18:00 UTC-6
-! Version: 12.01.2024rev3
+! Expires: 5 days
+! Last modified: 21 Jan 2024 13:35 UTC-6
+! Version: 21.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -353,6 +353,11 @@ lrepacks.net#?#article:has([href*="/876-keysfan-sales-gifts-best-prices.html"])
 lrepacks.net#?#article:has([href*="/743-podderzhka-proekta.html"])
 lrepacks.net##ul[class^="block-with-icons"]
 lrepacks.net##li:has([href*="-premium-"])
+
+! rsload
+rsload.net##div.short:has([href*="/35894-arenda-servera-2023-god.html"])
+rsload.net##div.short:has([href*="/33133-novogodnie-skidki-windows-10-11.html"])
+rsload.net##[href="https://rsload.net/tutvce.html"]
 
 ! elementos genericos
 *##nav[class^="fixed-sites"]
@@ -727,6 +732,9 @@ lrepacks.net##li:has([href*="-premium-"])
 *##p:contains(Vea también)
 ##._social-share-container
 ##p:contains(Similar)
+*##.rating
+*##.mdp-stellar
+*##.related-article-content
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -989,6 +997,8 @@ web.whatsapp.com##div[data-testid^="menu-bar-ad-creation"]
 web.whatsapp.com##div[aria-label="Anunciar en Facebook"]
 ! ad fb menulist
 web.whatsapp.com##li[data-testid^="ad-creation-menu-item"]
+! Elemento Anuncios en Menu Herramientas
+web.whatsapp.com##.oteuebma.cmcp1to6.nc5t0wl8.fbgy3m38.oq31bsqd:has([title="Anuncios"])
 ! splash home
 web.whatsapp.com##div[class^="_3SOOk"]
 ! btn reaction
@@ -1070,9 +1080,20 @@ www.genbeta.com##p:contains(En Genbeta)
 ! lavanguardia
 www.lavanguardia.com##html:style(overflow: auto !important;)
 www.lavanguardia.com##.visible
+www.lavanguardia.com##[data-mrf-recirculation="article-box"]
 
 ! kiwilimon
 www.kiwilimon.com##.wall
+
+! computerhoy
+computerhoy.com##.embed-article_embedAarticle__lIiLk
+
+! nationalgeographic
+www.nationalgeographic.*##.subscription-container
+www.nationalgeographic.*##*:watch-attr(class):remove-class(jw-flag-floating)
+www.nationalgeographic.*##*:watch-attr(class):remove-class(jw-flag-small-player)
+www.nationalgeographic.*##*:watch-attr(class):remove-class(subscription-default)
+www.nationalgeographic.*##.related-article-content
 
 ! periodicocentral
 periodicocentral.mx##[id^="lx_"]
@@ -1268,6 +1289,28 @@ www.automateexcel.com###right-column
 www.automateexcel.com##.pb-8.gap-8.md\:justify-around.md\:flex-row.items-center.flex-col.flex
 www.automateexcel.com##.px-0.py-8.gap-4.md\:grid-cols-4.sm\:grid-cols-2.grid-cols-1.grid
 www.automateexcel.com##.my-8.p-8.bg-gray-300
+
+! spreadsheetplanet
+spreadsheetplanet.com##pre.wp-block-preformatted:contains(Also read)
+
+! macrosenexcel
+macrosenexcel.com##iframe.lazyloading
+macrosenexcel.com##[class*="macro-despues-del-contenido"]
+macrosenexcel.com##.macro-widget > .lazyloaded
+macrosenexcel.com##.textwidget > .lazyloaded
+macrosenexcel.com##[id*="macro"] > .lazyloaded
+macrosenexcel.com##.tr-caption-container
+macrosenexcel.com##.entry-aside.widget-area
+
+! trumpexcel
+trumpexcel.com##.elementor-button-wrapper
+
+! enciclopedia
+enciclopedia.net##.creatividades1
+
+! educba
+www.educba.com##div.box-div.five-sixths
+www.educba.com###custom_html-21 > .widget-wrap.widget_text > .custom-html-widget.textwidget
 
 ! ayudaexcel
 ayudaexcel.com##.elementor-popup-modal
