@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 21 Jan 2024 13:35 UTC-6
-! Version: 21.01.2024rev1
+! Last modified: 22 Jan 2024 11:10 UTC-6
+! Version: 22.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -285,6 +285,9 @@ www.bing.com##.cdxConv
 www.bing.com##.sbox:style(width: 100% !important;)
 www.bing.com##shopping-sd-card[id*="shopping-carousel"]
 www.bing.com##[class="actions"]
+www.bing.com###sacs_window
+www.bing.com###b_sydTigerCont > cib-serp.cib-serp-main
+www.bing.com###b_results > li.b_ans
 www.msn.com##[class="card-action"]
 www.msn.com##[id="feedback-link-button"]
 www.msn.com##[instance-id="CodexBingChat"]
@@ -1066,6 +1069,7 @@ howtogeek.com##+js(set, admiral, noopFunc)
 ipadizate.com##.popular-list
 ipadizate.com##.visible
 ipadizate.com##article-box
+ipadizate.com##.ad-div
 
 ! applesfera
 www.applesfera.com##p:contains(En Applesfera)
@@ -1090,10 +1094,15 @@ computerhoy.com##.embed-article_embedAarticle__lIiLk
 
 ! nationalgeographic
 www.nationalgeographic.*##.subscription-container
-www.nationalgeographic.*##*:watch-attr(class):remove-class(jw-flag-floating)
-www.nationalgeographic.*##*:watch-attr(class):remove-class(jw-flag-small-player)
-www.nationalgeographic.*##*:watch-attr(class):remove-class(subscription-default)
 www.nationalgeographic.*##.related-article-content
+www.nationalgeographic.*##.preview.sticky-mobile
+www.nationalgeographic.*##.paywall
+www.nationalgeographic.*##body:style(overflow: auto !important;)
+www.nationalgeographic.*##.subscripcion-revista
+www.nationalgeographic.*##aside.subscription-highlighted
+www.nationalgeographic.*##.social-footer
+www.nationalgeographic.*##.jw-float-to-top
+www.nationalgeographic.*#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
 
 ! periodicocentral
 periodicocentral.mx##[id^="lx_"]
