@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 22 Jan 2024 11:10 UTC-6
-! Version: 22.01.2024rev1
+! Last modified: 22 Jan 2024 11:40 UTC-6
+! Version: 22.01.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -1092,17 +1092,17 @@ www.kiwilimon.com##.wall
 ! computerhoy
 computerhoy.com##.embed-article_embedAarticle__lIiLk
 
-! nationalgeographic
-www.nationalgeographic.*##.subscription-container
-www.nationalgeographic.*##.related-article-content
-www.nationalgeographic.*##.preview.sticky-mobile
-www.nationalgeographic.*##.paywall
-www.nationalgeographic.*##body:style(overflow: auto !important;)
-www.nationalgeographic.*##.subscripcion-revista
-www.nationalgeographic.*##aside.subscription-highlighted
-www.nationalgeographic.*##.social-footer
-www.nationalgeographic.*##.jw-float-to-top
-www.nationalgeographic.*#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
+! nationalgeographic es
+www.nationalgeographic.com.es##.subscription-container
+www.nationalgeographic.com.es##.related-article-content
+www.nationalgeographic.com.es##.preview.sticky-mobile
+www.nationalgeographic.com.es##.paywall
+www.nationalgeographic.com.es##body:style(overflow: auto !important;)
+www.nationalgeographic.com.es##.subscripcion-revista
+www.nationalgeographic.com.es##aside.subscription-highlighted
+www.nationalgeographic.com.es##.social-footer
+www.nationalgeographic.com.es##.jw-float-to-top
+www.nationalgeographic.com.es#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
 
 ! periodicocentral
 periodicocentral.mx##[id^="lx_"]
