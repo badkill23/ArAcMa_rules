@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 22 Jan 2024 11:40 UTC-6
-! Version: 22.01.2024rev2
+! Last modified: 27 Jan 2024 09:05 UTC-6
+! Version: 27.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -754,7 +754,7 @@ es.wired.com##.oneTrust_btn
 
 ! milenio
 www.milenio.com###signwall
-www.milenio.com##body:style(overflow: visible !important;)
+www.milenio.com##body:style(overflow: auto !important;)
 www.milenio.com##.nd-related-news-detail-media-dual
 www.milenio.com##.social-media
 www.milenio.com##[data-mrf-recirculation^="Nota Recomendada"]
@@ -802,6 +802,9 @@ cnn.com##*:watch-attr(class):remove-class(fave-mobile)
 cnn.com##*:watch-attr(class):remove-class(mobile-video-sticky-enabled)
 cnn.com##.story-video-playing.story-video.story-summary.story
 cnn.com##.footer-buttons
+cnn.com##.storyfull__body > ul
+cnn.com##.share__radios
+cnn.com##.headerradio__social
 
 ! numeros-a-letras
 numeros-a-letras.onlinegratis.tv##p
@@ -1070,13 +1073,16 @@ ipadizate.com##.popular-list
 ipadizate.com##.visible
 ipadizate.com##article-box
 ipadizate.com##.ad-div
+ipadizate.com##.recommender-line
+ipadizate.com##.b-f
 
 ! applesfera
 www.applesfera.com##p:contains(En Applesfera)
 
 ! xataka
-xataka.*##p:contains(En Xataka)
-xataka.*##div.customize-me:nth-child(5) > div.page-container:last-child > div.content-container > section.section-native-container:nth-child(5)
+www.xataka.*##.ad-out.ad
+www.xataka.*##p:contains(En Xataka)
+www.xataka.*##div.customize-me:nth-child(5) > div.page-container:last-child > div.content-container > section.section-native-container:nth-child(5)
 
 ! genbeta
 www.genbeta.com##p:contains(En Genbeta)
@@ -1103,6 +1109,9 @@ www.nationalgeographic.com.es##aside.subscription-highlighted
 www.nationalgeographic.com.es##.social-footer
 www.nationalgeographic.com.es##.jw-float-to-top
 www.nationalgeographic.com.es#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
+
+! nationalgeographic la
+www.nationalgeographicla.com##.css-13dgr6k
 
 ! periodicocentral
 periodicocentral.mx##[id^="lx_"]
@@ -1286,10 +1295,16 @@ cine24h.net##.alert-danger.alert
 
 ! mercadolibre
 mercadolibre.*##body > div > div > [href^="https://ddnf.adj.st/home"]:upward(2)
+mercadolibre.*##.onboarding-cp-tooltip
+mercadolibre.*##.download-app-top-banner-wrapper
 
 ! geeksblog
 www.igeeksblog.com##.elementor-popup-modal.dialog-type-lightbox.dialog-type-buttons.dialog-lightbox-widget.dialog-widget
 www.igeeksblog.com##.cnvs-block-section-fullwidth.cnvs-block-section-layout-full.cnvs-block-section-1697538714378.cnvs-block-section
+
+! esgeeks
+esgeeks.com##.inline-post
+esgeeks.com##.tipi-flex.reaction-wrap
 
 ! automateexcel
 www.automateexcel.com##.automacro-footer-strip
@@ -1366,7 +1381,38 @@ www.howtodoexcel.com##body:style(overflow-y: auto !important)
 @@||googlesyndication.com^$domain=disking.in
 @@||gplinks.in/track/js/*$domain=disking.in
 
-! filtros para Moviles
-!#if (ext_ublock)
+! kiturt
+kiturt-com.custommapposter.com##div.insert:contains(See Also)
+
+! gizmodo
+gizmodo.com##.js_more-below-post
+gizmodo.com##p:contains(¿Quieres más noticias io9?)
+gizmodo.com##.js_footer
+
+! reforma
+www.reforma.com##.login_contenedor
+www.reforma.com###Bloque_EX_Suscripcion2
+www.reforma.com###Bloque_IN_Publicidad_Main
+www.reforma.com###Bloque_EX_RielV
+
+! excelsior
+www.excelsior.com.mx##p:contains(TE RECOMENDAMOS)
+www.excelsior.com.mx##p:contains(Te puede interesar)
+www.excelsior.com.mx###suscription-block
+
+! exceltips.wiki
+exceltips.wiki##.alert:contains(Ver también)
+
+! businessprogrammer
+www.businessprogrammer.com##.bpOptInBox
+
+! tecnoprogramas
+tecnoprogramas.com##.entry-item:has([href*="/preguntas-frecuentes/"])
+tecnoprogramas.com##.entry-item:has([href*="/descargar-desde-tecnoprogramas/"])
+tecnoprogramas.com##.banner
+
+! mediafire
+www.mediafire.com###subFooterSocial
+
+! Filtros DNS
 !#include aracmaDNS.txt
-!#endif
