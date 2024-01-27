@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 27 Jan 2024 09:15 UTC-6
-! Version: 27.01.2024rev2
+! Last modified: 27 Jan 2024 13:20 UTC-6
+! Version: 27.01.2024rev3
 ! Syntax: Adblock
 
 ! listonic
@@ -293,6 +293,8 @@ www.msn.com##[id="feedback-link-button"]
 www.msn.com##[instance-id="CodexBingChat"]
 www.msn.com##[class*="feedback_link"]
 www.msn.com##action-tray
+www.msn.com##cs-native-ad-card
+www.msn.com##[id*="nativead"]
 
 ! taenet
 www.taenet.com.mx##.sidebar_main_header
@@ -742,6 +744,25 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
 www.eluniversal.com.mx##.ELU_VIDEO
+www.eluniversal.com.mx##.lg\:max-w-screen-lg.sc__author
+www.eluniversal.com.mx##.dfp-tag-wrapper__close
+www.eluniversal.com.mx##.itemgpt_portada_responsive_top
+www.eluniversal.com.mx##.itemgpt_responsive_portada_leaderboard
+www.eluniversal.com.mx##.itemgpt_responsive_portada_leaderboard_2
+www.eluniversal.com.mx##.lg\:flex-1.lg\:pr-7.items-end.flex-col.lg\:flex.mt-10
+www.eluniversal.com.mx##.mt-9.footer_c4-2
+www.eluniversal.com.mx##.story-content__embed
+www.eluniversal.com.mx##.sc__recommend
+www.eluniversal.com.mx##.sidebar
+www.eluniversal.com.mx##.si__body
+www.eluniversal.com.mx##.coupons__container
+www.eluniversal.com.mx##.short_reviews
+
+! bbc
+www.bbc.com##figure.bbc-1qn0xuy
+www.bbc.com##p:contains(Y recuerda)
+www.bbc.com##p:contains(Haz clic aquí)
+www.bbc.com##.evvt9po0.bbc-acwcvw
 
 ! esbarrio
 esbarrio.com###social-links
@@ -754,7 +775,9 @@ es.wired.com##.oneTrust_btn
 
 ! milenio
 www.milenio.com###signwall
-
+www.milenio.com##html:style(overflow: auto !important;)
+www.milenio.com##body:style(overflow: visible !important;)
+www.milenio.com###comments-container
 www.milenio.com##.nd-related-news-detail-media-dual
 www.milenio.com##.social-media
 www.milenio.com##[data-mrf-recirculation^="Nota Recomendada"]
@@ -1075,6 +1098,7 @@ ipadizate.com##article-box
 ipadizate.com##.ad-div
 ipadizate.com##.recommender-line
 ipadizate.com##.b-f
+ipadizate.com##.aside-cont
 
 ! applesfera
 www.applesfera.com##p:contains(En Applesfera)
@@ -1083,6 +1107,7 @@ www.applesfera.com##p:contains(En Applesfera)
 www.xataka.*##.ad-out.ad
 www.xataka.*##p:contains(En Xataka)
 www.xataka.*##div.customize-me:nth-child(5) > div.page-container:last-child > div.content-container > section.section-native-container:nth-child(5)
+www.xataka.*##.ad
 
 ! genbeta
 www.genbeta.com##p:contains(En Genbeta)
@@ -1413,6 +1438,13 @@ tecnoprogramas.com##.banner
 
 ! mediafire
 www.mediafire.com###subFooterSocial
+
+! aristeguinoticias
+aristeguinoticias.com##[class*=wrapperad]:upward(1)
+
+! quinto-poder
+quinto-poder.mx##.content-banner
+quinto-poder.mx##.bnn
 
 ! Filtros DNS
 !#include aracmaDNS.txt
