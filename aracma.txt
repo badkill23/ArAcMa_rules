@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 27 Jan 2024 09:05 UTC-6
-! Version: 27.01.2024rev1
+! Last modified: 27 Jan 2024 09:15 UTC-6
+! Version: 27.01.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -754,7 +754,7 @@ es.wired.com##.oneTrust_btn
 
 ! milenio
 www.milenio.com###signwall
-www.milenio.com##body:style(overflow: auto !important;)
+
 www.milenio.com##.nd-related-news-detail-media-dual
 www.milenio.com##.social-media
 www.milenio.com##[data-mrf-recirculation^="Nota Recomendada"]
