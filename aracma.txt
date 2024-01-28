@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 27 Jan 2024 13:20 UTC-6
-! Version: 27.01.2024rev3
+! Last modified: 28 Jan 2024 09:15 UTC-6
+! Version: 28.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -316,8 +316,8 @@ www.imagentv.com##.nodeMain_wrapper:style(justify-content: space-evenly !importa
 www.imagentv.com##html:style(background: black !important;)
 www.imagentv.com##html:style(overflow: hidden !important;)
 www.imagentv.com##.wrapper-description
-www.imagentv.com##*:watch-attr(class):remove-class(limited)
-www.imagentv.com##*:watch-attr(class):remove-class(dblock)
+www.imagentv.com#%#//scriptlet('remove-class', 'limited', '', 'stay')
+www.imagentv.com#%#//scriptlet('remove-class', 'dblock', '', 'stay')
 
 ! respontodo
 respontodo.com##.entry-content > div:contains(Relacionado)
@@ -798,7 +798,7 @@ www.milenio.com##span > [href="/suscripciones/notificaciones"]
 
 ! elpais
 elpais.com##[id="ctn_freemium_article"]
-elpais.com##.a_b_wall._dn:style(display: block !important;)
+elpais.com##.a_b_wall:style(display: block !important;)
 elpais.com###containerBlockLayer
 elpais.com##.btn-2.btn-xs.btn.flex.\|.button
 elpais.com##.fo_col
@@ -806,7 +806,7 @@ elpais.com##.fo_en_redes
 elpais.com##.icon_social_twitter
 elpais.com##.fo_app
 elpais.com###s_b_mb
-elpais.com##+js(set, window.videoList, enabled)
+elpais.com#%#//scriptlet('remove-class', 'mm_ad_module', '', 'stay')
 ||elpais.com/arc/subs/p.min.js
 ||ak-ads-ns.prisasd.com/slot/elpais/slot.js$script,domain=elpais.com
 
@@ -816,18 +816,25 @@ www.nytimes.com##.related-links-block
 www.nytimes.com##p:has([href*="/subscription?"])
 
 ! cnn
-cnn.com##*:watch-attr(class):remove-class(news--videofull)
-cnn.com##*:watch-attr(class):remove-class(cnnvideo--sticky)
-cnn.com##*:watch-attr(class):remove-class(single-video-mobile-template)
-cnn.com##*:watch-attr(class):remove-class(story-media)
-cnn.com##*:watch-attr(class):remove-class(fave-top-player)
-cnn.com##*:watch-attr(class):remove-class(fave-mobile)
-cnn.com##*:watch-attr(class):remove-class(mobile-video-sticky-enabled)
+cnn.com#%#//scriptlet('remove-class', 'cnnvideo--sticky', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'news--videofull', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'single-video-mobile-template', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'story-media', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'fave-top-player', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'fave-mobile', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'mobile-video-sticky-enabled', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'ads--international', '', 'stay')
 cnn.com##.story-video-playing.story-video.story-summary.story
 cnn.com##.footer-buttons
 cnn.com##.storyfull__body > ul
 cnn.com##.share__radios
 cnn.com##.headerradio__social
+cnn.com##.story-body > ul
+cnn.com##[id*="js_ad--"]
+
+! muycomputer
+www.muycomputer.com##.relative.right.mvp-post-soc-out > .mvp-soc-mob-up
+
 
 ! numeros-a-letras
 numeros-a-letras.onlinegratis.tv##p
@@ -836,12 +843,13 @@ numeros-a-letras.onlinegratis.tv##footer
 
 ! digitaltoo
 www.digitaltoo.com##[id*="hustle-popup-id-"]
-www.digitaltoo.com##html:watch-attr(class):remove-class(hustle-no-scroll)
+www.digitaltoo.com#%#//scriptlet('remove-class', 'hustle-no-scroll', '', 'stay')
 www.digitaltoo.com##.inline-post
 
 ! muyinteresante
-www.muyinteresante.es##.main_video
 www.muyinteresante.es##.c-detail__share
+www.muyinteresante.es#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
+www.muyinteresante.es##.subscribe-hit
 
 ! hipertextual
 hipertextual.com##.widget_block.widget.above-content
@@ -867,7 +875,7 @@ y2meta.app##.navbar-toggle
 ecoavant.com##html:style(overflow-y: auto !important;)
 
 ! 20minutos
-20minutos.es##body:watch-attr(class):remove-class(didomi-popup-open)
+20minutos.es#%#//scriptlet('remove-class', 'didomi-popup-open', '', 'stay')
 
 ! zdescargas
 zdescargas.org##.icon-box.after-menu
