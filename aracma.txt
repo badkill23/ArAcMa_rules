@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 28 Jan 2024 09:15 UTC-6
-! Version: 28.01.2024rev1
+! Last modified: 29 Jan 2024 18:05 UTC-6
+! Version: 29.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -740,6 +740,8 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.rating
 *##.mdp-stellar
 *##.related-article-content
+! iframe Bypass All Shortlinks
+*##[src="https://menrealitycalc.com/greasyfork"]
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -814,6 +816,27 @@ elpais.com#%#//scriptlet('remove-class', 'mm_ad_module', '', 'stay')
 www.nytimes.com##span:contains(El Times):upward(4)
 www.nytimes.com##.related-links-block
 www.nytimes.com##p:has([href*="/subscription?"])
+||meter-svc.nytimes.com^
+||nytimes.com^*/metered_assets/
+||nyt.com^*/metered_assets$script
+||nytimes.com/svc/nyt/data-layer
+||myaccount.nytimes.com/auth/iframe/*&asset=RegiWall
+||nytimes.com/unified_lire/
+!||nytimes.com/lire_ui/
+nytimes.com##.magnoliaDock
+nytimes.com##div[data-testid="inline-message"]
+nytimes.com##div[data-testid="expanded-dock"]
+nytimes.com##div[data-test-id="RecommendedNewsletter"]
+nytimes.com##.gdpr
+nytimes.com###credential_picker_container
+nytimes.com##[id*="story-ad-"][id*="wrapper"]
+nytimes.com##+js(no-fetch-if, headers:x-nyt-entitlements)
+!#if env_chromium
+nytimes.com##+js(set, navigator.storage.estimate, undefined)
+!#endif
+!#if env_firefox
+nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
+!#endif
 
 ! cnn
 cnn.com#%#//scriptlet('remove-class', 'cnnvideo--sticky', '', 'stay')
@@ -850,6 +873,18 @@ www.digitaltoo.com##.inline-post
 www.muyinteresante.es##.c-detail__share
 www.muyinteresante.es#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
 www.muyinteresante.es##.subscribe-hit
+www.muyinteresante.es##.c-header__aside
+www.muyinteresante.es##.newsletter-btn
+www.muyinteresante.es##.c-detail-sidebar
+www.muyinteresante.es##.ad-placement
+www.muyinteresante.es##.c-detail:style(display: unset !important;)
+www.muyinteresante.es##.u-flex.u-grid-col-span-1
+
+! wradio
+wradio.com.mx##.mh266-100
+
+! elfinanciero
+www.elfinanciero.com.mx##.inline-promo
 
 ! hipertextual
 hipertextual.com##.widget_block.widget.above-content
@@ -876,6 +911,18 @@ ecoavant.com##html:style(overflow-y: auto !important;)
 
 ! 20minutos
 20minutos.es#%#//scriptlet('remove-class', 'didomi-popup-open', '', 'stay')
+www.20minutos.es##.header:style(top: 0 !important;)
+www.20minutos.es##.referal-wrapper:style(border-bottom: unset !important;)
+www.20minutos.es##.header-primary-wrapper:style(border-bottom: unset !important;)
+www.20minutos.es##main:style(width: 100% !important;)
+www.20minutos.es##.container-grid-box:style(justify-content: space-evenly !important;)
+www.20minutos.es##.article-titles:style(text-align: center !important;)
+www.20minutos.es##.header-referal
+www.20minutos.es##.rel
+www.20minutos.es##p:contains(newsletter)
+www.20minutos.es##.trustproject_container
+www.20minutos.es##.article-sidebar.container-grid-cell
+www.20minutos.es##.breaking-news-wrapper
 
 ! zdescargas
 zdescargas.org##.icon-box.after-menu
@@ -1128,6 +1175,10 @@ www.lavanguardia.com##[data-mrf-recirculation="article-box"]
 ! kiwilimon
 www.kiwilimon.com##.wall
 
+! ohmygeek
+ohmygeek.net##.jnews_inline_related_post
+ohmygeek.net##[id*="omgads"]
+
 ! computerhoy
 computerhoy.com##.embed-article_embedAarticle__lIiLk
 
@@ -1142,6 +1193,7 @@ www.nationalgeographic.com.es##aside.subscription-highlighted
 www.nationalgeographic.com.es##.social-footer
 www.nationalgeographic.com.es##.jw-float-to-top
 www.nationalgeographic.com.es#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
+www.nationalgeographic.com##+js(aeld, scroll)
 
 ! nationalgeographic la
 www.nationalgeographicla.com##.css-13dgr6k
