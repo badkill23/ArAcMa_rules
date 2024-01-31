@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 29 Jan 2024 18:05 UTC-6
-! Version: 29.01.2024rev1
+! Last modified: 30 Jan 2024 18:45 UTC-6
+! Version: 30.01.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -884,7 +884,11 @@ www.muyinteresante.es##.u-flex.u-grid-col-span-1
 wradio.com.mx##.mh266-100
 
 ! elfinanciero
-www.elfinanciero.com.mx##.inline-promo
+www.elfinanciero.com.mx##[class*="inline-promo"]
+www.elfinanciero.com.mx##hr
+www.elfinanciero.com.mx##.feed
+www.elfinanciero.com.mx##div.amp-flying-carpet-text-border
+www.elfinanciero.com.mx##.footer-menu
 
 ! hipertextual
 hipertextual.com##.widget_block.widget.above-content
@@ -1102,6 +1106,10 @@ web.whatsapp.com##._64p9P:style(border-left: 0 !important;)
 web.whatsapp.com##._5kRIK:style(border-left: 0 !important;)
 web.whatsapp.com##.AmmtE:style(border-left: 0 !important;)
 web.whatsapp.com##._2lSWV:style(border-left: 0 !important;)
+! quita efectos y animaciones
+web.whatsapp.com#%#//scriptlet('remove-class', 'cssanimations', '', 'stay')
+web.whatsapp.com#%#//scriptlet('remove-class', 'csstransitions', '', 'stay')
+web.whatsapp.com#%#//scriptlet('remove-class', 'webp-animation', '', 'stay')
 
 ! whatsapp
 www.whatsapp.com##._ae_x._9tau._9ta8._9ta5._9ta3._9tar
@@ -1484,6 +1492,9 @@ www.reforma.com###Bloque_EX_RielV
 www.excelsior.com.mx##p:contains(TE RECOMENDAMOS)
 www.excelsior.com.mx##p:contains(Te puede interesar)
 www.excelsior.com.mx###suscription-block
+www.excelsior.com.mx###te-puede-interesar
+www.excelsior.com.mx###tambien-puedes-leer
+www.excelsior.com.mx###comments-block
 
 ! exceltips.wiki
 exceltips.wiki##.alert:contains(Ver también)
@@ -1505,6 +1516,36 @@ aristeguinoticias.com##[class*=wrapperad]:upward(1)
 ! quinto-poder
 quinto-poder.mx##.content-banner
 quinto-poder.mx##.bnn
+
+! mexico.as
+mexico.as.com##.sh-bar
+mexico.as.com##h4:contains(Te puede interesar)
+mexico.as.com##.rel-ss
+mexico.as.com##.wdt-trends--recommended
+mexico.as.com##h4:contains(TAMBIÉN PUEDES LEER)
+mexico.as.com##h4:contains(TE PUEDE INTERESAR)
+mexico.as.com##p:contains(Sigue el canal de Diario AS en WhatsApp)
+mexico.as.com##.flex-d-col.col-12.col-md-4
+
+! arbolabc
+arbolabc.com##[class*="leaderboard-container"]
+arbolabc.com##.related-article-row
+arbolabc.com###blog-author-row
+arbolabc.com##.ReactModalPortal
+
+! informador
+www.informador.mx##.mexico.header__logos
+www.informador.mx##.mod-list
+www.informador.mx##.mod-morenews
+www.informador.mx##ul:contains(No te pierdas)
+www.informador.mx##ul:contains(Te puede interesar)
+www.informador.mx##ul:contains(Además, lee)
+www.informador.mx##p:contains(Mantente al día con las noticias)
+
+! politica.expansion
+politica.expansion.mx##div.RawHtmlModule
+politica.expansion.mx##.CardGrid
+politica.expansion.mx##.authors-module
 
 ! Filtros DNS
 !#include aracmaDNS.txt
