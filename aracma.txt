@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 30 Jan 2024 18:45 UTC-6
-! Version: 30.01.2024rev1
+! Last modified: 01 Feb 2024 07:30 UTC-6
+! Version: 01.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -63,6 +63,11 @@ inscripcion.seppue.gob.mx##div[class^="footer"]
 inscripcion.seppue.gob.mx##div[class^="modal-dialog"]
 inscripcion.seppue.gob.mx##div[class^="modal bootstrap-dialog type-primary fade size-normal in"]
 inscripcion.seppue.gob.mx##div[class^="modal-backdrop fade in"]
+preinscripcion.seppue.gob.mx#%#//scriptlet('remove-attr', 'onload', '', 'stay')
+preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/gobiernoPresente.png"]
+! encabezado de la pagina
+preinscripcion.seppue.gob.mx###undefined-sticky-wrapper
+
 ! repuve
 www2.repuve.gob.mx##body:style(overflow-y: scroll !important)
 www2.repuve.gob.mx##div[class^="swal2-container swal2-center swal2-backdrop-show"]
@@ -303,19 +308,19 @@ www.taenet.com.mx##.menu_section > ul > li:nth-of-type(3) > a
 www.taenet.com.mx##.menu_section > ul > li:nth-of-type(2) > a
 
 ! imagentv
-www.imagentv.com##.m-none.left.node-ads.nodeAds
-www.imagentv.com##.m-none.right.node-ads.nodeAds
-www.imagentv.com##.headerUserInner
-www.imagentv.com##.m-p0.t-cuad-12.m-cuad-12.m-float-none.pr15.pt60.cuad-12.left
-www.imagentv.com###landingSchedule
-www.imagentv.com##.footer
-!www.imagentv.com##.list_envivo:style(width: 100% !important;)
-www.imagentv.com###headerMain:style(display: none !important;)
-www.imagentv.com##div#wrapp:style(padding-top: 150px !important;)
-www.imagentv.com##.nodeMain_wrapper:style(justify-content: space-evenly !important;)
-www.imagentv.com##html:style(background: black !important;)
-www.imagentv.com##html:style(overflow: hidden !important;)
-www.imagentv.com##.wrapper-description
+www.imagentv.com/en-vivo##.m-none.left.node-ads.nodeAds
+www.imagentv.com/en-vivo##.m-none.right.node-ads.nodeAds
+www.imagentv.com/en-vivo##.headerUserInner
+www.imagentv.com/en-vivo##.m-p0.t-cuad-12.m-cuad-12.m-float-none.pr15.pt60.cuad-12.left
+www.imagentv.com/en-vivo###landingSchedule
+www.imagentv.com/en-vivo##.footer
+!www.imagentv.com/en-vivo##.list_envivo:style(width: 100% !important;)
+www.imagentv.com/en-vivo###headerMain:style(display: none !important;)
+www.imagentv.com/en-vivo##div#wrapp:style(padding-top: 150px !important;)
+www.imagentv.com/en-vivo##.nodeMain_wrapper:style(justify-content: space-evenly !important;)
+www.imagentv.com/en-vivo##html:style(background: black !important;)
+www.imagentv.com/en-vivo##html:style(overflow: hidden !important;)
+www.imagentv.com/en-vivo##.wrapper-description
 www.imagentv.com#%#//scriptlet('remove-class', 'limited', '', 'stay')
 www.imagentv.com#%#//scriptlet('remove-class', 'dblock', '', 'stay')
 
@@ -358,6 +363,7 @@ lrepacks.net#?#article:has([href*="/876-keysfan-sales-gifts-best-prices.html"])
 lrepacks.net#?#article:has([href*="/743-podderzhka-proekta.html"])
 lrepacks.net##ul[class^="block-with-icons"]
 lrepacks.net##li:has([href*="-premium-"])
+lrepacks.net###footer
 
 ! rsload
 rsload.net##div.short:has([href*="/35894-arenda-servera-2023-god.html"])
@@ -1546,6 +1552,39 @@ www.informador.mx##p:contains(Mantente al día con las noticias)
 politica.expansion.mx##div.RawHtmlModule
 politica.expansion.mx##.CardGrid
 politica.expansion.mx##.authors-module
+
+! justexw
+justexw.com##.single-content.entry-content > div
+
+! portalexcel
+portalexcel.com##.jeg_popup_post
+portalexcel.com##[href="https://portalexcel.com/curso-basico-de-excel"] > [src="https://portalexcel.com/wp-content/uploads/2023/08/curso-basico-de-excel-1.png"]
+
+! excel-dashboards
+excel-dashboards.com##.sidenavright
+
+! ionos
+www.ionos.es###bio_ep_reworked
+www.ionos.es###bio_ep_reworked_bg
+
+! eldiariodechihuahua
+www.eldiariodechihuahua.mx##.nota_interes_grandes
+www.eldiariodechihuahua.mx##.publicidad_basica
+www.eldiariodechihuahua.mx##[href^="https://duckduckgo.com/"]
+www.eldiariodechihuahua.mx##.publicidad_w
+www.eldiariodechihuahua.mx###content_nota_relacionado
+www.eldiariodechihuahua.mx##.publicidad_ads
+www.eldiariodechihuahua.mx##.nota_articulos_interesar
+
+! infobae
+www.infobae.com##.recommended-card
+www.infobae.com##.social-copy
+
+! telediario
+www.telediario.mx##[data-mrf-recirculation*="Nota Recomendada"]
+www.telediario.mx##.footer__socials-ul
+www.telediario.mx##.nd-disclaimer-base
+www.telediario.mx##.content-columns__right
 
 ! Filtros DNS
 !#include aracmaDNS.txt
