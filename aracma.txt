@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 01 Feb 2024 07:30 UTC-6
-! Version: 01.02.2024rev1
+! Last modified: 02 Feb 2024 08:25 UTC-6
+! Version: 02.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -67,6 +67,8 @@ preinscripcion.seppue.gob.mx#%#//scriptlet('remove-attr', 'onload', '', 'stay')
 preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/gobiernoPresente.png"]
 ! encabezado de la pagina
 preinscripcion.seppue.gob.mx###undefined-sticky-wrapper
+! siged CCT
+siged.sep.gob.mx##.section
 
 ! repuve
 www2.repuve.gob.mx##body:style(overflow-y: scroll !important)
@@ -777,14 +779,17 @@ esbarrio.com###social-links
 
 ! wired
 es.wired.com##.oneTrust_btn
+es.wired.com##.linkstack
+es.wired.com##.social-icons__list
 
 ! fost.ws
 ||tarload.site/uv2.js$script,domain=fost.ws
 
 ! milenio
-www.milenio.com###signwall
-www.milenio.com##html:style(overflow: auto !important;)
-www.milenio.com##body:style(overflow: visible !important;)
+!www.milenio.com###signwall
+!www.milenio.com##html:style(overflow: auto !important;)
+!www.milenio.com##body:style(overflow: visible !important;)
+||tinypass.com^$domain=milenio.com
 www.milenio.com###comments-container
 www.milenio.com##.nd-related-news-detail-media-dual
 www.milenio.com##.social-media
@@ -802,7 +807,7 @@ www.milenio.com###main-footer > .content
 www.milenio.com##.column-right
 www.milenio.com##.column-left:style(width: 100% !important;)
 www.milenio.com##span > [href="/suscripciones/notificaciones"]
-||id.tinypass.com/id/api/v1/identity/token/verify$script,domain=milenio.com
+!||id.tinypass.com/id/api/v1/identity/token/verify$script,domain=milenio.com
 
 ! elpais
 elpais.com##[id="ctn_freemium_article"]
@@ -1369,6 +1374,9 @@ www.tvazteca.com##.Page-footer
 www.tvazteca.com###container-banner
 www.tvazteca.com##.CreativeWorkPage-actions
 www.tvazteca.com##div.LoginProviders-panel
+www.tvazteca.com#%#//scriptlet('remove-attr', 'data-loginconfig', '', 'stay')
+www.tvazteca.com#%#//scriptlet('remove-attr', 'data-loginform', '', 'stay')
+www.tvazteca.com##.ArticlePage-customFinalText
 
 ! parfana
 parfana.net##.mt10.container-fluid.containers > .row
@@ -1585,6 +1593,12 @@ www.telediario.mx##[data-mrf-recirculation*="Nota Recomendada"]
 www.telediario.mx##.footer__socials-ul
 www.telediario.mx##.nd-disclaimer-base
 www.telediario.mx##.content-columns__right
+
+! formulasexcel
+formulasexcel.com##.pum-active.click_open.auto_open.popmake-overlay.pum-theme-lightbox.pum-theme-5476.pum-overlay.pum
+
+! thespreadsheetguru
+www.thespreadsheetguru.com##.custom-imgs
 
 ! Filtros DNS
 !#include aracmaDNS.txt
