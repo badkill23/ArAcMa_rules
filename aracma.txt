@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 02 Feb 2024 08:25 UTC-6
-! Version: 02.02.2024rev1
+! Last modified: 04 Feb 2024 12:25 UTC-6
+! Version: 04.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -64,6 +64,7 @@ inscripcion.seppue.gob.mx##div[class^="modal-dialog"]
 inscripcion.seppue.gob.mx##div[class^="modal bootstrap-dialog type-primary fade size-normal in"]
 inscripcion.seppue.gob.mx##div[class^="modal-backdrop fade in"]
 preinscripcion.seppue.gob.mx#%#//scriptlet('remove-attr', 'onload', '', 'stay')
+preinscripcion.seppue.gob.mx#%#//scriptlet('remove-class', 'modal-open', '', 'stay')
 preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/gobiernoPresente.png"]
 ! encabezado de la pagina
 preinscripcion.seppue.gob.mx###undefined-sticky-wrapper
@@ -767,12 +768,12 @@ www.eluniversal.com.mx##.sidebar
 www.eluniversal.com.mx##.si__body
 www.eluniversal.com.mx##.coupons__container
 www.eluniversal.com.mx##.short_reviews
+www.eluniversal.com.mx##p:contains(Lee También)
+www.eluniversal.com.mx##.paywallContentTitle
 
 ! bbc
-www.bbc.com##figure.bbc-1qn0xuy
-www.bbc.com##p:contains(Y recuerda)
-www.bbc.com##p:contains(Haz clic aquí)
-www.bbc.com##.evvt9po0.bbc-acwcvw
+www.bbc.com##p:contains(Haz clic para leer más historias de BBC News Mundo.)
+www.bbc.com##p:contains(Recuerda que puedes recibir notificaciones de BBC )
 
 ! esbarrio
 esbarrio.com###social-links
@@ -868,6 +869,7 @@ cnn.com##[id*="js_ad--"]
 
 ! muycomputer
 www.muycomputer.com##.relative.right.mvp-post-soc-out > .mvp-soc-mob-up
+www.muycomputer.com###mvp-prev-next-wrap
 
 
 ! numeros-a-letras
@@ -881,15 +883,30 @@ www.digitaltoo.com#%#//scriptlet('remove-class', 'hustle-no-scroll', '', 'stay')
 www.digitaltoo.com##.inline-post
 
 ! muyinteresante
-www.muyinteresante.es##.c-detail__share
-www.muyinteresante.es#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
-www.muyinteresante.es##.subscribe-hit
-www.muyinteresante.es##.c-header__aside
-www.muyinteresante.es##.newsletter-btn
-www.muyinteresante.es##.c-detail-sidebar
-www.muyinteresante.es##.ad-placement
-www.muyinteresante.es##.c-detail:style(display: unset !important;)
-www.muyinteresante.es##.u-flex.u-grid-col-span-1
+www.muyinteresante.*##.c-detail__share
+www.muyinteresante.*##.subscribe-hit
+www.muyinteresante.*##.newsletter-btn
+www.muyinteresante.*##.c-detail-sidebar
+www.muyinteresante.*##.ad-placement
+www.muyinteresante.*##.c-detail:style(display: unset !important;)
+www.muyinteresante.*##.u-flex.u-grid-col-span-1
+www.muyinteresante.*##.add-no-mobile
+www.muyinteresante.*##.free-html
+www.muyinteresante.*##.c-detail__box
+www.muyinteresante.*##.c-header__aside
+www.muyinteresante.*##.henneoHB_mobile
+www.muyinteresante.*##.henneoHB_desktop
+www.muyinteresante.*##p:contains(Te sugerimos:)
+www.muyinteresante.*##p:contains(También lee:)
+www.muyinteresante.*##p:contains(Te puede interesar:)
+www.muyinteresante.*##p:contains(Te puede gustar:)
+www.muyinteresante.*##p:contains(Te interesa:)
+www.muyinteresante.*##p:contains(No dejes de leer:)
+www.muyinteresante.*#%#//scriptlet('remove-class', 'jw-flag-floating', '', 'stay')
+www.muyinteresante.*#%#//scriptlet('remove-class', 'jw-flag-small-player', '', 'stay')
+||www.muyinteresante.es/static/js/custom_js_muy.js$script,domain=www.muyinteresante.*
+||cdn.jwplayer.com/libraries/CoGiJVnr.js$script,domain=www.muyinteresante.*
+||hb.20m.es/stable/config/xk.zinetmedia.es/muyinteresante.es/desktop-mobile.min.js$script,domain=www.muyinteresante.*
 
 ! wradio
 wradio.com.mx##.mh266-100
@@ -1083,6 +1100,9 @@ twitter.com##.css-175oi2r.r-k200y:style(align-self: center !important;)
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
 ! block Facebook Stories from News Feed
 facebook.com##[aria-posinset] [href^="/stories/"][href*="source=from_feed"]:upward([aria-posinset])
+facebook.com#%#//scriptlet('remove-class', 'MobileSafari', '', 'stay')
+facebook.com#%#//scriptlet('remove-class', 'iOS', '', 'stay')
+facebook.com##div.displayed.m:contains(Publicidad)
 
 ! digitaltrends
 digitaltrends.com##div[class^="b-related-links"]
@@ -1509,6 +1529,7 @@ www.excelsior.com.mx###suscription-block
 www.excelsior.com.mx###te-puede-interesar
 www.excelsior.com.mx###tambien-puedes-leer
 www.excelsior.com.mx###comments-block
+www.excelsior.com.mx##p:contains(Te recomendamos)
 
 ! exceltips.wiki
 exceltips.wiki##.alert:contains(Ver también)
@@ -1555,6 +1576,12 @@ www.informador.mx##ul:contains(No te pierdas)
 www.informador.mx##ul:contains(Te puede interesar)
 www.informador.mx##ul:contains(Además, lee)
 www.informador.mx##p:contains(Mantente al día con las noticias)
+www.informador.mx##li:contains(TE PUEDE INTERESAR)
+www.informador.mx##li:contains(QUIZÁ QUIERAS LEER)
+www.informador.mx##li:contains(PUEDES LEER)
+www.informador.mx##li:contains(TAMBIÉN LEE)
+www.informador.mx##li:contains(LEE)
+||cdn.ampproject.org/v0.js$script,domain=informador.mx
 
 ! politica.expansion
 politica.expansion.mx##div.RawHtmlModule
@@ -1593,6 +1620,12 @@ www.telediario.mx##[data-mrf-recirculation*="Nota Recomendada"]
 www.telediario.mx##.footer__socials-ul
 www.telediario.mx##.nd-disclaimer-base
 www.telediario.mx##.content-columns__right
+
+! diario.mx
+diario.mx##[title="Try and find a proper version of this page"]
+diario.mx##[src*="https://diario.mx/gasolina/img_movil.jpg?"]
+diario.mx##[src*="https://diario.mx/jrz/media/img/banners_taltal_gas/"]
+||cdn.jsdelivr.net/npm/vue/dist/vue.js$script,domain=diario.mx
 
 ! formulasexcel
 formulasexcel.com##.pum-active.click_open.auto_open.popmake-overlay.pum-theme-lightbox.pum-theme-5476.pum-overlay.pum
