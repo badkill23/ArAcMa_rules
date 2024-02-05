@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 05 Feb 2024 13:40 UTC-6
-! Version: 05.02.2024rev1
+! Last modified: 05 Feb 2024 15:10 UTC-6
+! Version: 05.02.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -478,7 +478,6 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##[class*="suggested-content"]
 *##[class^="accessibility_open"]
 *##[class*="twitter-timeline"]
-*##[class*="block-social"]
 *##div>ul:has-text(/Te recomendamos/)
 *##[href*="/donate/"]
 *##[href*="/donate"]
@@ -501,8 +500,6 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##[action^="https://www.paypal.com/donate"]
 *##[class*="paypal-button"]
 *##[id^="layerAppsWrapper"]
-*##div>a:has-text(/LEA TAMBIÉN/)
-*##div>a:has-text(/Puede servirte/)
 *##div>a:has-text(/LEA TAMBIÉN/)
 *##div>a:has-text(/Puede servirte/)
 *##p:has-text(/TE PUEDE INTERESAR/)
@@ -642,7 +639,6 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.expand.floating-footer
 ###elFooterSocialLinks
 *##h3:has-text("Follow Us")
-*##h3:has-text(/Suscríbete/)
 *##h3:has-text(/Síguenos/)
 ##.bottomFooter
 ###chat-teaser-box
@@ -716,11 +712,8 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 ###reactions_section
 ##.medias
 ##.mwm_rrss_contenedor
-*##p:contains(Also Read:)
-*##p:contains(Recommended:)
 ##.optinforms-form-container
 *##.social-icons__list
-*##.oneTrust_btn
 ##.jl_socialcolor
 ##.jl_single_share_wrapper
 ##.jl_auth_link
@@ -740,28 +733,53 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 ##div.in-article-container
 ! Blank space instead of Video Ads
 ##.article-asset-video
-*##p:contains(Read:)
-*##p:contains(Related:)
 *##.icon-list
 *##[href*="privacychoices"]
 *##.soc-ico
 *##.banner-cursos-online-latam
 *##a:contains(Privacy Choices)
-*##p:contains(Also See)
 ##.section__social
 *##.oneTrust_btn
 ##.wpra-reactions-wrap
 ##.kenta-socials
-*##p:contains(See also)
-*##p:contains(See Also)
-*##p:contains(Vea también)
 ##._social-share-container
-##p:contains(Similar)
 *##.rating
 *##.mdp-stellar
 *##.related-article-content
 ! iframe Bypass All Shortlinks
 *##[src="https://menrealitycalc.com/greasyfork"]
+! Sugerencias de articulos
+*##p:contains(Also Read:)
+*##p:contains(Recommended:)
+*##p:contains(See Also)
+*##p:contains(Vea también)
+##p:contains(Similar)
+*##p:contains(Read:)
+*##p:contains(Related:)
+*##p:contains(Also See)
+*##p:contains(Lee También)
+*##p:contains(Te sugerimos:)
+*##p:contains(También lee:)
+*##p:contains(Te puede interesar:)
+*##p:contains(Te puede gustar:)
+*##p:contains(Te interesa:)
+*##p:contains(No dejes de leer:)
+*##p:contains(TE RECOMENDAMOS)
+*##p:contains(Te puede interesar)
+*##p:contains(Te recomendamos)
+*##p:contains(Ver también)
+*##p:contains(TAMBIÉN PUEDES LEER)
+*##p:contains(TE PUEDE INTERESAR)
+*##ul:contains(No te pierdas)
+*##ul:contains(Te puede interesar)
+*##ul:contains(Además, lee)
+*##li:contains(TE PUEDE INTERESAR)
+*##li:contains(QUIZÁ QUIERAS LEER)
+*##li:contains(PUEDES LEER)
+*##li:contains(TAMBIÉN LEE)
+*##li:contains(LEE)
+*##p:contains(Lee:)
+*##p:contains(También puedes leer:)
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -779,7 +797,6 @@ www.eluniversal.com.mx##.sidebar
 www.eluniversal.com.mx##.si__body
 www.eluniversal.com.mx##.coupons__container
 www.eluniversal.com.mx##.short_reviews
-www.eluniversal.com.mx##p:contains(Lee También)
 www.eluniversal.com.mx##.paywallContentTitle
 
 ! bbc
@@ -1187,6 +1204,7 @@ correotemporal.org##article
 correotemporal.org##.bg-dark-subtle.py-3
 correotemporal.org###message-fixed
 correotemporal.org##.text-justify
+
 ! tempail
 tempail.com##section.gri-bg.tam-konteyner:nth-of-type(3)
 tempail.com##section.tam-konteyner:nth-of-type(4)
@@ -1541,6 +1559,7 @@ www.excelsior.com.mx###te-puede-interesar
 www.excelsior.com.mx###tambien-puedes-leer
 www.excelsior.com.mx###comments-block
 www.excelsior.com.mx##p:contains(Te recomendamos)
+www.excelsior.com.mx##p:contains(También puedes leer:)
 
 ! exceltips.wiki
 exceltips.wiki##.alert:contains(Ver también)
@@ -1592,6 +1611,7 @@ www.informador.mx##li:contains(QUIZÁ QUIERAS LEER)
 www.informador.mx##li:contains(PUEDES LEER)
 www.informador.mx##li:contains(TAMBIÉN LEE)
 www.informador.mx##li:contains(LEE)
+www.informador.mx##p:contains(Lee:)
 ||cdn.ampproject.org/v0.js$script,domain=informador.mx
 
 ! politica.expansion
@@ -1646,6 +1666,10 @@ www.thespreadsheetguru.com##.custom-imgs
 
 ! yelitzonpc
 yelitzonpc.com##.show-check-also
+
+! internetizado
+www.internetizado.com##p:contains(Podría interesarte:)
+www.internetizado.com##.star-rating:upward(.flex)
 
 ! Filtros DNS
 !#include aracmaDNS.txt
