@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 04 Feb 2024 22:25 UTC-6
-! Version: 04.02.2024rev2
+! Last modified: 05 Feb 2024 13:40 UTC-6
+! Version: 05.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -296,6 +296,10 @@ www.bing.com##[class="actions"]
 www.bing.com###sacs_window
 www.bing.com###b_sydTigerCont > cib-serp.cib-serp-main
 www.bing.com###b_results > li.b_ans
+www.bing.com##[aria-label*="Try Copilot for"]
+www.bing.com###sa_zis_PN
+www.bing.com##[stype="PLQ"]
+www.bing.com##.b_wpt_creator
 www.msn.com##[class="card-action"]
 www.msn.com##[id="feedback-link-button"]
 www.msn.com##[instance-id="CodexBingChat"]
@@ -309,6 +313,14 @@ www.taenet.com.mx##.sidebar_main_header
 www.taenet.com.mx##[href="ActualizacionFacturacion"]
 www.taenet.com.mx##.menu_section > ul > li:nth-of-type(3) > a
 www.taenet.com.mx##.menu_section > ul > li:nth-of-type(2) > a
+www.taenet.com.mx#%#//scriptlet('remove-class', 'cssanimations', '', 'stay')
+www.taenet.com.mx#%#//scriptlet('remove-class', 'csstransitions', '', 'stay')
+www.taenet.com.mx#%#//scriptlet('remove-class', 'cssgradients', '', 'stay')
+www.taenet.com.mx#%#//scriptlet('remove-class', 'cssreflections', '', 'stay')
+www.taenet.com.mx#%#//scriptlet('remove-class', 'smil', '', 'stay')
+www.taenet.com.mx#%#//scriptlet('remove-class', 'boxshadow', '', 'stay')
+www.taenet.com.mx#%#//scriptlet('remove-class', 'textshadow', '', 'stay')
+www.taenet.com.mx#%#//scriptlet('remove-class', 'canvastext', '', 'stay')
 
 ! imagentv
 www.imagentv.com/en-vivo##.m-none.left.node-ads.nodeAds
@@ -367,6 +379,7 @@ lrepacks.net#?#article:has([href*="/743-podderzhka-proekta.html"])
 lrepacks.net##ul[class^="block-with-icons"]
 lrepacks.net##li:has([href*="-premium-"])
 lrepacks.net###footer
+lrepacks.net#%#//scriptlet('remove-class', 'animated', 'body', 'stay')
 
 ! rsload
 rsload.net##div.short:has([href*="/35894-arenda-servera-2023-god.html"])
@@ -490,12 +503,10 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##[id^="layerAppsWrapper"]
 *##div>a:has-text(/LEA TAMBIÉN/)
 *##div>a:has-text(/Puede servirte/)
-*##p:has-text(/TE PUEDE INTERESAR/):upward(1)
-*##p:has-text(/Advertisement/):upward(1)
 *##div>a:has-text(/LEA TAMBIÉN/)
 *##div>a:has-text(/Puede servirte/)
-*##p:has-text(/TE PUEDE INTERESAR/):upward(1)
-*##p:has-text(/Advertisement/):upward(1)
+*##p:has-text(/TE PUEDE INTERESAR/)
+*##p:has-text(/Advertisement/)
 *##p:has-text(/Síguenos en/):upward(1)
 *##h4:has-text(/Síguenos en/):upward(1)
 *##a:has-text(/suscríbete/):upward(1)
@@ -504,7 +515,7 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##span:has-text(/Suscríbete/)
 *##[class*="-siguenos-"]
 *##p:has-text(/Siguenos/):upward(1)
-*##p:has-text(/Valora este contenido/):upward(1)
+*##p:has-text(/Valora este contenido/)
 *##[alt="Newslwtter"]
 *##[class^="exit-intent-popup"]
 *##[data-testid^="assistant"]
@@ -773,7 +784,7 @@ www.eluniversal.com.mx##.paywallContentTitle
 
 ! bbc
 www.bbc.com##p:contains(Haz clic para leer más historias de BBC News Mundo.)
-www.bbc.com##p:contains(Recuerda que puedes recibir notificaciones de BBC )
+www.bbc.com##p:contains(puedes recibir notificaciones)
 
 ! esbarrio
 esbarrio.com###social-links
@@ -1632,6 +1643,9 @@ formulasexcel.com##.pum-active.click_open.auto_open.popmake-overlay.pum-theme-li
 
 ! thespreadsheetguru
 www.thespreadsheetguru.com##.custom-imgs
+
+! yelitzonpc
+yelitzonpc.com##.show-check-also
 
 ! Filtros DNS
 !#include aracmaDNS.txt
