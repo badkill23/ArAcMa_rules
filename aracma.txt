@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 05 Feb 2024 15:10 UTC-6
-! Version: 05.02.2024rev2
+! Last modified: 06 Feb 2024 11:45 UTC-6
+! Version: 06.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -780,6 +780,9 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##li:contains(LEE)
 *##p:contains(Lee:)
 *##p:contains(También puedes leer:)
+*##li:contains(Artículo relacionado:)
+*##p:contains(NO TE PIERDAS:)
+*##p:contains(te recomienda:)
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -1118,11 +1121,16 @@ twitter.com##[href$="/verified-choose"]
 twitter.com##[href$="/settings/monetization"]
 !spaces
 !||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true
+||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true$xhr,1p
 ! icono perfil
 twitter.com##[data-testid="Tweet-User-Avatar"]:upward(1)
 twitter.com##.css-175oi2r.r-18kxxzh.r-1b7u577.r-onrtq4.r-1awozwy
 ! centrar contenido
 twitter.com##.css-175oi2r.r-k200y:style(align-self: center !important;)
+! quita a quien seguir
+!twitter.com##[data-testid="cellInnerDiv"] h2:has-text(Who to follow)
+!twitter.com##[data-testid="UserCell"]
+!twitter.com##[data-testid="cellInnerDiv"] [href^="/i/connect_people"]
 
 ! facebook
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
@@ -1178,6 +1186,7 @@ telcel.com##div[class^="comp-telcel-banner-superior"]
 telcel.com##div[class^="comp-telcel-chatbot"]
 telcel.com##div[class^="comp-telcel-banner-rotativo"]
 telcel.com##div[class^="text parbase section"]
+www.telcel.com###QSIFeedbackButton-btn
 
 ! elcomercio
 elcomercio.pe##blockquote.story-contents__blockquote
@@ -1426,6 +1435,14 @@ www.tvazteca.com##div.LoginProviders-panel
 www.tvazteca.com#%#//scriptlet('remove-attr', 'data-loginconfig', '', 'stay')
 www.tvazteca.com#%#//scriptlet('remove-attr', 'data-loginform', '', 'stay')
 www.tvazteca.com##.ArticlePage-customFinalText
+www.tvazteca.com#%#//scriptlet('remove-attr', 'data-bsp-plugin', '', 'stay')
+www.tvazteca.com##.PortalNavigation
+www.tvazteca.com##.Page-header:style(top: unset !important;)
+
+! azteca puebla
+www.aztecapuebla.com#%#//scriptlet('remove-attr', 'data-loginconfig', '', 'stay')
+www.aztecapuebla.com##.PortalNavigation
+www.aztecapuebla.com##.Page-header:style(top: unset !important;)
 
 ! parfana
 parfana.net##.mt10.container-fluid.containers > .row
@@ -1560,6 +1577,9 @@ www.excelsior.com.mx###tambien-puedes-leer
 www.excelsior.com.mx###comments-block
 www.excelsior.com.mx##p:contains(Te recomendamos)
 www.excelsior.com.mx##p:contains(También puedes leer:)
+www.excelsior.com.mx##[id*="-viralize-wide-wrapper"]
+www.excelsior.com.mx##[id*="funcion-cont"]
+www.excelsior.com.mx##p:contains(NO TE PIERDAS:)
 
 ! exceltips.wiki
 exceltips.wiki##.alert:contains(Ver también)
@@ -1670,6 +1690,10 @@ yelitzonpc.com##.show-check-also
 ! internetizado
 www.internetizado.com##p:contains(Podría interesarte:)
 www.internetizado.com##.star-rating:upward(.flex)
+
+! vogue
+www.vogue.mx##[data-testid="external-link-embed--inline"]
+www.vogue.mx##.grid-layout__aside
 
 ! Filtros DNS
 !#include aracmaDNS.txt
