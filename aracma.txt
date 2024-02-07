@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 06 Feb 2024 19:25 UTC-6
-! Version: 06.02.2024rev2
+! Last modified: 07 Feb 2024 11:05 UTC-6
+! Version: 07.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -783,6 +783,8 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##li:contains(Artículo relacionado:)
 *##p:contains(NO TE PIERDAS:)
 *##p:contains(te recomienda:)
+*##p:contains(Lee también:)
+*##.entrada__link-related
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -1120,8 +1122,7 @@ twitter.com##[aria-label="Premium"]
 twitter.com##[href$="/verified-choose"]
 twitter.com##[href$="/settings/monetization"]
 !spaces
-!||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true
-||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true$xhr,1p
+||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true
 ! icono perfil
 twitter.com##[data-testid="Tweet-User-Avatar"]:upward(1)
 twitter.com##.css-175oi2r.r-18kxxzh.r-1b7u577.r-onrtq4.r-1awozwy
@@ -1703,6 +1704,17 @@ www.internetizado.com##.star-rating:upward(.flex)
 ! vogue
 www.vogue.mx##[data-testid="external-link-embed--inline"]
 www.vogue.mx##.grid-layout__aside
+
+! mundodeportivo
+www.mundodeportivo.com##.recomendado-incrustado
+
+! manualidades.innatia
+manualidades.innatia.com##.entrada__link-related
+manualidades.innatia.com##p:contains(Lee también:)
+
+! noticiasrcn
+www.noticiasrcn.com###ads-inread
+www.noticiasrcn.com##[id*="-compuesto-movil"]
 
 ! Filtros DNS
 !#include aracmaDNS.txt
