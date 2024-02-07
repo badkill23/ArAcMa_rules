@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 06 Feb 2024 11:45 UTC-6
-! Version: 06.02.2024rev1
+! Last modified: 06 Feb 2024 19:25 UTC-6
+! Version: 06.02.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -323,19 +323,19 @@ www.taenet.com.mx#%#//scriptlet('remove-class', 'textshadow', '', 'stay')
 www.taenet.com.mx#%#//scriptlet('remove-class', 'canvastext', '', 'stay')
 
 ! imagentv
-www.imagentv.com/en-vivo##.m-none.left.node-ads.nodeAds
-www.imagentv.com/en-vivo##.m-none.right.node-ads.nodeAds
-www.imagentv.com/en-vivo##.headerUserInner
-www.imagentv.com/en-vivo##.m-p0.t-cuad-12.m-cuad-12.m-float-none.pr15.pt60.cuad-12.left
-www.imagentv.com/en-vivo###landingSchedule
-www.imagentv.com/en-vivo##.footer
-!www.imagentv.com/en-vivo##.list_envivo:style(width: 100% !important;)
-www.imagentv.com/en-vivo###headerMain:style(display: none !important;)
-www.imagentv.com/en-vivo##div#wrapp:style(padding-top: 150px !important;)
-www.imagentv.com/en-vivo##.nodeMain_wrapper:style(justify-content: space-evenly !important;)
-www.imagentv.com/en-vivo##html:style(background: black !important;)
-www.imagentv.com/en-vivo##html:style(overflow: hidden !important;)
-www.imagentv.com/en-vivo##.wrapper-description
+www.imagentv.com##.m-none.left.node-ads.nodeAds
+www.imagentv.com##.m-none.right.node-ads.nodeAds
+www.imagentv.com##.headerUserInner
+www.imagentv.com##.m-p0.t-cuad-12.m-cuad-12.m-float-none.pr15.pt60.cuad-12.left
+www.imagentv.com###landingSchedule
+www.imagentv.com##.footer
+!www.imagentv.com##.list_envivo:style(width: 100% !important;)
+www.imagentv.com###headerMain:style(display: none !important;)
+www.imagentv.com##div#wrapp:style(padding-top: 150px !important;)
+www.imagentv.com##.nodeMain_wrapper:style(justify-content: space-evenly !important;)
+www.imagentv.com##html:style(background: black !important;)
+www.imagentv.com##html:style(overflow: hidden !important;)
+www.imagentv.com##.wrapper-description
 www.imagentv.com#%#//scriptlet('remove-class', 'limited', '', 'stay')
 www.imagentv.com#%#//scriptlet('remove-class', 'dblock', '', 'stay')
 
@@ -1568,6 +1568,9 @@ www.reforma.com###Bloque_EX_Suscripcion2
 www.reforma.com###Bloque_IN_Publicidad_Main
 www.reforma.com###Bloque_EX_RielV
 
+! mvsnoticias
+mvsnoticias.com##.hidden-m.col--sidebar
+
 ! excelsior
 www.excelsior.com.mx##p:contains(TE RECOMENDAMOS)
 www.excelsior.com.mx##p:contains(Te puede interesar)
@@ -1596,7 +1599,13 @@ tecnoprogramas.com##.banner
 www.mediafire.com###subFooterSocial
 
 ! aristeguinoticias
-aristeguinoticias.com##[class*=wrapperad]:upward(1)
+aristeguinoticias.com##[class*=wrapperad]
+
+! diariocambio
+www.diariocambio.com.mx##.socialIcons
+
+! angulo7
+www.angulo7.com.mx##blockquote.wp-embedded-content
 
 ! quinto-poder
 quinto-poder.mx##.content-banner
