@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 07 Feb 2024 19:45 UTC-6
-! Version: 07.02.2024rev2
+! Last modified: 08 Feb 2024 09:00 UTC-6
+! Version: 08.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -790,6 +790,8 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.entrada__link-related
 *##p:contains(Puedes leer:)
 *##p:contains(Revisa:)
+*##p:contains(Leer también:)
+*##p:contains(Te podría interesar)
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -808,6 +810,7 @@ www.eluniversal.com.mx##.si__body
 www.eluniversal.com.mx##.coupons__container
 www.eluniversal.com.mx##.short_reviews
 www.eluniversal.com.mx##.paywallContentTitle
+www.eluniversal.com.mx##p:contains(Leer también:)
 
 ! eluniversalpuebla
 www.eluniversalpuebla.com.mx##.si__body
@@ -1304,19 +1307,21 @@ www.nationalgeographic.com##+js(aeld, scroll)
 www.nationalgeographicla.com##.css-13dgr6k
 
 ! periodicocentral
-periodicocentral.mx##[id^="lx_"]
-periodicocentral.mx##[data-widgetid="19724"]
-periodicocentral.mx##div[class^="newspack-newsletters-subscribe"]
-periodicocentral.mx##div[class^="clAdPlacementAnchor"]
-periodicocentral.mx##.BelowPost.custom-html-22333.custom-html
-periodicocentral.mx##.BelowPost.custom-html-22322.custom-html
-periodicocentral.mx##.BelowPost.custom-html-21683.custom-html
-periodicocentral.mx##.BelowPost.custom-html-19728.custom-html
-periodicocentral.mx##.BelowPost.custom-html-22313.custom-html
-periodicocentral.mx##div[class*="google-news-wrap"]
-periodicocentral.mx##footer[id*="footer"]
-periodicocentral.mx##div[class*="cl-social cl-social-widget cl-social-20115 cl-social-positioning-center cl-social-title-positioning-left"]
-periodicocentral.mx##.custom-html-extra:has(a[href*="http://www.ficomics.buap.mx/portal/"])
+www.periodicocentral.mx##[id^="lx_"]
+www.periodicocentral.mx##[data-widgetid="19724"]
+www.periodicocentral.mx##div[class^="newspack-newsletters-subscribe"]
+www.periodicocentral.mx##div[class^="clAdPlacementAnchor"]
+www.periodicocentral.mx##.BelowPost.custom-html-22333.custom-html
+www.periodicocentral.mx##.BelowPost.custom-html-22322.custom-html
+www.periodicocentral.mx##.BelowPost.custom-html-21683.custom-html
+www.periodicocentral.mx##.BelowPost.custom-html-19728.custom-html
+www.periodicocentral.mx##.BelowPost.custom-html-22313.custom-html
+www.periodicocentral.mx##div[class*="google-news-wrap"]
+www.periodicocentral.mx##footer[id*="footer"]
+www.periodicocentral.mx##div[class*="cl-social cl-social-widget cl-social-20115 cl-social-positioning-center cl-social-title-positioning-left"]
+www.periodicocentral.mx##.custom-html-extra:has(a[href*="http://www.ficomics.buap.mx/portal/"])
+www.periodicocentral.mx##p:contains(MANTENTE AL DÍA CON TODO)
+www.periodicocentral.mx##[href="https://promociones.estrellaroja.com.mx/"]
 
 ! rt
 actualidad.rt.com##section.Grid-container:nth-of-type(2)
@@ -1471,6 +1476,10 @@ www.tvazteca.com##.Page-header:style(top: unset !important;)
 www.aztecapuebla.com#%#//scriptlet('remove-attr', 'data-loginconfig', '', 'stay')
 www.aztecapuebla.com##.PortalNavigation
 www.aztecapuebla.com##.Page-header:style(top: unset !important;)
+www.aztecapuebla.com##.ArticlePage-customFinalText
+www.aztecapuebla.com###LoginForm
+www.aztecapuebla.com##.Page-footer
+www.aztecapuebla.com##.CreativeWorkPage-actions
 
 ! parfana
 parfana.net##.mt10.container-fluid.containers > .row
@@ -1708,6 +1717,13 @@ www.telediario.mx##[data-mrf-recirculation*="Nota Recomendada"]
 www.telediario.mx##.footer__socials-ul
 www.telediario.mx##.nd-disclaimer-base
 www.telediario.mx##.content-columns__right
+www.telediario.mx###pushNotification-disclaimer
+
+! imagenradio
+www.imagenradio.com.mx##.shares_class
+www.imagenradio.com.mx##.share-wrapper
+www.imagenradio.com.mx##.block-que-opinas
+www.imagenradio.com.mx##.nuestras-redes
 
 ! diario.mx
 diario.mx##[title="Try and find a proper version of this page"]
