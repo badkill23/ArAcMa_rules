@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 07 Feb 2024 11:05 UTC-6
-! Version: 07.02.2024rev1
+! Last modified: 07 Feb 2024 19:45 UTC-6
+! Version: 07.02.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -746,8 +746,11 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.rating
 *##.mdp-stellar
 *##.related-article-content
+*##.si__body
+
 ! iframe Bypass All Shortlinks
 *##[src="https://menrealitycalc.com/greasyfork"]
+
 ! Sugerencias de articulos
 *##p:contains(Also Read:)
 *##p:contains(Recommended:)
@@ -785,6 +788,8 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##p:contains(te recomienda:)
 *##p:contains(Lee también:)
 *##.entrada__link-related
+*##p:contains(Puedes leer:)
+*##p:contains(Revisa:)
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -804,9 +809,27 @@ www.eluniversal.com.mx##.coupons__container
 www.eluniversal.com.mx##.short_reviews
 www.eluniversal.com.mx##.paywallContentTitle
 
+! eluniversalpuebla
+www.eluniversalpuebla.com.mx##.si__body
+www.eluniversalpuebla.com.mx##.share
+
+! sanluis.eluniversal
+sanluis.eluniversal.com.mx##p:contains(Puedes leer:)
+
+! viveusa
+www.viveusa.mx##.si__body
+
+! latinus
+latinus.us##p:contains(Revisa:)
+
+! reporteindigo
+www.reporteindigo.com##[id*="_ad"]
+www.reporteindigo.com##[id*="cc_smartads-"]
+
 ! bbc
 www.bbc.com##p:contains(Haz clic para leer más historias de BBC News Mundo.)
 www.bbc.com##p:contains(puedes recibir notificaciones)
+www.bbc.com##p:contains(Haz clic aquí para leer más historias de)
 
 ! esbarrio
 esbarrio.com###social-links
@@ -841,7 +864,11 @@ www.milenio.com###main-footer > .content
 www.milenio.com##.column-right
 www.milenio.com##.column-left:style(width: 100% !important;)
 www.milenio.com##span > [href="/suscripciones/notificaciones"]
+www.milenio.com#%#//scriptlet('remove-attr', 'data-controller', 'ul[class="eo-tv-program__container"]')
 !||id.tinypass.com/id/api/v1/identity/token/verify$script,domain=milenio.com
+
+! elimparcial
+www.elimparcial.com##[class*="recommended-card-container"]
 
 ! elpais
 elpais.com##[id="ctn_freemium_article"]
