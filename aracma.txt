@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 days
-! Last modified: 08 Feb 2024 09:00 UTC-6
-! Version: 08.02.2024rev1
+! Last modified: 09 Feb 2024 19:20 UTC-6
+! Version: 09.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -301,6 +301,8 @@ www.bing.com###sa_zis_PN
 www.bing.com##[stype="PLQ"]
 www.bing.com##.b_wpt_creator
 www.msn.com##[class="card-action"]
+www.bing.com##.bordertop
+! msn
 www.msn.com##[id="feedback-link-button"]
 www.msn.com##[instance-id="CodexBingChat"]
 www.msn.com##[class*="feedback_link"]
@@ -504,14 +506,11 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##div>a:has-text(/Puede servirte/)
 *##p:has-text(/TE PUEDE INTERESAR/)
 *##p:has-text(/Advertisement/)
-*##p:has-text(/Síguenos en/):upward(1)
-*##h4:has-text(/Síguenos en/):upward(1)
-*##a:has-text(/suscríbete/):upward(1)
-*##h2:has-text(/Síguenos en/):upward(div)
-*##a:has-text(/Suscríbete/)
+*##h4:has-text(/Síguenos en/)
+*##h2:has-text(/Síguenos en/)
+*##a:has-text(/uscríbete/)
 *##span:has-text(/Suscríbete/)
 *##[class*="-siguenos-"]
-*##p:has-text(/Siguenos/):upward(1)
 *##p:has-text(/Valora este contenido/)
 *##[alt="Newslwtter"]
 *##[class^="exit-intent-popup"]
@@ -536,7 +535,7 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##div>p:has-text(/Quizá te gusté/):upward(1)
 *##[class^="networking"]
 *##h4:has-text(/edes sociales/)
-*##h3:has-text(/edes Sociales/):upward(1)
+*##h3:has-text(/edes Sociales/)
 *##[data-display-name="SocialShare"]
 *##[data-display-name="Newsletter"]
 *##[class*="social-links"]
@@ -558,12 +557,12 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##b:has-text(/Recomendado/)
 *##[class^="accessibilityClass"]
 *##[class*="btn-paypal"]
-##.widget_social_apps
-##.social_link
-##.social-icons
-##.social.social-footer
-##.author-social_profiles
-##[href$="ko-fi.com/4download"]
+*##.widget_social_apps
+*##.social_link
+*##.social-icons
+*##.social.social-footer
+*##.author-social_profiles
+*##[href$="ko-fi.com/4download"]
 *##.contenido-redes-sociales:upward(1)
 *##.tdm-social-item-wrap:upward(3)
 *##.tdb-author-social
@@ -576,173 +575,173 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.icon-holder-social:upward(1)
 *##.icon-holder-device:upward(1)
 *###dailymotion-pip-large-viewport
-##.social-link
-##.css-1v5xah6
-##.sg-social
-##.ShareList
-##.boxsocial
-##.share
+*##.social-link
+*##.css-1v5xah6
+*##.sg-social
+*##.ShareList
+*##.boxsocial
+*##.share
 *##[id*="publicidad"]
 *##.rayabtn
-##.siguenos_footer
-##.elementor-widget-social-icons
-##.elementor-social-icons-wrapper
-##.elementor-widget-share-buttons:upward(1)
-##.sfsi_Sicons
+*##.siguenos_footer
+*##.elementor-widget-social-icons
+*##.elementor-social-icons-wrapper
+*##.elementor-widget-share-buttons:upward(1)
+*##.sfsi_Sicons
 *##h4:has-text(/Share this/)
-##.show_share
-##.heateor_sss_follow_ul
-##.kofi-button
-##.fa-twitter.fab
-##.fa-facebook.fab
-##.fab.mvp-author-box-soc
-##.newsletter-box
-##.header__social
-##.newsfull__share-buttons
-##.footer__social
-##.td-social-icon-wrap
-##.footer-social-wrap
-##.subscribe-button
-###membership_sidebar
-##.header_sm_buttons
-##.donate_button
-##.donate_message
-##.subscribe-hit
-##.c-footer__share
-###ctn_premium_article
-##.fo_en_redes
-##.share-buttons-style-two 
-##.newsletter
-##.memberful-post-container
-##.like-newsletter
-##.membership-link
+*##.show_share
+*##.heateor_sss_follow_ul
+*##.kofi-button
+*##.fa-twitter.fab
+*##.fa-facebook.fab
+*##.fab.mvp-author-box-soc
+*##.newsletter-box
+*##.header__social
+*##.newsfull__share-buttons
+*##.footer__social
+*##.td-social-icon-wrap
+*##.footer-social-wrap
+*##.subscribe-button
+*###membership_sidebar
+*##.header_sm_buttons
+*##.donate_button
+*##.donate_message
+*##.subscribe-hit
+*##.c-footer__share
+*###ctn_premium_article
+*##.fo_en_redes
+*##.share-buttons-style-two 
+*##.newsletter
+*##.memberful-post-container
+*##.like-newsletter
+*##.membership-link
 *##.comments-social-share-mobile
 *##a.kofi-button
-##.redes
-###btn-soporte
-##.essb-block
-##.feedback-binded
-##.info-networks
+*##.redes
+*###btn-soporte
+*##.essb-block
+*##.feedback-binded
+*##.info-networks
 *##ins[class="adsbygoogle"]
-##[name*="chatbot"]
-##.app-footer__social
-##.footer-social-inner-wrap
-###slidebox
-##.social-cl
-##.socialNetwork
-##.banners-ecp
-##.m-footer__bottombar__left__social
-##h3:has-text(/Suscríbete/)
-##.btnsplyr
-##.jetpack_widget_social_icons
-##.content-social
+*##[name*="chatbot"]
+*##.app-footer__social
+*##.footer-social-inner-wrap
+*###slidebox
+*##.social-cl
+*##.socialNetwork
+*##.banners-ecp
+*##.m-footer__bottombar__left__social
+*##h3:has-text(/Suscríbete/)
+*##.btnsplyr
+*##.jetpack_widget_social_icons
+*##.content-social
 *##.expand.floating-footer
-###elFooterSocialLinks
+*###elFooterSocialLinks
 *##h3:has-text("Follow Us")
 *##h3:has-text(/Síguenos/)
-##.bottomFooter
-###chat-teaser-box
-##.circle_social
-##.mzp-c-footer-links-social > li
-##.donate
-##[href*="/ko-fi.com/"]
-##.nv-social-icons-list
-##.nv-post-share
-##.phpdebugbar
+*##.bottomFooter
+*###chat-teaser-box
+*##.circle_social
+*##.mzp-c-footer-links-social > li
+*##.donate
+*##[href*="/ko-fi.com/"]
+*##.nv-social-icons-list
+*##.nv-post-share
+*##.phpdebugbar
 *##[href$="/membresia-vip/"]:upward(.container-wrapper)
-###glt-translate-trigger
-##.social-profiles
-##.social_icon
-##.footer-wrapper_branding-social
+*###glt-translate-trigger
+*##.social-profiles
+*##.social_icon
+*##.footer-wrapper_branding-social
 *##form:has(button[name="subscribe"]):upward(1)
-##.footer-follow
-##.footer-social-link
-##.mks_social_widget
-##.fa-facebook-square
-##.fa-twitter-square
-###whatsapp-dialog
-##.app-header > .d-block.d-md-none
-##.share-article-card
-##[id="reactions__container"]
-##[id="didomi-host"]
-##.compartir-articulo
-##.about-share
-##.share-section
-##.sm_links
-##.icon-share
-##[class*="relacionada"]
-##[class*="relacionados"]
-##[class*="next-post"]
-##[class*="anuncio-"]
-##[class*="suscripcion"]
-###scrollRecomendacion
-##.meta_right
-##[data-testid*="onsite-messaging"]
-##[aria-label*="Social Media Share buttons"]
-##[id*="btn_share"]
-*#?#a:contains(Suscribirse)
-##.btn-redes-sociales
-###chat-button
-##.redesBox
-##.iconos-redes
-*#?#.widget:contains(Síguenos)
-##.footer-follow-us
-##.privacy-choices-link
-##.menu-icon-fb
-##.menu-icon-tw
-##.youtubechannelgallery
-*#?#aside:contains(Follow)
-##.fa-instagram
-##.share-container
-##.social-platform
-##.get-news-title
-##.share-party
-##.newsletter-dialog-link
-##[class*="footer-social"]
+*##.footer-follow
+*##.footer-social-link
+*##.mks_social_widget
+*##.fa-facebook-square
+*##.fa-twitter-square
+*###whatsapp-dialog
+*##.app-header > .d-block.d-md-none
+*##.share-article-card
+*##[id="reactions__container"]
+*##[id="didomi-host"]
+*##.compartir-articulo
+*##.about-share
+*##.share-section
+*##.sm_links
+*##.icon-share
+*##[class*="relacionada"]
+*##[class*="relacionados"]
+*##[class*="next-post"]
+*##[class*="anuncio-"]
+*##[class*="suscripcion"]
+*###scrollRecomendacion
+*##.meta_right
+*##[data-testid*="onsite-messaging"]
+*##[aria-label*="Social Media Share buttons"]
+*##[id*="btn_share"]
+*##a:contains(Suscribirse)
+*##.btn-redes-sociales
+*###chat-button
+*##.redesBox
+*##.iconos-redes
+*##.widget:contains(Síguenos)
+*##.footer-follow-us
+*##.privacy-choices-link
+*##.menu-icon-fb
+*##.menu-icon-tw
+*##.youtubechannelgallery
+*##aside:contains(Follow)
+*##.fa-instagram
+*##.share-container
+*##.social-platform
+*##.get-news-title
+*##.share-party
+*##.newsletter-dialog-link
+*##[class*="footer-social"]
 !smallpdf
-##.dCbDug.sc-1vdvga6-1
-##[data-e2e*="recommendations"]
+*##.dCbDug.sc-1vdvga6-1
+*##[data-e2e*="recommendations"]
 *##h6:contains(Follow)
 *##h3:contains(Follow)
-##.feed-newsletter-ficha
-##.social-share-contenedor
-##.list-socials
-##.social-column
-##.slide-down.notification-subs
-###reactions_section
-##.medias
-##.mwm_rrss_contenedor
-##.optinforms-form-container
+*##.feed-newsletter-ficha
+*##.social-share-contenedor
+*##.list-socials
+*##.social-column
+*##.slide-down.notification-subs
+*###reactions_section
+*##.medias
+*##.mwm_rrss_contenedor
+*##.optinforms-form-container
 *##.social-icons__list
-##.jl_socialcolor
-##.jl_single_share_wrapper
-##.jl_auth_link
-##[class*="social-list_container"]
-##.f-social
+*##.jl_socialcolor
+*##.jl_single_share_wrapper
+*##.jl_auth_link
+*##[class*="social-list_container"]
+*##.f-social
 *##[title="Banner"]:upward(2)
-##.element-social-inner-wrap
-##[class*="footer_social"]
-##[class*="social-networks"]
-##[class*="social_icon"]
+*##.element-social-inner-wrap
+*##[class*="footer_social"]
+*##[class*="social-networks"]
+*##[class*="social_icon"]
 *###share-to-social
-##.reaction-section
-##[class*="rating-widget"]
-##.social-follower
-##.topbar-social
+*##.reaction-section
+*##[class*="rating-widget"]
+*##.social-follower
+*##.topbar-social
 ! Blank space instead of GoogleAds
-##div.in-article-container
+*##div.in-article-container
 ! Blank space instead of Video Ads
-##.article-asset-video
+*##.article-asset-video
 *##.icon-list
 *##[href*="privacychoices"]
 *##.soc-ico
 *##.banner-cursos-online-latam
 *##a:contains(Privacy Choices)
-##.section__social
+*##.section__social
 *##.oneTrust_btn
-##.wpra-reactions-wrap
-##.kenta-socials
-##._social-share-container
+*##.wpra-reactions-wrap
+*##.kenta-socials
+*##._social-share-container
 *##.rating
 *##.mdp-stellar
 *##.related-article-content
@@ -792,6 +791,10 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##p:contains(Revisa:)
 *##p:contains(Leer también:)
 *##p:contains(Te podría interesar)
+*##.teinteresa
+*##p:contains(/Síguenos en/)
+*##p:contains(/Siguenos en/)
+
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -1758,6 +1761,13 @@ manualidades.innatia.com##p:contains(Lee también:)
 ! noticiasrcn
 www.noticiasrcn.com###ads-inread
 www.noticiasrcn.com##[id*="-compuesto-movil"]
+
+! elgrupoinformatico
+www.elgrupoinformatico.com##.teinteresa
+
+! eleconomista
+www.eleconomista.com.mx##.botonera.jsx-3384469762
+www.eleconomista.com.mx##.footer__aside
 
 ! Filtros DNS
 !#include aracmaDNS.txt
