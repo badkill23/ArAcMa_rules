@@ -2,9 +2,9 @@
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
-! Expires: 5 days
-! Last modified: 09 Feb 2024 19:20 UTC-6
-! Version: 09.02.2024rev1
+! Expires: 3 days
+! Last modified: 11 Feb 2024 20:05 UTC-6
+! Version: 11.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -94,6 +94,8 @@ cevar.registrocivil.gob.mx##.page > .container:style(background: none !important
 cevar.registrocivil.gob.mx##header
 ! puebla.gob.mx
 rl.puebla.gob.mx##.footer-bottom
+! usicmm.gob.mx
+uscmm.gob.mx##.socialside23
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -266,6 +268,9 @@ nmas.com.mx##.Grid_social_media_wrapper__O95P2
 nmas.com.mx##.viewGrid.Grid_wrapper_vix__N7uvH
 nmas.com.mx##.Footer_social_network_list__6u_bS:upward(1)
 nmas.com.mx##.BloqueNewsletter_newsletter__ex4im
+www.nmas.com.mx##[class*="SocialShareButtons"]
+www.nmas.com.mx##[class*="BannerWhatsApp"]
+www.nmas.com.mx##[class*="Advertising_advertising__DivAds"]
 
 ! bing
 www.bing.com##.slide-in.b_widgetContainer
@@ -718,7 +723,7 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.jl_auth_link
 *##[class*="social-list_container"]
 *##.f-social
-*##[title="Banner"]:upward(2)
+*##[title="Banner"]
 *##.element-social-inner-wrap
 *##[class*="footer_social"]
 *##[class*="social-networks"]
@@ -779,7 +784,7 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##li:contains(QUIZÁ QUIERAS LEER)
 *##li:contains(PUEDES LEER)
 *##li:contains(TAMBIÉN LEE)
-*##li:contains(LEE)
+*##li:contains(LEE:)
 *##p:contains(Lee:)
 *##p:contains(También puedes leer:)
 *##li:contains(Artículo relacionado:)
@@ -792,8 +797,13 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##p:contains(Leer también:)
 *##p:contains(Te podría interesar)
 *##.teinteresa
-*##p:contains(/Síguenos en/)
-*##p:contains(/Siguenos en/)
+*##p:contains(Síguenos en)
+*##p:contains(Siguenos en)
+*##aside:contains(Get your FREE ebook)
+*##[class*="Advertising_advertising__DivAds"]
+*##p:contains(Sigue leyendo:)
+*##.newsletter-btn
+*##.social-media
 
 
 ! eluniversal
@@ -886,6 +896,7 @@ elpais.com##.fo_en_redes
 elpais.com##.icon_social_twitter
 elpais.com##.fo_app
 elpais.com###s_b_mb
+elpais.com##i:contains(newsletter)
 elpais.com#%#//scriptlet('remove-class', 'mm_ad_module', '', 'stay')
 ||elpais.com/arc/subs/p.min.js
 ||ak-ads-ns.prisasd.com/slot/elpais/slot.js$script,domain=elpais.com
@@ -1761,6 +1772,7 @@ manualidades.innatia.com##p:contains(Lee también:)
 ! noticiasrcn
 www.noticiasrcn.com###ads-inread
 www.noticiasrcn.com##[id*="-compuesto-movil"]
+www.noticiasrcn.com##.social-media
 
 ! elgrupoinformatico
 www.elgrupoinformatico.com##.teinteresa
@@ -1768,6 +1780,17 @@ www.elgrupoinformatico.com##.teinteresa
 ! eleconomista
 www.eleconomista.com.mx##.botonera.jsx-3384469762
 www.eleconomista.com.mx##.footer__aside
+
+! vidacontecnologia
+vidacontecnologia.com##.enlazatom-title-box
+vidacontecnologia.com##.enlazatom-show-box
+
+
+! elsoldepuebla
+||www.elsoldepuebla.com.mx/static/theme/solmx/base/img/nuestros_sitios_mobile-right.svg$image
+www.elsoldepuebla.com.mx##.share-group
+www.elsoldepuebla.com.mx##.newsletter-btn
+www.elsoldepuebla.com.mx##.item-redes
 
 ! Filtros DNS
 !#include aracmaDNS.txt
