@@ -3,11 +3,18 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 11 Feb 2024 20:05 UTC-6
-! Version: 11.02.2024rev1
+! Last modified: 12 Feb 2024 18:00 UTC-6
+! Version: 12.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
+! inicio-update120224
+listonic.com##[class*="Sidebar_privacyWrapper"]
+listonic.com##[class*="socialMediaButtons"]
+listonic.com##button:contains(Consigue la aplicación)
+listonic.com##[class*="FooterMobile_container"]
+new.app.listonic.com##p:contains(¡Descárgalo en tu dispositivo!):upward(4)
+! fin-update120224
 listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
 listonic.com##div[class^="flex flex-col w-auto Sidebar_privacyWrapper__a52W5"]
 listonic.com##div[class^="flex flex-col w-auto DownloadNotification_container__oTdOo"]
@@ -751,6 +758,14 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.mdp-stellar
 *##.related-article-content
 *##.si__body
+*##.newsletter-btn
+*##.social-media
+*##[class*="star-ratings"]
+*##.ratings-wrapper
+*##.social-icons-header
+*##.ad-contentbanner
+*##[class*="feedback__wrapper"]
+*##.feedback
 
 ! iframe Bypass All Shortlinks
 *##[src="https://menrealitycalc.com/greasyfork"]
@@ -802,8 +817,7 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##aside:contains(Get your FREE ebook)
 *##[class*="Advertising_advertising__DivAds"]
 *##p:contains(Sigue leyendo:)
-*##.newsletter-btn
-*##.social-media
+*##p:contains(También te puede interesar:)
 
 
 ! eluniversal
@@ -1791,6 +1805,11 @@ vidacontecnologia.com##.enlazatom-show-box
 www.elsoldepuebla.com.mx##.share-group
 www.elsoldepuebla.com.mx##.newsletter-btn
 www.elsoldepuebla.com.mx##.item-redes
+
+! somoscosmos
+somoscosmos.com##hr
+somoscosmos.com##p:contains(Si quieres conocer otros artículos parecidos)
+somoscosmos.com##.widget-area:contains(Nuestras Redes)
 
 ! Filtros DNS
 !#include aracmaDNS.txt
