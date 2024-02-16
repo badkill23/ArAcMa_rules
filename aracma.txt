@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 12 Feb 2024 18:00 UTC-6
-! Version: 12.02.2024rev1
+! Last modified: 16 Feb 2024 12:05 UTC-6
+! Version: 16.02.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -818,6 +818,14 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##[class*="Advertising_advertising__DivAds"]
 *##p:contains(Sigue leyendo:)
 *##p:contains(También te puede interesar:)
+*##blockquote:contains(Artículo recomendado:)
+*##.card-related
+*##.article-recommend
+*##p:contains(También te puede interesar)
+*##blockquote:contains(Artículo recomendado:)
+*##p:contains(Relacionado:)
+*##li:contains(Te recomendamos leer:)
+*##.recomendado-incrustado
 
 
 ! eluniversal
@@ -1087,6 +1095,7 @@ tunein.com##+js(set-cookie, hideMobileOverlay, true, , reload, 1)
 www.megawarez.org##.lazyloaded.entered.size-full.wp-image-66552.alignnone
 www.megawarez.org##.has-icon.has-text.is-large.join-link.components-button
 www.megawarez.org##div[class^="widget w2"]
+www.megawarez.org##article:contains(Donaciones)
 ||www.megawarez.org/bg_1.png
 
 ! programasvirtualespc
@@ -1190,6 +1199,8 @@ twitter.com##.css-175oi2r.r-k200y:style(align-self: center !important;)
 !twitter.com##[data-testid="cellInnerDiv"] h2:has-text(Who to follow)
 !twitter.com##[data-testid="UserCell"]
 !twitter.com##[data-testid="cellInnerDiv"] [href^="/i/connect_people"]
+! Activar notificaciones
+twitter.com##span:contains(Activar notificaciones):upward([data-testid="cellInnerDiv"])
 
 ! facebook
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
@@ -1778,6 +1789,9 @@ www.vogue.mx##.grid-layout__aside
 
 ! mundodeportivo
 www.mundodeportivo.com##.recomendado-incrustado
+www.mundodeportivo.com##.ad
+www.mundodeportivo.com##.visible
+www.mundodeportivo.com##p:contains(También te puede interesar)
 
 ! manualidades.innatia
 manualidades.innatia.com##.entrada__link-related
@@ -1805,11 +1819,19 @@ vidacontecnologia.com##.enlazatom-show-box
 www.elsoldepuebla.com.mx##.share-group
 www.elsoldepuebla.com.mx##.newsletter-btn
 www.elsoldepuebla.com.mx##.item-redes
+www.elsoldepuebla.com.mx##.social-media-footer
 
 ! somoscosmos
 somoscosmos.com##hr
 somoscosmos.com##p:contains(Si quieres conocer otros artículos parecidos)
 somoscosmos.com##.widget-area:contains(Nuestras Redes)
+
+! lamenteesmaravillosa
+lamenteesmaravillosa.com##.card-related
+
+! psicologiaymente
+psicologiaymente.com##blockquote:contains(Artículo recomendado:)
+psicologiaymente.com##[class~="prose-unprose"]
 
 ! Filtros DNS
 !#include aracmaDNS.txt
