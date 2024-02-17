@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 16 Feb 2024 12:05 UTC-6
-! Version: 16.02.2024rev1
+! Last modified: 16 Feb 2024 20:00 UTC-6
+! Version: 16.02.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -1832,6 +1832,10 @@ lamenteesmaravillosa.com##.card-related
 ! psicologiaymente
 psicologiaymente.com##blockquote:contains(Artículo recomendado:)
 psicologiaymente.com##[class~="prose-unprose"]
+
+! medicoplus
+medicoplus.com##li:contains(Te recomendamos leer:)
+
 
 ! Filtros DNS
 !#include aracmaDNS.txt
