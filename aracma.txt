@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 16 Feb 2024 20:00 UTC-6
-! Version: 16.02.2024rev2
+! Last modified: 30 Mar 2024 08:30 UTC-6
+! Version: 30.03.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -100,9 +100,14 @@ cevar.registrocivil.gob.mx##body:style(background: none !important;)
 cevar.registrocivil.gob.mx##.page > .container:style(background: none !important;)
 cevar.registrocivil.gob.mx##header
 ! puebla.gob.mx
-rl.puebla.gob.mx##.footer-bottom
+srl.puebla.gob.mx##.footer-bottom
 ! usicmm.gob.mx
 uscmm.gob.mx##.socialside23
+! imssbienestar
+app-registro.imssbienestar.gob.mx###toppage
+! imss
+www.imss.gob.mx##.region-topheader
+www.imss.gob.mx##.mdp-hover-none
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -314,6 +319,7 @@ www.bing.com##[stype="PLQ"]
 www.bing.com##.b_wpt_creator
 www.msn.com##[class="card-action"]
 www.bing.com##.bordertop
+www.bing.com###b_pag_sh_btn_container
 ! msn
 www.msn.com##[id="feedback-link-button"]
 www.msn.com##[instance-id="CodexBingChat"]
@@ -826,6 +832,7 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##p:contains(Relacionado:)
 *##li:contains(Te recomendamos leer:)
 *##.recomendado-incrustado
+*##[id*="related-articles"]
 
 
 ! eluniversal
@@ -1085,6 +1092,8 @@ tunein.com##.leftSide-module__upsellButtonContainer___fOE5Z
 tunein.com##.right-side-module__container___QoVHu
 tunein.com##.ad-cell-module__ad___xyJuW
 tunein.com##.ad-cell-module__container___phfcP
+tunein.com#%#//scriptlet('remove-class', 'mobile', '', 'stay')
+tunein.com###windowsDesktopLinkContainer
 ! appmobile
 tunein.com##+js(set-cookie, hideMobileOverlay, true, , reload, 1)
 
@@ -1209,6 +1218,7 @@ facebook.com##[aria-posinset] [href^="/stories/"][href*="source=from_feed"]:upwa
 facebook.com#%#//scriptlet('remove-class', 'MobileSafari', '', 'stay')
 facebook.com#%#//scriptlet('remove-class', 'iOS', '', 'stay')
 facebook.com##div.displayed.m:contains(Publicidad)
+facebook.com#%#//scriptlet('set-constant', 'Object.prototype.scrubber', 'undefined')
 
 ! digitaltrends
 digitaltrends.com##div[class^="b-related-links"]
