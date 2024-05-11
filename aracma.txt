@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 05 May 2024 11:50 UTC-6
-! Version: 05.05.2024rev1
+! Last modified: 10 May 2024 20:00 UTC-6
+! Version: 10.05.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -1255,7 +1255,8 @@ web.whatsapp.com##div._aohj > ._ajvb._ajv7 > .xurb0ha.xwib8y2.x1sxyh0.x1y1aw1k._
 ! btn anunciar en Facebook menu desplegable
 web.whatsapp.com##li._aj-_._aj-q._aj-r:nth-of-type(4)
 ! btn anuncios en menu herramientas
-web.whatsapp.com##div.xwib8y2.x1y1aw1k.xcsjwe9.x1q0q8m5.xso031l:nth-of-type(2)
+web.whatsapp.com##div.xwib8y2.x1y1aw1k.xcsjwe9.x1q0q8m5.xso031l:has([title="Anuncios"])
+web.whatsapp.com##div.xwib8y2.x1y1aw1k:contains(Publica una promoción)
 ! quita bordes blancos
 web.whatsapp.com##._8nE1Y:style(border-top: 0 !important;)
 web.whatsapp.com##._64p9P:style(border-left: 0 !important;)
@@ -1514,6 +1515,8 @@ sinube.mx##div.sqs-row.row:nth-of-type(2) > .span-12.sqs-col-12.col
 
 ! deezer
 deezer.com##[href="/mx/concerts"]
+! cartel sin conexion internet
+www.deezer.com##.css-1bg4k38
 
 ! ionos
 ionos.mx###bio_ep_reworked_bg
@@ -1860,6 +1863,9 @@ psicologiaymente.com##[class~="prose-unprose"]
 
 ! medicoplus
 medicoplus.com##li:contains(Te recomendamos leer:)
+
+! katfile
+katfile.com##p:has([href*="/bmjidc.xyz/?"])
 
 
 ! Filtros DNS
