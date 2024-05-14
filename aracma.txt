@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 10 May 2024 20:05 UTC-6
-! Version: 10.05.2024rev2
+! Last modified: 14 May 2024 17:30 UTC-6
+! Version: 14.05.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -1166,7 +1166,7 @@ twitter.com#@#div[data-testid="BottomBar"]
 twitter.com##div[data-testid="FloatingActionButtonBase"]
 ! btn replay
 !twitter.com##div[data-testid="reply"]:upward(1)
-twitter.com##div[data-testid="reply"]:upward(.css-175oi2r.r-18u37iz.r-1h0z5md.r-13awgt0)
+twitter.com##[data-testid="reply"]:upward(.css-175oi2r.r-18u37iz.r-1h0z5md.r-13awgt0)
 ! quita borde gris
 twitter.com##.css-175oi2r:style(border:0px !important;)
 ! oculta borde nueva pub
