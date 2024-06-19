@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 18 Jun 2024 14:40 UTC-6
-! Version: 18.06.2024rev4
+! Last modified: 19 Jun 2024 08:20 UTC-6
+! Version: 19.06.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -285,6 +285,8 @@ nmas.com.mx##.BloqueNewsletter_newsletter__ex4im
 www.nmas.com.mx##[class*="SocialShareButtons"]
 www.nmas.com.mx##[class*="BannerWhatsApp"]
 www.nmas.com.mx##[class*="Advertising_advertising__DivAds"]
+! chatbot
+||go.botmaker.com/rest/webchat/$xhr
 nmas.com.mx##[class="chatbot-div"]
 www.nmas.com.mx##p:contains(Noticia relacionada)
 
