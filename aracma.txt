@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 19 Jun 2024 08:20 UTC-6
-! Version: 19.06.2024rev1
+! Last modified: 23 Jun 2024 07:20 UTC-6
+! Version: 23.06.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -1220,6 +1220,8 @@ twitter.com##.css-175oi2r.r-k200y:style(align-self: center !important;)
 !twitter.com##[data-testid="cellInnerDiv"] [href^="/i/connect_people"]
 ! Activar notificaciones
 twitter.com##span:contains(Activar notificaciones):upward([data-testid="cellInnerDiv"])
+! navbar Grok
+twitter.com##[href="/i/grok"]
 
 ! facebook
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
