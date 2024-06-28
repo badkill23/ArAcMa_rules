@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 23 Jun 2024 07:20 UTC-6
-! Version: 23.06.2024rev1
+! Last modified: 28 Jun 2024 10:20 UTC-6
+! Version: 28.06.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -93,6 +93,10 @@ becasbenitojuarez.gob.mx##footer
 consultas.curp.gob.mx##header.container
 consultas.curp.gob.mx##.footer
 ||consultas.curp.gob.mx/CurpSP/preparaEncuesta.do$popup,1p
+! CURP Crypto ERROR
+||www.gob.mx/_sec/cp_challenge/ak-challenge-4-5.js$script,1p
+! btn fantasma descarga CURP Movil
+www.gob.mx##.clearfix.top-buffer.col-md-12
 ! becasbenitojuarez
 buscador.becasbenitojuarez.gob.mx##.header
 buscador.becasbenitojuarez.gob.mx##.print.internal.font-changer.hidden-xs
