@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 29 Jun 2024 12:00 UTC-6
-! Version: 29.06.2024rev1
+! Last modified: 17 Jul 2024 11:05 UTC-6
+! Version: 17.07.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -93,8 +93,8 @@ becasbenitojuarez.gob.mx##footer
 consultas.curp.gob.mx##header.container
 consultas.curp.gob.mx##.footer
 ||consultas.curp.gob.mx/CurpSP/preparaEncuesta.do$popup,1p
-! btn fantasma descarga CURP Movil
-!www.gob.mx##.clearfix.top-buffer.col-md-12
+! ceypto CURP
+||www.gob.mx/_sec/cp_challenge/
 ! becasbenitojuarez
 buscador.becasbenitojuarez.gob.mx##.header
 buscador.becasbenitojuarez.gob.mx##.print.internal.font-changer.hidden-xs
@@ -332,6 +332,9 @@ www.bing.com###b_pag_sh_btn_container
 www.bing.com###b_phead_chat
 ! bton busqueda inteligente
 www.bing.com##.b_phead_sh_link
+! sugerencia en busqueda Prueba copilot
+www.bing.com##li.sa_cb_btm:contains(Prueba Copilot)
+
 ! msn
 www.msn.com##[id="feedback-link-button"]
 www.msn.com##[instance-id="CodexBingChat"]
@@ -1262,13 +1265,17 @@ web.whatsapp.com##._amil._am-_
 ! btn canales menu
 web.whatsapp.com##div._ajvb._ajv5._ajv7:has([aria-label="Canales"])
 !web.whatsapp.com##div._ajvb._ajv5._ajv7:nth-of-type(4)
+web.whatsapp.com##._ajv7>[aria-label="Canales"]
 ! btn comunidades menu
 web.whatsapp.com##div._ajvb._ajv5._ajv7:has([aria-label="Comunidades"])
 !web.whatsapp.com##div._ajvb._ajv5._ajv7:nth-of-type(2)
+web.whatsapp.com##._ajv7>[aria-label="Comunidades"]
 ! btn anunciar en Facebook menu
 web.whatsapp.com##div._aohj > ._ajvb._ajv7 > .xurb0ha.xwib8y2.x1sxyh0.x1y1aw1k._ajv6
 ! btn anunciar en Facebook menu desplegable
 web.whatsapp.com##li._aj-_._aj-q._aj-r:nth-of-type(4)
+web.whatsapp.com##._ajv7>[aria-label="Anunciar en Facebook"]
+web.whatsapp.com##li._aj-_._aj-q._aj-r>[aria-label="Anunciar en Facebook"]
 ! btn anuncios en menu herramientas
 web.whatsapp.com##div.xwib8y2.x1y1aw1k.xcsjwe9.x1q0q8m5.xso031l:has([title="Anuncios"])
 web.whatsapp.com##div.xwib8y2.x1y1aw1k:contains(Publica una promoción)
@@ -1279,9 +1286,9 @@ web.whatsapp.com##._5kRIK:style(border-left: 0 !important;)
 web.whatsapp.com##.AmmtE:style(border-left: 0 !important;)
 web.whatsapp.com##._2lSWV:style(border-left: 0 !important;)
 ! quita efectos y animaciones
-!web.whatsapp.com#%#//scriptlet('remove-class', 'cssanimations', '', 'stay')
-!web.whatsapp.com#%#//scriptlet('remove-class', 'csstransitions', '', 'stay')
-!web.whatsapp.com#%#//scriptlet('remove-class', 'webp-animation', '', 'stay')
+web.whatsapp.com#%#//scriptlet('remove-class', 'cssanimations', '', 'stay')
+web.whatsapp.com#%#//scriptlet('remove-class', 'csstransitions', '', 'stay')
+web.whatsapp.com#%#//scriptlet('remove-class', 'webp-animation', '', 'stay')
 
 ! whatsapp
 www.whatsapp.com##._ae_x._9tau._9ta8._9ta5._9ta3._9tar
