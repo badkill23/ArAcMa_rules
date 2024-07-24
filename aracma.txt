@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 17 Jul 2024 11:05 UTC-6
-! Version: 17.07.2024rev1
+! Last modified: 24 Jul 2024 07:28 UTC-6
+! Version: 24.07.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -112,6 +112,8 @@ app-registro.imssbienestar.gob.mx###toppage
 ! imss
 www.imss.gob.mx##.region-topheader
 www.imss.gob.mx##.mdp-hover-none
+! boton de accesibilidad IMSS
+||serviciosdigitales.imss.gob.mx/delta/resources/readabler/
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -1250,6 +1252,8 @@ web.whatsapp.com##li[data-testid^="ad-creation-menu-item"]
 web.whatsapp.com##.oteuebma.cmcp1to6.nc5t0wl8.fbgy3m38.oq31bsqd:has([title="Anuncios"])
 ! splash home
 web.whatsapp.com##div[class^="_3SOOk"]
+! logo chats
+web.whatsapp.com##._al_n
 ! btn reaction
 !web.whatsapp.com##div[data-testid*="reaction-entry-point"]
 !web.whatsapp.com##div[aria-label="Reaccionar"]
@@ -1285,10 +1289,32 @@ web.whatsapp.com##._64p9P:style(border-left: 0 !important;)
 web.whatsapp.com##._5kRIK:style(border-left: 0 !important;)
 web.whatsapp.com##.AmmtE:style(border-left: 0 !important;)
 web.whatsapp.com##._2lSWV:style(border-left: 0 !important;)
+!quita borde gris lista de contactos
+web.whatsapp.com##._ak8l:style(border-top: 0 !important;)
+web.whatsapp.com##.xu3j5b3:style(border-right-style: hidden !important;)
+web.whatsapp.com##.xm81vs4:style(border-right-width: 0 !important;)
+web.whatsapp.com##._ak1k:style(border-left: 0 !important;)
+web.whatsapp.com##.xso031l:style(border-bottom-width: 0 !important;)
 ! quita efectos y animaciones
 web.whatsapp.com#%#//scriptlet('remove-class', 'cssanimations', '', 'stay')
 web.whatsapp.com#%#//scriptlet('remove-class', 'csstransitions', '', 'stay')
 web.whatsapp.com#%#//scriptlet('remove-class', 'webp-animation', '', 'stay')
+!desactivar animacion en visor de imagenes
+web.whatsapp.com#%#//scriptlet('set-attr', '._alhn.overlay', 'data-animate-media-viewer', 'false')
+!desactivar animacion en menu chats
+web.whatsapp.com#%#//scriptlet('set-attr', '._aj-_._aj-q._aj-r', 'data-animate-dropdown-item', 'false')
+!desactivar animacion en menu adjuntar en chats
+web.whatsapp.com#%#//scriptlet('set-attr', '._ak_v._aj-_._aj-q._aj-r', 'data-animate-dropdown-item', 'false')
+!desactivar animacion en menu adjuntar en chats
+web.whatsapp.com#%#//scriptlet('set-attr', '.quick-label-item', 'data-animate-dropdown-item', 'false')
+!desactivar animacion en visor de estados
+web.whatsapp.com#%#//scriptlet('set-attr', '.x66m237.x5yr21d.xh8yej3.x1bpt9pm.x17qophe.x13vifvy.x10l6tqk', 'data-animate-status-viewer', 'false')
+!desactivar animacion en ventana eliminar mensaje
+web.whatsapp.com#%#//scriptlet('set-attr', '.x1n2onr6.x1iyjqo2.xs83m0k.x1l7klhg.x1mzt3pk.xeaf4i8', 'data-animate-modal-body', 'false')
+!desactivar animacion en ventanas flotantes
+web.whatsapp.com#%#//scriptlet('set-attr', '.x9f619.x78zum5.x1c4vz4f.x2lah0s.xdl72j9.xdt5ytf.xvue9z.x1xy6bms.xxbr6pl.xx6bls6.xbbxn1n.x1v8jjaa.xkwfhqy.x17e6fzg.x15dh256.x1t7u3xy.x1shw4ur.x6ikm8r.x10wlt62', 'data-animate-modal-popup', 'false')
+!desactivar animacion en ventanas
+web.whatsapp.com#%#//scriptlet('set-attr', '.xixxii4.x13vifvy.x17qophe.x9f619.xh8yej3.x5yr21d.x1bpt9pm.xw2csxc.x1odjw0f.xa03szm.xnpuxes.copyable-area', 'data-animate-modal-backdrop', 'false')
 
 ! whatsapp
 www.whatsapp.com##._ae_x._9tau._9ta8._9ta5._9ta3._9tar
@@ -1883,6 +1909,8 @@ www.canalcatorce.tv##footer
 ||www.canalcatorce.tv/img/template/videoteca_back_mxplus.jpg$image
 www.canalcatorce.tv##.col-xs-4.col-sm-3.col-md-3.col-lg-2 > .row
 
+! Docs WPS 365
+@@||www.googletagmanager.com^$domain=wps.com
 
 ! Filtros DNS
 !#include aracmaDNS.txt
