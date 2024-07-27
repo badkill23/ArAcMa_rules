@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 27 Jul 2024 12:00 UTC-6
-! Version: 27.07.2024rev1
+! Last modified: 27 Jul 2024 14:10 UTC-6
+! Version: 27.07.2024rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -161,6 +161,12 @@ youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageV
 youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
 youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
 youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+
+! Exclude for Mobile YouTube's Anti-Ad-blocker
+m.youtube.com#@#+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+m.youtube.com#@#+js(set, Object.prototype.adBlocksFound, 0)
+m.youtube.com#@#+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
+m.youtube.com#@#+js(set, Object.prototype.hasAllowedInstreamAd, true)
 
 !   Hide YouTube Shorts
 ! https://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt
