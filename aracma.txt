@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 24 Jul 2024 07:28 UTC-6
-! Version: 24.07.2024rev1
+! Last modified: 27 Jul 2024 12:00 UTC-6
+! Version: 27.07.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -1911,6 +1911,11 @@ www.canalcatorce.tv##.col-xs-4.col-sm-3.col-md-3.col-lg-2 > .row
 
 ! Docs WPS 365
 @@||www.googletagmanager.com^$domain=wps.com
+us.docs.wps.com##.platform-head
+us.docs.wps.com##.body-content-10.body-content > .use-dynamic-10.open-wps.btn
+us.docs.wps.com##.sub-title
+us.docs.wps.com##.edit-on-pc-button
+us.docs.wps.com##.platform-box_wrap .platform-body .body-content:matches-media((max-width: 1600px) and (max-height:820px)):style(top: 35% !important)
 
 ! Filtros DNS
 !#include aracmaDNS.txt
