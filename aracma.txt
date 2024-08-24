@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 27 Jul 2024 14:10 UTC-6
-! Version: 27.07.2024rev2
+! Last modified: 24 Aug 2024 15:00 UTC-6
+! Version: 24.08.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -342,6 +342,8 @@ www.bing.com###b_phead_chat
 www.bing.com##.b_phead_sh_link
 ! sugerencia en busqueda Prueba copilot
 www.bing.com##li.sa_cb_btm:contains(Prueba Copilot)
+! btn sugerido buscar inferior
+www.bing.com###pag_search_btn
 
 ! msn
 www.msn.com##[id="feedback-link-button"]
@@ -1182,59 +1184,60 @@ www.instagram.com##div.x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz
 
 ! Twitter
 !omitir bloqueo barra inferior
-twitter.com#@#div[data-testid="BottomBar"]
+x.com#@#div[data-testid="BottomBar"]
 ! btn flotante
-twitter.com##div[data-testid="FloatingActionButtonBase"]
+x.com##div[data-testid="FloatingActionButtonBase"]
 ! btn replay
-!twitter.com##div[data-testid="reply"]:upward(1)
-twitter.com##[data-testid="reply"]:upward(.css-175oi2r.r-18u37iz.r-1h0z5md.r-13awgt0)
+!x.com##div[data-testid="reply"]:upward(1)
+x.com##[data-testid="reply"]:upward(.css-175oi2r.r-18u37iz.r-1h0z5md.r-13awgt0)
 ! quita borde gris
-twitter.com##.css-175oi2r:style(border:0px !important;)
+x.com##.css-175oi2r:style(border:0px !important;)
 ! oculta borde nueva pub
-twitter.com##.r-gu4em3:style(background-color: unset !important;)
+x.com##.r-gu4em3:style(background-color: unset !important;)
 ! btn analitics
-!twitter.com##article [role=group] [href$="/analytics"]:upward(div:not(:only-child))
-twitter.com##[aria-label='Ver las estadísticas del post']:upward(1)
-twitter.com##[href$="/analytics"]:upward(1)
+!x.com##article [role=group] [href$="/analytics"]:upward(div:not(:only-child))
+x.com##[aria-label='Ver las estadísticas del post']:upward(1)
+x.com##[href$="/analytics"]:upward(1)
 ! toast saved
-twitter.com##[data-testid="toast"]
-twitter.com##.r-105ug2t.r-xyw6el.r-zd98yo.r-1wtj0ep.r-18u37iz.r-z2wwpe.r-l5o3uw.r-1kihuf0.r-1awozwy.css-1dbjc4n
-twitter.com##.r-105ug2t.r-xyw6el.r-1wtj0ep.r-18u37iz.r-l5o3uw.r-1awozwy.css-1dbjc4n
+x.com##[data-testid="toast"]
+x.com##.r-105ug2t.r-xyw6el.r-zd98yo.r-1wtj0ep.r-18u37iz.r-z2wwpe.r-l5o3uw.r-1kihuf0.r-1awozwy.css-1dbjc4n
+x.com##.r-105ug2t.r-xyw6el.r-1wtj0ep.r-18u37iz.r-l5o3uw.r-1awozwy.css-1dbjc4n
+x.com##.r-1ye8kvj.r-13qz1uu.r-f8sm7e.r-633pao.css-175oi2r
 ! popup saved en adguardPro
-twitter.com##div.css-1dbjc4n.r-1jgb5lz.r-633pao.r-13qz1uu > div.css-1dbjc4n.r-1awozwy.r-l5o3uw.r-18u37iz.r-1wtj0ep.r-q81ovl.r-105ug2t
+x.com##div.css-1dbjc4n.r-1jgb5lz.r-633pao.r-13qz1uu > div.css-1dbjc4n.r-1awozwy.r-l5o3uw.r-18u37iz.r-1wtj0ep.r-q81ovl.r-105ug2t
 ! blue
-twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
+x.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
 ! btn open app
-twitter.com##.r-lrvibr.r-6416eg.r-o7ynqc.r-ymttw5.r-1ny4l3l.r-4wgw6l.r-15ysp7h.r-rs99b7.r-1phboty.r-sdzlij.r-1niwhzg.css-1dbjc4n.css-18t94o4
+x.com##.r-lrvibr.r-6416eg.r-o7ynqc.r-ymttw5.r-1ny4l3l.r-4wgw6l.r-15ysp7h.r-rs99b7.r-1phboty.r-sdzlij.r-1niwhzg.css-1dbjc4n.css-18t94o4
 ! remove "Show additinonal replies"
-twitter.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] article [role="button"]:not([aria-label]):upward([data-testid="cellInnerDiv"])
+x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"] article [role="button"]:not([aria-label]):upward([data-testid="cellInnerDiv"])
 ! ref shared post
-twitter.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1loqt21.r-adacv.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg:last-child
+x.com###id__aq4jkjwyjx > div.css-1dbjc4n.r-1kqtdi0.r-1867qdf.r-rs99b7.r-1loqt21.r-adacv.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg:last-child
 ! centrar iconos barra
-twitter.com##.r-1hdv0qi:style(width: 3.25em !important;)
-twitter.com##.r-1srniue:style(width: 3.25em !important;)
-twitter.com##.r-1kb76zh:style(margin-right: 20px !important;)
-twitter.com##.tmd-down:style(margin-left: 20px !important;)
-twitter.com##.css-175oi2r.r-18u37iz.r-1h0z5md.r-1b7u577:style(width: 4.25em !important;)
+x.com##.r-1hdv0qi:style(width: 3.25em !important;)
+x.com##.r-1srniue:style(width: 3.25em !important;)
+x.com##.r-1kb76zh:style(margin-right: 20px !important;)
+x.com##.tmd-down:style(margin-left: 20px !important;)
+x.com##.css-175oi2r.r-18u37iz.r-1h0z5md.r-1b7u577:style(width: 4.25em !important;)
 ! Hide Premium
-twitter.com##[aria-label="Premium"]
-twitter.com##[href$="/verified-choose"]
-twitter.com##[href$="/settings/monetization"]
+x.com##[aria-label="Premium"]
+x.com##[href$="/verified-choose"]
+x.com##[href$="/settings/monetization"]
 !spaces
-||twitter.com/i/api/fleets/v1/fleetline?only_spaces=true
+||x.com/i/api/fleets/v1/fleetline?only_spaces=true
 ! icono perfil
-twitter.com##[data-testid="Tweet-User-Avatar"]:upward(1)
-twitter.com##.css-175oi2r.r-18kxxzh.r-1b7u577.r-onrtq4.r-1awozwy
+x.com##[data-testid="Tweet-User-Avatar"]:upward(1)
+x.com##.css-175oi2r.r-18kxxzh.r-1b7u577.r-onrtq4.r-1awozwy
 ! centrar contenido
-twitter.com##.css-175oi2r.r-k200y:style(align-self: center !important;)
+x.com##.css-175oi2r.r-k200y:style(align-self: center !important;)
 ! quita a quien seguir
-!twitter.com##[data-testid="cellInnerDiv"] h2:has-text(Who to follow)
-!twitter.com##[data-testid="UserCell"]
-!twitter.com##[data-testid="cellInnerDiv"] [href^="/i/connect_people"]
+!x.com##[data-testid="cellInnerDiv"] h2:has-text(Who to follow)
+!x.com##[data-testid="UserCell"]
+!x.com##[data-testid="cellInnerDiv"] [href^="/i/connect_people"]
 ! Activar notificaciones
-twitter.com##span:contains(Activar notificaciones):upward([data-testid="cellInnerDiv"])
+x.com##span:contains(Activar notificaciones):upward([data-testid="cellInnerDiv"])
 ! navbar Grok
-twitter.com##[href="/i/grok"]
+x.com##[href="/i/grok"]
 
 ! facebook
 facebook.com##.x1daaz14.xxzkxad.x7wzq59.x10wlt62.x6ikm8r.x1u2d2a2.x1t2pt76.xxc7z9f.xnjgh8c.x112wk31.xnp8db0.x1ja2u2z.x9f619
@@ -1539,6 +1542,7 @@ politico.mx##body:style(overflow-y: auto !important;)
 
 !debate
 debate.com.mx##div>h2:has-text(/Contenido Patrocinado/):upward(4)
+debate.com.mx##.newsfull__social
 
 ! cdn.com.do
 cdn.com.do##.has-link.entry-resumen.wp-block-group
@@ -1554,6 +1558,11 @@ sinube.mx##div.sqs-row.row:nth-of-type(2) > .span-12.sqs-col-12.col
 deezer.com##[href="/mx/concerts"]
 ! cartel sin conexion internet
 www.deezer.com##.css-1bg4k38
+! eliminar bordes grises Deezer
+www.deezer.com##.page-topbar:style(border-bottom: 0 !important;)
+www.deezer.com##.css-tzddi9:style(border-top-width: 0 !important;)
+www.deezer.com##.css-efpag6:style(border-right-width: 0 !important;)
+www.deezer.com##.css-w8kdg9:style(border-bottom-width: 0 !important;)
 
 ! ionos
 ionos.mx###bio_ep_reworked_bg
@@ -1575,6 +1584,7 @@ www.tvazteca.com##.ArticlePage-customFinalText
 www.tvazteca.com#%#//scriptlet('remove-attr', 'data-bsp-plugin', '', 'stay')
 www.tvazteca.com##.PortalNavigation
 www.tvazteca.com##.Page-header:style(top: unset !important;)
+@@||imasdk.googleapis.com^$domain=mdstrm.com
 
 ! azteca puebla
 www.aztecapuebla.com#%#//scriptlet('remove-attr', 'data-loginconfig', '', 'stay')
@@ -1584,6 +1594,10 @@ www.aztecapuebla.com##.ArticlePage-customFinalText
 www.aztecapuebla.com###LoginForm
 www.aztecapuebla.com##.Page-footer
 www.aztecapuebla.com##.CreativeWorkPage-actions
+
+! televisa
+www.televisa.com##[data-widget-type="Advertisement"]
+www.televisa.com##.uvs-ad-full-width
 
 ! parfana
 parfana.net##.mt10.container-fluid.containers > .row
@@ -1783,6 +1797,8 @@ www.informador.mx##li:contains(TAMBIÉN LEE)
 www.informador.mx##li:contains(LEE)
 www.informador.mx##p:contains(Lee:)
 ||cdn.ampproject.org/v0.js$script,domain=informador.mx
+informador.mx##h3:contains(Lee:)
+informador.mx##h3:contains(Te puede interesar:)
 
 ! politica.expansion
 politica.expansion.mx##div.RawHtmlModule
@@ -1922,6 +1938,10 @@ us.docs.wps.com##.body-content-10.body-content > .use-dynamic-10.open-wps.btn
 us.docs.wps.com##.sub-title
 us.docs.wps.com##.edit-on-pc-button
 us.docs.wps.com##.platform-box_wrap .platform-body .body-content:matches-media((max-width: 1600px) and (max-height:820px)):style(top: 35% !important)
+
+! Acrobat Adobe
+! popup dejar el primero comentario
+acrobat.adobe.com##.Popup__Popup___NkdCE
 
 ! Filtros DNS
 !#include aracmaDNS.txt
