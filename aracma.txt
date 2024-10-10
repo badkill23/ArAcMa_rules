@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 24 Aug 2024 15:00 UTC-6
-! Version: 24.08.2024rev1
+! Last modified: 10 Oct 2024 13:05 UTC-6
+! Version: 10.10.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -20,6 +20,7 @@ listonic.com##.ml-8.my-6.w-auto.flex-col.flex > .gap-6.items-center.w-auto.flex-
 listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
 listonic.com##div[class^="flex flex-col w-auto Sidebar_privacyWrapper__a52W5"]
 listonic.com##div[class^="flex flex-col w-auto DownloadNotification_container__oTdOo"]
+@@||www.googletagmanager.com/gtag/js$script,domain=app.listonic.com
 !Movil
 listonic.com##button[class^="w-auto Button_solid__AQNMV text-xs"]
 listonic.com##div[class^="flex flex-row w-auto SocialMediaButtons_socialMediaButtonsWrapper__f8cWu"]
@@ -344,6 +345,8 @@ www.bing.com##.b_phead_sh_link
 www.bing.com##li.sa_cb_btm:contains(Prueba Copilot)
 ! btn sugerido buscar inferior
 www.bing.com###pag_search_btn
+www.bing.com###b_typetosearchtips
+www.bing.com###b_mtp
 
 ! msn
 www.msn.com##[id="feedback-link-button"]
@@ -665,7 +668,7 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.essb-block
 *##.feedback-binded
 *##.info-networks
-*##ins[class="adsbygoogle"]
+!*##ins[class="adsbygoogle"]
 *##[name*="chatbot"]
 *##.app-footer__social
 *##.footer-social-inner-wrap
@@ -1942,6 +1945,13 @@ us.docs.wps.com##.platform-box_wrap .platform-body .body-content:matches-media((
 ! Acrobat Adobe
 ! popup dejar el primero comentario
 acrobat.adobe.com##.Popup__Popup___NkdCE
+
+! taecel
+taecel.com##.position-fixed.social_1
+
+! cuevana
+cuevana.bot##.cuevana-message
+
 
 ! Filtros DNS
 !#include aracmaDNS.txt
