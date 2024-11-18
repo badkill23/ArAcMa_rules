@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 10 Oct 2024 13:05 UTC-6
-! Version: 10.10.2024rev1
+! Last modified: 18 Nov 2024 07:10 UTC-6
+! Version: 07.11.2024rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -34,7 +34,6 @@ gob.mx##[class^="main-footer"]
 gob.mx##.list-info
 gob.mx##.alert-info.alert
 gob.mx##.col-md-8 > p
-gob.mx##h1
 gob.mx##.form-group > .clearfix.form-group
 gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
@@ -1307,28 +1306,8 @@ web.whatsapp.com##.xu3j5b3:style(border-right-style: hidden !important;)
 web.whatsapp.com##.xm81vs4:style(border-right-width: 0 !important;)
 web.whatsapp.com##._ak1k:style(border-left: 0 !important;)
 web.whatsapp.com##.xso031l:style(border-bottom-width: 0 !important;)
-! quita efectos y animaciones
-web.whatsapp.com#%#//scriptlet('remove-class', 'cssanimations', '', 'stay')
-web.whatsapp.com#%#//scriptlet('remove-class', 'csstransitions', '', 'stay')
-web.whatsapp.com#%#//scriptlet('remove-class', 'webp-animation', '', 'stay')
-!desactivar animacion en visor de imagenes
-web.whatsapp.com#%#//scriptlet('set-attr', '._alhn.overlay', 'data-animate-media-viewer', 'false')
-!desactivar animacion en menu chats
-web.whatsapp.com#%#//scriptlet('set-attr', '._aj-_._aj-q._aj-r', 'data-animate-dropdown-item', 'false')
-!desactivar animacion en menu adjuntar en chats
-web.whatsapp.com#%#//scriptlet('set-attr', '._ak_v._aj-_._aj-q._aj-r', 'data-animate-dropdown-item', 'false')
-!desactivar animacion en menu adjuntar en chats
-web.whatsapp.com#%#//scriptlet('set-attr', '.quick-label-item', 'data-animate-dropdown-item', 'false')
-!desactivar animacion en visor de estados
-web.whatsapp.com#%#//scriptlet('set-attr', '.x66m237.x5yr21d.xh8yej3.x1bpt9pm.x17qophe.x13vifvy.x10l6tqk', 'data-animate-status-viewer', 'false')
-!desactivar animacion en ventana eliminar mensaje
-web.whatsapp.com#%#//scriptlet('set-attr', '.x1n2onr6.x1iyjqo2.xs83m0k.x1l7klhg.x1mzt3pk.xeaf4i8', 'data-animate-modal-body', 'false')
-!desactivar animacion en ventanas flotantes
-web.whatsapp.com#%#//scriptlet('set-attr', '.x9f619.x78zum5.x1c4vz4f.x2lah0s.xdl72j9.xdt5ytf.xvue9z.x1xy6bms.xxbr6pl.xx6bls6.xbbxn1n.x1v8jjaa.xkwfhqy.x17e6fzg.x15dh256.x1t7u3xy.x1shw4ur.x6ikm8r.x10wlt62', 'data-animate-modal-popup', 'false')
-!desactivar animacion en ventanas
-web.whatsapp.com#%#//scriptlet('set-attr', '.xixxii4.x13vifvy.x17qophe.x9f619.xh8yej3.x5yr21d.x1bpt9pm.xw2csxc.x1odjw0f.xa03szm.xnpuxes.copyable-area', 'data-animate-modal-backdrop', 'false')
 
-! whatsapp
+! whatsapp sitio
 www.whatsapp.com##._ae_x._9tau._9ta8._9ta5._9ta3._9tar
 
 ! Telcel
