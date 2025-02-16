@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 18 Nov 2024 07:10 UTC-6
-! Version: 07.11.2024rev1
+! Last modified: 16 Feb 2025 12:10 UTC-6
+! Version: 16.02.2025rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -48,8 +48,7 @@ app.cfe.mx##div[class^="col-md-12 alert alert-info"]
 app.cfe.mx##div[class^="list-info"]
 app.cfe.mx##.main-footer
 app.cfe.mx##footer[id^="footer"]
-app.cfe.mx##div.form-row:nth-of-type(2)
-app.cfe.mx##div.col-lg-12:nth-of-type(2)
+app.cfe.mx##div.form-row>:contains(Recibo electrónico:)
 app.cfe.mx##.bottommargin-sm.col-lg-12
 app.cfe.mx##.page-title-dark.page-title
 app.cfe.mx###header
