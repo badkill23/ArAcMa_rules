@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 25 Jun 2025 19:10 UTC-6
-! Version: 25.06.2025rev2
+! Last modified: 25 Jun 2025 19:20 UTC-6
+! Version: 25.06.2025rev3
 ! Syntax: Adblock
 
 ! listonic
@@ -534,7 +534,6 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##[href*="/news.google.com/"]
 *##[href*="/newsletters"]:upward(1)
 *##[class*="itemRelated"]
-*##[class*="elementor-icon-list-items"]
 *##[class^="jsx-2832277404"]
 *##[class$="banner block"]
 *##div>h2:has-text(/Contenido Patrocinado/)
