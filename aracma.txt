@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 25 Jun 2025 08:00 UTC-6
-! Version: 25.06.2025rev1
+! Last modified: 25 Jun 2025 19:10 UTC-6
+! Version: 25.06.2025rev2
 ! Syntax: Adblock
 
 ! listonic
@@ -629,9 +629,6 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##[id*="publicidad"]
 *##.rayabtn
 *##.siguenos_footer
-*##.elementor-widget-social-icons
-*##.elementor-social-icons-wrapper
-*##.elementor-widget-share-buttons:upward(1)
 *##.sfsi_Sicons
 *##h4:has-text(/Share this/)
 *##.show_share
@@ -799,6 +796,7 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.ad-contentbanner
 *##[class*="feedback__wrapper"]
 *##.feedback
+*##.elementor-widget-share-buttons
 
 ! iframe Bypass All Shortlinks
 *##[src="https://menrealitycalc.com/greasyfork"]
@@ -1931,6 +1929,7 @@ cuevana.bot##.cuevana-message
 ! Elimina pop-ups "Compartir este articulo"
 pchardwarepro.com##+js(aeld, scroll, ticking)
 tutowindow.com##+js(aeld, scroll, ticking)
+biobook.es##+js(aeld, scroll, ticking)
 
 ! grafik-teka
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=grafik-teka.com
