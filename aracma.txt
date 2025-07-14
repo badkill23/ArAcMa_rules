@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 25 Jun 2025 19:20 UTC-6
-! Version: 25.06.2025rev3
+! Last modified: 14 Jul 2025 10:10 UTC-6
+! Version: 14.07.2025rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -68,9 +68,6 @@ www.suri.agricultura.gob.mx##section:nth-of-type(4)
 ! SEPPuebla
 inscripcion.seppue.gob.mx##div[id^="datosPersonalesInf"]
 inscripcion.seppue.gob.mx##div[class^="footer"]
-inscripcion.seppue.gob.mx##div[class^="modal-dialog"]
-inscripcion.seppue.gob.mx##div[class^="modal bootstrap-dialog type-primary fade size-normal in"]
-inscripcion.seppue.gob.mx##div[class^="modal-backdrop fade in"]
 preinscripcion.seppue.gob.mx#%#//scriptlet('remove-attr', 'onload', '', 'stay')
 preinscripcion.seppue.gob.mx#%#//scriptlet('remove-class', 'modal-open', '', 'stay')
 preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/gobiernoPresente.png"]
