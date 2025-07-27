@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 14 Jul 2025 10:10 UTC-6
-! Version: 14.07.2025rev1
+! Last modified: 27 Jul 2025 15:10 UTC-6
+! Version: 27.07.2025rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -83,6 +83,7 @@ www2.repuve.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-to
 www2.repuve.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 www2.repuve.gob.mx##div.row:nth-of-type(4)
 www2.repuve.gob.mx##div[class^="alert alert-info"]
+www2.repuve.gob.mx##app-consulta > div.container > .row
 ! becasbenitojuarez
 becasbenitojuarez.gob.mx##footer
 ! CURP
@@ -354,6 +355,7 @@ www.msn.com##cs-native-ad-card
 www.msn.com##[id*="nativead"]
 
 ! taenet
+www.taenet.com.mx###respOK:style(font-size: unset !important;)
 www.taenet.com.mx##.sidebar_main_header
 www.taenet.com.mx##[href="ActualizacionFacturacion"]
 www.taenet.com.mx##.menu_section > ul > li:nth-of-type(3) > a
@@ -432,6 +434,7 @@ rsload.net##div.short:has([href*="/33133-novogodnie-skidki-windows-10-11.html"])
 rsload.net##[href="https://rsload.net/tutvce.html"]
 
 ! elementos genericos
+*##.floating-sites
 *##nav[class^="fixed-sites"]
 *##div[class^="redes-flotantes"]
 *##div[id^="header social widget"]
@@ -1531,11 +1534,13 @@ sinube.mx##div.sqs-row.row:nth-of-type(2) > .span-12.sqs-col-12.col
 deezer.com##[href="/mx/concerts"]
 ! cartel sin conexion internet
 www.deezer.com##.alert-wrapper
-! eliminar bordes grises Deezer
+! eliminar bordes grises
 www.deezer.com##.page-topbar:style(border-bottom: 0 !important;)
 www.deezer.com##.css-tzddi9:style(border-top-width: 0 !important;)
 www.deezer.com##.css-efpag6:style(border-right-width: 0 !important;)
 www.deezer.com##.css-w8kdg9:style(border-bottom-width: 0 !important;)
+www.deezer.com##.css-1d4hfp6:style(border-top-width: 0px !important;)
+www.deezer.com##.css-p6wjuo:style(border-right-width: 0px !important;)
 
 ! ionos
 ionos.mx###bio_ep_reworked_bg
@@ -1940,6 +1945,14 @@ eleventa.com#@#[class*="paypal-button"],important
 ! calcularrfc
 calcularrfc.mx##.wp-block-kadence-rowlayout.alignnone.kb-row-layout-id25_c5f6b2-ca.kb-row-layout-wrap
 calcularrfc.mx##.site-footer-wrap
+
+! Consulta SIAT - Ajuste de pantalla
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml###formapp\:pnl_content > table:nth-child(10) > tbody > tr > td:style(padding: unset !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml###contenedorcc:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml###contenedorcc:style(height: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml###formapp:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml##html:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml##.ui-corner-all.ui-widget-content.ui-widget.ui-panel:style(width: 100% !important;)
 
 
 ! Filtros DNS
