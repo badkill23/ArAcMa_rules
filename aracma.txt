@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 27 Jul 2025 15:10 UTC-6
-! Version: 27.07.2025rev1
+! Last modified: 29 Jul 2025 13:25 UTC-6
+! Version: 29.07.2025rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -1947,13 +1947,18 @@ calcularrfc.mx##.wp-block-kadence-rowlayout.alignnone.kb-row-layout-id25_c5f6b2-
 calcularrfc.mx##.site-footer-wrap
 
 ! Consulta SIAT - Ajuste de pantalla
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml###formapp\:pnl_content > table:nth-child(10) > tbody > tr > td:style(padding: unset !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml###contenedorcc:style(width: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml###contenedorcc:style(height: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml###formapp:style(width: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml##html:style(width: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/index.xhtml##.ui-corner-all.ui-widget-content.ui-widget.ui-panel:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###formapp\:pnl_content > table:nth-child(10) > tbody > tr > td:style(padding: unset !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###contenedorcc:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###contenedorcc:style(height: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###formapp:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##html:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##.ui-corner-all.ui-widget-content.ui-widget.ui-panel:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##.cuno:style(padding-left: 0px !important;)
 
+! sstwitter
+ssstwitter.com##.content
+ssstwitter.com##.content-wrapper
+ssstwitter.com###footer
 
 ! Filtros DNS
 !#include aracmaDNS.txt
