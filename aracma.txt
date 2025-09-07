@@ -3,30 +3,21 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 07 Sep 2025 10:45 UTC-6
-! Version: 07.09.2025rev4
+! Last modified: 07 Sep 2025 14:02 UTC-6
+! Version: 07.09.2025rev5
 ! Syntax: Adblock
 
-! listonic
-! inicio-update050524
-listonic.com##[class*="Sidebar_privacyWrapper"]
-listonic.com##[class*="socialMediaButtons"]
-listonic.com##button:contains(Consigue la aplicación)
-listonic.com##[class*="FooterMobile_container"]
-new.app.listonic.com##p:contains(¡Descárgalo en tu dispositivo!):upward(4)
-listonic.com##.dark\:text-darkMode-600.text-gray-500.text-sm.gap-4.mx-8.w-auto.flex-col.flex
-listonic.com##.ml-8.my-6.w-auto.flex-col.flex > .gap-6.items-center.w-auto.flex-row.flex
-! fin-update050524
-listonic.com##div[class^="flex flex-col w-auto Sidebar_socialMediaButtonsWrapper__z6nQ_"]
-listonic.com##div[class^="flex flex-col w-auto Sidebar_privacyWrapper__a52W5"]
-listonic.com##div[class^="flex flex-col w-auto DownloadNotification_container__oTdOo"]
-@@||www.googletagmanager.com/gtag/js$script,domain=app.listonic.com
-!Movil
-listonic.com##button[class^="w-auto Button_solid__AQNMV text-xs"]
-listonic.com##div[class^="flex flex-row w-auto SocialMediaButtons_socialMediaButtonsWrapper__f8cWu"]
-listonic.com##div[class^="flex flex-row w-auto gap-3 mt-6"]
-listonic.com##div[class^="flex flex-row w-auto gap-12 my-5"]
-listonic.com##p[class^="text-center"]
+! 7 sep 2025 Listonic
+! Oculta Ventan Flotante Descargar App
+new.app.listonic.com##div.fixed:has-text("Descárgalo en tu dispositivo!")
+! Oculta Btn Descargar App
+new.app.listonic.com##[href*="/id331302745"]
+new.app.listonic.com##[href*="id=com.l"]
+! Oculta Redes Sociales
+new.app.listonic.com##.ml-8.my-6.w-auto.flex-col.flex
+! Oculta Terminos y Politica
+new.app.listonic.com##.gap-4.mx-8.w-auto.flex-col.flex
+
 
 ! GobiernoMX
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
@@ -223,46 +214,9 @@ m.youtube.com##ytm-single-column-browse-results-renderer>.scbrr-tabs>.scbrr-tab:
 ! adn40
 live.adn40.mx##.EnvivoConstant-info
 
-! telelatinohd
-www.telelatinohd.com##.col-md-5.col-xl-4
-www.telelatinohd.com##[href="https://t.me/+cSr9aoH36AMwYzMx"] > .gray-default.lm-info-block.lm-canal:upward(2)
-www.telelatinohd.com##[href*="/donationlizardpremium"] > .gray-default.lm-info-block.lm-canal:upward(2)
-www.telelatinohd.com##[href="https://www.lizardpremium.com"] > .gray-default.lm-info-block.lm-canal:upward(2)
-www.telelatinohd.com##.card-body
-www.telelatinohd.com##.col-sm-12.col-xs-12 > .block-title
-www.telelatinohd.com##.bg-white.card
-www.telelatinohd.com##.btn-secondary.btn
-www.telelatinohd.com##body > center
-www.telelatinohd.com##.footer
-
-! micineclub
-||feefouga.com
-
-! tvplusgratis
-www.tvplusgratis.com###chat-online
-www.tvplusgratis.com##.btn-block.btn-white.btn-danger.btn
-www.tvplusgratis.com##.alert-info.alert
-www.tvplusgratis.com##.alert-danger.alert
-www.tvplusgratis.com##p
-www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(2)
-www.tvplusgratis.com##div.col-lg-3.col-md-3.col-sm-6.col-xs-6.col-6.canal-item:nth-of-type(1)
-www.tvplusgratis.com##.btn-secondary.btn
-www.tvplusgratis.com##.card-body
-www.tvplusgratis.com##.site-main-menu.leven-classic-menu
-www.tvplusgratis.com##h2
-www.tvplusgratis.com##.col-sm-12.col-xs-12 > .block-title
-www.tvplusgratis.com##.items-end.flex-col.flex.md\:col-span-2
-www.tvplusgratis.com##[href="https://www.lizardpremium.com"] > .gray-default.lm-info-block.lm-canal:upward(2)
-www.tvplusgratis.com##.bg-dark.card
-
 ! smotret
 smotret.tv##.tv-programm.program-container
 smotret.tv##.about_channel_info
-
-! telegratis.online
-telegratis.online##.card-description
-telegratis.online##.tageti
-telegratis.online##.footer
 
 ! vertvcable
 www.vertvcable.com###ventana-flotante
@@ -365,21 +319,6 @@ www.msn.com##action-tray
 www.msn.com##cs-native-ad-card
 www.msn.com##[id*="nativead"]
 
-! taenet
-www.taenet.com.mx###respOK:style(font-size: unset !important;)
-www.taenet.com.mx##.sidebar_main_header
-www.taenet.com.mx##[href="ActualizacionFacturacion"]
-www.taenet.com.mx##.menu_section > ul > li:nth-of-type(3) > a
-www.taenet.com.mx##.menu_section > ul > li:nth-of-type(2) > a
-www.taenet.com.mx#%#//scriptlet('remove-class', 'cssanimations', '', 'stay')
-www.taenet.com.mx#%#//scriptlet('remove-class', 'csstransitions', '', 'stay')
-www.taenet.com.mx#%#//scriptlet('remove-class', 'cssgradients', '', 'stay')
-www.taenet.com.mx#%#//scriptlet('remove-class', 'cssreflections', '', 'stay')
-www.taenet.com.mx#%#//scriptlet('remove-class', 'smil', '', 'stay')
-www.taenet.com.mx#%#//scriptlet('remove-class', 'boxshadow', '', 'stay')
-www.taenet.com.mx#%#//scriptlet('remove-class', 'textshadow', '', 'stay')
-www.taenet.com.mx#%#//scriptlet('remove-class', 'canvastext', '', 'stay')
-
 ! imagentv
 www.imagentv.com##.m-none.left.node-ads.nodeAds
 www.imagentv.com##.m-none.right.node-ads.nodeAds
@@ -400,26 +339,8 @@ www.imagentv.com#%#//scriptlet('remove-class', 'dblock', '', 'stay')
 ! respontodo
 respontodo.com##.entry-content > div:contains(Relacionado)
 
-! vtube
-vtube.network##center:nth-of-type(2)
-vtube.network##.nav-tabs.nav
-vtube.network###nav-embed
-
-! estrellatv
-estrellatv.com###descarga-app
-estrellatv.com##div.publicitag
-estrellatv.com##div.bg-2:nth-of-type(2)
-estrellatv.com##.align-items-center.row
-estrellatv.com##footer
-
 ! tubitv
 tubitv.com##.GLTCO
-
-! repelis24
-||doruffleton.com^$popup,domain=repelis24.rs
-
-! pelisplus2
-pelisplus2.vip##.rcl0c.rfg1.rw.options
 
 ! 1password
 1password.com##.u-py-24\@lg.u-py-16.password-gen.c-panel
@@ -434,6 +355,18 @@ pelisplus2.vip##.rcl0c.rfg1.rw.options
 rsload.net##div.short:has([href*="/35894-arenda-servera-2023-god.html"])
 rsload.net##div.short:has([href*="/33133-novogodnie-skidki-windows-10-11.html"])
 rsload.net##[href="https://rsload.net/tutvce.html"]
+
+! 07 Sep 2025 lrepacks
+lrepacks.net##ul[class^="block-with-icons"]
+lrepacks.net###footer
+lrepacks.net###pageuserscroll
+lrepacks.net#%#//scriptlet('remove-class', 'cssanimations', 'html', 'stay')
+lrepacks.net#%#//scriptlet('remove-class', 'csstransitions', 'html', 'stay')
+lrepacks.net#%#//scriptlet('remove-class', 'animated', 'body', 'stay')
+lrepacks.net#%#//scriptlet('remove-class', 'header-fixed', 'body', 'stay')
+lrepacks.net##article.columns.large-6.medium-6:has([href*="/743-podderzhka-proekta.html"])
+lrepacks.net##article.columns.large-6.medium-6:has([href*="/876-keysfan-sales-gifts-best-prices.html"])
+lrepacks.net##li:has([href*="/206-podderzhka-proekta-i-poluchenie-premium-dostupa.html"])
 
 ! elementos genericos
 *##.floating-sites
@@ -665,7 +598,6 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##.essb-block
 *##.feedback-binded
 *##.info-networks
-!*##ins[class="adsbygoogle"]
 *##[name*="chatbot"]
 *##.app-footer__social
 *##.footer-social-inner-wrap
@@ -798,9 +730,6 @@ rsload.net##[href="https://rsload.net/tutvce.html"]
 *##[class*="feedback__wrapper"]
 *##.feedback
 *##.elementor-widget-share-buttons
-
-! iframe Bypass All Shortlinks
-*##[src="https://menrealitycalc.com/greasyfork"]
 
 ! Sugerencias de articulos
 *##p:contains(Also Read:)
@@ -1311,7 +1240,7 @@ telcel.com##div[class^="comp-telcel-banner-superior"]
 telcel.com##div[class^="comp-telcel-chatbot"]
 telcel.com##div[class^="comp-telcel-banner-rotativo"]
 telcel.com##div[class^="text parbase section"]
-www.telcel.com###QSIFeedbackButton-btn
+telcel.com###QSIFeedbackButton-btn
 
 ! elcomercio
 elcomercio.pe##blockquote.story-contents__blockquote
@@ -1545,9 +1474,6 @@ www.deezer.com##.css-w8kdg9:style(border-bottom-width: 0 !important;)
 www.deezer.com##.css-1d4hfp6:style(border-top-width: 0px !important;)
 www.deezer.com##.css-p6wjuo:style(border-right-width: 0px !important;)
 
-! ionos
-ionos.mx###bio_ep_reworked_bg
-
 ! letras
 letras.com##.composer
 letras.com##.logo
@@ -1589,9 +1515,6 @@ parfana.net##.copyRight
 ! ennovelas
 ennovelas.net##.chaty-channels
 ||iamcdn.net/players/custom-banner.js$script,domain=abysscdn.com
-
-! pelisflix2
-pelisflix2.stream##.ShareList
 
 ! cine24h
 @@||waaw.to^
@@ -1799,6 +1722,7 @@ excel-dashboards.com##.sidenavright
 ! ionos
 www.ionos.es###bio_ep_reworked
 www.ionos.es###bio_ep_reworked_bg
+www.ionos.mx###bio_ep_reworked_bg
 
 ! eldiariodechihuahua
 www.eldiariodechihuahua.mx##.nota_interes_grandes
@@ -1927,8 +1851,6 @@ acrobat.adobe.com##.Popup__Popup___NkdCE
 ! taecel
 taecel.com##.position-fixed.social_1
 
-! cuevana
-cuevana.bot##.cuevana-message
 
 ! Elimina pop-ups "Compartir este articulo"
 pchardwarepro.com##+js(aeld, scroll, ticking)
@@ -1965,7 +1887,3 @@ ssstwitter.com###footer
 
 ! Filtros DNS
 !#include aracmaDNS.txt
-
-
-
-
