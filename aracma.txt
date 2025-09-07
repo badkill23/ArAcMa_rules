@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 29 Jul 2025 13:25 UTC-6
-! Version: 29.07.2025rev1
+! Last modified: 07 Sep 2025 08:25 UTC-6
+! Version: 07.09.2025rev1
 ! Syntax: Adblock
 
 ! listonic
@@ -75,6 +75,17 @@ preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/go
 preinscripcion.seppue.gob.mx###undefined-sticky-wrapper
 ! siged CCT
 siged.sep.gob.mx##.section
+
+! llaveMX
+www.llave.gob.mx##.footer
+
+! sisep.puebla
+sisep.puebla.gob.mx###captchaMod:style(height: 97px !important;)
+sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(1) > div > a > img:style(height: 60px !important;)
+sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(1) > div > a > img:style(width: 150px !important;)
+sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > a > img:style(height: 60px !important;)
+sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > a > img:style(width: 150px !important;)
+sisep.puebla.gob.mx###Encabezado > table:nth-child(41):style(display: none !important;)
 
 ! repuve
 www2.repuve.gob.mx##body:style(overflow-y: scroll !important)
@@ -418,15 +429,6 @@ pelisplus2.vip##.rcl0c.rfg1.rw.options
 1password.com##footer
 1password.com##.u-py-12\@lg.u-px-10\@lg.u-py-8.u-px-4.u-flexhorizontal\@lg.u-aligncenter.u-justifybetween\@md.u-flexvertical.u-is-displayflex.u-bg-core-bits-blue-2.u-rounded
 1password.com##.hover\:bg-\[\#DEE0E3\].text-bits-blue.bg-white.rounded-full.px-4.py-2.md\:tracking-\[-0\.0112rem\].md\:leading-\[1\.6875rem\].md\:text-lg.tracking-\[-0\.01rem\].leading-6.text-base.no-underline.inline-block
-
-! lrepacks
-lrepacks.net##.fixedbut
-lrepacks.net#?#article:has([href*="/876-keysfan-sales-gifts-best-prices.html"])
-lrepacks.net#?#article:has([href*="/743-podderzhka-proekta.html"])
-lrepacks.net##ul[class^="block-with-icons"]
-lrepacks.net##li:has([href*="-premium-"])
-lrepacks.net###footer
-lrepacks.net#%#//scriptlet('remove-class', 'animated', 'body', 'stay')
 
 ! rsload
 rsload.net##div.short:has([href*="/35894-arenda-servera-2023-god.html"])
@@ -1271,7 +1273,7 @@ web.whatsapp.com##._3OtEr:has([aria-label="Reaccionar"])
 web.whatsapp.com##.xv54qhq.xf7dkkf.xsag5q8.xz9dl7a.x1evy7pa.x1f6kntn.x78zum5.xm4wzdf.xi7vu0r.x14j70uu.xfrhtc.x12veol0.x1wkzo03.x6s0dn4
 web.whatsapp.com##.xv54qhq.xf7dkkf.xsag5q8.xz9dl7a.x1evy7pa.x1f6kntn.x78zum5.xm4wzdf.xr2wkf5.x1fxmhz6.x1u1eq46.x2yqj0j.x1wkzo03.x6s0dn4
 ! popup llega a nuevos clientes
-web.whatsapp.com##.xikfvyg.x13z0jks.xof6966
+web.whatsapp.com###side>div:contains(Llega a nuevos clientes)
 ! btn canales menu
 web.whatsapp.com##.xjpr12u:has([aria-label="Canales"])
 ! btn comunidades menu
@@ -1326,6 +1328,9 @@ reddit.com##div[class^="_1b1Jalg2nxA_Z-BjKXRfAV"]
 reddit.com##div[class^="_1vXXD2qKLnHetdKvisFzBD"]
 reddit.com##.m-visible.TopNav__topButton.TopButton
 reddit.com##.subredditvars-r-ublockorigin :is(div:has(>div>button[id^="collection-menu"]), div:has(>#collectionPostListScrollContainer))
+!#if env_mobile
+@@||click.redditmail.com
+!#endif
 
 ! masterpctutoriales
 masterpctutoriales.com##.adblock_title:upward(5)
@@ -1962,3 +1967,4 @@ ssstwitter.com###footer
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
