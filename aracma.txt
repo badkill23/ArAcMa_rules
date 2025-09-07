@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 07 Sep 2025 10:15 UTC-6
-! Version: 07.09.2025rev2
+! Last modified: 07 Sep 2025 10:35 UTC-6
+! Version: 07.09.2025rev3
 ! Syntax: Adblock
 
 ! listonic
@@ -1328,9 +1328,7 @@ reddit.com##div[class^="_1b1Jalg2nxA_Z-BjKXRfAV"]
 reddit.com##div[class^="_1vXXD2qKLnHetdKvisFzBD"]
 reddit.com##.m-visible.TopNav__topButton.TopButton
 reddit.com##.subredditvars-r-ublockorigin :is(div:has(>div>button[id^="collection-menu"]), div:has(>#collectionPostListScrollContainer))
-!#if adguard_app_ios
-@@||click.redditmail.com
-!#endif
+@@||click.redditmail.com^
 
 
 ! masterpctutoriales
@@ -1968,5 +1966,6 @@ ssstwitter.com###footer
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
