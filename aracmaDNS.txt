@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 5 day
-! Last modified: 11 Dec 2024 13:05 UTC-6
-! Version: 11.12.2024rev1
+! Last modified: 07 Sep 2025 11:00 UTC-6
+! Version: 07.09.2025rev1
 ! Syntax: AdBlock
 
 
@@ -77,3 +77,4 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=yelitzonpc.com
 @@||modemobile.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=descargaspcpro.net
+@@||click.redditmail.com^
