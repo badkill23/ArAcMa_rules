@@ -3,20 +3,17 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 07 Sep 2025 14:02 UTC-6
-! Version: 07.09.2025rev5
+! Last modified: 30 Oct 2025 15:00 UTC-6
+! Version: 30.10.2025rev1
 ! Syntax: Adblock
 
-! 7 sep 2025 Listonic
+! Listonic 30 Oct. 2025
 ! Oculta Ventan Flotante Descargar App
-new.app.listonic.com##div.fixed:has-text("Descárgalo en tu dispositivo!")
-! Oculta Btn Descargar App
-new.app.listonic.com##[href*="/id331302745"]
-new.app.listonic.com##[href*="id=com.l"]
+new.app.listonic.com###__next > main > div > div:has-text(¿Te gusta Listonic?)
 ! Oculta Redes Sociales
-new.app.listonic.com##.ml-8.my-6.w-auto.flex-col.flex
+new.app.listonic.com###__next > main > div > div > div > div:has([href="https://www.facebook.com/listonic"])
 ! Oculta Terminos y Politica
-new.app.listonic.com##.gap-4.mx-8.w-auto.flex-col.flex
+new.app.listonic.com###__next > main > div > div > div > div:has([href="https://listonic.com/privacy/"])
 
 
 ! GobiernoMX
@@ -137,6 +134,8 @@ pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
 pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 pinterest.com.mx##.Hsu.iyn.zI7.rDA.ojN.jar._he.RDc.KO4
+! Mensaje de img descargada
+pinterest.com##[data-test-id="post-download-upsell-popover"]
 
 ! YouTube
 !     Sin Distracciones Personal
@@ -788,6 +787,8 @@ lrepacks.net##li:has([href*="/206-podderzhka-proekta-i-poluchenie-premium-dostup
 *##li:contains(Te recomendamos leer:)
 *##.recomendado-incrustado
 *##[id*="related-articles"]
+*##[data-parent-group="related-stories"]
+*###barra-redes-sociales
 
 
 ! eluniversal
@@ -1184,55 +1185,61 @@ digitaltrends.com##div[class^="b-foot__social"]
 digitaltrends.com##div[class^="b-share h-modal-it"]
 digitaltrends.com##button[class^="b-share h-modal-it"]
 
-! whatsapp web
-! ad fb menulist
-web.whatsapp.com##li[data-testid^="ad-creation-menu-item"]
-! Elemento Anuncios en Menu Herramientas
-web.whatsapp.com##.oteuebma.cmcp1to6.nc5t0wl8.fbgy3m38.oq31bsqd:has([title="Anuncios"])
-! splash home
-web.whatsapp.com##div[class^="_3SOOk"]
-! logo chats
-web.whatsapp.com##._al_n
-! btn reaction
-!web.whatsapp.com##div[data-testid*="reaction-entry-point"]
-!web.whatsapp.com##div[aria-label="Reaccionar"]
-! btn reaccionar en chat
-web.whatsapp.com##._3OtEr:has([aria-label="Reaccionar"])
-!notif mensaje eliminado
-web.whatsapp.com##.xv54qhq.xf7dkkf.xsag5q8.xz9dl7a.x1evy7pa.x1f6kntn.x78zum5.xm4wzdf.xi7vu0r.x14j70uu.xfrhtc.x12veol0.x1wkzo03.x6s0dn4
-web.whatsapp.com##.xv54qhq.xf7dkkf.xsag5q8.xz9dl7a.x1evy7pa.x1f6kntn.x78zum5.xm4wzdf.xr2wkf5.x1fxmhz6.x1u1eq46.x2yqj0j.x1wkzo03.x6s0dn4
-! popup llega a nuevos clientes
-web.whatsapp.com###side>div:contains(Llega a nuevos clientes)
-! btn canales menu
-web.whatsapp.com##.xjpr12u:has([aria-label="Canales"])
-! btn comunidades menu
-web.whatsapp.com##div._ajvb._ajv5._ajv7:has([aria-label="Comunidades"])
-!web.whatsapp.com##div._ajvb._ajv5._ajv7:nth-of-type(2)
-web.whatsapp.com##._ajv7>[aria-label="Comunidades"]
-! btn anunciar en Facebook menu
-web.whatsapp.com##div._aohj > ._ajvb._ajv7 > .xurb0ha.xwib8y2.x1sxyh0.x1y1aw1k._ajv6
-! btn anunciar en Facebook menu desplegable
-web.whatsapp.com##.xjpr12u:has([aria-label="Anunciar en Facebook"])
-web.whatsapp.com##li:contains(Anunciar en Facebook)
-! btn anuncios en menu herramientas
-web.whatsapp.com##div.xwib8y2.x1y1aw1k.xcsjwe9.x1q0q8m5.xso031l:has([title="Anuncios"])
-web.whatsapp.com##div.xwib8y2.x1y1aw1k:contains(Publica una promoción)
-! quita bordes blancos
-web.whatsapp.com##._8nE1Y:style(border-top: 0 !important;)
-web.whatsapp.com##._64p9P:style(border-left: 0 !important;)
-web.whatsapp.com##._5kRIK:style(border-left: 0 !important;)
-web.whatsapp.com##.AmmtE:style(border-left: 0 !important;)
-web.whatsapp.com##._2lSWV:style(border-left: 0 !important;)
-!quita borde gris lista de contactos
-web.whatsapp.com##._ak8l:style(border-top: 0 !important;)
-web.whatsapp.com##.xu3j5b3:style(border-right-style: hidden !important;)
-web.whatsapp.com##.xm81vs4:style(border-right-width: 0 !important;)
-web.whatsapp.com##._ak1k:style(border-left: 0 !important;)
-web.whatsapp.com##.xso031l:style(border-bottom-width: 0 !important;)
-! quita borde en archivados
-web.whatsapp.com##.xjm9jq1:style(height: 0 !important;)
+# WhatsApp Web
 
-! whatsapp sitio
+! Eliminar Anuncios
+! -------------------------------
+! Llega a más clientes
+! Herramientas de empresa
+! [aria-label="Anuncios"]
+web.whatsapp.com###app > div > div > div > div > div > div > div > span > div > div > span > div > div:nth-child(3)
+
+! Centro de ayuda para empresas
+! Herramientas de empresa
+! [aria-label="Centro de ayuda para empresas"]
+web.whatsapp.com###app > div > div > div > div > div > div > div > span > div > div > span > div > div:nth-child(5)
+
+! Anunciar en Facebook
+! Boton Menú en Lista
+! li:contains(Anunciar en Facebook)
+web.whatsapp.com###app > div > div > span > div > ul > div > div:nth-child(3)
+
+! Mensaje llega a nuevos clientes
+web.whatsapp.com###side>div:contains(Llega a nuevos clientes)
+
+! Mensaje emergente Información sobre herramientas
+web.whatsapp.com###app > div:nth-child(2):style(display: none !important;)
+
+! Notificación mensaje eliminado
+web.whatsapp.com##.xv54qhq.xf7dkkf.xsag5q8.xz9dl7a.x1evy7pa.x1f6kntn.x78zum5.x17t9dm2.xr2wkf5.x1fxmhz6.x1u1eq46.x2yqj0j.x1e6sl3u.x6s0dn4
+
+! Personalizar NavBar 
+! Barra izquierdo
+! ---------------------
+! Icono Canales
+! NavBar izquierdo
+! [aria-label="Canales"]
+web.whatsapp.com###app > div > div > div > div > header > div > div > div > div:nth-child(3)
+
+! Icono Comunidades
+! NavBar izquierdo
+! [aria-label="Comunidades"]
+web.whatsapp.com###app > div > div > div > div > header > div > div > div > div:nth-child(4)
+
+! Icono Canales
+! NavBar izquierdo
+! [aria-label="Anunciar en Facebook"]
+web.whatsapp.com###app > div > div > div > div > header > div > div > div > div:nth-child(7)
+
+! Personalizar Interfaz
+! -------------------------------
+! Quita todos los bordes blancos
+web.whatsapp.com##*:style(border: 0 !important;)
+
+! Linea Separadora de Chats Archivados
+web.whatsapp.com###app > div > div > div > div > div:nth-child(3) > div:first-child > div > span > div > span > div > div:last-child > div[tabindex] > div:nth-child(2):style(display: none !important;)
+
+! Whatsapp Sitio
 www.whatsapp.com##._ae_x._9tau._9ta8._9ta5._9ta3._9tar
 
 ! Telcel
@@ -1826,10 +1833,8 @@ medicoplus.com##li:contains(Te recomendamos leer:)
 katfile.com##p:has([href*="/bmjidc.xyz/?"])
 
 ! Spotify
-! btn instalar app
-open.spotify.com##.encore-over-media-set.kVKSMm.ButtonInner-sc-14ud5tc-0
-! btn premium
-open.spotify.com##.encore-text-body-small-bold.bThepJ.Button-sc-qlcn5g-0
+open.spotify.com##[data-testid="upgrade-button"]
+open.spotify.com##a:has-text(Instalar aplicación)
 
 ! canalcatorce
 www.canalcatorce.tv##footer
@@ -1851,11 +1856,15 @@ acrobat.adobe.com##.Popup__Popup___NkdCE
 ! taecel
 taecel.com##.position-fixed.social_1
 
+! TAENET Seycel
+! Quita el tamaño de fuente en Tabla Pago Exitoso
+www.taenet.com.mx##.md-card-content #result table#respOK:style(font-size: unset !important;)
 
 ! Elimina pop-ups "Compartir este articulo"
 pchardwarepro.com##+js(aeld, scroll, ticking)
 tutowindow.com##+js(aeld, scroll, ticking)
 biobook.es##+js(aeld, scroll, ticking)
+tecnotuto.com##+js(aeld, scroll, ticking)
 
 ! grafik-teka
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=grafik-teka.com
@@ -1885,5 +1894,15 @@ ssstwitter.com##.content
 ssstwitter.com##.content-wrapper
 ssstwitter.com###footer
 
+! scribd
+scribd.com##[data-e2e="megamenu-top-bar-read-free-button"]
+
+! imgur
+imgur.com##.BottomRecirc
+
+! foxit
+foxit.com##.ai-chatbot-wrapper
+
 ! Filtros DNS
 !#include aracmaDNS.txt
+
