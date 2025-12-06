@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 30 Oct 2025 15:00 UTC-6
-! Version: 30.10.2025rev1
+! Last modified: 06 Dic 2025 10:00 UTC-6
+! Version: 06.12.2025rev1
 ! Syntax: Adblock
 
 ! Listonic 30 Oct. 2025
@@ -309,6 +309,9 @@ www.bing.com###b_typetosearchtips
 www.bing.com###b_mtp
 ! Reactiva las sugerencias de busqueda en Bing
 @@||*$removeparam=cvid,from=bing.com|microsoft.com|msn.com
+! btn flotante en busqueda
+! Hacer pregunta de seguimiento
+www.bing.com###b_copilot_search
 
 ! msn
 www.msn.com##[id="feedback-link-button"]
@@ -1905,4 +1908,5 @@ foxit.com##.ai-chatbot-wrapper
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
