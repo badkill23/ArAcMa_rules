@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 06 Dic 2025 10:00 UTC-6
-! Version: 06.12.2025rev1
+! Last modified: 11 Dic 2025 08:10 UTC-6
+! Version: 11.12.2025rev1
 ! Syntax: Adblock
 
 ! Listonic 30 Oct. 2025
@@ -1188,60 +1188,6 @@ digitaltrends.com##div[class^="b-foot__social"]
 digitaltrends.com##div[class^="b-share h-modal-it"]
 digitaltrends.com##button[class^="b-share h-modal-it"]
 
-# WhatsApp Web
-
-! Eliminar Anuncios
-! -------------------------------
-! Llega a más clientes
-! Herramientas de empresa
-! [aria-label="Anuncios"]
-web.whatsapp.com###app > div > div > div > div > div > div > div > span > div > div > span > div > div:nth-child(3)
-
-! Centro de ayuda para empresas
-! Herramientas de empresa
-! [aria-label="Centro de ayuda para empresas"]
-web.whatsapp.com###app > div > div > div > div > div > div > div > span > div > div > span > div > div:nth-child(5)
-
-! Anunciar en Facebook
-! Boton Menú en Lista
-! li:contains(Anunciar en Facebook)
-web.whatsapp.com###app > div > div > span > div > ul > div > div:nth-child(3)
-
-! Mensaje llega a nuevos clientes
-web.whatsapp.com###side>div:contains(Llega a nuevos clientes)
-
-! Mensaje emergente Información sobre herramientas
-web.whatsapp.com###app > div:nth-child(2):style(display: none !important;)
-
-! Notificación mensaje eliminado
-web.whatsapp.com##.xv54qhq.xf7dkkf.xsag5q8.xz9dl7a.x1evy7pa.x1f6kntn.x78zum5.x17t9dm2.xr2wkf5.x1fxmhz6.x1u1eq46.x2yqj0j.x1e6sl3u.x6s0dn4
-
-! Personalizar NavBar 
-! Barra izquierdo
-! ---------------------
-! Icono Canales
-! NavBar izquierdo
-! [aria-label="Canales"]
-web.whatsapp.com###app > div > div > div > div > header > div > div > div > div:nth-child(3)
-
-! Icono Comunidades
-! NavBar izquierdo
-! [aria-label="Comunidades"]
-web.whatsapp.com###app > div > div > div > div > header > div > div > div > div:nth-child(4)
-
-! Icono Canales
-! NavBar izquierdo
-! [aria-label="Anunciar en Facebook"]
-web.whatsapp.com###app > div > div > div > div > header > div > div > div > div:nth-child(7)
-
-! Personalizar Interfaz
-! -------------------------------
-! Quita todos los bordes blancos
-web.whatsapp.com##*:style(border: 0 !important;)
-
-! Linea Separadora de Chats Archivados
-web.whatsapp.com###app > div > div > div > div > div:nth-child(3) > div:first-child > div > span > div > span > div > div:last-child > div[tabindex] > div:nth-child(2):style(display: none !important;)
-
 ! Whatsapp Sitio
 www.whatsapp.com##._ae_x._9tau._9ta8._9ta5._9ta3._9tar
 
@@ -1906,7 +1852,12 @@ imgur.com##.BottomRecirc
 ! foxit
 foxit.com##.ai-chatbot-wrapper
 
+! Chatbot de Typebot
+||cdn.jsdelivr.net/npm/@typebot.io/$script
+
+
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
