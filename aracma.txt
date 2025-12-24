@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 11 Dic 2025 08:10 UTC-6
-! Version: 11.12.2025rev1
+! Last modified: 24 Dic 2025 07:10 UTC-6
+! Version: 24.12.2025rev1
 ! Syntax: Adblock
 
 ! Listonic 30 Oct. 2025
@@ -83,28 +83,33 @@ www2.repuve.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 www2.repuve.gob.mx##div.row:nth-of-type(4)
 www2.repuve.gob.mx##div[class^="alert alert-info"]
 www2.repuve.gob.mx##app-consulta > div.container > .row
-! becasbenitojuarez
-becasbenitojuarez.gob.mx##footer
+
 ! CURP
 consultas.curp.gob.mx##header.container
 consultas.curp.gob.mx##.footer
 ||consultas.curp.gob.mx/CurpSP/preparaEncuesta.do$popup,1p
 ! ceypto CURP
 ||www.gob.mx/_sec/cp_challenge/
+
 ! becasbenitojuarez
 buscador.becasbenitojuarez.gob.mx##.header
 buscador.becasbenitojuarez.gob.mx##.print.internal.font-changer.hidden-xs
 buscador.becasbenitojuarez.gob.mx###socialside
+becasbenitojuarez.gob.mx##footer
+
 ! registrocivil
 cevar.registrocivil.gob.mx##body:style(background: none !important;)
 cevar.registrocivil.gob.mx##.page > .container:style(background: none !important;)
 cevar.registrocivil.gob.mx##header
+
 ! puebla.gob.mx
 srl.puebla.gob.mx##.footer-bottom
 ! usicmm.gob.mx
 uscmm.gob.mx##.socialside23
+
 ! imssbienestar
 app-registro.imssbienestar.gob.mx###toppage
+
 ! imss
 www.imss.gob.mx##.region-topheader
 www.imss.gob.mx##.mdp-hover-none
@@ -369,430 +374,6 @@ lrepacks.net#%#//scriptlet('remove-class', 'header-fixed', 'body', 'stay')
 lrepacks.net##article.columns.large-6.medium-6:has([href*="/743-podderzhka-proekta.html"])
 lrepacks.net##article.columns.large-6.medium-6:has([href*="/876-keysfan-sales-gifts-best-prices.html"])
 lrepacks.net##li:has([href*="/206-podderzhka-proekta-i-poluchenie-premium-dostupa.html"])
-
-! elementos genericos
-*##.floating-sites
-*##nav[class^="fixed-sites"]
-*##div[class^="redes-flotantes"]
-*##div[id^="header social widget"]
-*##ul[class^="social-icons"]
-*##nav[class^="trends"]
-*##ul[class^="comments-social-share"]
-*##div[class^="np-card np-card--visible"]
-*##div[class^="gaz-branded-link"]
-*##aside[id^="head-favicons"]
-*##div[class^="head-favicons-container"]
-*##ul[class^="masthead-nav-social"]
-*##div[class^="article-social-share js-article-social-share m-in-normal"]
-*##div[class^="article-actions"]
-*##nav[class^="menu-follow aside-menu-follow"]
-*##div[class^="pivot-ecommerce-container"]
-*##div[class^="article-asset-video article-asset-large article-asset-center"]
-*##div[class^="article-social-share js-article-social-share m-in-links is-hidden"]
-*##div[class^="menu-follow foot-menu-follow"]
-*##div[class^="section-deeplinking-container m-deeplinking-news "]
-*##div[class^="video-boost-container article-asset-normal"]
-*##div[class^="desvio-container"]
-*##div[class^="pivot-newsletter"]
-*##div[class^="section-deeplinking-container m-evergreen-links"]
-*##div[class^="post-comments-shortcut"]
-*##a[class^="float-nav-2"]
-*##div[class^="code-block code-block-2"]
-*##section[id^="block-25"]
-*##nav[class^="social-navigation"]
-*##div[class^="disqus-footer disqus-footer--refresh"]
-*##div[class^="aside"]
-*##div[class*="np-sheet"]
-*##nav[class^="menu-categories foot-menu-categories"]
-*##div[class^="section-post-closure"]
-*##div[data-itemtype^="product"]
-*##div[data-asin^="B0BSJF5SHL"]
-*##div[class^="related-alts-container"]
-*##div[class^="section-deeplinking-container m-deeplinking-aside "]
-*##div[class^="section-deeplinking-container m-deeplinking-light "]
-*##div[class^="article-wrapper-outer"]
-*##div[class^="article-social-share js-article-social-share m-in-links"]
-*##div[id^="ModuleAccessibility117"]
-*##div[id^="accessibility"]
-*##div[id^="survey"]
-*##.social-bar
-*##.contact-footer
-*##[id^="subscriptionUI"]
-*##[class$="suscribete"]
-*##[class*="bannerSuscribete"]
-*##[class*="adversiting"]
-*##[id*="socialmedia"]
-*##[id^="popmake-"]
-*##ul[class^="social-links"]
-*##[class^="subscribe-modal-wrapper"]
-*##li[class^="js-freemium-cta ps-relative"]
-*##[class^="socialicon"]
-*##[class^="subscibe-"]
-*##[class^="icons-menu"]
-*##ul[class^="follow-"]
-*##ul[class$="social-icons"]
-*##[class^="follow-us"]
-*##[id^="Subscription"]
-*##[class^="donations-"]
-*##[aria-label="Síguenos en las redes sociales"]
-*##[id^="popUpMedictor-movil"]
-*##[class^="at-temp"]
-*##[class^="find-us"]
-*##[id="fbox-background"]
-*##[id^="subscribe-"]
-*##[class^="rainbow"]
-*##[class*="footer__icons--social"]
-*##[id^="container-banner"]
-*##[class^="block-social"]
-*##[class*="_social_media_follow_"]
-*##[class^="ListContenidoRelacionado"]
-*##[class*="_siganos"]
-*##[class^="bottomMenu"]
-*##[class^="sharing-menu"]
-*##[id^="google-news"]
-*##[class$="footer-redes"]
-*##[class$="footer__banner "]
-*##[class^="hook "]
-*##[class*="media-integrated "]
-*##[class*="relatedposts"]
-*##[class*="post-related"]
-*##[class*="tambien-en"]
-*##[class*="editors-recs"]
-*##[id^="sectionSocialMedia"]
-*##[class*="suggested-content"]
-*##[class^="accessibility_open"]
-*##[class*="twitter-timeline"]
-*##div>ul:has-text(/Te recomendamos/)
-*##[href*="/donate/"]
-*##[href*="/donate"]
-*##[class^="kofi-button"]
-*##[class^="subscribe_button"]
-*##[class*="google-news"]
-*##[href*="/news.google.com/"]
-*##[href*="/newsletters"]:upward(1)
-*##[class*="itemRelated"]
-*##[class^="jsx-2832277404"]
-*##[class$="banner block"]
-*##div>h2:has-text(/Contenido Patrocinado/)
-*##div>h4:has-text(/Sigueme/)
-*##[class*="icon-redes"]
-*##[class*="widget-follow"]
-*##form:has(input[alt="Donate with PayPal button"])
-*##form:has(input[name="hosted_button_id"])
-*##form:has(input[name="business"])
-*##[action^="https://www.paypal.com/donate"]
-*##[class*="paypal-button"]
-*##[id^="layerAppsWrapper"]
-*##div>a:has-text(/LEA TAMBIÉN/)
-*##div>a:has-text(/Puede servirte/)
-*##p:has-text(/TE PUEDE INTERESAR/)
-*##p:has-text(/Advertisement/)
-*##h4:has-text(/Síguenos en/)
-*##h2:has-text(/Síguenos en/)
-*##a:has-text(/uscríbete/)
-*##span:has-text(/Suscríbete/)
-*##[class*="-siguenos-"]
-*##p:has-text(/Valora este contenido/)
-*##[alt="Newslwtter"]
-*##[class^="exit-intent-popup"]
-*##[data-testid^="assistant"]
-*##[class^="products-box-ask"]
-*##[class^="botlers-messaging"]
-*##[class^="m a"]
-*##[aria-label="Chatea con nosotros"]
-*##[aria-label="Chat with us"]
-*##[class^="adbMsg"]
-*##[id^="seguidores"]
-*##[class="title"]:has-text(/uscribirse/)
-*##form:has(input[value="Subscribirse"]):upward(1)
-*##[class^="ads-asap"]
-*##[class$="-antes"]
-*##[href*="donar"]:upward(1)
-*##[class*="card FixedWidget"]
-*##p:has-text(/^Lea también/)
-*##.the-content>ul:not(#index-table)
-*##p:has(a[href="https://t.me/AndroForever"])
-*##td:has(a[href="https://t.me/AndroForever"])
-*##div>p:has-text(/Quizá te gusté/):upward(1)
-*##[class^="networking"]
-*##h4:has-text(/edes sociales/)
-*##h3:has-text(/edes Sociales/)
-*##[data-display-name="SocialShare"]
-*##[data-display-name="Newsletter"]
-*##[class*="social-links"]
-*##[class*="article-vote"]
-*##.ListPOpt
-*##.smft
-*##.fa-lightbulb
-*##[class*="subscribe_to_updates"]
-*##[id*="browser-promo"]
-*##[class*="telegram-widget"]
-*##[id*="post-rating"]
-*##[href*="/donations/"]
-*##.BtnLight
-*###ad_strip
-*##[class^="alert-section"]
-*##[class^="ask-common-wrap"]
-*##[class*="soc-list"]:upward(1)
-*##[class*="nav-soc"]:upward(1)
-*##b:has-text(/Recomendado/)
-*##[class^="accessibilityClass"]
-*##[class*="btn-paypal"]
-*##.widget_social_apps
-*##.social_link
-*##.social-icons
-*##.social.social-footer
-*##.author-social_profiles
-*##[href$="ko-fi.com/4download"]
-*##.contenido-redes-sociales:upward(1)
-*##.tdm-social-item-wrap:upward(3)
-*##.tdb-author-social
-*##.fh5co-social-icons
-*##.kids_social_wrapper
-*##.kids_social
-*##.social
-*##.open-chaty:upward(2)
-*##.botones_sociales
-*##.icon-holder-social:upward(1)
-*##.icon-holder-device:upward(1)
-*###dailymotion-pip-large-viewport
-*##.social-link
-*##.css-1v5xah6
-*##.sg-social
-*##.ShareList
-*##.boxsocial
-*##.share
-*##[id*="publicidad"]
-*##.rayabtn
-*##.siguenos_footer
-*##.sfsi_Sicons
-*##h4:has-text(/Share this/)
-*##.show_share
-*##.heateor_sss_follow_ul
-*##.kofi-button
-*##.fa-twitter.fab
-*##.fa-facebook.fab
-*##.fab.mvp-author-box-soc
-*##.newsletter-box
-*##.header__social
-*##.newsfull__share-buttons
-*##.footer__social
-*##.td-social-icon-wrap
-*##.footer-social-wrap
-*##.subscribe-button
-*###membership_sidebar
-*##.header_sm_buttons
-*##.donate_button
-*##.donate_message
-*##.subscribe-hit
-*##.c-footer__share
-*###ctn_premium_article
-*##.fo_en_redes
-*##.share-buttons-style-two 
-*##.newsletter
-*##.memberful-post-container
-*##.like-newsletter
-*##.membership-link
-*##.comments-social-share-mobile
-*##a.kofi-button
-*##.redes
-*###btn-soporte
-*##.essb-block
-*##.feedback-binded
-*##.info-networks
-*##[name*="chatbot"]
-*##.app-footer__social
-*##.footer-social-inner-wrap
-*###slidebox
-*##.social-cl
-*##.socialNetwork
-*##.banners-ecp
-*##.m-footer__bottombar__left__social
-*##h3:has-text(/Suscríbete/)
-*##.btnsplyr
-*##.jetpack_widget_social_icons
-*##.content-social
-*##.expand.floating-footer
-*###elFooterSocialLinks
-*##h3:has-text("Follow Us")
-*##h3:has-text(/Síguenos/)
-*##.bottomFooter
-*###chat-teaser-box
-*##.circle_social
-*##.mzp-c-footer-links-social > li
-*##.donate
-*##[href*="/ko-fi.com/"]
-*##.nv-social-icons-list
-*##.nv-post-share
-*##.phpdebugbar
-*##[href$="/membresia-vip/"]:upward(.container-wrapper)
-*###glt-translate-trigger
-*##.social-profiles
-*##.social_icon
-*##.footer-wrapper_branding-social
-*##form:has(button[name="subscribe"]):upward(1)
-*##.footer-follow
-*##.footer-social-link
-*##.mks_social_widget
-*##.fa-facebook-square
-*##.fa-twitter-square
-*###whatsapp-dialog
-*##.app-header > .d-block.d-md-none
-*##.share-article-card
-*##[id="reactions__container"]
-*##[id="didomi-host"]
-*##.compartir-articulo
-*##.about-share
-*##.share-section
-*##.sm_links
-*##.icon-share
-*##[class*="relacionada"]
-*##[class*="relacionados"]
-*##[class*="next-post"]
-*##[class*="anuncio-"]
-*##[class*="suscripcion"]
-*###scrollRecomendacion
-*##.meta_right
-*##[data-testid*="onsite-messaging"]
-*##[aria-label*="Social Media Share buttons"]
-*##[id*="btn_share"]
-*##a:contains(Suscribirse)
-*##.btn-redes-sociales
-*###chat-button
-*##.redesBox
-*##.iconos-redes
-*##.widget:contains(Síguenos)
-*##.footer-follow-us
-*##.privacy-choices-link
-*##.menu-icon-fb
-*##.menu-icon-tw
-*##.youtubechannelgallery
-*##aside:contains(Follow)
-*##.fa-instagram
-*##.share-container
-*##.social-platform
-*##.get-news-title
-*##.share-party
-*##.newsletter-dialog-link
-*##[class*="footer-social"]
-!smallpdf
-*##.dCbDug.sc-1vdvga6-1
-*##[data-e2e*="recommendations"]
-*##h6:contains(Follow)
-*##h3:contains(Follow)
-*##.feed-newsletter-ficha
-*##.social-share-contenedor
-*##.list-socials
-*##.social-column
-*##.slide-down.notification-subs
-*###reactions_section
-*##.medias
-*##.mwm_rrss_contenedor
-*##.optinforms-form-container
-*##.social-icons__list
-*##.jl_socialcolor
-*##.jl_single_share_wrapper
-*##.jl_auth_link
-*##[class*="social-list_container"]
-*##.f-social
-*##[title="Banner"]
-*##.element-social-inner-wrap
-*##[class*="footer_social"]
-*##[class*="social-networks"]
-*##[class*="social_icon"]
-*###share-to-social
-*##.reaction-section
-*##[class*="rating-widget"]
-*##.social-follower
-*##.topbar-social
-! Blank space instead of GoogleAds
-*##div.in-article-container
-! Blank space instead of Video Ads
-*##.article-asset-video
-*##.icon-list
-*##[href*="privacychoices"]
-*##.soc-ico
-*##.banner-cursos-online-latam
-*##a:contains(Privacy Choices)
-*##.section__social
-*##.oneTrust_btn
-*##.wpra-reactions-wrap
-*##.kenta-socials
-*##._social-share-container
-*##.rating
-*##.mdp-stellar
-*##.related-article-content
-*##.si__body
-*##.newsletter-btn
-*##.social-media
-*##[class*="star-ratings"]
-*##.ratings-wrapper
-*##.social-icons-header
-*##.ad-contentbanner
-*##[class*="feedback__wrapper"]
-*##.feedback
-*##.elementor-widget-share-buttons
-
-! Sugerencias de articulos
-*##p:contains(Also Read:)
-*##p:contains(Recommended:)
-*##p:contains(See Also)
-*##p:contains(Vea también)
-##p:contains(Similar)
-*##p:contains(Read:)
-*##p:contains(Related:)
-*##p:contains(Also See)
-*##p:contains(Lee También)
-*##p:contains(Te sugerimos:)
-*##p:contains(También lee:)
-*##p:contains(Te puede interesar:)
-*##p:contains(Te puede gustar:)
-*##p:contains(Te interesa:)
-*##p:contains(No dejes de leer:)
-*##p:contains(TE RECOMENDAMOS)
-*##p:contains(Te puede interesar)
-*##p:contains(Te recomendamos)
-*##p:contains(Ver también)
-*##p:contains(TAMBIÉN PUEDES LEER)
-*##p:contains(TE PUEDE INTERESAR)
-*##ul:contains(No te pierdas)
-*##ul:contains(Te puede interesar)
-*##ul:contains(Además, lee)
-*##li:contains(TE PUEDE INTERESAR)
-*##li:contains(QUIZÁ QUIERAS LEER)
-*##li:contains(PUEDES LEER)
-*##li:contains(TAMBIÉN LEE)
-*##li:contains(LEE:)
-*##p:contains(Lee:)
-*##p:contains(También puedes leer:)
-*##li:contains(Artículo relacionado:)
-*##p:contains(NO TE PIERDAS:)
-*##p:contains(te recomienda:)
-*##p:contains(Lee también:)
-*##.entrada__link-related
-*##p:contains(Puedes leer:)
-*##p:contains(Revisa:)
-*##p:contains(Leer también:)
-*##p:contains(Te podría interesar)
-*##.teinteresa
-*##p:contains(Síguenos en)
-*##p:contains(Siguenos en)
-*##aside:contains(Get your FREE ebook)
-*##[class*="Advertising_advertising__DivAds"]
-*##p:contains(Sigue leyendo:)
-*##p:contains(También te puede interesar:)
-*##blockquote:contains(Artículo recomendado:)
-*##.card-related
-*##.article-recommend
-*##p:contains(También te puede interesar)
-*##blockquote:contains(Artículo recomendado:)
-*##p:contains(Relacionado:)
-*##li:contains(Te recomendamos leer:)
-*##.recomendado-incrustado
-*##[id*="related-articles"]
-*##[data-parent-group="related-stories"]
-*###barra-redes-sociales
-
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -1858,6 +1439,7 @@ foxit.com##.ai-chatbot-wrapper
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
