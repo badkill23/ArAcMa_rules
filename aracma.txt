@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 24 Dic 2025 07:30 UTC-6
-! Version: 24.12.2025rev2
+! Last modified: 24 Dic 2025 08:10 UTC-6
+! Version: 24.12.2025rev3
 ! Syntax: Adblock
 
 ! Listonic 30 Oct. 2025
@@ -20,8 +20,7 @@ new.app.listonic.com###__next > main > div > div > div > div:has([href="https://
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
 ||widget.botlers.io/button/index.html$subdocument
 gob.mx##[class*="footer"]
-!gob.mx##[class^="main-footer"]
-!gob.mx##.col-md-8 > p
+gob.mx###accessibility
 gob.mx##.list-info
 gob.mx##.alert-info.alert
 gob.mx##.form-group > .clearfix.form-group
@@ -31,11 +30,13 @@ gob.mx##.breadcrumb:style(margin: 0 !important;)
 gob.mx##.breadcrumb:style(padding: 0 !important;)
 gob.mx##.top-buffer:style(margin: 0 !important;)
 gob.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
+
 !CFE
 app.cfe.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 app.cfe.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 app.cfe.mx##div[class^="col-md-12 alert alert-info"]
 app.cfe.mx##div[class^="list-info"]
+app.cfe.mx###accessibility
 app.cfe.mx##.main-footer
 app.cfe.mx##footer[id^="footer"]
 app.cfe.mx##div.form-row>:contains(Recibo electrónico:)
@@ -49,12 +50,14 @@ app.cfe.mx##.breadcrumb:style(margin: 0 !important;)
 app.cfe.mx##.breadcrumb:style(padding: 0 !important;)
 app.cfe.mx##.top-buffer:style(margin: 0 !important;)
 app.cfe.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
+
 ! Agricultura
 www.suri.agricultura.gob.mx##div[class^="carousel slide"]
 www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
 www.suri.agricultura.gob.mx##section:nth-of-type(3)
 www.suri.agricultura.gob.mx##section:nth-of-type(4)
+
 ! SEPPuebla
 inscripcion.seppue.gob.mx##div[id^="datosPersonalesInf"]
 preinscripcion.seppue.gob.mx#%#//scriptlet('remove-attr', 'onload', '', 'stay')
@@ -62,11 +65,9 @@ preinscripcion.seppue.gob.mx#%#//scriptlet('remove-class', 'modal-open', '', 'st
 preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/gobiernoPresente.png"]
 ! encabezado de la pagina
 preinscripcion.seppue.gob.mx###undefined-sticky-wrapper
+
 ! siged CCT
 siged.sep.gob.mx##.section
-
-! llaveMX
-www.llave.gob.mx##.footer
 
 ! sisep.puebla
 sisep.puebla.gob.mx###captchaMod:style(height: 97px !important;)
@@ -375,6 +376,7 @@ lrepacks.net#%#//scriptlet('remove-class', 'header-fixed', 'body', 'stay')
 lrepacks.net##article.columns.large-6.medium-6:has([href*="/743-podderzhka-proekta.html"])
 lrepacks.net##article.columns.large-6.medium-6:has([href*="/876-keysfan-sales-gifts-best-prices.html"])
 lrepacks.net##li:has([href*="/206-podderzhka-proekta-i-poluchenie-premium-dostupa.html"])
+lrepacks.net##[href="/donate.html"]
 
 ! eluniversal
 www.eluniversal.com.mx##p:contains(Lee también)
@@ -1447,6 +1449,7 @@ foxit.com##.ai-chatbot-wrapper
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
