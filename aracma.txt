@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 24 Dic 2025 08:10 UTC-6
-! Version: 24.12.2025rev3
+! Last modified: 24 Dic 2025 15:10 UTC-6
+! Version: 24.12.2025rev4
 ! Syntax: Adblock
 
 ! Listonic 30 Oct. 2025
@@ -15,108 +15,90 @@ new.app.listonic.com###__next > main > div > div > div > div:has([href="https://
 ! Oculta Terminos y Politica
 new.app.listonic.com###__next > main > div > div > div > div:has([href="https://listonic.com/privacy/"])
 
+#### Gobierno de México ####
+! Accesibilidad IMSS
+||serviciosdigitales.imss.gob.mx/delta/resources/readabler/
 
-! GobiernoMX
+! Accesibilidad Gob MX
+||framework-gb.cdn.gob.mx/gm/accesibilidad/js/gobmx-accesibilidad.min.js$script
+
+! Encuestas
+||consultas.curp.gob.mx/CurpSP/preparaEncuesta.do$popup,1p
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
+
+! Chat Gob Pue
 ||widget.botlers.io/button/index.html$subdocument
-gob.mx##[class*="footer"]
-gob.mx###accessibility
-gob.mx##.list-info
-gob.mx##.alert-info.alert
-gob.mx##.form-group > .clearfix.form-group
-gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
-gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
+
+! Gob MX
+gob.mx##nav[class*="navbar-fixed-top"]
+gob.mx###toppage
+gob.mx##body:style(margin-top: 0 !important;)
+gob.mx##body:style(padding-top: 0 !important;)
 gob.mx##.breadcrumb:style(margin: 0 !important;)
 gob.mx##.breadcrumb:style(padding: 0 !important;)
-gob.mx##.top-buffer:style(margin: 0 !important;)
+gob.mx##.sub-navbar:style(margin-top: 0 !important;)
 gob.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
+gob.mx##[class*="footer"]:not([class="panel-footer"])
+gob.mx##.footer
+gob.mx###footer
+gob.mx##footer
+gob.mx##[class*="alert-info"]
+gob.mx##.mdp-readabler-trigger-button-box
+gob.mx##.region-topheader
+gob.mx##.mdp-hover-none
+gob.mx##.flag-banner
+gob.mx###header
+gob.mx###page-menu
+gob.mx##.page-title
+gob.mx###socialside
+gob.mx##.socialside23
+gob.mx##.print.internal.font-changer.hidden-xs
+gob.mx##[title*="accesibilidad"]
+gob.mx##.grecaptcha-badge
 
-!CFE
-app.cfe.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
-app.cfe.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
-app.cfe.mx##div[class^="col-md-12 alert alert-info"]
-app.cfe.mx##div[class^="list-info"]
-app.cfe.mx###accessibility
-app.cfe.mx##.main-footer
-app.cfe.mx##footer[id^="footer"]
-app.cfe.mx##div.form-row>:contains(Recibo electrónico:)
-app.cfe.mx##.bottommargin-sm.col-lg-12
-app.cfe.mx##.page-title-dark.page-title
+! CFE
+app.cfe.mx##nav[class*="navbar-fixed-top"]
+app.cfe.mx##[class*="footer"]
+app.cfe.mx##[class*="alert-info"]
 app.cfe.mx###header
-app.cfe.mx###page-menu-wrap
-app.cfe.mx###top-bar
+app.cfe.mx###page-menu
+app.cfe.mx##.page-title
+app.cfe.mx###footer
+app.cfe.mx##div.form-row>:contains(Recibo electrónico:)
 app.cfe.mx##.nopadding:style(background-image: none !important;)
-app.cfe.mx##.breadcrumb:style(margin: 0 !important;)
-app.cfe.mx##.breadcrumb:style(padding: 0 !important;)
-app.cfe.mx##.top-buffer:style(margin: 0 !important;)
-app.cfe.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
+app.cfe.mx##div.center:has(img[src*="logo-ssb.png"])
 
 ! Agricultura
-www.suri.agricultura.gob.mx##div[class^="carousel slide"]
-www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
-www.suri.agricultura.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
-www.suri.agricultura.gob.mx##section:nth-of-type(3)
-www.suri.agricultura.gob.mx##section:nth-of-type(4)
+www.suri.agricultura.gob.mx##section:nth-of-type(1)
+www.suri.agricultura.gob.mx##section:nth-of-type(n +3)
 
-! SEPPuebla
-inscripcion.seppue.gob.mx##div[id^="datosPersonalesInf"]
+! SEP Puebla
+inscripcion.seppue.gob.mx###datosPersonalesInf
 preinscripcion.seppue.gob.mx#%#//scriptlet('remove-attr', 'onload', '', 'stay')
 preinscripcion.seppue.gob.mx#%#//scriptlet('remove-class', 'modal-open', '', 'stay')
 preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/gobiernoPresente.png"]
-! encabezado de la pagina
+! Encabezado de la pagina
 preinscripcion.seppue.gob.mx###undefined-sticky-wrapper
 
-! siged CCT
-siged.sep.gob.mx##.section
-
-! sisep.puebla
+! Consulta Calif. Puebla
 sisep.puebla.gob.mx###captchaMod:style(height: 97px !important;)
 sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(1) > div > a > img:style(height: 60px !important;)
 sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(1) > div > a > img:style(width: 150px !important;)
 sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > a > img:style(height: 60px !important;)
 sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > a > img:style(width: 150px !important;)
 sisep.puebla.gob.mx###Encabezado > table:nth-child(41):style(display: none !important;)
+sisep.puebla.gob.mx###contenido-principal > table > tbody
 
-! repuve
-www2.repuve.gob.mx##body:style(overflow-y: scroll !important)
-www2.repuve.gob.mx##div[class^="swal2-container swal2-center swal2-backdrop-show"]
-www2.repuve.gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
-www2.repuve.gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
-www2.repuve.gob.mx##div.row:nth-of-type(4)
-www2.repuve.gob.mx##div[class^="alert alert-info"]
-www2.repuve.gob.mx##app-consulta > div.container > .row
+! Repuve
+www2.repuve.gob.mx##div.container:nth-of-type(6)
 
 ! CURP
 consultas.curp.gob.mx##header.container
-consultas.curp.gob.mx##.footer
-||consultas.curp.gob.mx/CurpSP/preparaEncuesta.do$popup,1p
 ! ceypto CURP
 ||www.gob.mx/_sec/cp_challenge/
 
-! becasbenitojuarez
-buscador.becasbenitojuarez.gob.mx##.header
-buscador.becasbenitojuarez.gob.mx##.print.internal.font-changer.hidden-xs
-buscador.becasbenitojuarez.gob.mx###socialside
-becasbenitojuarez.gob.mx##footer
-
-! registrocivil
-cevar.registrocivil.gob.mx##body:style(background: none !important;)
-cevar.registrocivil.gob.mx##.page > .container:style(background: none !important;)
-cevar.registrocivil.gob.mx##header
-
-! puebla.gob.mx
-srl.puebla.gob.mx##.footer-bottom
-! usicmm.gob.mx
-uscmm.gob.mx##.socialside23
-
-! imssbienestar
-app-registro.imssbienestar.gob.mx###toppage
-
-! imss
-www.imss.gob.mx##.region-topheader
-www.imss.gob.mx##.mdp-hover-none
-! boton de accesibilidad IMSS
-||serviciosdigitales.imss.gob.mx/delta/resources/readabler/
+! Puebla Gob
+citasenlinea.puebla.gob.mx###layout > div:nth-of-type(n+5)
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -1449,6 +1431,7 @@ foxit.com##.ai-chatbot-wrapper
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
