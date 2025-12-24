@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 24 Dic 2025 07:10 UTC-6
-! Version: 24.12.2025rev1
+! Last modified: 24 Dic 2025 07:30 UTC-6
+! Version: 24.12.2025rev2
 ! Syntax: Adblock
 
 ! Listonic 30 Oct. 2025
@@ -18,10 +18,12 @@ new.app.listonic.com###__next > main > div > div > div > div:has([href="https://
 
 ! GobiernoMX
 ||framework-gb.cdn.gob.mx/data/encuesta_v1.0/
-gob.mx##[class^="main-footer"]
+||widget.botlers.io/button/index.html$subdocument
+gob.mx##[class*="footer"]
+!gob.mx##[class^="main-footer"]
+!gob.mx##.col-md-8 > p
 gob.mx##.list-info
 gob.mx##.alert-info.alert
-gob.mx##.col-md-8 > p
 gob.mx##.form-group > .clearfix.form-group
 gob.mx##nav[class^="navbar navbar-inverse sub-navbar navbar-fixed-top"]
 gob.mx##nav[class^="navbar navbar-inverse navbar-fixed-top"]
@@ -55,7 +57,6 @@ www.suri.agricultura.gob.mx##section:nth-of-type(3)
 www.suri.agricultura.gob.mx##section:nth-of-type(4)
 ! SEPPuebla
 inscripcion.seppue.gob.mx##div[id^="datosPersonalesInf"]
-inscripcion.seppue.gob.mx##div[class^="footer"]
 preinscripcion.seppue.gob.mx#%#//scriptlet('remove-attr', 'onload', '', 'stay')
 preinscripcion.seppue.gob.mx#%#//scriptlet('remove-class', 'modal-open', '', 'stay')
 preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/gobiernoPresente.png"]
@@ -1241,10 +1242,11 @@ www.informador.mx##p:contains(Lee:)
 informador.mx##h3:contains(Lee:)
 informador.mx##h3:contains(Te puede interesar:)
 
-! politica.expansion
-politica.expansion.mx##div.RawHtmlModule
-politica.expansion.mx##.CardGrid
-politica.expansion.mx##.authors-module
+! expansion
+expansion.mx##div.RawHtmlModule
+expansion.mx##.CardGrid
+expansion.mx##.authors-module
+expansion.mx##span:has-text("Lee más")
 
 ! justexw
 justexw.com##.single-content.entry-content > div
@@ -1280,6 +1282,10 @@ www.telediario.mx##.footer__socials-ul
 www.telediario.mx##.nd-disclaimer-base
 www.telediario.mx##.content-columns__right
 www.telediario.mx###pushNotification-disclaimer
+www.telediario.mx##ul:has([class*="social-share"])
+
+! ambasmanos
+www.ambasmanos.mx##img[src*="Venta-anticipada"]
 
 ! imagenradio
 www.imagenradio.com.mx##.shares_class
@@ -1436,9 +1442,12 @@ foxit.com##.ai-chatbot-wrapper
 ! Chatbot de Typebot
 ||cdn.jsdelivr.net/npm/@typebot.io/$script
 
+! localsend
+||sponsorapp.io/sponsor/$subdocument
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
