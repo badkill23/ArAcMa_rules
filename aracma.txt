@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
 ! Expires: 3 days
-! Last modified: 24 Dic 2025 15:10 UTC-6
-! Version: 24.12.2025rev4
+! Last modified: 26 Dic 2025 11:05 UTC-6
+! Version: 26.12.2025rev1
 ! Syntax: Adblock
 
 ! Listonic 30 Oct. 2025
@@ -29,44 +29,7 @@ new.app.listonic.com###__next > main > div > div > div > div:has([href="https://
 ! Chat Gob Pue
 ||widget.botlers.io/button/index.html$subdocument
 
-! Gob MX
-gob.mx##nav[class*="navbar-fixed-top"]
-gob.mx###toppage
-gob.mx##body:style(margin-top: 0 !important;)
-gob.mx##body:style(padding-top: 0 !important;)
-gob.mx##.breadcrumb:style(margin: 0 !important;)
-gob.mx##.breadcrumb:style(padding: 0 !important;)
-gob.mx##.sub-navbar:style(margin-top: 0 !important;)
-gob.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
-gob.mx##[class*="footer"]:not([class="panel-footer"])
-gob.mx##.footer
-gob.mx###footer
-gob.mx##footer
-gob.mx##[class*="alert-info"]
-gob.mx##.mdp-readabler-trigger-button-box
-gob.mx##.region-topheader
-gob.mx##.mdp-hover-none
-gob.mx##.flag-banner
-gob.mx###header
-gob.mx###page-menu
-gob.mx##.page-title
-gob.mx###socialside
-gob.mx##.socialside23
-gob.mx##.print.internal.font-changer.hidden-xs
-gob.mx##[title*="accesibilidad"]
-gob.mx##.grecaptcha-badge
 
-! CFE
-app.cfe.mx##nav[class*="navbar-fixed-top"]
-app.cfe.mx##[class*="footer"]
-app.cfe.mx##[class*="alert-info"]
-app.cfe.mx###header
-app.cfe.mx###page-menu
-app.cfe.mx##.page-title
-app.cfe.mx###footer
-app.cfe.mx##div.form-row>:contains(Recibo electrónico:)
-app.cfe.mx##.nopadding:style(background-image: none !important;)
-app.cfe.mx##div.center:has(img[src*="logo-ssb.png"])
 
 ! Agricultura
 www.suri.agricultura.gob.mx##section:nth-of-type(1)
@@ -1431,6 +1394,7 @@ foxit.com##.ai-chatbot-wrapper
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
