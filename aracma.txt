@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 26 Dic 2025 14:30 UTC-6
-! Version: 26.12.2025rev2
+! Last modified: 27 Dic 2025 09:30 UTC-6
+! Version: 27.12.2025rev2
 ! Syntax: Adblock
 
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -33,6 +33,7 @@
 *##.social-media
 *##.social-feed
 *##.inklusionButton
+*###inklusion_tab_button
 *##[class*="fa-facebook"]
 *##[class*="fa-twitter"]
 *##[class*="fa-instagram"]
@@ -85,7 +86,21 @@
 *##.botones_sociales
 *##.subscription-container
 *##.fundraiser_progress
+*###seguidores
+*##.redessociales
+*##.btn__inklusion
+*##[data-display-name="SocialShare" i]
+*##[data-display-name="Newsletter" i]
+
+!----------------- CALIFICAR CONTENIDO -----------------!
 ||/plugins/chaty/*
+||/plugins/rate-my-post/*
+||api-2-0.spot.im/v1.0.0/reactions/
+||static-cdn.spot.im/production/social/tags/v5.18.1/reactions/
+||auth.openweb.com^
+||/openweb-feedback.js*
+||comentarios.audiencias-api.com^
+*##.ratingContainer
 
 !----------------- Recomendaciones -----------------!
 ##.inTextNews
@@ -98,7 +113,6 @@
 *##[id*="related-articles"]
 *##[data-parent-group="related-stories"]
 *##[class^="related-alts-container"]
-*##[class*="related"]
 *##[class*="relacionad"]
 *##.entrada__link-related
 *##.card-related
@@ -606,15 +620,12 @@ nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 !#endif
 
 ! cnn
-cnn.com#%#//scriptlet('remove-class', 'cnnvideo--sticky', '', 'stay')
-cnn.com#%#//scriptlet('remove-class', 'news--videofull', '', 'stay')
-cnn.com#%#//scriptlet('remove-class', 'single-video-mobile-template', '', 'stay')
-cnn.com#%#//scriptlet('remove-class', 'story-media', '', 'stay')
-cnn.com#%#//scriptlet('remove-class', 'fave-top-player', '', 'stay')
-cnn.com#%#//scriptlet('remove-class', 'fave-mobile', '', 'stay')
-cnn.com#%#//scriptlet('remove-class', 'mobile-video-sticky-enabled', '', 'stay')
-cnn.com#%#//scriptlet('remove-class', 'ads--international', '', 'stay')
-cnn.com##.story-video-playing.story-video.story-summary.story
+! video pip 27-12-25
+cnn.com#%#//scriptlet('remove-class', 'fave-player-container', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'fave-bolt-player', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'fave-no-mobile', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'fave-autoplay ', '', 'stay')
+cnn.com#%#//scriptlet('remove-class', 'video-resource__stuck', '', 'stay')
 cnn.com##.footer-buttons
 cnn.com##.storyfull__body > ul
 cnn.com##.share__radios
@@ -1571,3 +1582,4 @@ pagoenlinea.megacable.com.mx##div.css-y4rift.ant-row-center.ant-row:nth-of-type(
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
