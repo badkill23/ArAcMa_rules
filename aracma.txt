@@ -2,17 +2,19 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 27 Dic 2025 09:30 UTC-6
-! Version: 27.12.2025rev2
+! Last modified: 28 Dic 2025 12:00 UTC-6
+! Version: 28.12.2025rev1
 ! Syntax: Adblock
-
+!
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
 ! Issues: https://github.com/badkill23/ArAcMa_rules/issues
-
+!
+!
 ! ============================================
 !            ELEMENTOS GENÉRICOS
 ! ============================================
-!----------------- Anuncios -----------------!
+!
+!----------------- ANUNCIOS -----------------!
 *##p:has([id*="publicidad" i])
 *##[class*="Advertising" i]
 *##[data-widget-type="ADVERTISEMENT" i]
@@ -24,12 +26,13 @@
 *##iframe[src*="vix.com/"][src*="/embed/"][src*="embed=core"][src*="controlPlayer=true"]:upward(.\[content-visibility\:auto\])
 *##[aria-label*="VixBannerFooter" i]
 *##[href*="&deeplink=vixapp://detail/"]:upward([data-content-type="external widget"])
-*##span:has-text(/(publicidad|Lee más)/i)
+*##span:has-text(/^(publicidad/i)
 *##[href*="vix.onelink.me/"]
 *##[data-card-type*="vixplayer"]
 *##.ads_single_ad
+*##[class*="ads-content" i], [class*="publicidad" i]
 
-!----------------- Redes Sociales y Newsletter -----------------!
+!----------------- REDES SOCIALES Y NEWSLETTER -----------------!
 *##.social-media
 *##.social-feed
 *##.inklusionButton
@@ -91,6 +94,18 @@
 *##.btn__inklusion
 *##[data-display-name="SocialShare" i]
 *##[data-display-name="Newsletter" i]
+*##[class*="social-share" i]
+*##.footer__socials-ul
+*##.social-copy
+*##[id*="nuestras-redes" i], [class*="nuestra-redes" i], [class*="nuestras-redes" i]
+*###AgentAppContainer
+*##[class*="WhatsappButton" i]
+*##[class*="SocialSection" i]
+*##.jetpack-social-navigation
+*##.webot-custom-iframe
+*##[class*="footer-social" i]
+*##[aria-label*="Social Links" i]
+*##a:has-text(/(Suscríbete)/i)
 
 !----------------- CALIFICAR CONTENIDO -----------------!
 ||/plugins/chaty/*
@@ -102,7 +117,8 @@
 ||comentarios.audiencias-api.com^
 *##.ratingContainer
 
-!----------------- Recomendaciones -----------------!
+!----------------- ARTÍCULOS RECOMENDADOS -----------------!
+*##.recommended-card
 ##.inTextNews
 *##[class*="itemRelated"]
 *##[class*="relatedposts"]
@@ -139,14 +155,13 @@
 *##li:has-text(/^(lee|leer|leer también|también puedes leer|puedes leer|también lee|quizá quieras leer|te recomendamos leer|Artículo relacionado|Relacionado|También te puede interesar|Vea también|Similar|Lee También|Sigue leyendo|Leer también|Revisa|Puedes leer|Lee también|te recomienda|no te pierdas|Además, lee|Ver también|No dejes de leer|Ver además|Sigue en|Más en):/i)
 *##p:has-text(/^(lee|leer|leer también|también puedes leer|puedes leer|también lee|quizá quieras leer|te recomendamos leer|Artículo relacionado|Relacionado|También te puede interesar|Vea también|Similar|Lee También|Sigue leyendo|Leer también|Revisa|Puedes leer|Lee también|te recomienda|no te pierdas|Además, lee|Ver también|No dejes de leer|Ver además|Sigue en|Más en|Puede servirte|Valora este contenido|Más sobre):/i)
 
-! Listonic 30 Oct. 2025
-! Oculta Ventan Flotante Descargar App
-new.app.listonic.com###__next > main > div > div:has-text(¿Te gusta Listonic?)
-! Oculta Redes Sociales
-new.app.listonic.com###__next > main > div > div > div > div:has([href="https://www.facebook.com/listonic"])
-! Oculta Terminos y Politica
-new.app.listonic.com###__next > main > div > div > div > div:has([href="https://listonic.com/privacy/"])
+!----------------- ELIMINA POP-UPS "COMPARTIR ESTE ARTÍCULO" -----------------!
+pchardwarepro.com##+js(aeld, scroll, ticking)
+tutowindow.com##+js(aeld, scroll, ticking)
+biobook.es##+js(aeld, scroll, ticking)
+tecnotuto.com##+js(aeld, scroll, ticking)
 
+!----------------- LISTA DE BLOQUEO POR SITIO WEB -----------------!
 #### Gobierno de México ####
 ! Accesibilidad IMSS
 ||serviciosdigitales.imss.gob.mx/delta/resources/readabler/
@@ -237,6 +252,27 @@ consultas.curp.gob.mx##header.container
 
 ! Puebla Gob
 citasenlinea.puebla.gob.mx###layout > div:nth-of-type(n+5)
+
+! calcularrfc
+calcularrfc.mx##.wp-block-kadence-rowlayout.alignnone.kb-row-layout-id25_c5f6b2-ca.kb-row-layout-wrap
+calcularrfc.mx##.site-footer-wrap
+
+! Consulta SIAT - Ajuste de pantalla
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###formapp\:pnl_content > table:nth-child(10) > tbody > tr > td:style(padding: unset !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###contenedorcc:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###contenedorcc:style(height: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###formapp:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##html:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##.ui-corner-all.ui-widget-content.ui-widget.ui-panel:style(width: 100% !important;)
+agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##.cuno:style(padding-left: 0px !important;)
+
+! Listonic 30 Oct. 2025
+! Oculta Ventan Flotante Descargar App
+new.app.listonic.com###__next > main > div > div:has-text(¿Te gusta Listonic?)
+! Oculta Redes Sociales
+new.app.listonic.com###__next > main > div > div > div > div:has([href="https://www.facebook.com/listonic"])
+! Oculta Terminos y Politica
+new.app.listonic.com###__next > main > div > div > div > div:has([href="https://listonic.com/privacy/"])
 
 ! uploadrar
 uploadrar.com##[src="https://uploadrar.com/vps.jpg"]
@@ -1119,18 +1155,6 @@ sinube.mx#@#[class*="share"]
 sinube.mx##[class="Footer-inner clear"]
 sinube.mx##div.sqs-row.row:nth-of-type(2) > .span-12.sqs-col-12.col
 
-! deezer
-deezer.com##[href="/mx/concerts"]
-! cartel sin conexion internet
-www.deezer.com##.alert-wrapper
-! eliminar bordes grises
-www.deezer.com##.page-topbar:style(border-bottom: 0 !important;)
-www.deezer.com##.css-tzddi9:style(border-top-width: 0 !important;)
-www.deezer.com##.css-efpag6:style(border-right-width: 0 !important;)
-www.deezer.com##.css-w8kdg9:style(border-bottom-width: 0 !important;)
-www.deezer.com##.css-1d4hfp6:style(border-top-width: 0px !important;)
-www.deezer.com##.css-p6wjuo:style(border-right-width: 0px !important;)
-
 ! letras
 letras.com##.composer
 letras.com##.logo
@@ -1160,7 +1184,6 @@ www.aztecapuebla.com##.Page-footer
 www.aztecapuebla.com##.CreativeWorkPage-actions
 
 ! televisa
-www.televisa.com##[data-widget-type="Advertisement"]
 www.televisa.com##.uvs-ad-full-width
 
 ! parfana
@@ -1370,7 +1393,7 @@ justexw.com##.single-content.entry-content > div
 
 ! portalexcel
 portalexcel.com##.jeg_popup_post
-portalexcel.com##[href="https://portalexcel.com/curso-basico-de-excel"] > [src="https://portalexcel.com/wp-content/uploads/2023/08/curso-basico-de-excel-1.png"]
+portalexcel.com##[href*="curso-basico-de-excel"] > [src*="curso-basico-de-excel-1.png"]
 
 ! excel-dashboards
 excel-dashboards.com##.sidenavright
@@ -1389,17 +1412,11 @@ www.eldiariodechihuahua.mx###content_nota_relacionado
 www.eldiariodechihuahua.mx##.publicidad_ads
 www.eldiariodechihuahua.mx##.nota_articulos_interesar
 
-! infobae
-www.infobae.com##.recommended-card
-www.infobae.com##.social-copy
-
 ! telediario
 www.telediario.mx##[data-mrf-recirculation*="Nota Recomendada"]
-www.telediario.mx##.footer__socials-ul
 www.telediario.mx##.nd-disclaimer-base
 www.telediario.mx##.content-columns__right
 www.telediario.mx###pushNotification-disclaimer
-www.telediario.mx##ul:has([class*="social-share"])
 
 ! ambasmanos
 www.ambasmanos.mx##img[src*="Venta-anticipada"]
@@ -1459,7 +1476,6 @@ www.eleconomista.com.mx##.footer__aside
 vidacontecnologia.com##.enlazatom-title-box
 vidacontecnologia.com##.enlazatom-show-box
 
-
 ! elsoldepuebla
 ||www.elsoldepuebla.com.mx/static/theme/solmx/base/img/nuestros_sitios_mobile-right.svg$image
 www.elsoldepuebla.com.mx##.share-group
@@ -1513,12 +1529,6 @@ taecel.com##.position-fixed.social_1
 ! Quita el tamaño de fuente en Tabla Pago Exitoso
 www.taenet.com.mx##.md-card-content #result table#respOK:style(font-size: unset !important;)
 
-! Elimina pop-ups "Compartir este articulo"
-pchardwarepro.com##+js(aeld, scroll, ticking)
-tutowindow.com##+js(aeld, scroll, ticking)
-biobook.es##+js(aeld, scroll, ticking)
-tecnotuto.com##+js(aeld, scroll, ticking)
-
 ! grafik-teka
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=grafik-teka.com
 
@@ -1527,20 +1537,6 @@ mexicotravelchannel.mx##[data-aid="MESSAGING_FAB"]
 
 ! eleventa
 eleventa.com#@#[class*="paypal-button"],important
-@@/paypal.*/
-
-! calcularrfc
-calcularrfc.mx##.wp-block-kadence-rowlayout.alignnone.kb-row-layout-id25_c5f6b2-ca.kb-row-layout-wrap
-calcularrfc.mx##.site-footer-wrap
-
-! Consulta SIAT - Ajuste de pantalla
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###formapp\:pnl_content > table:nth-child(10) > tbody > tr > td:style(padding: unset !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###contenedorcc:style(width: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###contenedorcc:style(height: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/###formapp:style(width: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##html:style(width: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##.ui-corner-all.ui-widget-content.ui-widget.ui-panel:style(width: 100% !important;)
-agsc.siat.sat.gob.mx/PTSC/ConsultaIdCSIAT/##.cuno:style(padding-left: 0px !important;)
 
 ! sstwitter
 ssstwitter.com##.content
@@ -1580,6 +1576,9 @@ wikipedia.org##div.mw-heading > .mw-editsection
 pagoenlinea.megacable.com.mx##div.ant-row:nth-of-type(3)
 pagoenlinea.megacable.com.mx##div.css-y4rift.ant-row-center.ant-row:nth-of-type(2)
 
+! France24 video pip
+france24.com#%#//scriptlet('remove-class', 'm-em-video--pip', '', 'stay')
+france24.com#%#//scriptlet('remove-attr', 'data-em-video-pip', '', 'stay')
+
 ! Filtros DNS
 !#include aracmaDNS.txt
-
