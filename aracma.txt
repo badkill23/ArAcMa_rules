@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 28 Dic 2025 12:00 UTC-6
-! Version: 28.12.2025rev1
+! Last modified: 28 Dic 2025 12:30 UTC-6
+! Version: 28.12.2025rev2
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -17,7 +17,7 @@
 !----------------- ANUNCIOS -----------------!
 *##p:has([id*="publicidad" i])
 *##[class*="Advertising" i]
-*##[data-widget-type="ADVERTISEMENT" i]
+*##[data-widget-type="Advertisement" i]
 *##.top-banner
 *##[class^="ads" i]:upward([class^="box" i])
 *###idfullbannerbodynota
@@ -26,11 +26,11 @@
 *##iframe[src*="vix.com/"][src*="/embed/"][src*="embed=core"][src*="controlPlayer=true"]:upward(.\[content-visibility\:auto\])
 *##[aria-label*="VixBannerFooter" i]
 *##[href*="&deeplink=vixapp://detail/"]:upward([data-content-type="external widget"])
-*##span:has-text(/^(publicidad/i)
+*##span:has-text(/^(publicidad)/i)
 *##[href*="vix.onelink.me/"]
 *##[data-card-type*="vixplayer"]
 *##.ads_single_ad
-*##[class*="ads-content" i], [class*="publicidad" i]
+*##[class*="ads-content" i], [class*="publicidad" i], [id*="publicidad" i]
 
 !----------------- REDES SOCIALES Y NEWSLETTER -----------------!
 *##.social-media
@@ -1279,9 +1279,6 @@ www.ntwind.com##.btn_block
 www.howtodoexcel.com##.modal-backdrop
 www.howtodoexcel.com##body:style(overflow-y: auto !important)
 
-! Remove Smart App Banners on iOS
-#%#(function(){window.addEventListener("load",function(){(document.querySelector("meta[name='apple-itunes-app']")||{remove:()=>0}).remove();});})();
-
 ! materializedview
 ##.frontend-components-SubscribePrompt-module__background--WF3cB
 ##.frontend-components-SubscribePrompt-module__subscribeDialog--Yce7g
@@ -1582,3 +1579,4 @@ france24.com#%#//scriptlet('remove-attr', 'data-em-video-pip', '', 'stay')
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
