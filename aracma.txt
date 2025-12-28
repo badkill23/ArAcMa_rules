@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 28 Dic 2025 12:30 UTC-6
-! Version: 28.12.2025rev2
+! Last modified: 28 Dic 2025 15:30 UTC-6
+! Version: 28.12.2025rev3
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -14,6 +14,9 @@
 !            ELEMENTOS GENÉRICOS
 ! ============================================
 !
+!----------------- FILTROS PERMITIDOS -----------------!
+@@||click.redditmail.com^
+
 !----------------- ANUNCIOS -----------------!
 *##p:has([id*="publicidad" i])
 *##[class*="Advertising" i]
@@ -1579,4 +1582,5 @@ france24.com#%#//scriptlet('remove-attr', 'data-em-video-pip', '', 'stay')
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
