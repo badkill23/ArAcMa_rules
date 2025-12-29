@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 28 Dic 2025 15:30 UTC-6
-! Version: 28.12.2025rev3
+! Last modified: 29 Dic 2025 11:20 UTC-6
+! Version: 29.12.2025rev1
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -15,27 +15,22 @@
 ! ============================================
 !
 !----------------- FILTROS PERMITIDOS -----------------!
-@@||click.redditmail.com^
 
 !----------------- ANUNCIOS -----------------!
-*##p:has([id*="publicidad" i])
-*##[class*="Advertising" i]
 *##[data-widget-type="Advertisement" i]
-*##.top-banner
 *##[class^="ads" i]:upward([class^="box" i])
-*###idfullbannerbodynota
-*###sidebar-ad-container
-*##[id*="container-banner" i]
 *##iframe[src*="vix.com/"][src*="/embed/"][src*="embed=core"][src*="controlPlayer=true"]:upward(.\[content-visibility\:auto\])
 *##[aria-label*="VixBannerFooter" i]
 *##[href*="&deeplink=vixapp://detail/"]:upward([data-content-type="external widget"])
 *##span:has-text(/^(publicidad)/i)
 *##[href*="vix.onelink.me/"]
 *##[data-card-type*="vixplayer"]
-*##.ads_single_ad
-*##[class*="ads-content" i], [class*="publicidad" i], [id*="publicidad" i]
+*##*:matches-attr("class"=/(publicidad|Advertising|top-banner|ads_single_ad|ads-content)/i)
+*##*:matches-attr("id"=/(publicidad|Advertising|idfullbannerbodynota|sidebar-ad-container|container-banner|ads_single_ad)/i)
 
 !----------------- REDES SOCIALES Y NEWSLETTER -----------------!
+*##a:matches-attr("title"=/\b(ig|x|youtube|twitter|fb|facebook|instagram)\b/i)
+*##[data-hubspot-wrapper-cta-id]
 *##.social-media
 *##.social-feed
 *##.inklusionButton
@@ -68,6 +63,7 @@
 *##[href*="whatsapp.com/channel/"]:upward(1)
 *##[href*="news.google.com/publications"]:upward(1)
 *##[action*="paypal.com"]
+*##[href*="paypal.com/cgi-bin/webscr?"]
 *##.menu-follow
 *###dailymotion-pip-large-viewport
 *##.post-comments-shortcut
@@ -1582,5 +1578,6 @@ france24.com#%#//scriptlet('remove-attr', 'data-em-video-pip', '', 'stay')
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
