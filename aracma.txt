@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 29 Dic 2025 11:20 UTC-6
-! Version: 29.12.2025rev1
+! Last modified: 29 Dic 2025 17:10 UTC-6
+! Version: 29.12.2025rev2
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -18,15 +18,15 @@
 
 !----------------- ANUNCIOS -----------------!
 *##[data-widget-type="Advertisement" i]
-*##[class^="ads" i]:upward([class^="box" i])
 *##iframe[src*="vix.com/"][src*="/embed/"][src*="embed=core"][src*="controlPlayer=true"]:upward(.\[content-visibility\:auto\])
 *##[aria-label*="VixBannerFooter" i]
 *##[href*="&deeplink=vixapp://detail/"]:upward([data-content-type="external widget"])
 *##span:has-text(/^(publicidad)/i)
 *##[href*="vix.onelink.me/"]
 *##[data-card-type*="vixplayer"]
-*##*:matches-attr("class"=/(publicidad|Advertising|top-banner|ads_single_ad|ads-content)/i)
-*##*:matches-attr("id"=/(publicidad|Advertising|idfullbannerbodynota|sidebar-ad-container|container-banner|ads_single_ad)/i)
+*##*:matches-attr("class"=/(publicidad|Advertising|top-banner|ads_single_ad|ads-content|ads|AdWrapper|ad-div|stickyad|espacio-anuncio)/i)
+*##*:matches-attr("id"=/(publicidad|Advertising|idfullbannerbodynota|sidebar-ad-container|container-banner|ads_single_ad|anuncio)/i)
+*##[data-label="Publicidad" i]
 
 !----------------- REDES SOCIALES Y NEWSLETTER -----------------!
 *##a:matches-attr("title"=/\b(ig|x|youtube|twitter|fb|facebook|instagram)\b/i)
@@ -60,8 +60,8 @@
 *##[aria-label="Social Media Links"]
 *##aside:has-text(/(Get your FREE ebook):/i)
 *##p:has([href*="whatsapp.com/channel/"])
-*##[href*="whatsapp.com/channel/"]:upward(1)
-*##[href*="news.google.com/publications"]:upward(1)
+*##[href*="whatsapp.com/channel/"]
+*##[href*="news.google.com/publications"]
 *##[action*="paypal.com"]
 *##[href*="paypal.com/cgi-bin/webscr?"]
 *##.menu-follow
@@ -105,6 +105,21 @@
 *##[class*="footer-social" i]
 *##[aria-label*="Social Links" i]
 *##a:has-text(/(Suscríbete)/i)
+||/plugins/readabler/*
+*###social-media-list
+*##.col_redes
+*##.box_fb
+*##.votacion
+*##.box_registro
+*##[id*="visitor_votes"]
+*##[class="btnbuzon"]
+*##.share-redes
+*##[id*="rating"]
+*##.starRating
+*##.community
+*##*:matches-attr("src"=/livechat-([A-Za-z]{2}).asus.com/plugin/)
+*##.top-recommed-container
+*##[href*="t.me/"]
 
 !----------------- CALIFICAR CONTENIDO -----------------!
 ||/plugins/chaty/*
@@ -1576,8 +1591,16 @@ pagoenlinea.megacable.com.mx##div.css-y4rift.ant-row-center.ant-row:nth-of-type(
 france24.com#%#//scriptlet('remove-class', 'm-em-video--pip', '', 'stay')
 france24.com#%#//scriptlet('remove-attr', 'data-em-video-pip', '', 'stay')
 
+! telemundo video pip
+telemundo.com#%#//scriptlet('remove-class', 'sticky-pip--stuck', '', 'stay')
+
+! minitool
+www.minitool.com##:is([data-position="Middle"])[class*="article-down-btn"]
+www.minitool.com##.side-popup-container
+
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
