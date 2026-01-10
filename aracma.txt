@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 02 Jan 2025 20:30 UTC-6
-! Version: 2026.0102.2030.42
+! Last modified: 09 Jan 2025 19:30 UTC-6
+! Version: 2026.0109.1930.42
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -30,6 +30,7 @@
 *##[data-label="Publicidad" i]
 *##.sticky-banner
 *##.close_ad
+*##[class*="banner-container"]
 
 !----------------- REDES SOCIALES Y NEWSLETTER -----------------!
 *##a:matches-attr("title"=/\b(ig|x|youtube|twitter|fb|facebook|instagram)\b/i)
@@ -37,6 +38,7 @@
 *##.social-media
 *##.social-feed
 *##*:matches-attr("class"=/(inklusion)/i)
+*##[href*=".inklusionweb.com/"]
 *##[class*="fa-facebook"]
 *##[class*="fa-twitter"]
 *##[class*="fa-instagram"]
@@ -130,6 +132,9 @@
 *##.nav-social-grid
 *##.st-socialwsns
 *##.footer-secondary__social
+*##.post_share
+*###menu-rs-list
+*##.icon-soci
 
 !----------------- CALIFICAR CONTENIDO -----------------!
 ||/plugins/chaty/*
@@ -141,6 +146,9 @@
 ||comentarios.audiencias-api.com^
 *##.ratingContainer
 *##.form_valuation_cl
+*##[class*="rating-widget"]
+||messenger.svc.chative.io^$script
+||support.gcfglobal.org/form/$subdocument
 
 !----------------- ARTÍCULOS RECOMENDADOS -----------------!
 *##.recommended-card
@@ -242,7 +250,7 @@ app.cfe.mx###header
 app.cfe.mx###page-menu
 app.cfe.mx##.page-title
 app.cfe.mx##div.form-row>:contains(Recibo electrónico:)
-app.cfe.mx##.nopadding:style(background-image: none !important;)
+app.cfe.mx##.nopadding:style(background: #eee !important;)
 app.cfe.mx##div.center:has(img[src*="logo-ssb.png"])
 app.cfe.mx##.bottommargin-sm:has([src*="recibo.jpg"])
 
@@ -1613,6 +1621,7 @@ www.minitool.com##.side-popup-container
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
