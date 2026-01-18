@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 09 Jan 2025 19:30 UTC-6
-! Version: 2026.0109.1930.42
+! Last modified: 18 Jan 2025 13:31 UTC-6
+! Version: 2026.0118.1331.12
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -31,6 +31,8 @@
 *##.sticky-banner
 *##.close_ad
 *##[class*="banner-container"]
+*###promo-bar
+*##body:not(#promo-bar):style(padding-top: 0px !important;)
 
 !----------------- REDES SOCIALES Y NEWSLETTER -----------------!
 *##a:matches-attr("title"=/\b(ig|x|youtube|twitter|fb|facebook|instagram)\b/i)
@@ -135,6 +137,20 @@
 *##.post_share
 *###menu-rs-list
 *##.icon-soci
+*##.whatsapp-floating-icon
+*##[class*="social__group"]
+*##.SocialLink
+*##.social_icon
+*##.social-icons
+*###button-beacon-container
+*##.contenedor-redes
+*##.whatsapp-floating-button
+*##.social-media-icon-layout
+*###compartirRrss
+*##.redes-footer
+*##.social_network
+*##.soc-ico
+*##.social_icons
 
 !----------------- CALIFICAR CONTENIDO -----------------!
 ||/plugins/chaty/*
@@ -149,6 +165,12 @@
 *##[class*="rating-widget"]
 ||messenger.svc.chative.io^$script
 ||support.gcfglobal.org/form/$subdocument
+||chat-bot.sslcamaltec.com.es^$script
+||chat.raiola.network^
+*##[class*="SocialLink"]
+||smooch.io^
+||apps.mypurecloud.com/messenger/$script
+||instructure-gen.ada.support^
 
 !----------------- ARTÍCULOS RECOMENDADOS -----------------!
 *##.recommended-card
@@ -1196,6 +1218,7 @@ letras.com##.composer
 letras.com##.logo
 
 ! TV Azteca
+www.aztecapuebla.com##.stickyDiv
 www.tvazteca.com###stickyDiv
 www.tvazteca.com###LoginForm
 www.tvazteca.com##.Page-footer
@@ -1208,6 +1231,11 @@ www.tvazteca.com##.ArticlePage-customFinalText
 www.tvazteca.com#%#//scriptlet('remove-attr', 'data-bsp-plugin', '', 'stay')
 www.tvazteca.com##.PortalNavigation
 www.tvazteca.com##.Page-header:style(top: unset !important;)
+envivo.tvazteca.com#%#//scriptlet('remove-class', 'eighQd', '', 'stay')
+envivo.tvazteca.com#%#//scriptlet('remove-class', 'fPCvAP', '', 'stay')
+envivo.tvazteca.com###page > main > div > div > .swiper-wrapper
+envivo.tvazteca.com###page > main > .container
+@@||imasdk.googleapis.com^$domain=envivo.tvazteca.com
 @@||imasdk.googleapis.com^$domain=mdstrm.com
 
 ! azteca puebla
@@ -1598,7 +1626,9 @@ foxit.com##.ai-chatbot-wrapper
 cultura-informatica.com##.ai-viewport-1
 
 ! fredl.ru sitio de descargas
-frdl.*##.col-lg-12 > .text-center, .seperate, .footer
+fredl.*##.col-lg-12 > .text-center
+fredl.*##.seperate
+fredl.*##.footer
 
 ! wikipedia
 wikipedia.org##[href^="#cite_note-"]:upward(sup)
@@ -1621,6 +1651,7 @@ www.minitool.com##.side-popup-container
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
