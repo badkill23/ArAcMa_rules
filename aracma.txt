@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 21 Jan 2025 21:20 UTC-6
-! Version: 2026.0121.2120.42
+! Last modified: 22 Jan 2025 11:05 UTC-6
+! Version: 2026.0122.1105.02
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -1236,8 +1236,19 @@ envivo.tvazteca.com#%#//scriptlet('remove-class', 'eighQd', '', 'stay')
 envivo.tvazteca.com#%#//scriptlet('remove-class', 'fPCvAP', '', 'stay')
 envivo.tvazteca.com###page > main > div > div > .swiper-wrapper
 envivo.tvazteca.com###page > main > .container
-imasdk.googleapis.com$redirect-rule=google-ima.js,domain=tvazteca.com
+
 @@||imasdk.googleapis.com^$domain=mdstrm.com
+!#if !ext_ubol
+imasdk.googleapis.com$redirect-rule=google-ima.js,domain=tvazteca.com
+!#else
+@@||googletagmanager.com^$domain=tvazteca.com
+@@||doubleclick.net^$domain=tvazteca.com
+@@||googlesyndication.com^$domain=tvazteca.com
+@@||mdstrm.com^$domain=tvazteca.com
+@@||googleapis.com^$domain=tvazteca.com
+@@||doubleclick.net^$domain=tvazteca.com
+@@||doubleclick.net^$domain=imasdk.googleapis.com
+!#endif
 
 ! azteca puebla
 www.aztecapuebla.com#%#//scriptlet('remove-attr', 'data-loginconfig', '', 'stay')
@@ -1652,6 +1663,7 @@ www.minitool.com##.side-popup-container
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
