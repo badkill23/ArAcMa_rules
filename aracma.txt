@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 22 Jan 2025 14:55 UTC-6
-! Version: 2026.0122.1455.48
+! Last modified: 22 Jan 2025 15:25 UTC-6
+! Version: 2026.0122.1525.44
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -32,7 +32,7 @@
 *##.close_ad
 *##[class*="banner-container"]
 *###promo-bar
-*##body:is(#promo-bar):style(padding-top: 0px !important;)
+*##body:has(#promo-bar):style(padding-top: 0px !important;)
 
 !----------------- REDES SOCIALES Y NEWSLETTER -----------------!
 *##a:matches-attr("title"=/\b(ig|x|youtube|twitter|fb|facebook|instagram)\b/i)
@@ -122,7 +122,7 @@
 *##.share-redes
 *##[id*="rating"]
 *##.starRating
-*##.community
+*##.community:not(body)
 *##*:matches-attr("src"=/livechat-([A-Za-z]{2}).asus.com/plugin/)
 *##.top-recommed-container
 *##[href*="t.me/"]
@@ -1663,6 +1663,7 @@ www.minitool.com##.side-popup-container
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
