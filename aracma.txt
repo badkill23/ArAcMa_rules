@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 22 Jan 2025 14:35 UTC-6
-! Version: 2026.0122.1435.18
+! Last modified: 22 Jan 2025 14:55 UTC-6
+! Version: 2026.0122.1455.48
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -25,8 +25,8 @@
 *##span:has-text(/^(publicidad)/i)
 *##[href*="vix.onelink.me/"]
 *##[data-card-type*="vixplayer"]
-*##*:matches-attr("class"=/(publicidad|Advertising|top-banner|ads_single_ad|ads-content|ads|AdWrapper|ad-div|stickyad|espacio-anuncio|publibypi|ad)/i):not(body)
-*##*:matches-attr("id"=/(publicidad|Advertising|idfullbannerbodynota|sidebar-ad-container|container-banner|ads_single_ad|anuncio)/i):not(body)
+*##*:matches-attr("class"=/^(publicidad|Advertising|top-banner|ads_single_ad|ads-content|ads|AdWrapper|ad-div|stickyad|espacio-anuncio|publibypi)/i):not(body)
+*##*:matches-attr("id"=/^(publicidad|Advertising|idfullbannerbodynota|sidebar-ad-container|container-banner|ads_single_ad|anuncio)/i):not(body)
 *##[data-label="Publicidad" i]
 *##.sticky-banner
 *##.close_ad
@@ -1663,6 +1663,7 @@ www.minitool.com##.side-popup-container
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
