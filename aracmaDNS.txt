@@ -2,8 +2,8 @@
 ! Title: ArAcMa's DNS Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 5 day
-! Last modified: 22 Jan 2025 11:08 UTC-6
-! Version: 2026.0122.1108.29
+! Last modified: 22 Jan 2025 11:30 UTC-6
+! Version: 2026.0122.1130.49
 ! Syntax: AdBlock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -80,6 +80,7 @@
 @@||modemobile.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=descargaspcpro.net
 @@||click.redditmail.com^
+!#if !ext_ubol
 @@||googletagmanager.com^$domain=tvazteca.com
 @@||doubleclick.net^$domain=tvazteca.com
 @@||googlesyndication.com^$domain=tvazteca.com
@@ -87,3 +88,4 @@
 @@||googleapis.com^$domain=tvazteca.com
 @@||doubleclick.net^$domain=tvazteca.com
 @@||doubleclick.net^$domain=imasdk.googleapis.com
+!#endif
