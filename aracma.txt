@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 22 Jan 2025 11:05 UTC-6
-! Version: 2026.0122.1105.02
+! Last modified: 22 Jan 2025 11:25 UTC-6
+! Version: 2026.0122.1125.16
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -1236,9 +1236,9 @@ envivo.tvazteca.com#%#//scriptlet('remove-class', 'eighQd', '', 'stay')
 envivo.tvazteca.com#%#//scriptlet('remove-class', 'fPCvAP', '', 'stay')
 envivo.tvazteca.com###page > main > div > div > .swiper-wrapper
 envivo.tvazteca.com###page > main > .container
-
 @@||imasdk.googleapis.com^$domain=mdstrm.com
-!#if !ext_ubol
+
+!#if ext_ubol
 imasdk.googleapis.com$redirect-rule=google-ima.js,domain=tvazteca.com
 !#else
 @@||googletagmanager.com^$domain=tvazteca.com
@@ -1663,6 +1663,7 @@ www.minitool.com##.side-popup-container
 
 ! Filtros DNS
 !#include aracmaDNS.txt
+
 
 
 
