@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 22 Jan 2025 15:25 UTC-6
-! Version: 2026.0122.1525.44
+! Last modified: 03 Feb 2025 11:25 UTC-6
+! Version: 2026.0203.1125.26
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -33,6 +33,7 @@
 *##[class*="banner-container"]
 *###promo-bar
 *##body:has(#promo-bar):style(padding-top: 0px !important;)
+*##a:matches-attr("class"=/\b(bannertop|banner)\b/i):not(body)
 
 !----------------- REDES SOCIALES Y NEWSLETTER -----------------!
 *##a:matches-attr("title"=/\b(ig|x|youtube|twitter|fb|facebook|instagram)\b/i)
@@ -81,7 +82,7 @@
 *##[class*="boton_sticky"]:has([title="Botón sticky"])
 *##[id*="Accessibility" i]
 *##.social-bar
-*##[class*="subscribe" i]
+*##[class*="subscribe" i]:not(body)
 *##[id*="subscription" i]
 *##:not(main) [class*="follow" i]
 *##[class*="donation" i]
@@ -151,6 +152,7 @@
 *##.social_network
 *##.soc-ico
 *##.social_icons
+*##a:matches-attr("class"=/\b(ig|x|youtube|twitter|fb|facebook|instagram|social-icon|icons-sm|header-redes|menu-rss)\b/i)
 
 !----------------- CALIFICAR CONTENIDO -----------------!
 ||/plugins/chaty/*
@@ -241,7 +243,7 @@ gob.mx##.breadcrumb:style(margin: 0 !important;)
 gob.mx##.breadcrumb:style(padding: 0 !important;)
 gob.mx##.sub-navbar:style(margin-top: 0 !important;)
 gob.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
-gob.mx##:not([class*="panel-"],[class^="modal-"],body)[class*="footer"]
+!gob.mx##:not([class*="panel-"],[class^="modal-"],body)[class*="footer"]
 gob.mx###footer
 gob.mx##.alert-info.alert
 gob.mx##.mdp-readabler-trigger-button-box
@@ -1412,6 +1414,7 @@ www.mediafire.com###subFooterSocial
 
 ! aristeguinoticias
 aristeguinoticias.com##[class*=wrapperad]
+aristeguinoticias.com##[class*="box"]:has(.adspot)
 
 ! diariocambio
 www.diariocambio.com.mx##.socialIcons
@@ -1641,6 +1644,9 @@ cultura-informatica.com##.ai-viewport-1
 fredl.*##.col-lg-12 > .text-center
 fredl.*##.seperate
 fredl.*##.footer
+frdl.*##.col-lg-12 > .text-center
+frdl.*##.seperate
+frdl.*##.footer
 
 ! wikipedia
 wikipedia.org##[href^="#cite_note-"]:upward(sup)
@@ -1663,19 +1669,3 @@ www.minitool.com##.side-popup-container
 
 ! Filtros DNS
 !#include aracmaDNS.txt
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
