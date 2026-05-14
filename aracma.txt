@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 13 May 2026 18:40 UTC-6
-! Version: 2026.0513.1840.15
+! Last modified: 13 May 2026 19:02 UTC-6
+! Version: 2026.0513.1902.35
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -243,8 +243,7 @@ gob.mx##.breadcrumb:style(margin: 0 !important;)
 gob.mx##.breadcrumb:style(padding: 0 !important;)
 gob.mx##.sub-navbar:style(margin-top: 0 !important;)
 gob.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
-!gob.mx##:not([class*="panel-"],[class^="modal-"],body)[class*="footer"]
-gob.mx###footer:not([class*="panel-"],[class^="modal-"],body)
+gob.mx###footer
 gob.mx##.alert-info.alert
 gob.mx##.mdp-readabler-trigger-button-box
 gob.mx##.region-topheader
@@ -271,9 +270,8 @@ app.cfe.mx##.breadcrumb:style(padding: 0 !important;)
 app.cfe.mx##.sub-navbar:style(margin-top: 0 !important;)
 app.cfe.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
 app.cfe.mx##nav[class*="navbar-fixed-top"]
-app.cfe.mx##:not([class*="panel-"],[class^="modal-"],body)[class*="footer"]
 app.cfe.mx##div[class^="col-md-12 alert alert-info"]
-app.cfe.mx###footer:not([class*="panel-"],[class^="modal-"],body)
+app.cfe.mx###footer
 app.cfe.mx###header
 app.cfe.mx###page-menu
 app.cfe.mx##.page-title
