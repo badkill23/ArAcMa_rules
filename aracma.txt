@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 03 Feb 2025 11:25 UTC-6
-! Version: 2026.0203.1125.26
+! Last modified: 13 May 2026 18:40 UTC-6
+! Version: 2026.0513.1840.15
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -244,7 +244,7 @@ gob.mx##.breadcrumb:style(padding: 0 !important;)
 gob.mx##.sub-navbar:style(margin-top: 0 !important;)
 gob.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
 !gob.mx##:not([class*="panel-"],[class^="modal-"],body)[class*="footer"]
-gob.mx###footer
+gob.mx###footer:not([class*="panel-"],[class^="modal-"],body)
 gob.mx##.alert-info.alert
 gob.mx##.mdp-readabler-trigger-button-box
 gob.mx##.region-topheader
@@ -258,6 +258,10 @@ gob.mx##.socialside23
 gob.mx##.print.internal.font-changer.hidden-xs
 gob.mx##[title*="accesibilidad"]
 gob.mx##.grecaptcha-badge
+gob.mx##.right-header
+gob.mx##left-header
+gob.mx##.main-footer
+gob.mx##.content_footer
 
 ! CFE
 app.cfe.mx##body:style(margin-top: 0 !important;)
@@ -269,12 +273,11 @@ app.cfe.mx##.small-top-buffer.pull-right:style(margin: 0 !important;)
 app.cfe.mx##nav[class*="navbar-fixed-top"]
 app.cfe.mx##:not([class*="panel-"],[class^="modal-"],body)[class*="footer"]
 app.cfe.mx##div[class^="col-md-12 alert alert-info"]
-app.cfe.mx###footer
+app.cfe.mx###footer:not([class*="panel-"],[class^="modal-"],body)
 app.cfe.mx###header
 app.cfe.mx###page-menu
 app.cfe.mx##.page-title
 app.cfe.mx##div.form-row>:contains(Recibo electrónico:)
-app.cfe.mx##.nopadding:style(background: #eee !important;)
 app.cfe.mx##div.center:has(img[src*="logo-ssb.png"])
 app.cfe.mx##.bottommargin-sm:has([src*="recibo.jpg"])
 
@@ -360,6 +363,8 @@ pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 pinterest.com.mx##.Hsu.iyn.zI7.rDA.ojN.jar._he.RDc.KO4
 ! Mensaje de img descargada
 pinterest.com##[data-test-id="post-download-upsell-popover"]
+#@#a[href*="pinterest.com/pin/create/button"]
+#@#a[href^="https://www.pinterest.com/pin/create/button/"]
 
 ! YouTube
 !     Sin Distracciones Personal
@@ -1666,6 +1671,9 @@ telemundo.com#%#//scriptlet('remove-class', 'sticky-pip--stuck', '', 'stay')
 ! minitool
 www.minitool.com##:is([data-position="Middle"])[class*="article-down-btn"]
 www.minitool.com##.side-popup-container
+
+! mitelmex
+mitelmex.telmex.com###chat-teaser-box
 
 ! Filtros DNS
 !#include aracmaDNS.txt
