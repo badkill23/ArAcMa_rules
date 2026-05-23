@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 23 May 2026 14:10 UTC-6
-! Version: 2026.0523.1410.35
+! Last modified: 23 May 2026 14:20 UTC-6
+! Version: 2026.0523.1420.35
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -152,7 +152,7 @@
 *##.social_network
 *##.soc-ico
 *##.social_icons
-*##a:matches-attr("class"=/\b(ig|x|youtube|twitter|fb|facebook|instagram|social-icon|icons-sm|header-redes|menu-rss)\b/i)
+!*##a:matches-attr("class"=/\b(ig|x|youtube|twitter|fb|facebook|instagram|social-icon|icons-sm|header-redes|menu-rss)\b/i)
 
 !----------------- CALIFICAR CONTENIDO -----------------!
 ||/plugins/chaty/*
