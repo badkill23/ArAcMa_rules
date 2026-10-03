@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 24 Sep 2026 12:50 UTC-6
-! Version: 2026.0924.1250.35
+! Last modified: 03 Oct 2026 07:20 UTC-6
+! Version: 2026.1003.0720.35
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -289,15 +289,6 @@ preinscripcion.seppue.gob.mx#%#//scriptlet('remove-class', 'modal-open', '', 'st
 preinscripcion.seppue.gob.mx##[src="/sicepInscripciones/resources/front/media/gobiernoPresente.png"]
 ! Encabezado de la pagina
 preinscripcion.seppue.gob.mx###undefined-sticky-wrapper
-
-! Consulta Calif. Puebla
-sisep.puebla.gob.mx###captchaMod:style(height: 97px !important;)
-sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(1) > div > a > img:style(height: 60px !important;)
-sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(1) > div > a > img:style(width: 150px !important;)
-sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > a > img:style(height: 60px !important;)
-sisep.puebla.gob.mx###DivCaptcha > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > a > img:style(width: 150px !important;)
-sisep.puebla.gob.mx###Encabezado > table:nth-child(41):style(display: none !important;)
-sisep.puebla.gob.mx###contenido-principal > table > tbody
 
 ! Repuve
 www2.repuve.gob.mx##div.container:nth-of-type(6)
