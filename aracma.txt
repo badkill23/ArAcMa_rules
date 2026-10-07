@@ -2,8 +2,8 @@
 ! Title: ArAcMa's Cosmetic Filters
 ! Description: Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Phishing, Malware, Scam, Fake, based on personal use. Welcome cleaner internet.
 ! Expires: 3 days
-! Last modified: 03 Oct 2026 07:20 UTC-6
-! Version: 2026.1003.0720.35
+! Last modified: 07 Oct 2026 08:20 UTC-6
+! Version: 2026.1007.0820.35
 ! Syntax: Adblock
 !
 ! Homepage: https://github.com/badkill23/ArAcMa_rules
@@ -235,7 +235,6 @@ tecnotuto.com##+js(aeld, scroll, ticking)
 ! Gob MX
 gob.mx###toppage
 gob.mx##nav:style(top: 0 !important;)
-gob.mx##body:style(padding-top: 0 !important;)
 gob.mx##.breadcrumb:style(margin: 0 !important;)
 gob.mx##.breadcrumb:style(padding: 0 !important;)
 gob.mx##.sub-navbar:style(margin-top: 0 !important;)
@@ -1672,12 +1671,16 @@ mitelmex.telmex.com###chat-teaser-box
 imasdk.googleapis.com$redirect-rule=google-ima.js,domain=beatdigital.mx
 
 ! Bloquear Google One Tap / Iniciar sesión con Google
-||accounts.google.com/gsi/iframe/select$subdocument
-||accounts.google.com/gsi/client$script,3p
-||accounts.google.com/gsi/*$xhr,script,3p
+||accounts.google.com/gsi/iframe/select?client_id=*.apps.googleusercontent.com
 
-! Bloqueo completo de Google Identity Services
-!||accounts.google.com/gsi/*
+! Google consent, "before you continue"
+www.google.*##^script:has-text(consentCookiePayload)
+www.google.*##+js(acis, document.cookie, YES+)
+google.*##+js(aeld, DOMContentLoaded, CONSENT)
+
+! canalonce.mx
+@@||extreme-ip-lookup.com^$xhr,domain=canalonce.mx
+
 
 ! Filtros DNS
 !#include aracmaDNS.txt
